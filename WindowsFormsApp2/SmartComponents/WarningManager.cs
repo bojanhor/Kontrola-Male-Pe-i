@@ -53,7 +53,7 @@ namespace WindowsFormsApp2
         void DisplayOnScreen()
         {
             var m = new MethodInvoker(delegate { ShowOnDisplay(); });
-            while (Parent == null)
+            while (FormControl.Gui == null)
             {
                 Thread.Sleep(100);
             }
@@ -63,7 +63,7 @@ namespace WindowsFormsApp2
             {
                 try
                 {
-                    Parent.Invoke(m);
+                    FormControl.Gui.Invoke(m);
                 }
                 catch
                 {
