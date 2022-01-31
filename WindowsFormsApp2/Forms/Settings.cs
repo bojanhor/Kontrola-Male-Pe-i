@@ -884,7 +884,7 @@ namespace WindowsFormsApp2
 
             try
             {
-                settingsXML = XDocument.Load(textBoxPathXML.Text);
+                settingsXML = XDocument.Load(Settings.pathToConfigFile);
             }
             catch (Exception)
             {
