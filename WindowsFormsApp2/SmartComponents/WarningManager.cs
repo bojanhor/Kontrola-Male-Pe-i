@@ -55,7 +55,7 @@ namespace WindowsFormsApp2
             var m = new MethodInvoker(delegate { ShowOnDisplay(); });
             while (FormControl.Gui == null)
             {
-                Thread.Sleep(100);
+                Thread.Sleep(100); 
                 Application.DoEvents();
             }
             Thread.Sleep(1000);
