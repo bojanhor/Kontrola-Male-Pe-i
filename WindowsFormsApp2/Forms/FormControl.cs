@@ -217,9 +217,8 @@ namespace WindowsFormsApp2
 
             try
             {
-                Form_settings.SettingsAfterjobs();
                 Gui = new Gui_MalaPec();
-
+                Form_settings.SettingsAfterjobs();
             }
             catch (Exception ex)
             {
