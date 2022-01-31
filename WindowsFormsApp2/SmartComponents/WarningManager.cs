@@ -56,6 +56,7 @@ namespace WindowsFormsApp2
             while (FormControl.Gui == null)
             {
                 Thread.Sleep(100);
+                Application.DoEvents();
             }
             Thread.Sleep(1000);
 
