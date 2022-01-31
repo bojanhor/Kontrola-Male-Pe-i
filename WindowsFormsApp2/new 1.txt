@@ -1,0 +1,23 @@
+
+5 člen pravilnika o varstvu pri delu pred nevarnostjo električnega toka (online). 2016. (citirano 1. 12 2016). Dostopno na naslovu: www.uradni-list.si.
+
+Slika PWM primera (online). 2016. (citirano 1. 12 2016). Dostopno na naslovu: https://arduino-info.wikispaces.com/Analog-Output.
+
+Odgovori na pogosta vprašanja "FAQ" (online). 2016. (povzeto 13. 12 2016). Dostopno na naslovu: http://www.elabtronics.com/contact_us.php.
+
+Informacije o kompatibilnosti (online). 2016. (povzeto 13. 12 2016) Dostopno na naslovu: http://www.microchip.com/mplab/mplab-x-ide.
+
+Predstavitev podjetja za javnost. Zalog pri Cerkljah: Humar Sistemi d.o.o., 2016
+
+Promocijska stran podjetja armKeil (online). 2016. (povzeto 30. 10 2016). Dostopno na naslovu: https://www.keil.com/download/.
+
+Promocijska stran podjetja Atmel (online). 2016. (povzeto 30. 10 2016). Dostopno na naslovu: http://www.atmel.com/tools/atmelstudio.aspx.
+
+Promocijska stran podjetja Matrix (online). 2016. (povzeto 30. 10 2016). Dostopno na naslovu: https://www.matrixtsl.com/wiki/index.php?title=FlowcodeV5.
+
+Rezultati spletnega obrazca podjetja DesignSoft (online). 2016. (povzeto 30. 10 2016). Dostopno na naslovu: https://www.designsoftware.com/orders/order.php.
+
+Spletni katalog podjetja Matrix Dostopno na naslovu (online). 2016. (povzeto 30. 10 2016). https://www.matrixtsl.com/flowcode/download/.
+
+Stran za prenose in okvirne informacije podjetja Eclipse (online). 2016. (povzeto 30. 10 2016). Dostopno na naslovu: https://eclipse.org/downloads/.
+

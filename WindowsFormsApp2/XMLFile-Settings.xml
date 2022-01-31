@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root> // Please close program before editing this document! In other case changes might be overwritten
+  <GENERAL>//
+		<logFilePath>C:\Users\Pisarna\source\repos\Kontrola male peči\WindowsFormsApp2\Logs\Log.txt</logFilePath> // TXT Log
+		<UserActionsFilePath>C:\Users\Pisarna\source\repos\Kontrola male peči\WindowsFormsApp2\Logs\UserActions.csv</UserActionsFilePath> // CSV Log of user actions
+		<TemperatureLogFilePath>C:\Users\Pisarna\source\repos\Kontrola male peči\WindowsFormsApp2\Logs\Temperatures.csv</TemperatureLogFilePath> // CSV Log of temperatures
+		<SarzaLogFolderPath>C:\Users\Kontrola Kadi\Desktop\Google Backup\Humar sistemi - Kontrola kadi v29\Humar sistemi - Kontrola kadi\Log Sarza</SarzaLogFolderPath> //  Logi - Saržno orientirani
+		<SearchEngineRunScript>C:\Scripts_KontrolaKadi\Srch.bat</SearchEngineRunScript>//  Pot do skripta za zagon iskalnika
+		<WatchdogRetries>3</WatchdogRetries>							// how many times watchdog retries to get value from PLC before error is shown and reconection is invoked
+		<AutoConnect>True</AutoConnect>           						// autoconnect at startup
+		<GUIrefreshrate>800</GUIrefreshrate>							// program will force refresh values every ### miliseconds (small values can result in overloading CPU) NOTE: Program refreshes gui on every value change from PLC on its own!
+		<SettingsMenuRefreshrate>200</SettingsMenuRefreshrate>			// program will refresh values in settings form every ### miliseconds
+		<GeneratePC_WD>true</GeneratePC_WD>								// program will generate watchdog counter for PLC to check if PC is present on the network (value must be: "true" or "false")
+		<AddressPC_WD>6</AddressPC_WD>									// program will generate watchdog counter on specified profinet address (type is WORD; example/default value: "278")
+		<DisableGuiOnLostConnection>true</DisableGuiOnLostConnection>	// Disables Gui sub-Menus when connection is lost and prevents entry to sub-Menus
+		<LogPeriod_Sarza>1000</LogPeriod_Sarza>							// Določi na koliko časa se vpiše vzorec temperatur, ph vrednosti in ostalih podatkov v Log za saržo
+		<LogoffEnabled>false</LogoffEnabled>							// Omogoči delovanje programa brez prijavljenega uporabnika	
+		<debugToConsole>true</debugToConsole>							// false
+		<LogInRequired>false</LogInRequired>	//
+		</GENERAL>//
+		//
+		<CONNECTION>//
+	  <LOGO1>//
+		<show>true</show>							// indicates if tabpage is shown on GUI
+		<enabled>true</enabled>						// indicates if device is enabled - (gui, communication ...)
+		<showname>LOGO1</showname>					// Showname
+		<serverIP>192.168.1.201</serverIP>		// format must be ###.###.###.### (192.168.0.1) IP of PLC
+		<localTSAP>"02.00"</localTSAP>				// format must be ##.## (00.03) TSAP is used for comunication between PLCs 
+		<remoteTSAP>"20.00"</remoteTSAP>			// format must be ##.## (00.03) TSAP is used for comunication between PLCs
+		<watchdogEN>true</watchdogEN>				// value must be "true" or "false" .. enable or disable watchdog - watchdog is used for detecting comunication problems	
+		<watchdogAddress>2</watchdogAddress>  		// value must be number DOUBLE WORD format. Watchdog is used for detecting comunication problems. For example "100" if watchdog value is DOUBLE WORD on address 100
+		<ReadWriteCycle>100</ReadWriteCycle>		// value in miliseconds - frequency at which data aquisition is preformed - read, action, write, delay. (watchdog is also bound at this frequency)
+	  </LOGO1>//
+	  //
+	  <LOGO2>//
+		<show>false</show>//
+		<enabled>false</enabled>//
+		<showname>LOGO2</showname>//
+		<serverIP>192.168.10.202</serverIP>//
+		<localTSAP>"03.00"</localTSAP>//
+		<remoteTSAP>"02.00"</remoteTSAP>//
+		<watchdogEN>true</watchdogEN>//
+		<watchdogAddress>246</watchdogAddress>//
+		<ReadWriteCycle>200</ReadWriteCycle>//
+		</LOGO2>//
+	  //
+	  <LOGO3>//
+		<show>false</show>//
+		<enabled>false</enabled>//
+		<showname>LOGO3</showname>//
+		<serverIP>192.168.10.203</serverIP>//
+		<localTSAP>"03.00"</localTSAP>//
+		<remoteTSAP>"02.00"</remoteTSAP>//
+		<watchdogEN>true</watchdogEN>//
+		<watchdogAddress>250</watchdogAddress>//
+		<ReadWriteCycle>200</ReadWriteCycle>//
+		</LOGO3>//
+	  //
+	  <LOGO4>//
+		<show>false</show>//
+		<enabled>false</enabled>//
+		<showname>LOGO4</showname>//
+		<serverIP>192.168.10.204</serverIP>//
+		<localTSAP>"03.00"</localTSAP>//
+		<remoteTSAP>"02.00"</remoteTSAP>//
+		<watchdogEN>true</watchdogEN>//
+		<watchdogAddress>254</watchdogAddress>//
+		<ReadWriteCycle>200</ReadWriteCycle>//
+		</LOGO4>//
+	  //
+	  <LOGO5>//
+		<show>false</show>//
+		<enabled>false</enabled>//
+		<showname>LOGO5</showname>//
+		<serverIP>192.168.10.205</serverIP>//
+		<localTSAP>"03.00"</localTSAP>//
+		<remoteTSAP>"02.00"</remoteTSAP>//
+		<watchdogEN>true</watchdogEN>//
+		<watchdogAddress>258</watchdogAddress>//
+		<ReadWriteCycle>200</ReadWriteCycle>//
+		</LOGO5>//
+	  //
+	  <LOGO6>//
+		<show>false</show>//
+		<enabled>false</enabled>//
+		<showname>LOGO6</showname>//
+		<serverIP>192.168.10.206</serverIP>//
+		<localTSAP>"03.00"</localTSAP>//
+		<remoteTSAP>"02.00"</remoteTSAP>//
+		<watchdogEN>true</watchdogEN>//
+		<watchdogAddress>262</watchdogAddress>//
+		<ReadWriteCycle>200</ReadWriteCycle>//
+		</LOGO6>//
+	  //
+	  <LOGO7>//
+		<show>false</show>//
+		<enabled>false</enabled>//
+		<showname>LOGO7</showname>//
+		<serverIP>192.168.10.207</serverIP>//
+		<localTSAP>"03.00"</localTSAP>//
+		<remoteTSAP>"02.00"</remoteTSAP>//
+		<watchdogEN>true</watchdogEN>//
+		<watchdogAddress>266</watchdogAddress>//
+		<ReadWriteCycle>200</ReadWriteCycle>//
+		</LOGO7>//
+	  //
+	  <LOGO8>//
+		<show>false</show>//
+		<enabled>false</enabled>//
+		<showname>LOGO8</showname>//
+		<serverIP>192.168.10.208</serverIP>//
+		<localTSAP>"03.00"</localTSAP>//
+		<remoteTSAP>"02.00"</remoteTSAP>//
+		<watchdogEN>true</watchdogEN>//
+		<watchdogAddress>270</watchdogAddress>//
+		<ReadWriteCycle>200</ReadWriteCycle>//
+		</LOGO8>//
+	</CONNECTION>//
+	  //
+	  //
+	  //
+	  <USERS>// Users paswords and permisions
+	  <User1>//
+		<Name>admin</Name> 	// Displayname for user
+		<Pwd>admin</Pwd> // Pasword for user
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>true</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>true</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>2864</ID> 		// ID for identification or quick login
+	  </User1>//
+	  //
+	  <User2>//
+		<Name>Šef</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>true</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>true</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>true</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>555</ID> 		//
+	  </User2>//
+	  //
+	  <User3>//
+		<Name>Anže Rozman</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>false</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>true</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>6827411</ID> 		//
+	  </User3>//
+	  //
+	  <User4>//
+		<Name>Klemen Zupin</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>false</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>true</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>6827599</ID> 		//
+	  </User4>//
+	  //
+	  <User5>//
+		<Name>Alen Japić</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>false</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1111</ID> 		//
+	  </User5>//
+	  //
+	  <User6>//
+		<Name>Marjan Jenkole</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>false</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>false</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>true</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>2222</ID> 		//
+	  </User6>//
+	  //
+	  <User7>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>3333</ID> 		//
+	  </User7>//
+	  //
+	  <User8>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>4444</ID> 		//
+	  </User8>//
+	  //
+	  <User9>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>5555</ID> 		//
+	  </User9>//
+	  //
+	  <User10>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1009</ID> 		//
+	  </User10>//
+	  //
+	  <User11>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1010</ID> 		//
+	  </User11>//
+	  //
+	  <User12>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1011</ID> 		//
+	  </User12>//
+	  //
+	  <User13>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1012</ID> 		//
+	  </User13>//
+	  //
+	  <User14>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1013</ID> 		//
+	  </User14>//
+	  //
+	  <User15>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1014</ID> 		//
+	  </User15>//
+	  //
+	  <User16>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1015</ID> 		//
+	  </User16>//
+	  //
+	  <User17>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1016</ID> 		//
+	  </User17>//
+	  //
+	  <User18>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1017</ID> 		//
+	  </User18>//
+	  //
+	  <User19>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1018</ID> 		//
+	  </User19>//
+	  //
+	  <User20>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>19</ID> 		//
+	  </User20>//
+	  //
+	  <User21>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1020</ID> 		//
+	  </User21>//
+	  //
+	  <User22>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1021</ID> 		//
+	  </User22>//
+	  //
+	  <User23>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1022</ID> 		//
+	  </User23>//
+	  //
+	  <User24>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1023</ID> 		//
+	  </User24>//
+	  //
+	  <User25>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1024</ID> 		//
+	  </User25>//
+	  //
+	  <User26>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1025</ID> 		//
+	  </User26>//
+	  //
+	  <User27>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1026</ID> 		//
+	  </User27>//
+	  //
+	  <User28>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1027</ID> 		//
+	  </User28>//
+	  //
+	  <User29>//
+		<Name>user</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>false</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>false</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>false</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+		<ID>1028</ID> 		//
+	  </User29>//
+	  //
+	  <User30>// Reserved for log off user
+		<Name>NO USER</Name> 	//
+		<Pwd>password</Pwd> //
+		<permission1>true</permission1> 	// Level of restriction: Lahko se prijavi na startu programa
+		<permission2>true</permission2> 	// Level of restriction: Lahko vstopa v meni nastavitev komunikacije
+		<permission3>true</permission3> 	// Level of restriction: Lahko dostopa do nastavitev posamezne kadi (globalno)
+		<permission4>true</permission4> 	// Level of restriction: Lahko poveže ali prekine povezavo s krmilniki z glavnega zaslona
+		<permission5>true</permission5> 	// Level of restriction: Lahko zažene ali ustavi povezavo s sistemom glavnega zaslona
+		<permission6>true</permission6> 	// Level of restriction: Lahko zažene ali ustavi posamezne kadi z glavnega zaslona
+		<permission7>true</permission7> 	// Level of restriction: Lahko nastavlja prisilne zagone grelnikov
+		<permission8>true</permission8> 	// Level of restriction: 
+		<permission9>true</permission9> 	// Level of restriction: 
+		<permission10>true</permission10> 	// Level of restriction: 
+			<ID>1234</ID> 						//
+		  </User30>//
+		  //
+		  </USERS>//
+		  <STATS>//
+			<kwhTotal>846,1</kwhTotal>				// Skupna poraba v kWh
+			<hTotal>20</hTotal>						// Skupen čas delovanja (ko je GUI aktiven in je poraba več kot 0W)			
+		  </STATS>//
+	</root>
