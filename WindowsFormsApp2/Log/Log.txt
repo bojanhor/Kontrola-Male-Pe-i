@@ -42,3 +42,32 @@ Streamwriter was initialised.
 31. 01. 2022 20:18:52 - Info: Connecting...
 31. 01. 2022 20:18:53 - Info: Connected
 31. 01. 2022 20:18:53 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+31. 01. 2022 20:28:08 - Info: Autoconnect at startup
+31. 01. 2022 20:28:08 - Info: Configuration was reloaded from XML file
+31. 01. 2022 20:28:08 - Info: GUI was loaded successfully
+
+
+Streamwriter was initialised.
+31. 01. 2022 20:35:09 - Info: Autoconnect at startup
+31. 01. 2022 20:35:09 - Info: Configuration was reloaded from XML file
+31. 01. 2022 20:35:09 - Info: GUI was loaded successfully
+31. 01. 2022 20:35:09 - Info: Connecting...
+
+
+Streamwriter was initialised.
+31. 01. 2022 20:35:41 - Info: Autoconnect at startup
+31. 01. 2022 20:35:41 - Info: Configuration was reloaded from XML file
+31. 01. 2022 20:35:41 - Info: GUI was loaded successfully
+31. 01. 2022 20:35:41 - Info: Connecting...
+
+
+Streamwriter was initialised.
+31. 01. 2022 20:36:51 - Info: Autoconnect at startup
+31. 01. 2022 20:36:52 - Info: Configuration was reloaded from XML file
+31. 01. 2022 20:36:52 - Info: GUI was loaded successfully
+31. 01. 2022 20:36:52 - Info: Connecting...
+31. 01. 2022 20:36:53 - Info: Connected
+31. 01. 2022 20:36:53 - Info: Watchdog started successfully - Period (Frequency) is 100ms

@@ -20,16 +20,16 @@ namespace WindowsFormsApp2
 
         public XDocument settingsXML;
         public int WatchdogRetries = 1;
-
+        Thread switchToGuiThread;
 
         public bool init = false;
 
 
         public SettingsForm()
         {
-
+            switchToGuiThread = new Thread(SwitchToGui);
             FormClosing += SettingsForm_FormClosing;
-            Shown += SettingsForm_Shown;
+            this.Shown += SettingsForm_Shown;
             FormControl.Form_settings = this;
 
 
@@ -74,9 +74,25 @@ namespace WindowsFormsApp2
 
         private void SettingsForm_Shown(object sender, EventArgs e)
         {
+            switchToGuiThread.Start();
+        }
 
-            FormControl.Gui.Show();
-            FormControl.HideForm_Settings();
+        Action ShowGuiAfterDly = new Action(delegate { Thread.Sleep(5000);  });
+
+        private void SwitchToGui()
+        {
+            var m = new MethodInvoker(delegate 
+            {
+                while (FormControl.Gui == null)
+                {
+                    Thread.Sleep(100);
+                }
+                FormControl.Gui.Show();
+                FormControl.HideForm_Settings();
+            });
+
+            Invoke(m);
+                     
         }
 
         private void SettingsForm_FormClosing(object sender, FormClosingEventArgs e)

@@ -65,7 +65,7 @@ namespace WindowsFormsApp2
                 {
                     Parent.Invoke(m);
                 }
-                catch (Exception ex)
+                catch
                 {
 
                 }
