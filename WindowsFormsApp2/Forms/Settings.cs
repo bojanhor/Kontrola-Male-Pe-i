@@ -806,22 +806,7 @@ namespace WindowsFormsApp2
             }
         }
 
-        // path to LOG changed
-        private void TextBoxPathLOG_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                settingsXML.Element("root").Element("GENERAL").Element("logFilePath").SetValue(textBoxPathLOG.Text);
-                settingsXML.Save(textBoxPathXML.Text);
-            }
-            catch (Exception ex)
-            {
-                var message = "Error writing logFilePath to XML file: ";
-                MessageBox.Show(message + ex.Message);
-                WL(message + ex.Message, -1);
-            }
-
-        }
+               
 
         // Browse button User Actions LOG
         public void ButtonBrowseUALOG_Click(object sender, EventArgs e)
@@ -849,22 +834,7 @@ namespace WindowsFormsApp2
             }
         }
 
-        // path to User Actions LOG changed
-        private void TextBoxPathUALOG_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                settingsXML.Element("root").Element("GENERAL").Element("UserActionsFilePath").SetValue(textBoxPathUALOG.Text);
-                settingsXML.Save(textBoxPathXML.Text);
-            }
-            catch (Exception ex)
-            {
-                var message = "Error writing UserActionsFilePath to XML file: ";
-                MessageBox.Show(message + ex.Message);
-                WL(message + ex.Message, -1);
-            }
-        }
-
+                
         // button open Temperature LOG
         private void button2_Click(object sender, EventArgs e)
         {
@@ -889,23 +859,7 @@ namespace WindowsFormsApp2
             t.Start();
 
         }
-        // path to Temperature LOG changed
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                settingsXML.Element("root").Element("GENERAL").Element("TemperatureLogFilePath").SetValue(textBoxPathTemperatureLog.Text);
-                settingsXML.Save(textBoxPathXML.Text);
-            }
-            catch (Exception ex)
-            {
-                var message = "Error writing TemperatureLogFilePath to XML file: ";
-                MessageBox.Show(message + ex.Message);
-                WL(message + ex.Message, -1);
-            }
-        }
-
-
+    
         // button connect all
         private void ButtonConnectALL_Click(object sender, EventArgs e)
         {
@@ -1018,36 +972,36 @@ namespace WindowsFormsApp2
             // log file
             try
             {
-                textBoxPathLOG.Text = settingsXML.Element("root").Element("GENERAL").Element("logFilePath").Value;
+                textBoxPathLOG.Text = Val.PathLogFIle;
             }
 
             catch
             {
-                MessageBox.Show("Error reading path to Log file from XML. Please provide valid LOG file (or path). Application will now close. ");
+                MessageBox.Show("Error reading path to Log file.");
                 Environment.Exit(0);
             }
 
             // user actions log file
             try
             {
-                textBoxPathUALOG.Text = settingsXML.Element("root").Element("GENERAL").Element("UserActionsFilePath").Value;
+                textBoxPathUALOG.Text = Val.PathUserActions;
             }
 
             catch
             {
-                MessageBox.Show("Error reading path to User Actions Log file from XML. Please provide valid LOG file (or path). Application will now close. ");
+                MessageBox.Show("Error reading path to User Actions Log file.");
                 Environment.Exit(0);
             }
 
             // temperature log file
             try
             {
-                textBoxPathTemperatureLog.Text = settingsXML.Element("root").Element("GENERAL").Element("TemperatureLogFilePath").Value;
+                textBoxPathTemperatureLog.Text = Val.PathTemperatures;
             }
 
             catch
             {
-                MessageBox.Show("Error reading path to Temperature log file from XML. Please provide valid CSV file (or path). Application will now close. ");
+                MessageBox.Show("Error reading path to Temperature log file.");
                 Environment.Exit(0);
             }
 

@@ -77,15 +77,15 @@ namespace WindowsFormsApp2
                 {
                     this.Invoke(new MethodInvoker(delegate 
                     {
-                        textBoxPathLOG.Text = XmlController.XmlGeneral.Element("logFilePath").Value.Replace("\"", "");
-                        textBoxPathUALOG.Text = XmlController.XmlGeneral.Element("UserActionsFilePath").Value.Replace("\"", "");
+                        textBoxPathLOG.Text = Val.PathLogFIle;
+                        textBoxPathUALOG.Text = Val.PathUserActions;
 
                     }));
                 }
                 else
-                { 
-                    textBoxPathLOG.Text = XmlController.XmlGeneral.Element("logFilePath").Value.Replace("\"", "");
-                    textBoxPathUALOG.Text = XmlController.XmlGeneral.Element("UserActionsFilePath").Value.Replace("\"", "");
+                {
+                    textBoxPathLOG.Text = Val.PathLogFIle;
+                    textBoxPathUALOG.Text = Val.PathUserActions;
                 }
                 settingsXML.Save(textBoxPathXML.Text);
             }

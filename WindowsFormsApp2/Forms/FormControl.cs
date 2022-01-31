@@ -40,7 +40,7 @@ namespace WindowsFormsApp2
             var LogFilePath = XmlController.BaseDirectoryPath + "\\Log\\Log.txt";
             if (File.Exists(LogFilePath))
             {
-
+                Val.PathLogFIle = LogFilePath;
             }
             else
             {
@@ -70,7 +70,7 @@ namespace WindowsFormsApp2
             var UserActionsFilePath = XmlController.BaseDirectoryPath + "\\Log\\UserActions.csv";
             if (File.Exists(UserActionsFilePath))
             {
-
+                Val.PathUserActions = UserActionsFilePath;
             }
             else
             {
@@ -102,7 +102,7 @@ namespace WindowsFormsApp2
             var TemperatureLogFilePath = XmlController.BaseDirectoryPath + "\\Log\\Temperatures.csv";
             if (File.Exists(TemperatureLogFilePath))
             {
-
+                Val.PathTemperatures = TemperatureLogFilePath;
             }
             else
             {

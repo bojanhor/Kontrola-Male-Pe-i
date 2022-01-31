@@ -13,16 +13,10 @@ namespace WindowsFormsApp2
         public static LogoControler logocontroler;       
         public static PC_WD PCWD;
         public static WarningManager WarningManager;       
-        
-        public static string ScrolToBottomTextboxScript;
-        public static string CantStartPatern;
-        public static string RetainPositionTextboxScript;
-        public static string FocusNextIfEnterKeyPressedScript;
-        public static string LoggedIn = "!#LoggedIn#!";
-        public static string LoggingIn = "!#LoggingIn#!";
 
-        
-
+        public static string PathLogFIle = "";
+        public static string PathUserActions = "";
+        public static string PathTemperatures = "";
 
         public static void InitialiseClass()
         {

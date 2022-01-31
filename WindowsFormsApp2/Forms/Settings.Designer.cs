@@ -1866,7 +1866,6 @@
             this.textBoxPathTemperatureLog.Name = "textBoxPathTemperatureLog";
             this.textBoxPathTemperatureLog.Size = new System.Drawing.Size(538, 20);
             this.textBoxPathTemperatureLog.TabIndex = 5;
-            this.textBoxPathTemperatureLog.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // groupBox12
             // 
@@ -1916,7 +1915,6 @@
             this.textBoxPathUALOG.Name = "textBoxPathUALOG";
             this.textBoxPathUALOG.Size = new System.Drawing.Size(538, 20);
             this.textBoxPathUALOG.TabIndex = 5;
-            this.textBoxPathUALOG.TextChanged += new System.EventHandler(this.TextBoxPathUALOG_TextChanged);
             // 
             // openGUI
             // 
@@ -2031,8 +2029,7 @@
             this.textBoxPathLOG.Location = new System.Drawing.Point(6, 32);
             this.textBoxPathLOG.Name = "textBoxPathLOG";
             this.textBoxPathLOG.Size = new System.Drawing.Size(538, 20);
-            this.textBoxPathLOG.TabIndex = 5;
-            this.textBoxPathLOG.TextChanged += new System.EventHandler(this.TextBoxPathLOG_TextChanged);
+            this.textBoxPathLOG.TabIndex = 5;           
             // 
             // groupBox4
             // 
