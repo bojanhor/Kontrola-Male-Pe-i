@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root> // Please close program before editing this document! In other case changes might be overwritten
-  <GENERAL>//
-		<logFilePath>C:\Users\Pisarna\source\repos\Kontrola male peči\WindowsFormsApp2\Logs\Log.txt</logFilePath> // TXT Log		
+  <GENERAL>//				
 		<WatchdogRetries>3</WatchdogRetries>							// how many times watchdog retries to get value from PLC before error is shown and reconection is invoked
 		<AutoConnect>True</AutoConnect>           						// autoconnect at startup
 		<GUIrefreshrate>800</GUIrefreshrate>							// program will force refresh values every ### miliseconds (small values can result in overloading CPU) NOTE: Program refreshes gui on every value change from PLC on its own!

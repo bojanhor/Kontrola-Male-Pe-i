@@ -37,48 +37,14 @@ namespace WindowsFormsApp2
 
             Initialiser = new Helper.Initialiser(); // Initializes multiple modules          
 
-            //Log file load
-            string LogFilePath = "ERR";
-            var a = (XmlController.XmlFile.Element("root").Element("GENERAL").Element("logFilePath").Value.Replace("\"", ""));
-            try
+            var LogFilePath = XmlController.BaseDirectoryPath + "\\Log\\Log.txt";
+            if (File.Exists(LogFilePath))
             {
-                if (File.Exists(XmlController.XmlFile.Element("root").Element("GENERAL").Element("logFilePath").Value.Replace("\"", "")))
-                {
-                    LogFilePath = XmlController.XmlFile.Element("root").Element("GENERAL").Element("logFilePath").Value.Replace("\"", "");
-                }
-                else
-                {
-                    System.Windows.Forms.MessageBox.Show("Application needs Log file to save log entries. Please provide Log file now. You can create empty *.txt file and use it for loging.");
-                    OpenFileDialog d2 = new OpenFileDialog
-                    {
-                        Title = "Select Log file (*.txt)",
-                        Filter = "TXT files (*.txt)|*.txt"
-                    };
 
-
-                    if (d2.ShowDialog() == DialogResult.OK)
-                    {
-                        if (d2.CheckFileExists)
-                        {
-                            LogFilePath = d2.FileName;
-                            XmlController.XmlFile.Element("root").Element("GENERAL").Element("logFilePath").Value = LogFilePath;
-                            d2.Dispose();
-                        }
-                        else
-                        {
-                            throw new Exception();
-                        }
-                    }
-                    else
-                    {
-                        throw new Exception();
-                    }
-                }
             }
-            catch (Exception e)
+            else
             {
-                System.Windows.Forms.MessageBox.Show("Log file is not valid. Check path and file noted in xml configuration file: " + Properties.Settings.Default.PathXML + " Application will now close." + Environment.NewLine + " Error message: " + e.Message);
-                Environment.Exit(0);
+                throw new Exception("Log file is missing in directory \"Log\". " + "Put file named \"Log.txt\" in that folder to overcome this error." );
             }
 
             try
@@ -101,47 +67,16 @@ namespace WindowsFormsApp2
 
 
             // UserActionsLog CsvFile load
-            string UserActionsFilePath = "ERR";
-            try
+            var UserActionsFilePath = XmlController.BaseDirectoryPath + "\\Log\\UserActions.csv";
+            if (File.Exists(UserActionsFilePath))
             {
-                if (File.Exists(XmlController.XmlFile.Element("root").Element("GENERAL").Element("UserActionsFilePath").Value.Replace("\"", "")))
-                {
-                    UserActionsFilePath = XmlController.XmlFile.Element("root").Element("GENERAL").Element("UserActionsFilePath").Value.Replace("\"", "");
-                }
-                else
-                {
-                    System.Windows.Forms.MessageBox.Show("Application needs UserActionsLog file to save User action entries. Please provide Log file now. You can create empty *.csv file and use it for loging.");
-                    OpenFileDialog d2 = new OpenFileDialog
-                    {
-                        Title = "Select UserActionsLog file (*.csv)",
-                        Filter = "CSV files (*.csv)|*.csv"
-                    };
 
-
-                    if (d2.ShowDialog() == DialogResult.OK)
-                    {
-                        if (d2.CheckFileExists)
-                        {
-                            UserActionsFilePath = d2.FileName;
-                            XmlController.XmlFile.Element("root").Element("GENERAL").Element("UserActionsFilePath").Value = UserActionsFilePath;
-                            d2.Dispose();
-                        }
-                        else
-                        {
-                            throw new Exception();
-                        }
-                    }
-                    else
-                    {
-                        throw new Exception();
-                    }
-                }
             }
-            catch (Exception e)
+            else
             {
-                System.Windows.Forms.MessageBox.Show("UserActionsLog file is not valid. Check path and file noted in xml configuration file: " + Properties.Settings.Default.PathXML + " Application will now close." + Environment.NewLine + " Error message: " + e.Message);
-                Environment.Exit(0);
+                throw new Exception("UserActions file is missing in directory \"Log\". " + "Put file named \"UserActions.csv\" in that folder to overcome this error.");
             }
+            
 
             try
             {
@@ -163,50 +98,19 @@ namespace WindowsFormsApp2
 
 
             // Temperature Log CsvFile load
-            string TemperatureLogFilePath = "ERR";
-            try
+
+            var TemperatureLogFilePath = XmlController.BaseDirectoryPath + "\\Log\\Temperatures.csv";
+            if (File.Exists(TemperatureLogFilePath))
             {
-                if (File.Exists(XmlController.XmlFile.Element("root").Element("GENERAL").Element("TemperatureLogFilePath").Value.Replace("\"", "")))
-                {
-                    TemperatureLogFilePath = XmlController.XmlFile.Element("root").Element("GENERAL").Element("TemperatureLogFilePath").Value.Replace("\"", "");
-                }
-                else
-                {
-                    System.Windows.Forms.MessageBox.Show("Application needs Temperature Log file to save Temperature hystory entries. Please provide Log file now. You can create empty *.csv file and use it for loging.");
-                    OpenFileDialog d2 = new OpenFileDialog
-                    {
-                        Title = "Select Temperature Log file (*.csv)",
-                        Filter = "CSV files (*.csv)|*.csv"
-                    };
 
-
-                    if (d2.ShowDialog() == DialogResult.OK)
-                    {
-                        if (d2.CheckFileExists)
-                        {
-                            TemperatureLogFilePath = d2.FileName;
-                            XmlController.XmlFile.Element("root").Element("GENERAL").Element("TemperatureLogFilePath").Value = TemperatureLogFilePath;
-                            d2.Dispose();
-                        }
-                        else
-                        {
-                            throw new Exception();
-                        }
-                    }
-                    else
-                    {
-                        throw new Exception();
-                    }
-                }
             }
-            catch (Exception e)
+            else
             {
-                System.Windows.Forms.MessageBox.Show("TemperatureLogFilePath file is not valid. Check path and file noted in xml configuration file: " + Properties.Settings.Default.PathXML + " Application will now close." + Environment.NewLine + " Error message: " + e.Message);
-                Environment.Exit(0);
+                throw new Exception("Temperatures file is missing in directory \"Log\". " + "Put file named \"Temperatures.csv\" in that folder to overcome this error.");
             }
 
-
-            XmlController.XmlFile.Save(Properties.Settings.Default.PathXML);
+            
+            
         }
 
         public static void SaveXML()
