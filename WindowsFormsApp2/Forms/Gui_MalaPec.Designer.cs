@@ -32,55 +32,56 @@ namespace WindowsFormsApp2
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gui_MalaPec));
             this.label1 = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
+            this.connectedButton1 = new WindowsFormsApp2.ConnectedButton();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSettings = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.urnikControl1 = new WindowsFormsApp2.UrnikControl();
-            this.actuatorStatus2 = new WindowsFormsApp2.ActuatorStatus();
-            this.actuatorStatus1 = new WindowsFormsApp2.ActuatorStatus();
-            this.textboxShow1 = new WindowsFormsApp2.TextboxShow();
-            this.autoMan01Select1 = new WindowsFormsApp2.AutoMan01Select();
-            this.histHeat2_101 = new WindowsFormsApp2.HistHeat2_10();
-            this.temperatureSelector_0_3002 = new WindowsFormsApp2.TemperatureSelector_0_300();
-            this.temperatureSelector_0_3001 = new WindowsFormsApp2.TemperatureSelector_0_300();
-            this.timeToGoMinutes_1_301 = new WindowsFormsApp2.TimeToGoMinutes_1_30();
-            this.rpmSelector_30_1003 = new WindowsFormsApp2.RpmSelector_30_100();
-            this.temperatureDifference_5_301 = new WindowsFormsApp2.TemperatureDifference_5_30();
-            this.rpmSelector_30_1002 = new WindowsFormsApp2.RpmSelector_30_100();
-            this.rpmSelector_30_1001 = new WindowsFormsApp2.RpmSelector_30_100();
-            this.temperatureDifference_5_302 = new WindowsFormsApp2.TemperatureDifference_5_30();
-            this.warningManager1 = new WindowsFormsApp2.WarningManager();
-            this.sensorSelect2 = new WindowsFormsApp2.SensorSelect();
-            this.sensorSelect1 = new WindowsFormsApp2.SensorSelect();
             this.sensorStatus5 = new WindowsFormsApp2.SensorStatus();
             this.sensorStatus4 = new WindowsFormsApp2.SensorStatus();
             this.sensorStatus3 = new WindowsFormsApp2.SensorStatus();
             this.sensorStatus2 = new WindowsFormsApp2.SensorStatus();
             this.sensorStatus1 = new WindowsFormsApp2.SensorStatus();
-            this.connectedButton1 = new WindowsFormsApp2.ConnectedButton();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.sensorSelect1 = new WindowsFormsApp2.SensorSelect();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.sensorSelect2 = new WindowsFormsApp2.SensorSelect();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textboxShow2 = new WindowsFormsApp2.TextboxShow();
+            this.label12 = new System.Windows.Forms.Label();
+            this.timeToGoMinutes_1_301 = new WindowsFormsApp2.TimeToGoMinutes_1_30();
+            this.label11 = new System.Windows.Forms.Label();
+            this.rpmSelector_30_1003 = new WindowsFormsApp2.RpmSelector_30_100();
+            this.label10 = new System.Windows.Forms.Label();
+            this.temperatureDifference_5_301 = new WindowsFormsApp2.TemperatureDifference_5_30();
+            this.rpmSelector_30_1002 = new WindowsFormsApp2.RpmSelector_30_100();
+            this.rpmSelector_30_1001 = new WindowsFormsApp2.RpmSelector_30_100();
+            this.temperatureDifference_5_302 = new WindowsFormsApp2.TemperatureDifference_5_30();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textboxShow1 = new WindowsFormsApp2.TextboxShow();
+            this.label13 = new System.Windows.Forms.Label();
+            this.autoMan01Select1 = new WindowsFormsApp2.AutoMan01Select();
+            this.histHeat2_101 = new WindowsFormsApp2.HistHeat2_10();
+            this.temperatureSelector_0_3002 = new WindowsFormsApp2.TemperatureSelector_0_300();
+            this.temperatureSelector_0_3001 = new WindowsFormsApp2.TemperatureSelector_0_300();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.actuatorStatus2 = new WindowsFormsApp2.ActuatorStatus();
+            this.actuatorStatus1 = new WindowsFormsApp2.ActuatorStatus();
+            this.urnikControl1 = new WindowsFormsApp2.UrnikControl();
+            this.warningManager1 = new WindowsFormsApp2.WarningManager();
             this.dataGridViewComboBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.textboxShow2 = new WindowsFormsApp2.TextboxShow();
-            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panelTop.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -110,6 +111,20 @@ namespace WindowsFormsApp2
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1469, 78);
             this.panelTop.TabIndex = 4;
+            // 
+            // connectedButton1
+            // 
+            this.connectedButton1.BackColor = System.Drawing.Color.Transparent;
+            this.connectedButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("connectedButton1.BackgroundImage")));
+            this.connectedButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.connectedButton1.ConnectionStatus = -4;
+            this.connectedButton1.ID = -1;
+            this.connectedButton1.Location = new System.Drawing.Point(13, 26);
+            this.connectedButton1.Name = "connectedButton1";
+            this.connectedButton1.RefreshOriginalVal = 500;
+            this.connectedButton1.Size = new System.Drawing.Size(60, 40);
+            this.connectedButton1.TabIndex = 21;
+            this.connectedButton1.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -157,6 +172,51 @@ namespace WindowsFormsApp2
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Diagnostika Temp. Tipal";
             // 
+            // sensorStatus5
+            // 
+            this.sensorStatus5.Location = new System.Drawing.Point(22, 125);
+            this.sensorStatus5.Name = "sensorStatus5";
+            this.sensorStatus5.Size = new System.Drawing.Size(150, 25);
+            this.sensorStatus5.TabIndex = 4;
+            this.sensorStatus5.Text = "sensorStatus5";
+            this.sensorStatus5.Value_PlcBit = null;
+            // 
+            // sensorStatus4
+            // 
+            this.sensorStatus4.Location = new System.Drawing.Point(22, 103);
+            this.sensorStatus4.Name = "sensorStatus4";
+            this.sensorStatus4.Size = new System.Drawing.Size(150, 25);
+            this.sensorStatus4.TabIndex = 3;
+            this.sensorStatus4.Text = "sensorStatus4";
+            this.sensorStatus4.Value_PlcBit = null;
+            // 
+            // sensorStatus3
+            // 
+            this.sensorStatus3.Location = new System.Drawing.Point(22, 81);
+            this.sensorStatus3.Name = "sensorStatus3";
+            this.sensorStatus3.Size = new System.Drawing.Size(150, 25);
+            this.sensorStatus3.TabIndex = 2;
+            this.sensorStatus3.Text = "sensorStatus3";
+            this.sensorStatus3.Value_PlcBit = null;
+            // 
+            // sensorStatus2
+            // 
+            this.sensorStatus2.Location = new System.Drawing.Point(22, 59);
+            this.sensorStatus2.Name = "sensorStatus2";
+            this.sensorStatus2.Size = new System.Drawing.Size(150, 25);
+            this.sensorStatus2.TabIndex = 1;
+            this.sensorStatus2.Text = "sensorStatus2";
+            this.sensorStatus2.Value_PlcBit = null;
+            // 
+            // sensorStatus1
+            // 
+            this.sensorStatus1.Location = new System.Drawing.Point(22, 37);
+            this.sensorStatus1.Name = "sensorStatus1";
+            this.sensorStatus1.Size = new System.Drawing.Size(150, 25);
+            this.sensorStatus1.TabIndex = 0;
+            this.sensorStatus1.Text = "sensorStatus1";
+            this.sensorStatus1.Value_PlcBit = null;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -185,6 +245,20 @@ namespace WindowsFormsApp2
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Izbira Delovnega Tipala";
             // 
+            // sensorSelect1
+            // 
+            this.sensorSelect1.Location = new System.Drawing.Point(6, 28);
+            this.sensorSelect1.Name = "sensorSelect1";
+            this.sensorSelect1.SensorName1 = "Sensor1";
+            this.sensorSelect1.SensorName2 = "Sensor2";
+            this.sensorSelect1.SensorName3 = "Sensor3";
+            this.sensorSelect1.SensorName4 = "Sensor4";
+            this.sensorSelect1.Size = new System.Drawing.Size(150, 125);
+            this.sensorSelect1.TabIndex = 17;
+            this.sensorSelect1.Text = "sensorSelect1";
+            this.sensorSelect1.Value = null;
+            this.sensorSelect1.Value_SelectedSensorError = null;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.sensorSelect2);
@@ -194,6 +268,20 @@ namespace WindowsFormsApp2
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Izbira Diferenčnega Tipala";
+            // 
+            // sensorSelect2
+            // 
+            this.sensorSelect2.Location = new System.Drawing.Point(6, 28);
+            this.sensorSelect2.Name = "sensorSelect2";
+            this.sensorSelect2.SensorName1 = "Sensor1";
+            this.sensorSelect2.SensorName2 = "Sensor2";
+            this.sensorSelect2.SensorName3 = "Sensor3";
+            this.sensorSelect2.SensorName4 = "Sensor4";
+            this.sensorSelect2.Size = new System.Drawing.Size(150, 125);
+            this.sensorSelect2.TabIndex = 17;
+            this.sensorSelect2.Text = "sensorSelect2";
+            this.sensorSelect2.Value = null;
+            this.sensorSelect2.Value_SelectedSensorError = null;
             // 
             // label6
             // 
@@ -255,6 +343,26 @@ namespace WindowsFormsApp2
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ventilacija";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(223, 23);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(125, 13);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Trenutni obrati ventilacije";
+            // 
+            // textboxShow2
+            // 
+            this.textboxShow2.Location = new System.Drawing.Point(226, 39);
+            this.textboxShow2.Name = "textboxShow2";
+            this.textboxShow2.Postfix = "%";
+            this.textboxShow2.Prefix = null;
+            this.textboxShow2.ReadOnly = true;
+            this.textboxShow2.Size = new System.Drawing.Size(100, 20);
+            this.textboxShow2.TabIndex = 31;
+            this.textboxShow2.Value = null;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -263,6 +371,15 @@ namespace WindowsFormsApp2
             this.label12.Size = new System.Drawing.Size(130, 13);
             this.label12.TabIndex = 30;
             this.label12.Text = "Čas Ohlajanja Ventilatorja:";
+            // 
+            // timeToGoMinutes_1_301
+            // 
+            this.timeToGoMinutes_1_301.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.timeToGoMinutes_1_301.FormattingEnabled = true;
+            this.timeToGoMinutes_1_301.Location = new System.Drawing.Point(16, 298);
+            this.timeToGoMinutes_1_301.Name = "timeToGoMinutes_1_301";
+            this.timeToGoMinutes_1_301.Size = new System.Drawing.Size(121, 21);
+            this.timeToGoMinutes_1_301.TabIndex = 29;
             // 
             // label11
             // 
@@ -273,6 +390,15 @@ namespace WindowsFormsApp2
             this.label11.TabIndex = 28;
             this.label11.Text = "Obrati Ventilatorja Ohlajanje:";
             // 
+            // rpmSelector_30_1003
+            // 
+            this.rpmSelector_30_1003.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.rpmSelector_30_1003.FormattingEnabled = true;
+            this.rpmSelector_30_1003.Location = new System.Drawing.Point(16, 246);
+            this.rpmSelector_30_1003.Name = "rpmSelector_30_1003";
+            this.rpmSelector_30_1003.Size = new System.Drawing.Size(121, 21);
+            this.rpmSelector_30_1003.TabIndex = 27;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -281,6 +407,42 @@ namespace WindowsFormsApp2
             this.label10.Size = new System.Drawing.Size(181, 13);
             this.label10.TabIndex = 24;
             this.label10.Text = "Obrati Ventilatorja ob visoki diferenci:";
+            // 
+            // temperatureDifference_5_301
+            // 
+            this.temperatureDifference_5_301.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.temperatureDifference_5_301.FormattingEnabled = true;
+            this.temperatureDifference_5_301.Location = new System.Drawing.Point(16, 39);
+            this.temperatureDifference_5_301.Name = "temperatureDifference_5_301";
+            this.temperatureDifference_5_301.Size = new System.Drawing.Size(121, 21);
+            this.temperatureDifference_5_301.TabIndex = 23;
+            // 
+            // rpmSelector_30_1002
+            // 
+            this.rpmSelector_30_1002.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.rpmSelector_30_1002.FormattingEnabled = true;
+            this.rpmSelector_30_1002.Location = new System.Drawing.Point(16, 192);
+            this.rpmSelector_30_1002.Name = "rpmSelector_30_1002";
+            this.rpmSelector_30_1002.Size = new System.Drawing.Size(121, 21);
+            this.rpmSelector_30_1002.TabIndex = 23;
+            // 
+            // rpmSelector_30_1001
+            // 
+            this.rpmSelector_30_1001.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.rpmSelector_30_1001.FormattingEnabled = true;
+            this.rpmSelector_30_1001.Location = new System.Drawing.Point(16, 140);
+            this.rpmSelector_30_1001.Name = "rpmSelector_30_1001";
+            this.rpmSelector_30_1001.Size = new System.Drawing.Size(121, 21);
+            this.rpmSelector_30_1001.TabIndex = 21;
+            // 
+            // temperatureDifference_5_302
+            // 
+            this.temperatureDifference_5_302.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.temperatureDifference_5_302.FormattingEnabled = true;
+            this.temperatureDifference_5_302.Location = new System.Drawing.Point(16, 88);
+            this.temperatureDifference_5_302.Name = "temperatureDifference_5_302";
+            this.temperatureDifference_5_302.Size = new System.Drawing.Size(121, 21);
+            this.temperatureDifference_5_302.TabIndex = 24;
             // 
             // groupBox5
             // 
@@ -300,27 +462,6 @@ namespace WindowsFormsApp2
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Ogrevanje";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(180, 25);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(51, 13);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "Histereza";
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.actuatorStatus2);
-            this.groupBox6.Controls.Add(this.actuatorStatus1);
-            this.groupBox6.Location = new System.Drawing.Point(882, 496);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(194, 170);
-            this.groupBox6.TabIndex = 21;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Grelniki";
-            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -329,40 +470,6 @@ namespace WindowsFormsApp2
             this.label5.Size = new System.Drawing.Size(109, 13);
             this.label5.TabIndex = 24;
             this.label5.Text = "Trenutna temperatura";
-            // 
-            // urnikControl1
-            // 
-            this.urnikControl1.AllowUserToAddRows = false;
-            this.urnikControl1.AllowUserToDeleteRows = false;
-            this.urnikControl1.AllowUserToResizeColumns = false;
-            this.urnikControl1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.urnikControl1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.urnikControl1.Location = new System.Drawing.Point(371, 128);
-            this.urnikControl1.Name = "urnikControl1";
-            this.urnikControl1.RowHeadersVisible = false;
-            this.urnikControl1.RowTemplate.DividerHeight = 1;
-            this.urnikControl1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.urnikControl1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.urnikControl1.Size = new System.Drawing.Size(260, 184);
-            this.urnikControl1.TabIndex = 22;
-            // 
-            // actuatorStatus2
-            // 
-            this.actuatorStatus2.Location = new System.Drawing.Point(19, 66);
-            this.actuatorStatus2.Name = "actuatorStatus2";
-            this.actuatorStatus2.Size = new System.Drawing.Size(150, 25);
-            this.actuatorStatus2.TabIndex = 23;
-            this.actuatorStatus2.Text = "Grelnik 2. stopnja:";
-            this.actuatorStatus2.Value_PlcBit = null;
-            // 
-            // actuatorStatus1
-            // 
-            this.actuatorStatus1.Location = new System.Drawing.Point(19, 37);
-            this.actuatorStatus1.Name = "actuatorStatus1";
-            this.actuatorStatus1.Size = new System.Drawing.Size(150, 25);
-            this.actuatorStatus1.TabIndex = 22;
-            this.actuatorStatus1.Text = "Grelnik 1.stopnja:";
-            this.actuatorStatus1.Value_PlcBit = null;
             // 
             // textboxShow1
             // 
@@ -374,6 +481,15 @@ namespace WindowsFormsApp2
             this.textboxShow1.Size = new System.Drawing.Size(100, 20);
             this.textboxShow1.TabIndex = 23;
             this.textboxShow1.Value = null;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(180, 25);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(51, 13);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "Histereza";
             // 
             // autoMan01Select1
             // 
@@ -416,59 +532,52 @@ namespace WindowsFormsApp2
             this.temperatureSelector_0_3001.Size = new System.Drawing.Size(121, 21);
             this.temperatureSelector_0_3001.TabIndex = 13;
             // 
-            // timeToGoMinutes_1_301
+            // groupBox6
             // 
-            this.timeToGoMinutes_1_301.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.timeToGoMinutes_1_301.FormattingEnabled = true;
-            this.timeToGoMinutes_1_301.Location = new System.Drawing.Point(16, 298);
-            this.timeToGoMinutes_1_301.Name = "timeToGoMinutes_1_301";
-            this.timeToGoMinutes_1_301.Size = new System.Drawing.Size(121, 21);
-            this.timeToGoMinutes_1_301.TabIndex = 29;
+            this.groupBox6.Controls.Add(this.actuatorStatus2);
+            this.groupBox6.Controls.Add(this.actuatorStatus1);
+            this.groupBox6.Location = new System.Drawing.Point(882, 496);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(194, 170);
+            this.groupBox6.TabIndex = 21;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Grelniki";
+            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
-            // rpmSelector_30_1003
+            // actuatorStatus2
             // 
-            this.rpmSelector_30_1003.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.rpmSelector_30_1003.FormattingEnabled = true;
-            this.rpmSelector_30_1003.Location = new System.Drawing.Point(16, 246);
-            this.rpmSelector_30_1003.Name = "rpmSelector_30_1003";
-            this.rpmSelector_30_1003.Size = new System.Drawing.Size(121, 21);
-            this.rpmSelector_30_1003.TabIndex = 27;
+            this.actuatorStatus2.Location = new System.Drawing.Point(19, 66);
+            this.actuatorStatus2.Name = "actuatorStatus2";
+            this.actuatorStatus2.Size = new System.Drawing.Size(150, 25);
+            this.actuatorStatus2.TabIndex = 23;
+            this.actuatorStatus2.Text = "Grelnik 2. stopnja:";
+            this.actuatorStatus2.Value_PlcBit = null;
             // 
-            // temperatureDifference_5_301
+            // actuatorStatus1
             // 
-            this.temperatureDifference_5_301.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.temperatureDifference_5_301.FormattingEnabled = true;
-            this.temperatureDifference_5_301.Location = new System.Drawing.Point(16, 39);
-            this.temperatureDifference_5_301.Name = "temperatureDifference_5_301";
-            this.temperatureDifference_5_301.Size = new System.Drawing.Size(121, 21);
-            this.temperatureDifference_5_301.TabIndex = 23;
+            this.actuatorStatus1.Location = new System.Drawing.Point(19, 37);
+            this.actuatorStatus1.Name = "actuatorStatus1";
+            this.actuatorStatus1.Size = new System.Drawing.Size(150, 25);
+            this.actuatorStatus1.TabIndex = 22;
+            this.actuatorStatus1.Text = "Grelnik 1.stopnja:";
+            this.actuatorStatus1.Value_PlcBit = null;
             // 
-            // rpmSelector_30_1002
+            // urnikControl1
             // 
-            this.rpmSelector_30_1002.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.rpmSelector_30_1002.FormattingEnabled = true;
-            this.rpmSelector_30_1002.Location = new System.Drawing.Point(16, 192);
-            this.rpmSelector_30_1002.Name = "rpmSelector_30_1002";
-            this.rpmSelector_30_1002.Size = new System.Drawing.Size(121, 21);
-            this.rpmSelector_30_1002.TabIndex = 23;
-            // 
-            // rpmSelector_30_1001
-            // 
-            this.rpmSelector_30_1001.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.rpmSelector_30_1001.FormattingEnabled = true;
-            this.rpmSelector_30_1001.Location = new System.Drawing.Point(16, 140);
-            this.rpmSelector_30_1001.Name = "rpmSelector_30_1001";
-            this.rpmSelector_30_1001.Size = new System.Drawing.Size(121, 21);
-            this.rpmSelector_30_1001.TabIndex = 21;
-            // 
-            // temperatureDifference_5_302
-            // 
-            this.temperatureDifference_5_302.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.temperatureDifference_5_302.FormattingEnabled = true;
-            this.temperatureDifference_5_302.Location = new System.Drawing.Point(16, 88);
-            this.temperatureDifference_5_302.Name = "temperatureDifference_5_302";
-            this.temperatureDifference_5_302.Size = new System.Drawing.Size(121, 21);
-            this.temperatureDifference_5_302.TabIndex = 24;
+            this.urnikControl1.AllowUserToAddRows = false;
+            this.urnikControl1.AllowUserToDeleteRows = false;
+            this.urnikControl1.AllowUserToResizeColumns = false;
+            this.urnikControl1.AllowUserToResizeRows = false;
+            this.urnikControl1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.urnikControl1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.urnikControl1.Location = new System.Drawing.Point(371, 128);
+            this.urnikControl1.Name = "urnikControl1";
+            this.urnikControl1.RowHeadersVisible = false;
+            this.urnikControl1.RowTemplate.DividerHeight = 1;
+            this.urnikControl1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.urnikControl1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.urnikControl1.Size = new System.Drawing.Size(260, 184);
+            this.urnikControl1.TabIndex = 22;
             // 
             // warningManager1
             // 
@@ -478,93 +587,6 @@ namespace WindowsFormsApp2
             this.warningManager1.Size = new System.Drawing.Size(250, 170);
             this.warningManager1.TabIndex = 18;
             this.warningManager1.Text = "";
-            // 
-            // sensorSelect2
-            // 
-            this.sensorSelect2.Location = new System.Drawing.Point(6, 28);
-            this.sensorSelect2.Name = "sensorSelect2";
-            this.sensorSelect2.SensorName1 = "Sensor1";
-            this.sensorSelect2.SensorName2 = "Sensor2";
-            this.sensorSelect2.SensorName3 = "Sensor3";
-            this.sensorSelect2.SensorName4 = "Sensor4";
-            this.sensorSelect2.Size = new System.Drawing.Size(150, 125);
-            this.sensorSelect2.TabIndex = 17;
-            this.sensorSelect2.Text = "sensorSelect2";
-            this.sensorSelect2.Value = null;
-            this.sensorSelect2.Value_SelectedSensorError = null;
-            // 
-            // sensorSelect1
-            // 
-            this.sensorSelect1.Location = new System.Drawing.Point(6, 28);
-            this.sensorSelect1.Name = "sensorSelect1";
-            this.sensorSelect1.SensorName1 = "Sensor1";
-            this.sensorSelect1.SensorName2 = "Sensor2";
-            this.sensorSelect1.SensorName3 = "Sensor3";
-            this.sensorSelect1.SensorName4 = "Sensor4";
-            this.sensorSelect1.Size = new System.Drawing.Size(150, 125);
-            this.sensorSelect1.TabIndex = 17;
-            this.sensorSelect1.Text = "sensorSelect1";
-            this.sensorSelect1.Value = null;
-            this.sensorSelect1.Value_SelectedSensorError = null;
-            // 
-            // sensorStatus5
-            // 
-            this.sensorStatus5.Location = new System.Drawing.Point(22, 125);
-            this.sensorStatus5.Name = "sensorStatus5";
-            this.sensorStatus5.Size = new System.Drawing.Size(150, 25);
-            this.sensorStatus5.TabIndex = 4;
-            this.sensorStatus5.Text = "sensorStatus5";
-            this.sensorStatus5.Value_PlcBit = null;
-            // 
-            // sensorStatus4
-            // 
-            this.sensorStatus4.Location = new System.Drawing.Point(22, 103);
-            this.sensorStatus4.Name = "sensorStatus4";
-            this.sensorStatus4.Size = new System.Drawing.Size(150, 25);
-            this.sensorStatus4.TabIndex = 3;
-            this.sensorStatus4.Text = "sensorStatus4";
-            this.sensorStatus4.Value_PlcBit = null;
-            // 
-            // sensorStatus3
-            // 
-            this.sensorStatus3.Location = new System.Drawing.Point(22, 81);
-            this.sensorStatus3.Name = "sensorStatus3";
-            this.sensorStatus3.Size = new System.Drawing.Size(150, 25);
-            this.sensorStatus3.TabIndex = 2;
-            this.sensorStatus3.Text = "sensorStatus3";
-            this.sensorStatus3.Value_PlcBit = null;
-            // 
-            // sensorStatus2
-            // 
-            this.sensorStatus2.Location = new System.Drawing.Point(22, 59);
-            this.sensorStatus2.Name = "sensorStatus2";
-            this.sensorStatus2.Size = new System.Drawing.Size(150, 25);
-            this.sensorStatus2.TabIndex = 1;
-            this.sensorStatus2.Text = "sensorStatus2";
-            this.sensorStatus2.Value_PlcBit = null;
-            // 
-            // sensorStatus1
-            // 
-            this.sensorStatus1.Location = new System.Drawing.Point(22, 37);
-            this.sensorStatus1.Name = "sensorStatus1";
-            this.sensorStatus1.Size = new System.Drawing.Size(150, 25);
-            this.sensorStatus1.TabIndex = 0;
-            this.sensorStatus1.Text = "sensorStatus1";
-            this.sensorStatus1.Value_PlcBit = null;
-            // 
-            // connectedButton1
-            // 
-            this.connectedButton1.BackColor = System.Drawing.Color.Transparent;
-            this.connectedButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("connectedButton1.BackgroundImage")));
-            this.connectedButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.connectedButton1.ConnectionStatus = -4;
-            this.connectedButton1.ID = -1;
-            this.connectedButton1.Location = new System.Drawing.Point(13, 26);
-            this.connectedButton1.Name = "connectedButton1";
-            this.connectedButton1.RefreshOriginalVal = 500;
-            this.connectedButton1.Size = new System.Drawing.Size(60, 40);
-            this.connectedButton1.TabIndex = 21;
-            this.connectedButton1.UseVisualStyleBackColor = false;
             // 
             // dataGridViewComboBoxColumn5
             // 
@@ -576,31 +598,22 @@ namespace WindowsFormsApp2
             this.dataGridViewComboBoxColumn6.HeaderText = "Off";
             this.dataGridViewComboBoxColumn6.Name = "dataGridViewComboBoxColumn6";
             // 
-            // textboxShow2
+            // label15
             // 
-            this.textboxShow2.Location = new System.Drawing.Point(226, 39);
-            this.textboxShow2.Name = "textboxShow2";
-            this.textboxShow2.Postfix = "%";
-            this.textboxShow2.Prefix = null;
-            this.textboxShow2.ReadOnly = true;
-            this.textboxShow2.Size = new System.Drawing.Size(100, 20);
-            this.textboxShow2.TabIndex = 31;
-            this.textboxShow2.Value = null;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(223, 23);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(125, 13);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "Trenutni obrati ventilacije";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(472, 341);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(41, 13);
+            this.label15.TabIndex = 23;
+            this.label15.Text = "label15";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // Gui_MalaPec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1176, 678);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.urnikControl1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
@@ -683,5 +696,6 @@ namespace WindowsFormsApp2
         private TextboxShow textboxShow1;
         private System.Windows.Forms.Label label14;
         private TextboxShow textboxShow2;
+        private System.Windows.Forms.Label label15;
     }
 }
