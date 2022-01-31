@@ -81,7 +81,6 @@ namespace WindowsFormsApp2
             this.warningManager1 = new WindowsFormsApp2.WarningManager();
             this.dataGridViewComboBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.label15 = new System.Windows.Forms.Label();
             this.panelTop.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -598,22 +597,11 @@ namespace WindowsFormsApp2
             this.dataGridViewComboBoxColumn6.HeaderText = "Off";
             this.dataGridViewComboBoxColumn6.Name = "dataGridViewComboBoxColumn6";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(472, 341);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 13);
-            this.label15.TabIndex = 23;
-            this.label15.Text = "label15";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
-            // 
             // Gui_MalaPec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1176, 678);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.urnikControl1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
@@ -696,6 +684,5 @@ namespace WindowsFormsApp2
         private TextboxShow textboxShow1;
         private System.Windows.Forms.Label label14;
         private TextboxShow textboxShow2;
-        private System.Windows.Forms.Label label15;
     }
 }
