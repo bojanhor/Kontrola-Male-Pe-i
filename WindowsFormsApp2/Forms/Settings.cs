@@ -101,33 +101,6 @@ namespace WindowsFormsApp2
         }
 
 
-
-        // Browse button XML
-
-        private void ButtonBrowseXML_Click(object sender, EventArgs e)
-        {
-            Thread t = new Thread(new ThreadStart(ShowDialog1));
-            t.Name = "BrowseXML Thread";
-            t.IsBackground = true;
-            t.SetApartmentState(ApartmentState.STA);
-            t.Start();
-
-        }
-
-        // path to XML changed
-        private void TextBoxPathXML_TextChanged(object sender, EventArgs e)
-        {
-            if (init)
-            {
-                Properties.Settings.Default.PathXML = textBoxPathXML.Text;
-                Properties.Settings.Default.Save();
-                WL("Path to XML file was changed.", 0);
-            }
-
-
-
-        }
-
         // Reload button XML
         private void ButtonReloadXML_Click(object sender, EventArgs e)
         {
@@ -797,16 +770,7 @@ namespace WindowsFormsApp2
         }
 
         // Browse button LOG
-        public void ButtonBrowseLOG_Click(object sender, EventArgs e)
-        {
-
-            Thread t = new Thread(new ThreadStart(ShowDialog2));
-            t.Name = "BrowseLOG Thread";
-            t.IsBackground = true;
-            t.SetApartmentState(ApartmentState.STA);
-            t.Start();
-
-        }
+       
 
         // button open LOG
         private void ButtonOpenLOG_Click(object sender, EventArgs e)
@@ -822,59 +786,7 @@ namespace WindowsFormsApp2
             }
         }
 
-               
-
-        // Browse button User Actions LOG
-        public void ButtonBrowseUALOG_Click(object sender, EventArgs e)
-        {
-
-            Thread t = new Thread(new ThreadStart(ShowDialog3));
-            t.Name = "BrowseUserActionsLOG Thread";
-            t.IsBackground = true;
-            t.SetApartmentState(ApartmentState.STA);
-            t.Start();
-
-        }
-
-        // button open User Actions LOG
-        private void ButtonOpenUALOG_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                System.Diagnostics.Process.Start(textBoxPathUALOG.Text);
-                WL("User Actions Log file was opend", 0);
-            }
-            catch (Exception ex)
-            {
-                WL("Can not open User Actions Log File - check that path is valid or that file exists: " + ex.Message, -1);
-            }
-        }
-
-                
-        // button open Temperature LOG
-        private void button2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                System.Diagnostics.Process.Start(textBoxPathTemperatureLog.Text);
-                WL("User Actions Log file was opend", 0);
-            }
-            catch (Exception ex)
-            {
-                WL("Can not open Temperature Log File - check that path is valid or that file exists: " + ex.Message, -1);
-            }
-        }
-
-        // Browse button Temperatures LOG
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Thread t = new Thread(new ThreadStart(ShowDialog3));
-            t.Name = "BrowseTemperatureLOG Thread";
-            t.IsBackground = true;
-            t.SetApartmentState(ApartmentState.STA);
-            t.Start();
-
-        }
+              
     
         // button connect all
         private void ButtonConnectALL_Click(object sender, EventArgs e)
@@ -964,15 +876,11 @@ namespace WindowsFormsApp2
 
 
             // Checking if path exists XML
-            if (File.Exists(textBoxPathXML.Text))
+            if (File.Exists(Settings.pathToConfigFile))  // TODO fix
             {
                 UpdateFieldsXML();
             }
-
-            else
-            {
-                ButtonBrowseXML_Click(null, null);
-            }
+                       
 
             try
             {
@@ -1126,48 +1034,6 @@ namespace WindowsFormsApp2
             }
 
         }
-
-        // Log file selection
-        public void ShowDialog2()
-        {
-            OpenFileDialog d2 = new OpenFileDialog();
-            d2.Title = "Select LOG configuration file";
-            d2.Filter = "TXT files (*.txt)|*.txt";
-
-            if (d2.ShowDialog() == DialogResult.OK)
-            {
-                d2.Title = "Please select LOG file";
-                this.Invoke(new MethodInvoker(delegate { textBoxPathLOG.Text = d2.FileName; }));
-                WL("Browse for Log file finished", 0);
-            }
-            else
-            {
-                WL("No changes were made while browsing for Log file", 0);
-                return;
-            }
-        }
-
-        // User actions Log file selection
-        public void ShowDialog3()
-        {
-            OpenFileDialog d2 = new OpenFileDialog();
-            d2.Title = "Select CSV configuration file";
-            d2.Filter = "CSV files (*.csv)|*.csv";
-
-            if (d2.ShowDialog() == DialogResult.OK)
-            {
-                d2.Title = "Please select User actions LOG file";
-                this.Invoke(new MethodInvoker(delegate { textBoxPathUALOG.Text = d2.FileName; }));
-                WL("Browse for Log file finished", 0);
-            }
-            else
-            {
-                WL("No changes were made while browsing for User Actions Log file", 0);
-                return;
-            }
-        }
-
-
 
         public static bool HasDuplicates(List<string> text)
         {

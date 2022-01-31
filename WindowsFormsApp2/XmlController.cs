@@ -13,10 +13,7 @@ using System.Windows.Forms;
 namespace WindowsFormsApp2
 {
     public static class XmlController
-    {
-
-        public static string BaseDirectoryPath = "";
-        
+    {                        
         static string XmlNotEncriptedPath;
         static string XmlEncriptedPath;
         static string XmlEncriptedPath_tmp;
@@ -109,7 +106,7 @@ namespace WindowsFormsApp2
         private static void setBaseDirPath()
         {
             
-            BaseDirectoryPath = Directory.GetParent(Directory.GetParent(Application.StartupPath).FullName).FullName;
+            Val.BaseDirectoryPath = Directory.GetParent(Directory.GetParent(Application.StartupPath).FullName).FullName;
         }
 
         private static XDocument LoadNotEncriptedXML(string XmlPath)
@@ -277,9 +274,9 @@ namespace WindowsFormsApp2
 
         static void FindFileAndEncript()
         {            
-            XmlNotEncriptedPath = BaseDirectoryPath +"\\"+ Settings.pathToConfigFile;
-            XmlEncriptedPath = BaseDirectoryPath + "\\" + Settings.pathToConfigFileEncripted;
-            XmlEncriptedPath_tmp = BaseDirectoryPath + "\\" + Settings.pathToConfigFileEncripted + "_tmp";
+            XmlNotEncriptedPath = Val.BaseDirectoryPath +"\\"+ Settings.pathToConfigFile;
+            XmlEncriptedPath = Val.BaseDirectoryPath + "\\" + Settings.pathToConfigFileEncripted;
+            XmlEncriptedPath_tmp = Val.BaseDirectoryPath + "\\" + Settings.pathToConfigFileEncripted + "_tmp";
 
             var ii = "\"";
 

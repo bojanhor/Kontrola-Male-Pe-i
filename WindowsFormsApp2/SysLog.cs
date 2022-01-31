@@ -19,7 +19,7 @@ namespace WindowsFormsApp2
             readonly Misc.SmartThread LogWriter;
 
 
-            static readonly string LogFolderPath = Directory.GetParent(XmlController.BaseDirectoryPath).ToString() + "\\" + "Logs";
+            static readonly string LogFolderPath = Directory.GetParent(Val.BaseDirectoryPath).ToString() + "\\" + "Logs";
             public static string LogFilePath;
             static string tempLogFilePath;
 

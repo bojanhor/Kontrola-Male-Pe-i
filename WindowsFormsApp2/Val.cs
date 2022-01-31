@@ -17,6 +17,8 @@ namespace WindowsFormsApp2
         public static string PathLogFIle = "";
         public static string PathUserActions = "";
         public static string PathTemperatures = "";
+        public static string BaseDirectoryPath = "";
+
 
         public static void InitialiseClass()
         {

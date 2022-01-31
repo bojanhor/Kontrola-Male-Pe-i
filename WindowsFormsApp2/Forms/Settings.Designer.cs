@@ -183,12 +183,10 @@
             this.tabPageMaster = new System.Windows.Forms.TabPage();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.textBoxPathTemperatureLog = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.buttonOpenUALOG = new System.Windows.Forms.Button();
-            this.buttonBrowseUALOG = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxPathUALOG = new System.Windows.Forms.TextBox();
             this.openGUI = new System.Windows.Forms.Button();
@@ -199,7 +197,6 @@
             this.buttonConnectALL = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.buttonOpenLOG = new System.Windows.Forms.Button();
-            this.buttonBrowseLOG = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxPathLOG = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -208,7 +205,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonOpenXML = new System.Windows.Forms.Button();
-            this.buttonBrowseXML = new System.Windows.Forms.Button();
             this.label86 = new System.Windows.Forms.Label();
             this.textBoxPathXML = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -1821,7 +1817,6 @@
             // groupBox20
             // 
             this.groupBox20.Controls.Add(this.button2);
-            this.groupBox20.Controls.Add(this.button3);
             this.groupBox20.Controls.Add(this.label11);
             this.groupBox20.Controls.Add(this.textBoxPathTemperatureLog);
             this.groupBox20.Location = new System.Drawing.Point(174, 358);
@@ -1833,23 +1828,12 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(87, 58);
+            this.button2.Location = new System.Drawing.Point(10, 58);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
             this.button2.Text = "Open";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(6, 58);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Browse";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label11
             // 
@@ -1870,7 +1854,6 @@
             // groupBox12
             // 
             this.groupBox12.Controls.Add(this.buttonOpenUALOG);
-            this.groupBox12.Controls.Add(this.buttonBrowseUALOG);
             this.groupBox12.Controls.Add(this.label4);
             this.groupBox12.Controls.Add(this.textBoxPathUALOG);
             this.groupBox12.Location = new System.Drawing.Point(174, 262);
@@ -1882,23 +1865,12 @@
             // 
             // buttonOpenUALOG
             // 
-            this.buttonOpenUALOG.Location = new System.Drawing.Point(87, 58);
+            this.buttonOpenUALOG.Location = new System.Drawing.Point(10, 58);
             this.buttonOpenUALOG.Name = "buttonOpenUALOG";
             this.buttonOpenUALOG.Size = new System.Drawing.Size(75, 23);
             this.buttonOpenUALOG.TabIndex = 5;
             this.buttonOpenUALOG.Text = "Open";
             this.buttonOpenUALOG.UseVisualStyleBackColor = true;
-            this.buttonOpenUALOG.Click += new System.EventHandler(this.ButtonOpenUALOG_Click);
-            // 
-            // buttonBrowseUALOG
-            // 
-            this.buttonBrowseUALOG.Location = new System.Drawing.Point(6, 58);
-            this.buttonBrowseUALOG.Name = "buttonBrowseUALOG";
-            this.buttonBrowseUALOG.Size = new System.Drawing.Size(75, 23);
-            this.buttonBrowseUALOG.TabIndex = 5;
-            this.buttonBrowseUALOG.Text = "Browse";
-            this.buttonBrowseUALOG.UseVisualStyleBackColor = true;
-            this.buttonBrowseUALOG.Click += new System.EventHandler(this.ButtonBrowseUALOG_Click);
             // 
             // label4
             // 
@@ -1985,7 +1957,6 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.buttonOpenLOG);
-            this.groupBox3.Controls.Add(this.buttonBrowseLOG);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.textBoxPathLOG);
             this.groupBox3.Location = new System.Drawing.Point(174, 166);
@@ -1997,23 +1968,13 @@
             // 
             // buttonOpenLOG
             // 
-            this.buttonOpenLOG.Location = new System.Drawing.Point(87, 58);
+            this.buttonOpenLOG.Location = new System.Drawing.Point(10, 58);
             this.buttonOpenLOG.Name = "buttonOpenLOG";
             this.buttonOpenLOG.Size = new System.Drawing.Size(75, 23);
             this.buttonOpenLOG.TabIndex = 5;
             this.buttonOpenLOG.Text = "Open";
             this.buttonOpenLOG.UseVisualStyleBackColor = true;
             this.buttonOpenLOG.Click += new System.EventHandler(this.ButtonOpenLOG_Click);
-            // 
-            // buttonBrowseLOG
-            // 
-            this.buttonBrowseLOG.Location = new System.Drawing.Point(6, 58);
-            this.buttonBrowseLOG.Name = "buttonBrowseLOG";
-            this.buttonBrowseLOG.Size = new System.Drawing.Size(75, 23);
-            this.buttonBrowseLOG.TabIndex = 5;
-            this.buttonBrowseLOG.Text = "Browse";
-            this.buttonBrowseLOG.UseVisualStyleBackColor = true;
-            this.buttonBrowseLOG.Click += new System.EventHandler(this.ButtonBrowseLOG_Click);
             // 
             // label1
             // 
@@ -2029,7 +1990,7 @@
             this.textBoxPathLOG.Location = new System.Drawing.Point(6, 32);
             this.textBoxPathLOG.Name = "textBoxPathLOG";
             this.textBoxPathLOG.Size = new System.Drawing.Size(538, 20);
-            this.textBoxPathLOG.TabIndex = 5;           
+            this.textBoxPathLOG.TabIndex = 5;
             // 
             // groupBox4
             // 
@@ -2055,7 +2016,6 @@
             this.groupBox140.Controls.Add(this.button4);
             this.groupBox140.Controls.Add(this.label6);
             this.groupBox140.Controls.Add(this.buttonOpenXML);
-            this.groupBox140.Controls.Add(this.buttonBrowseXML);
             this.groupBox140.Controls.Add(this.label86);
             this.groupBox140.Controls.Add(this.textBoxPathXML);
             this.groupBox140.Location = new System.Drawing.Point(174, 71);
@@ -2086,23 +2046,13 @@
             // 
             // buttonOpenXML
             // 
-            this.buttonOpenXML.Location = new System.Drawing.Point(87, 58);
+            this.buttonOpenXML.Location = new System.Drawing.Point(10, 58);
             this.buttonOpenXML.Name = "buttonOpenXML";
             this.buttonOpenXML.Size = new System.Drawing.Size(75, 23);
             this.buttonOpenXML.TabIndex = 5;
             this.buttonOpenXML.Text = "Open";
             this.buttonOpenXML.UseVisualStyleBackColor = true;
             this.buttonOpenXML.Click += new System.EventHandler(this.ButtonOpenXML_Click);
-            // 
-            // buttonBrowseXML
-            // 
-            this.buttonBrowseXML.Location = new System.Drawing.Point(6, 58);
-            this.buttonBrowseXML.Name = "buttonBrowseXML";
-            this.buttonBrowseXML.Size = new System.Drawing.Size(75, 23);
-            this.buttonBrowseXML.TabIndex = 5;
-            this.buttonBrowseXML.Text = "Browse";
-            this.buttonBrowseXML.UseVisualStyleBackColor = true;
-            this.buttonBrowseXML.Click += new System.EventHandler(this.ButtonBrowseXML_Click);
             // 
             // label86
             // 
@@ -2118,8 +2068,7 @@
             this.textBoxPathXML.Location = new System.Drawing.Point(6, 32);
             this.textBoxPathXML.Name = "textBoxPathXML";
             this.textBoxPathXML.Size = new System.Drawing.Size(538, 20);
-            this.textBoxPathXML.TabIndex = 5;
-            this.textBoxPathXML.TextChanged += new System.EventHandler(this.TextBoxPathXML_TextChanged);
+            this.textBoxPathXML.TabIndex = 5;           
             // 
             // groupBox2
             // 
@@ -2585,14 +2534,12 @@
         private System.Windows.Forms.Button buttonConnectALL;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button buttonOpenLOG;
-        private System.Windows.Forms.Button buttonBrowseLOG;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox textBoxPathLOG;
         private System.Windows.Forms.GroupBox groupBox4;
         public System.Windows.Forms.TextBox debug;
         private System.Windows.Forms.GroupBox groupBox140;
         private System.Windows.Forms.Button buttonOpenXML;
-        private System.Windows.Forms.Button buttonBrowseXML;
         private System.Windows.Forms.Label label86;
         public System.Windows.Forms.TextBox textBoxPathXML;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -2615,7 +2562,6 @@
         public System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.Button buttonOpenUALOG;
-        private System.Windows.Forms.Button buttonBrowseUALOG;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox textBoxPathUALOG;
         public System.Windows.Forms.CheckBox checkBox_Generate_PC;
@@ -2627,7 +2573,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox20;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label11;
         public System.Windows.Forms.TextBox textBoxPathTemperatureLog;
         private System.Windows.Forms.Button button4;

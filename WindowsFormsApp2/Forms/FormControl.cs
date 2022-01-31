@@ -37,7 +37,7 @@ namespace WindowsFormsApp2
 
             Initialiser = new Helper.Initialiser(); // Initializes multiple modules          
 
-            var LogFilePath = XmlController.BaseDirectoryPath + "\\Log\\Log.txt";
+            var LogFilePath = Val.BaseDirectoryPath + "\\Log\\Log.txt";
             if (File.Exists(LogFilePath))
             {
                 Val.PathLogFIle = LogFilePath;
@@ -67,7 +67,7 @@ namespace WindowsFormsApp2
 
 
             // UserActionsLog CsvFile load
-            var UserActionsFilePath = XmlController.BaseDirectoryPath + "\\Log\\UserActions.csv";
+            var UserActionsFilePath = Val.BaseDirectoryPath + "\\Log\\UserActions.csv";
             if (File.Exists(UserActionsFilePath))
             {
                 Val.PathUserActions = UserActionsFilePath;
@@ -99,7 +99,7 @@ namespace WindowsFormsApp2
 
             // Temperature Log CsvFile load
 
-            var TemperatureLogFilePath = XmlController.BaseDirectoryPath + "\\Log\\Temperatures.csv";
+            var TemperatureLogFilePath = Val.BaseDirectoryPath + "\\Log\\Temperatures.csv";
             if (File.Exists(TemperatureLogFilePath))
             {
                 Val.PathTemperatures = TemperatureLogFilePath;
