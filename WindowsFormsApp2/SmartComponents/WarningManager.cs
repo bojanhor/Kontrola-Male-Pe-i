@@ -11,12 +11,14 @@ namespace WindowsFormsApp2
 
     public class WarningManager : RichTextBox
     {
-        public static List<Warning> Warnings = new List<Warning>();
-        static List<PlcVars.AlarmBit> SporocilaZaPrikaz = new List<PlcVars.AlarmBit>();
+        // Local warnings
+        public static WarningNoConnection NoConnWarningPLC1 = new WarningNoConnection();
+
+        // --
+
+        public static List<Warning> Warnings = new List<Warning>();        
 
         Thread DisplayOnScreenThread;
-        Thread SporocilniSistemThread;
-
 
         public WarningManager()
         {
@@ -44,8 +46,6 @@ namespace WindowsFormsApp2
                 DisplayOnScreenThread = new Thread(DisplayOnScreen);
                 DisplayOnScreenThread.Start();
 
-                SporocilniSistemThread = new Thread(SporocilniSistem_method);
-                SporocilniSistemThread.Start();
             }
             ReadOnly = true;
         }
@@ -79,9 +79,9 @@ namespace WindowsFormsApp2
         {
             sporocilaZaprikazBuff = "";            
 
-            for (int i = 0; i < SporocilaZaPrikaz.Count; i++)
+            for (int i = 0; i < Warnings.Count; i++)
             {
-                sporocilaZaprikazBuff += SporocilaZaPrikaz[i].Message + Environment.NewLine + Environment.NewLine;
+                sporocilaZaprikazBuff += Warnings[i].GetMessage() + Environment.NewLine + Environment.NewLine;
             }
             Text = sporocilaZaprikazBuff;
         }
@@ -89,7 +89,7 @@ namespace WindowsFormsApp2
         {
             if (!PreventThisMessage_IsDuplicacate(message))
             {
-                Warnings.Add(new Warning(message, CreateId()));
+                Warnings.Add(new Warning(message));
                 SysLog.Message.SetMessage("Message shown to user: " + message);
             }
         }
@@ -99,19 +99,24 @@ namespace WindowsFormsApp2
             bool Alarm = false;
             Warnings = new List<Warning>();
 
+            
             try
             {
-                foreach (var item in MessageTrackerList)
+                while (true)
                 {
-                    Alarm = item.UpdateValue_TriggerAlarm();
+                    Thread.Sleep(Settings.UpdateValuesPCms);
 
-                    if (Alarm)
+                    foreach (var item in MessageTrackerList)
                     {
-                        AddMessageForUser_Warning(item.WarningMessage);
-                    }
-                }
+                        Alarm = item.UpdateValue_TriggerAlarm();
 
-                Helper.WarningManagerInitialized = true;                
+                        if (Alarm)
+                        {
+                            AddMessageForUser_Warning(item.WarningMessage);
+                        }
+                    }
+                }                
+                                               
             }
             catch (Exception ex)
             {
@@ -124,11 +129,24 @@ namespace WindowsFormsApp2
             Tracker t = new Tracker(PlcVar, valueToTrigerWarning, Condition, WarningMessage);
             MessageTrackerList.Add(t);
                         
-        }        
-       
+        }
+
+        public static void AddMessageForUser_Warning(Warning warning)
+        {
+            if (!PreventThisMessage_IsDuplicacate(warning.GetMessage()))
+            { 
+                Warnings.Add(warning);
+                SysLog.Message.SetMessage("Message shown to user: " + warning);
+            }
+            
+        }
+
         public static void RemoveMessageForUser_Warning(Warning warning)
         {
-            WarningManager.Warnings.Remove(warning);
+            if (Warnings.Contains(warning))
+            {
+                Warnings.Remove(warning);
+            }            
         }
         public static void RemoveMessageForUser_Warning(string warning)
         {
@@ -156,38 +174,7 @@ namespace WindowsFormsApp2
             LessThanOrEqualTo
         }
 
-        static int CreateId()
-        {
-            int id = 0;
-            bool again = false;
-
-            while (true)
-            {
-                foreach (var item in WarningManager.Warnings)
-                {
-                    if (item != null)
-                    {
-                        if (item.GetID() == id)
-                        {
-                            id++;
-                            again = true;
-                            break;
-                        }
-
-                    }
-                }
-
-                if (!again)
-                {
-                    return id;
-                }
-                else
-                {
-                    again = false;
-                }
-            }
-        }
-
+        
         static bool PreventThisMessage_IsDuplicacate(string message)
         {
             if (Warnings != null)
@@ -209,45 +196,7 @@ namespace WindowsFormsApp2
             WarningTrackerThread.Start("WarningTrackerThread", ApartmentState.MTA, true);
         }
 
-        void SporocilniSistem_method()
-        {
-            while (true)
-            {
-
-                try
-                {
-                    foreach (var item in PlcVars.AllAlarmMessageVars)
-                    {
-                        if (item != null)
-                        {
-                            if (item.Value == !item.InvertState)
-                            {
-                                if (!DoesItExist(item.Message, SporocilaZaPrikaz))
-                                {
-                                    SporocilaZaPrikaz.Add(item); // adds message to display if it does not exist yet   if alarm bool is == 1
-                                }
-                            }
-                            else
-                            {
-                                if (DoesItExist(item.Message, SporocilaZaPrikaz))
-                                {
-                                    SporocilaZaPrikaz.Remove(item);// removes message to display if it exists   if alarm bool is == 0
-                                }
-                            }
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    SysLog.SetMessage("Napaka v sporočilnem sistemu: " + ex.Message);
-                }
-
-
-
-                Thread.Sleep(Settings.UpdateValuesPCms);
-            }
-        }
-                
+     
         static bool DoesItExist(string sporocilo, List<PlcVars.AlarmBit> collection)
         {
             if (collection == null)
@@ -549,13 +498,11 @@ namespace WindowsFormsApp2
         }
 
         public class Warning
-        {
-            readonly int id;
+        {       
             readonly string message = "";
 
-            public Warning(string Message, int id)
-            {
-                this.id = id;
+            public Warning(string Message)
+            {               
                 message = Message;
             }
 
@@ -563,11 +510,18 @@ namespace WindowsFormsApp2
             {
                 return message;
             }
+            
+        }
 
-            public int GetID()
+        public class WarningNoConnection : Warning
+        {            
+            static readonly string message = "NI POVEZAVE S KRMILNIKOM";
+
+            public WarningNoConnection() : base(message)
             {
-                return id;
+               
             }
+                       
         }
     }
 

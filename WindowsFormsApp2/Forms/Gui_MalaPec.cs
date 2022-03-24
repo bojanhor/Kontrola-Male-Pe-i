@@ -34,7 +34,7 @@ namespace WindowsFormsApp2
            
         }
 
-        void enableGui(bool enable)
+        void enableGui(bool _enable)
         {
             for (int i = 0; i < Controls.Count; i++)
             {
@@ -46,16 +46,16 @@ namespace WindowsFormsApp2
 
                     }
                     else
-                    {
-                        Controls[i].Enabled = enable;
+                    {                        
+                        Controls[i].Enabled = _enable;                        
                     }
 
                 }
                 catch
                 {
 
-                }
-
+                }                
+                addMessageConnectionLost(_enable);
             }
         }
 
@@ -80,6 +80,18 @@ namespace WindowsFormsApp2
             {
                 Invoke(m);
                 Thread.Sleep(Settings.UpdateValuesPCms);
+            }
+        }
+
+        void addMessageConnectionLost(bool _add )
+        {
+            if (!_add)
+            {
+                WarningManager.AddMessageForUser_Warning(WarningManager.NoConnWarningPLC1);
+            }
+            else
+            {
+                WarningManager.RemoveMessageForUser_Warning(WarningManager.NoConnWarningPLC1);
             }
         }
 
@@ -213,6 +225,11 @@ namespace WindowsFormsApp2
         }
 
         private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void warningManager1_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -586,6 +586,7 @@ namespace WindowsFormsApp2
             this.warningManager1.Size = new System.Drawing.Size(250, 170);
             this.warningManager1.TabIndex = 18;
             this.warningManager1.Text = "";
+            this.warningManager1.TextChanged += new System.EventHandler(this.warningManager1_TextChanged);
             // 
             // dataGridViewComboBoxColumn5
             // 

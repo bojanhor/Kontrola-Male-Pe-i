@@ -28,6 +28,8 @@ namespace WindowsFormsApp2
         public static bool LogoffModeEnabled = false;
         Helper.Initialiser Initialiser;
 
+        SysLog sysLog;
+
         public FormControl(Context con_)
         {
             CreateSplashSceen();
@@ -228,7 +230,7 @@ namespace WindowsFormsApp2
 
             try
             {
-                SysLog sysLog = new SysLog();
+                 sysLog = new SysLog();
             }
             catch (Exception)
             {

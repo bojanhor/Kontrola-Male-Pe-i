@@ -20,7 +20,8 @@ namespace WindowsFormsApp2
         public static string BaseDirectoryPath = "";
 
         public static bool GuiInitialised = false;
-
+        
+        
         public static void InitialiseClass()
         {
             // TODO solve this
