@@ -159,3 +159,53 @@ Streamwriter was initialised.
 3. 02. 2022 20:54:12 - Info: Connecting...
 3. 02. 2022 20:54:13 - Info: Connected
 3. 02. 2022 20:54:13 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+24/03/2022 09:26:30 - Info: Autoconnect at startup
+24/03/2022 09:26:30 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+24/03/2022 09:26:30 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+24/03/2022 09:26:30 - Info: GUI was loaded successfully
+24/03/2022 09:26:30 - Info: Connecting...
+24/03/2022 09:26:33 - Info: TCP : Connection Error
+24/03/2022 09:26:33 - Info: Running connection diagnostics...
+24/03/2022 09:26:37 - Info:   -Ping ERROR at: 192.168.1.201 (TimedOut)
+24/03/2022 09:26:39 - Info: Connection failed. Trying to reconnect
+24/03/2022 09:26:39 - Info: Watchdog error - Watchdog does not change
+24/03/2022 09:26:39 - Info: Connection error: Watchdog error - Watchdog does not change
+24/03/2022 09:26:42 - Info: Running connection diagnostics...
+24/03/2022 09:26:45 - Info:   -Ping ERROR at: 192.168.1.201 (DestinationHostUnreachable)
+24/03/2022 09:26:48 - Info: Connection failed. Trying to reconnect
+24/03/2022 09:26:48 - Info: Running connection diagnostics...
+24/03/2022 09:26:51 - Info:   -Ping ERROR at: 192.168.1.201 (TimedOut)
+24/03/2022 09:26:54 - Info: Connection failed. Trying to reconnect
+24/03/2022 09:26:54 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+24/03/2022 09:26:54 - Info: Connection error: Watchdog error - Watchdog does not change
+24/03/2022 09:26:57 - Info: Running connection diagnostics...
+24/03/2022 09:27:00 - Info:   -Ping ERROR at: 192.168.1.201 (DestinationHostUnreachable)
+24/03/2022 09:27:02 - Info: Connection failed. Trying to reconnect
+24/03/2022 09:27:02 - Info: Running connection diagnostics...
+24/03/2022 09:27:06 - Info:   -Ping ERROR at: 192.168.1.201 (TimedOut)
+24/03/2022 09:27:08 - Info: Connection failed. Trying to reconnect
+24/03/2022 09:27:08 - Info: Connection error: Watchdog error - Watchdog does not change
+24/03/2022 09:27:11 - Info: Running connection diagnostics...
+24/03/2022 09:27:14 - Info:   -Ping ERROR at: 192.168.1.201 (DestinationHostUnreachable)
+24/03/2022 09:27:17 - Info: Connection failed. Trying to reconnect
+24/03/2022 09:27:17 - Info: Running connection diagnostics...
+24/03/2022 09:27:20 - Info:   -Ping ERROR at: 192.168.1.201 (TimedOut)
+24/03/2022 09:27:23 - Info: Connection failed. Trying to reconnect
+24/03/2022 09:27:23 - Info: Connection error: Watchdog error - Watchdog does not change
+24/03/2022 09:27:26 - Info: Running connection diagnostics...
+24/03/2022 09:27:29 - Info:   -Ping ERROR at: 192.168.1.201 (DestinationHostUnreachable)
+24/03/2022 09:27:31 - Info: Connection failed. Trying to reconnect
+24/03/2022 09:27:31 - Info: Running connection diagnostics...
+24/03/2022 09:27:35 - Info:   -Ping ERROR at: 192.168.1.201 (TimedOut)
+24/03/2022 09:27:37 - Info: Connection failed. Trying to reconnect
+24/03/2022 09:27:37 - Info: Connection error: Watchdog error - Watchdog does not change
+24/03/2022 09:27:40 - Info: Running connection diagnostics...
+24/03/2022 09:27:43 - Info:   -Ping ERROR at: 192.168.1.201 (DestinationHostUnreachable)
+24/03/2022 09:27:46 - Info: Connection failed. Trying to reconnect
+24/03/2022 09:27:46 - Info: Running connection diagnostics...
+24/03/2022 09:27:49 - Info:   -Ping ERROR at: 192.168.1.201 (TimedOut)
