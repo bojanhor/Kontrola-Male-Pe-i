@@ -226,6 +226,15 @@ namespace WindowsFormsApp2
                 Environment.Exit(0);
             }
 
+            try
+            {
+                SysLog sysLog = new SysLog();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
 
 
             Application.DoEvents();

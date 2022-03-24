@@ -135,7 +135,8 @@ namespace WindowsFormsApp2
         private void Gui_MalaPec_Load(object sender, EventArgs e)
         {           
             registerEvents();
-            DisableGuiOnConnectionLossThread.Start(); 
+            DisableGuiOnConnectionLossThread.Start();
+            Val.GuiInitialised = true;
         }
 
         private void Gui_MalaPec_FormClosed(object sender, FormClosedEventArgs e)

@@ -10,8 +10,13 @@ namespace WindowsFormsApp2
 {
     public class SysLog
     {      
-        public static MessageManager Message = new MessageManager();
+        public static MessageManager Message;
         private static bool FileCorupted = false;
+
+        public SysLog()
+        {
+            Message = new MessageManager();
+        }
 
         public class MessageManager
         {
