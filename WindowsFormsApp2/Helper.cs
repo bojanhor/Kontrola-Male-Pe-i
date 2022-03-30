@@ -15,9 +15,7 @@ namespace WindowsFormsApp2
     {
         public static bool LogoControllerInitialized = false;
         public static bool GuiControllerInitialized = false;        
-        public static bool WarningManagerInitialized = false;
-
-        
+                
 
         public static string getClockValue()
         {
