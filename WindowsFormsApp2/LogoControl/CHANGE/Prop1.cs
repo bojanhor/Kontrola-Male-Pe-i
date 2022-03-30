@@ -48,7 +48,7 @@ namespace WindowsFormsApp2
 
         //Alarm Bits
         public PlcVars.AlarmBit DiffVntErr, MaxTempReached, VentDemand, MussLauf, VrataOdprta, CoolOff;
-        public PlcVars.AlarmBit VarnostniTermostatOk, FreqOk, EMG_OK, EMG_Aux_OK; // inverted
+        public PlcVars.AlarmBit VarnostniTermostatOk, FreqOk, EMG_OK, EMG_Aux_OK, Sw102PositionOK; // inverted
 
 
         public Prop1(Sharp7.S7Client client) : base(client)
@@ -109,6 +109,7 @@ namespace WindowsFormsApp2
             FreqOk = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(161, 0), "[Zagon je preprečen] NAPAKA - Frekvenčnik", true, true);
             EMG_OK = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(162, 0), "[Zagon je preprečen] NAPAKA - Varnostni mehanizem 1", true, true);
             EMG_Aux_OK = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(163, 0), "[Zagon je preprečen] - Varnostni mehanizem 2", true, true);
+            Sw102PositionOK = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(164, 0), "[Zagon je preprečen] - Stikalo za prisilno delovanje ventilacije ni v ustrezni poziciji", true, true);
 
             VentDemand = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(167, 0), "[ROČNI NAČIN - PRISILNO DELOVANJE]", false, true);
             MaxTempReached = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(167, 0), "[ROČNI NAČIN - PRISILNO DELOVANJE]", false, true);
