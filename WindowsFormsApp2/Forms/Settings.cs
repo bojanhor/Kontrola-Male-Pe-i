@@ -870,8 +870,7 @@ namespace WindowsFormsApp2
             FormControl.Form_settings.TextBoxWatchdogAddressLOGO7 = TextBoxWatchdogAddressLOGO7;
             FormControl.Form_settings.TextBoxWatchdogAddressLOGO8 = TextBoxWatchdogAddressLOGO8;
 
-
-            textBoxPathXML.Text = Properties.Settings.Default.PathXML;
+                        
             init = true;
 
 
@@ -880,17 +879,20 @@ namespace WindowsFormsApp2
             {
                 UpdateFieldsXML();
             }
-                       
+
 
             try
             {
                 settingsXML = XDocument.Load(Settings.pathToConfigFile);
+                textBoxPathXML.Text = Val.BaseDirectoryPath + "\\" + Settings.pathToConfigFile;
             }
             catch (Exception)
             {
                 MessageBox.Show("Please provide valid XML file (or path). Application will now close. ");
                 Environment.Exit(0);
             }
+
+          
 
 
             // log file

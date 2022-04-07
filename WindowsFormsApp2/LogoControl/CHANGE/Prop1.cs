@@ -42,9 +42,13 @@ namespace WindowsFormsApp2
 
         public PlcVars.Bit Heat1, Heat2;
 
-        public PlcVars.Word Temp;
+        public PlcVars.Word TempReg, TempDif;
 
         public PlcVars.Word VentRpmCurrent;
+
+        public PlcVars.Word TempSenZg, TempSenSr1, TempSenSr2, TempSenSp, TempSenKn;
+
+
 
         //Alarm Bits
         public PlcVars.AlarmBit DiffVntErr, MaxTempReached, VentDemand, MussLauf, VrataOdprta, CoolOff;
@@ -98,7 +102,8 @@ namespace WindowsFormsApp2
             Heat1 = new PlcVars.Bit(this, new PlcVars.BitAddress(130,0), false);
             Heat2 = new PlcVars.Bit(this, new PlcVars.BitAddress(132,0), false);
 
-            Temp = new PlcVars.Word(this, new PlcVars.WordAddress(140), true);
+            TempReg = new PlcVars.Word(this, new PlcVars.WordAddress(140), false);
+            TempDif = new PlcVars.Word(this, new PlcVars.WordAddress(142), false);
 
             VentRpmCurrent = new PlcVars.Word(this, new PlcVars.WordAddress(150), true);
 
@@ -116,6 +121,12 @@ namespace WindowsFormsApp2
 
             VrataOdprta = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(170, 0), "Vrata so odprta", false, true);
             CoolOff = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(171, 0), "Ohlajanje v teku", false, true);
+
+            TempSenZg = new PlcVars.Word(this, new PlcVars.WordAddress(210), false);
+            TempSenSr1 = new PlcVars.Word(this, new PlcVars.WordAddress(212), false);
+            TempSenSr2 = new PlcVars.Word(this, new PlcVars.WordAddress(214), false);
+            TempSenSp= new PlcVars.Word(this, new PlcVars.WordAddress(216), false);
+            TempSenKn = new PlcVars.Word(this, new PlcVars.WordAddress(218), false);
 
         }
 

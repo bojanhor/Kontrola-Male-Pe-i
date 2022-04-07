@@ -29,6 +29,7 @@ namespace WindowsFormsApp2
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gui_MalaPec));
             this.label1 = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
@@ -81,6 +82,19 @@ namespace WindowsFormsApp2
             this.warningManager1 = new WindowsFormsApp2.WarningManager();
             this.dataGridViewComboBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.tb1sen1 = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tb1sen2 = new System.Windows.Forms.TextBox();
+            this.tb1sen3 = new System.Windows.Forms.TextBox();
+            this.tb1sen4 = new System.Windows.Forms.TextBox();
+            this.tb2Sen4 = new System.Windows.Forms.TextBox();
+            this.tb2Sen3 = new System.Windows.Forms.TextBox();
+            this.tb2Sen2 = new System.Windows.Forms.TextBox();
+            this.tb2Sen1 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textboxShow3 = new WindowsFormsApp2.TextboxShow();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tbtempkanal = new WindowsFormsApp2.TextboxShow();
             this.panelTop.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -228,7 +242,7 @@ namespace WindowsFormsApp2
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 151);
+            this.label4.Location = new System.Drawing.Point(18, 152);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(127, 13);
             this.label4.TabIndex = 16;
@@ -236,10 +250,14 @@ namespace WindowsFormsApp2
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tb1sen4);
+            this.groupBox2.Controls.Add(this.tb1sen3);
+            this.groupBox2.Controls.Add(this.tb1sen2);
             this.groupBox2.Controls.Add(this.sensorSelect1);
+            this.groupBox2.Controls.Add(this.tb1sen1);
             this.groupBox2.Location = new System.Drawing.Point(654, 124);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(147, 188);
+            this.groupBox2.Size = new System.Drawing.Size(194, 187);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Izbira Delovnega Tipala";
@@ -252,7 +270,7 @@ namespace WindowsFormsApp2
             this.sensorSelect1.SensorName2 = "Sensor2";
             this.sensorSelect1.SensorName3 = "Sensor3";
             this.sensorSelect1.SensorName4 = "Sensor4";
-            this.sensorSelect1.Size = new System.Drawing.Size(150, 125);
+            this.sensorSelect1.Size = new System.Drawing.Size(90, 125);
             this.sensorSelect1.TabIndex = 17;
             this.sensorSelect1.Text = "sensorSelect1";
             this.sensorSelect1.Value = null;
@@ -260,10 +278,14 @@ namespace WindowsFormsApp2
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.tb2Sen4);
+            this.groupBox3.Controls.Add(this.tb2Sen3);
             this.groupBox3.Controls.Add(this.sensorSelect2);
+            this.groupBox3.Controls.Add(this.tb2Sen2);
+            this.groupBox3.Controls.Add(this.tb2Sen1);
             this.groupBox3.Location = new System.Drawing.Point(857, 124);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(162, 187);
+            this.groupBox3.Size = new System.Drawing.Size(194, 187);
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Izbira Diferenčnega Tipala";
@@ -276,7 +298,7 @@ namespace WindowsFormsApp2
             this.sensorSelect2.SensorName2 = "Sensor2";
             this.sensorSelect2.SensorName3 = "Sensor3";
             this.sensorSelect2.SensorName4 = "Sensor4";
-            this.sensorSelect2.Size = new System.Drawing.Size(150, 125);
+            this.sensorSelect2.Size = new System.Drawing.Size(94, 125);
             this.sensorSelect2.TabIndex = 17;
             this.sensorSelect2.Text = "sensorSelect2";
             this.sensorSelect2.Value = null;
@@ -445,6 +467,10 @@ namespace WindowsFormsApp2
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.label16);
+            this.groupBox5.Controls.Add(this.tbtempkanal);
+            this.groupBox5.Controls.Add(this.label15);
+            this.groupBox5.Controls.Add(this.textboxShow3);
             this.groupBox5.Controls.Add(this.label5);
             this.groupBox5.Controls.Add(this.textboxShow1);
             this.groupBox5.Controls.Add(this.label13);
@@ -485,7 +511,7 @@ namespace WindowsFormsApp2
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(180, 25);
+            this.label13.Location = new System.Drawing.Point(180, 19);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(51, 13);
             this.label13.TabIndex = 22;
@@ -509,7 +535,7 @@ namespace WindowsFormsApp2
             // 
             this.histHeat2_101.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.histHeat2_101.FormattingEnabled = true;
-            this.histHeat2_101.Location = new System.Drawing.Point(183, 41);
+            this.histHeat2_101.Location = new System.Drawing.Point(183, 35);
             this.histHeat2_101.Name = "histHeat2_101";
             this.histHeat2_101.Size = new System.Drawing.Size(121, 21);
             this.histHeat2_101.TabIndex = 21;
@@ -518,7 +544,7 @@ namespace WindowsFormsApp2
             // 
             this.temperatureSelector_0_3002.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.temperatureSelector_0_3002.FormattingEnabled = true;
-            this.temperatureSelector_0_3002.Location = new System.Drawing.Point(18, 167);
+            this.temperatureSelector_0_3002.Location = new System.Drawing.Point(18, 170);
             this.temperatureSelector_0_3002.Name = "temperatureSelector_0_3002";
             this.temperatureSelector_0_3002.Size = new System.Drawing.Size(121, 21);
             this.temperatureSelector_0_3002.TabIndex = 15;
@@ -599,6 +625,131 @@ namespace WindowsFormsApp2
             this.dataGridViewComboBoxColumn6.HeaderText = "Off";
             this.dataGridViewComboBoxColumn6.Name = "dataGridViewComboBoxColumn6";
             // 
+            // tb1sen1
+            // 
+            this.tb1sen1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb1sen1.Location = new System.Drawing.Point(102, 38);
+            this.tb1sen1.Name = "tb1sen1";
+            this.tb1sen1.ReadOnly = true;
+            this.tb1sen1.Size = new System.Drawing.Size(58, 13);
+            this.tb1sen1.TabIndex = 23;
+            this.tb1sen1.Text = "_N/A_";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // tb1sen2
+            // 
+            this.tb1sen2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb1sen2.Location = new System.Drawing.Point(102, 61);
+            this.tb1sen2.Name = "tb1sen2";
+            this.tb1sen2.ReadOnly = true;
+            this.tb1sen2.Size = new System.Drawing.Size(58, 13);
+            this.tb1sen2.TabIndex = 24;
+            this.tb1sen2.Text = "_N/A_";
+            // 
+            // tb1sen3
+            // 
+            this.tb1sen3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb1sen3.Location = new System.Drawing.Point(102, 85);
+            this.tb1sen3.Name = "tb1sen3";
+            this.tb1sen3.ReadOnly = true;
+            this.tb1sen3.Size = new System.Drawing.Size(58, 13);
+            this.tb1sen3.TabIndex = 25;
+            this.tb1sen3.Text = "_N/A_";
+            // 
+            // tb1sen4
+            // 
+            this.tb1sen4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb1sen4.Location = new System.Drawing.Point(102, 108);
+            this.tb1sen4.Name = "tb1sen4";
+            this.tb1sen4.ReadOnly = true;
+            this.tb1sen4.Size = new System.Drawing.Size(58, 13);
+            this.tb1sen4.TabIndex = 26;
+            this.tb1sen4.Text = "_N/A_";
+            // 
+            // tb2Sen4
+            // 
+            this.tb2Sen4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb2Sen4.Location = new System.Drawing.Point(101, 108);
+            this.tb2Sen4.Name = "tb2Sen4";
+            this.tb2Sen4.ReadOnly = true;
+            this.tb2Sen4.Size = new System.Drawing.Size(58, 13);
+            this.tb2Sen4.TabIndex = 30;
+            this.tb2Sen4.Text = "_N/A_";
+            // 
+            // tb2Sen3
+            // 
+            this.tb2Sen3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb2Sen3.Location = new System.Drawing.Point(101, 85);
+            this.tb2Sen3.Name = "tb2Sen3";
+            this.tb2Sen3.ReadOnly = true;
+            this.tb2Sen3.Size = new System.Drawing.Size(58, 13);
+            this.tb2Sen3.TabIndex = 29;
+            this.tb2Sen3.Text = "_N/A_";
+            // 
+            // tb2Sen2
+            // 
+            this.tb2Sen2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb2Sen2.Location = new System.Drawing.Point(101, 61);
+            this.tb2Sen2.Name = "tb2Sen2";
+            this.tb2Sen2.ReadOnly = true;
+            this.tb2Sen2.Size = new System.Drawing.Size(58, 13);
+            this.tb2Sen2.TabIndex = 28;
+            this.tb2Sen2.Text = "_N/A_";
+            // 
+            // tb2Sen1
+            // 
+            this.tb2Sen1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb2Sen1.Location = new System.Drawing.Point(101, 38);
+            this.tb2Sen1.Name = "tb2Sen1";
+            this.tb2Sen1.ReadOnly = true;
+            this.tb2Sen1.Size = new System.Drawing.Size(58, 13);
+            this.tb2Sen1.TabIndex = 27;
+            this.tb2Sen1.Text = "_N/A_";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(180, 151);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(109, 13);
+            this.label15.TabIndex = 26;
+            this.label15.Text = "Trenutna temperatura";
+            // 
+            // textboxShow3
+            // 
+            this.textboxShow3.Location = new System.Drawing.Point(183, 170);
+            this.textboxShow3.Name = "textboxShow3";
+            this.textboxShow3.Postfix = "°C";
+            this.textboxShow3.Prefix = null;
+            this.textboxShow3.ReadOnly = true;
+            this.textboxShow3.Size = new System.Drawing.Size(100, 20);
+            this.textboxShow3.TabIndex = 25;
+            this.textboxShow3.Value = null;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(180, 63);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(102, 13);
+            this.label16.TabIndex = 28;
+            this.label16.Text = "Temperatura kanala";
+            // 
+            // tbtempkanal
+            // 
+            this.tbtempkanal.Location = new System.Drawing.Point(183, 82);
+            this.tbtempkanal.Name = "tbtempkanal";
+            this.tbtempkanal.Postfix = "°C";
+            this.tbtempkanal.Prefix = null;
+            this.tbtempkanal.ReadOnly = true;
+            this.tbtempkanal.Size = new System.Drawing.Size(100, 20);
+            this.tbtempkanal.TabIndex = 27;
+            this.tbtempkanal.Value = null;
+            // 
             // Gui_MalaPec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -622,7 +773,9 @@ namespace WindowsFormsApp2
             this.panelTop.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -686,5 +839,18 @@ namespace WindowsFormsApp2
         private TextboxShow textboxShow1;
         private System.Windows.Forms.Label label14;
         private TextboxShow textboxShow2;
+        private System.Windows.Forms.TextBox tb1sen4;
+        private System.Windows.Forms.TextBox tb1sen3;
+        private System.Windows.Forms.TextBox tb1sen2;
+        private System.Windows.Forms.TextBox tb1sen1;
+        private System.Windows.Forms.TextBox tb2Sen4;
+        private System.Windows.Forms.TextBox tb2Sen3;
+        private System.Windows.Forms.TextBox tb2Sen2;
+        private System.Windows.Forms.TextBox tb2Sen1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Label label16;
+        private TextboxShow tbtempkanal;
+        private System.Windows.Forms.Label label15;
+        private TextboxShow textboxShow3;
     }
 }

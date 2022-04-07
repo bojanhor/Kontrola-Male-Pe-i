@@ -27,8 +27,7 @@ namespace WindowsFormsApp2
             // TODO solve this
             //SysLog.Message = new SysLog.MessageManager();
 
-            XmlController.XmlControllerInitialize();            
-            WarningManager = new WarningManager();              // in new thread
+            XmlController.XmlControllerInitialize();  
             logocontroler = new LogoControler();                // in new thread
             PCWD = new PC_WD();                                 // in new thread
   

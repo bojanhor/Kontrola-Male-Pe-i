@@ -21,10 +21,8 @@ namespace WindowsFormsApp2
         Thread DisplayOnScreenThread;
 
         public WarningManager()
-        {
-            
+        {       
             StartWarningTrackerThread(); 
-
             Height = 150;
             Width = 250;
             Multiline = true;            
@@ -97,8 +95,7 @@ namespace WindowsFormsApp2
         void WarningTrackerThreadMethod()
         {
             bool Alarm = false;
-            Warnings = new List<Warning>();
-
+            Warnings = new List<Warning>();            
             
             try
             {
@@ -179,7 +176,7 @@ namespace WindowsFormsApp2
         {
             if (Warnings != null)
             {
-                foreach (var item in WarningManager.Warnings)
+                foreach (var item in Warnings)
                 {
                     if (message == item.GetMessage())
                     {
@@ -196,23 +193,7 @@ namespace WindowsFormsApp2
             WarningTrackerThread.Start("WarningTrackerThread", ApartmentState.MTA, true);
         }
 
-     
-        static bool DoesItExist(string sporocilo, List<PlcVars.AlarmBit> collection)
-        {
-            if (collection == null)
-            {
-                return false;
-            }
-            foreach (var item in collection)
-            {
-                if (item.Message == sporocilo)
-                {
-                    return true;
-                }
-            }
-            return false;
-
-        }
+    
 
         class Tracker
         {
@@ -232,7 +213,12 @@ namespace WindowsFormsApp2
                 var typ1 = valueToTrigerWarning.GetType();
                 object buff1;
 
-                if (typ == typeof(PlcVars.Bit))
+                if (typ == typeof(PlcVars.AlarmBit))
+                {
+                    buff = (PlcVars.AlarmBit)PlcVar;
+                }
+
+                else if (typ == typeof(PlcVars.Bit))
                 {
                     buff = (PlcVars.Bit)PlcVar;
                 }
@@ -264,12 +250,16 @@ namespace WindowsFormsApp2
 
                 string messageErrorTypeConflict = "Error: Type conflict. If PlcVars.Bit was passed, valueToTrigerWarning should be of type bool, and vice versa.";
 
+               
                 if (typ1 == typeof(bool))
                 {
-                    if (
-                        typ != typeof(PlcVars.Bit) ||
-                        (Condition != WarningTriggerCondition.EqualTo && Condition != WarningTriggerCondition.NotEqualTo)
-                        )
+                    if (Condition != WarningTriggerCondition.EqualTo && Condition != WarningTriggerCondition.NotEqualTo)
+                    { }
+                    else if (typ == typeof(PlcVars.AlarmBit))
+                    { }
+                    else if (typ != typeof(PlcVars.Bit))
+                    { }
+                    else
                     {
                         throw new Exception(messageErrorTypeConflict);
                     }
@@ -340,8 +330,21 @@ namespace WindowsFormsApp2
                     // Type checks
                     var typ = PlcVar.GetType();
 
+                    if (typ == typeof(PlcVars.AlarmBit))
+                    {
+                        var buff = (PlcVars.AlarmBit)PlcVar;
+                        var val = buff.Value;
 
-                    if (typ == typeof(PlcVars.Bit))
+                        if (val != null)
+                        {
+                            return CompareBool_Alarm((bool)val);
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                    else if (typ == typeof(PlcVars.Bit))
                     {
                         var buff = (PlcVars.Bit)PlcVar;
                         var val = buff.Value;
@@ -355,7 +358,7 @@ namespace WindowsFormsApp2
                             return false;
                         }
                     }
-                    if (typ == typeof(PlcVars.Byte))
+                    else if (typ == typeof(PlcVars.Byte))
                     {
                         var buff = (PlcVars.Byte)PlcVar;
                         var val = buff.Value;
@@ -369,7 +372,7 @@ namespace WindowsFormsApp2
                             return false;
                         }
                     }
-                    if (typ == typeof(PlcVars.Word))
+                    else if (typ == typeof(PlcVars.Word))
                     {
                         var buff = (PlcVars.Word)PlcVar;
                         var val = buff.Value;
@@ -383,7 +386,7 @@ namespace WindowsFormsApp2
                             return false;
                         }
                     }
-                    if (typ == typeof(PlcVars.DWord))
+                    else if (typ == typeof(PlcVars.DWord))
                     {
                         var buff = (PlcVars.DWord)PlcVar;
                         var val = buff.Value;

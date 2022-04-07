@@ -120,10 +120,23 @@ namespace WindowsFormsApp2
             histHeat2_101.Value = p.HistHeat;
             actuatorStatus1.Value_PlcBit = p.Heat1;
             actuatorStatus2.Value_PlcBit = p.Heat2;
-            textboxShow1.Value = p.Temp;
+            textboxShow1.Value = p.TempReg;
             textboxShow2.Value = p.VentRpmCurrent;
+            textboxShow3.Value = p.TempDif;
 
 
+            tb1sen1.Text = p.TempSenZg.Value_string;
+            tb1sen2.Text = p.TempSenSr1.Value_string;
+            tb1sen3.Text = p.TempSenSr2.Value_string;
+            tb1sen4.Text = p.TempSenSp.Value_string;
+
+            tbtempkanal.Value = p.TempSenKn;
+
+        }
+
+        string formatTemp1(string temperature)
+        {
+            return ("[" + temperature + "°C]");
         }
 
         void SensorErrDataFeed()

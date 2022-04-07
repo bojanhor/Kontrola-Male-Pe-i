@@ -1356,6 +1356,7 @@ namespace WindowsFormsApp2
                 this.Emergency = Emergency;
                 this.Message = Message;
                 AllAlarmMessageVars.Add(this);
+                AddMonitor();
             }
 
             public AlarmBit(PropComm prop, BitAddress TypeAndAdress, string Message, bool invertState, bool Emergency) : base(prop, TypeAndAdress, false)
@@ -1364,12 +1365,27 @@ namespace WindowsFormsApp2
                 this.Emergency = Emergency;
                 this.Message = Message;
                 AllAlarmMessageVars.Add(this);
+                AddMonitor();
             }
             public AlarmBit(PropComm prop, BitAddress TypeAndAdress, string Message) : base(prop, TypeAndAdress, false)
             {
                 InvertState = false;
                 this.Message = Message;
                 AllAlarmMessageVars.Add(this);
+                AddMonitor();
+            }
+
+            void AddMonitor()
+            {
+                if (InvertState)
+                {
+                    AddWarningMonitor(false, WarningManager.WarningTriggerCondition.EqualTo, Message);
+                }
+                else
+                {
+                    AddWarningMonitor(true, WarningManager.WarningTriggerCondition.EqualTo, Message);
+                }
+                
             }
         }
 
