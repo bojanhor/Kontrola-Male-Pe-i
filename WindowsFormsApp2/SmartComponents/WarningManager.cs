@@ -31,9 +31,7 @@ namespace WindowsFormsApp2
 
         }
 
-        static Misc.SmartThread WarningTrackerThread;
-
-        public static List<Warning> WarningsShowList;
+        static Misc.SmartThread WarningTrackerThread;        
         static readonly List<Tracker> MessageTrackerList = new List<Tracker>();
 
         void Setup()
@@ -111,6 +109,10 @@ namespace WindowsFormsApp2
                         {
                             AddMessageForUser_Warning(item.WarningMessage);
                         }
+                        else
+                        {                            
+                            RemoveMessageForUser_Warning(item.WarningMessage);
+                        }
                     }
                 }                
                                                
@@ -147,14 +149,16 @@ namespace WindowsFormsApp2
         }
         public static void RemoveMessageForUser_Warning(string warning)
         {
-            if (WarningsShowList != null)
-            {
-                WarningsShowList.Find(item => item.GetMessage() == warning);
-                foreach (var item in WarningsShowList)
+            if (Warnings != null)
+            {         
+                Warning buff;                
+                for (int i = 0; i < Warnings.Count; i++)
                 {
-                    if (warning == item.GetMessage())
+                    buff = Warnings[i];
+                    if (buff.GetMessage() == warning)
                     {
-                        RemoveMessageForUser_Warning(item);
+                        Warnings.RemoveAt(i);
+                        return;
                     }
                 }
             }

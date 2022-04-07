@@ -42,7 +42,7 @@ namespace WindowsFormsApp2
 
         public PlcVars.Bit Heat1, Heat2;
 
-        public PlcVars.Word TempReg, TempDif;
+        public PlcVars.Word TempReg, TempDif, TempErr;
 
         public PlcVars.Word VentRpmCurrent;
 
@@ -104,6 +104,8 @@ namespace WindowsFormsApp2
 
             TempReg = new PlcVars.Word(this, new PlcVars.WordAddress(140), false);
             TempDif = new PlcVars.Word(this, new PlcVars.WordAddress(142), false);
+
+            TempErr = new PlcVars.Word(this, new PlcVars.WordAddress(144), true);
 
             VentRpmCurrent = new PlcVars.Word(this, new PlcVars.WordAddress(150), true);
 

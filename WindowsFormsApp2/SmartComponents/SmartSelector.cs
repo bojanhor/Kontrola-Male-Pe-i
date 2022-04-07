@@ -50,7 +50,7 @@ namespace WindowsFormsApp2
 
         }
     }
-    class TemperatureSelector_0_300 : SelectorBaseClass
+    class TemperatureSelector_0_250 : SelectorBaseClass
     {
         static int from =  40;
         static int to = 250;
@@ -58,7 +58,21 @@ namespace WindowsFormsApp2
         static string postFix = "°C";
 
        
-        public TemperatureSelector_0_300() : base(from, to, step, postFix)
+        public TemperatureSelector_0_250() : base(from, to, step, postFix)
+        {
+
+        }
+    }
+
+    class TemperatureSelector_0_350 : SelectorBaseClass
+    {
+        static int from = 150;
+        static int to = 350;
+        static int step = 10;
+        static string postFix = "°C";
+
+
+        public TemperatureSelector_0_350() : base(from, to, step, postFix)
         {
 
         }

@@ -125,12 +125,19 @@ namespace WindowsFormsApp2
             textboxShow3.Value = p.TempDif;
 
 
-            tb1sen1.Text = p.TempSenZg.Value_string;
-            tb1sen2.Text = p.TempSenSr1.Value_string;
-            tb1sen3.Text = p.TempSenSr2.Value_string;
-            tb1sen4.Text = p.TempSenSp.Value_string;
+            tb1sen1.Value = p.TempSenZg; tb1sen1.Prefix = "["; tb1sen1.Postfix = "°C]";
+            tb1sen2.Value = p.TempSenSr1; tb1sen2.Prefix = "["; tb1sen2.Postfix = "°C]";
+            tb1sen3.Value = p.TempSenSr2; tb1sen3.Prefix = "["; tb1sen3.Postfix = "°C]";
+            tb1sen4.Value = p.TempSenSp; tb1sen4.Prefix = "["; tb1sen4.Postfix = "°C]";
+
+            tb2Sen1.Value = p.TempSenZg; tb2Sen1.Prefix = "["; tb2Sen1.Postfix = "°C]";
+            tb2Sen2.Value = p.TempSenSr1; tb2Sen2.Prefix = "["; tb2Sen2.Postfix = "°C]";
+            tb2Sen3.Value = p.TempSenSr2; tb2Sen3.Prefix = "["; tb2Sen3.Postfix = "°C]";
+            tb2Sen4.Value = p.TempSenSp; tb2Sen4.Prefix = "["; tb2Sen4.Postfix = "°C]";
 
             tbtempkanal.Value = p.TempSenKn;
+
+            tbshowNajvisjaTerr.Value = p.TempErr;
 
         }
 
@@ -248,6 +255,26 @@ namespace WindowsFormsApp2
         }
 
         private void textboxShow1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox7_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textboxShow4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void temperatureSelector_0_3001_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb1sen1_TextChanged(object sender, EventArgs e)
         {
 
         }

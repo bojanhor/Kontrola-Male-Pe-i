@@ -16,11 +16,11 @@ namespace WindowsFormsApp2
         Thread updaterThread;
 
         bool WriteMode = false;
-        
+
         RadioButton btn1;
         RadioButton btn2;
-        RadioButton btn3;      
-                
+        RadioButton btn3;
+
         public string Text_Auto
         {
             get { return btn1.Text; }
@@ -100,7 +100,7 @@ namespace WindowsFormsApp2
             {
                 RegisterEvents();
                 ReadFromPlc();
-            }           
+            }
         }
 
         void ReadFromPlc()
@@ -113,7 +113,7 @@ namespace WindowsFormsApp2
         {
             btn1.Checked = false;
             btn2.Checked = false;
-            btn3.Checked = false;            
+            btn3.Checked = false;
         }
 
         bool WordToBool(short? val)
@@ -158,7 +158,7 @@ namespace WindowsFormsApp2
                 else
                 {
                     WriteMode = false;
-                }                
+                }
 
             });
 
@@ -227,8 +227,8 @@ namespace WindowsFormsApp2
             btn1.CheckedChanged += Btn1_CheckedChanged;
             btn2.CheckedChanged += Btn2_CheckedChanged;
             btn3.CheckedChanged += Btn3_CheckedChanged;
-        }               
-       
+        }
+
         private void Btn3_CheckedChanged(object sender, EventArgs e)
         {
             WriteMode = true;
@@ -248,3 +248,5 @@ namespace WindowsFormsApp2
         }
     }
 }
+
+    
