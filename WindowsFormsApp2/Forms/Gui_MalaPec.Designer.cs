@@ -480,6 +480,7 @@ namespace WindowsFormsApp2
             this.textboxShow1.Size = new System.Drawing.Size(100, 20);
             this.textboxShow1.TabIndex = 23;
             this.textboxShow1.Value = null;
+            this.textboxShow1.TextChanged += new System.EventHandler(this.textboxShow1_TextChanged);
             // 
             // label13
             // 

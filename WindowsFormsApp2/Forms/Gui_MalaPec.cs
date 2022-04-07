@@ -233,5 +233,10 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void textboxShow1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
