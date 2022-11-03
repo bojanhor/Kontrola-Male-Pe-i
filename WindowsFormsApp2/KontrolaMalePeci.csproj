@@ -78,6 +78,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SmartComponents\MainTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SmartComponents\Stopwatch.cs" />
     <Compile Include="TextboxShow.cs">
       <SubType>Component</SubType>
     </Compile>

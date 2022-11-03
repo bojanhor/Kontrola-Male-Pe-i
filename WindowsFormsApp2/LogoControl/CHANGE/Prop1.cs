@@ -40,7 +40,7 @@ namespace WindowsFormsApp2
 
         public PlcVars.Bit Sel_T_Err, Dif_T_Err;        
 
-        public PlcVars.Bit Heat1, Heat2;
+        public PlcVars.Bit Heat1, Heat2, Heat3, Heat4;
 
         public PlcVars.Word TempReg, TempDif, TempErr;
 
@@ -51,7 +51,7 @@ namespace WindowsFormsApp2
 
 
         //Alarm Bits
-        public PlcVars.AlarmBit DiffVntErr, MaxTempReached, VentDemand, MussLauf, VrataOdprta, CoolOff;
+        public PlcVars.AlarmBit DiffVntErr, MaxTempReached, VentDemand, MussLauf, VrataOdprta, CoolOff, VentActive;
         public PlcVars.AlarmBit VarnostniTermostatOk, FreqOk, EMG_OK, EMG_Aux_OK, Sw102PositionOK; // inverted
 
 
@@ -101,6 +101,8 @@ namespace WindowsFormsApp2
             
             Heat1 = new PlcVars.Bit(this, new PlcVars.BitAddress(130,0), false);
             Heat2 = new PlcVars.Bit(this, new PlcVars.BitAddress(132,0), false);
+            Heat3 = new PlcVars.Bit(this, new PlcVars.BitAddress(134, 0), false);
+            Heat4 = new PlcVars.Bit(this, new PlcVars.BitAddress(136, 0), false);
 
             TempReg = new PlcVars.Word(this, new PlcVars.WordAddress(140), false);
             TempDif = new PlcVars.Word(this, new PlcVars.WordAddress(142), false);
@@ -112,10 +114,10 @@ namespace WindowsFormsApp2
             DiffVntErr = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(120, 0), "Napaka Nastavitev diference ventilacije - Max mora biiti večji od Min.", false, true);
             MaxTempReached = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(121, 0), "Presežena je najvišja dovoljena temperatura.", false, true);
 
-            VarnostniTermostatOk = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(160, 0), "[Zagon je preprečen] NAPAKA - Varnostni termostat", true, true);
-            FreqOk = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(161, 0), "[Zagon je preprečen] NAPAKA - Frekvenčnik", true, true);
-            EMG_OK = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(162, 0), "[Zagon je preprečen] NAPAKA - Varnostni mehanizem 1", true, true);
-            EMG_Aux_OK = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(163, 0), "[Zagon je preprečen] - Varnostni mehanizem 2", true, true);
+            VarnostniTermostatOk = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(160, 0), "[Zagon je preprečen] NAPAKA - Varnostni termostat", false, true);
+            FreqOk = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(161, 0), "[Zagon je preprečen] NAPAKA - Frekvenčnik", false, true);
+            EMG_OK = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(162, 0), "[Zagon je preprečen] NAPAKA - Varnostni mehanizem 1 - goba", false, true);
+            EMG_Aux_OK = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(163, 0), "[Zagon je preprečen] - Varnostni mehanizem 2 - goba", false, true);
             Sw102PositionOK = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(164, 0), "[Zagon je preprečen] - Stikalo za prisilno delovanje ventilacije ni v ustrezni poziciji", true, true);
 
             VentDemand = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(167, 0), "[ROČNI NAČIN - PRISILNO DELOVANJE]", false, true);
@@ -123,6 +125,7 @@ namespace WindowsFormsApp2
 
             VrataOdprta = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(170, 0), "Vrata so odprta", false, true);
             CoolOff = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(171, 0), "Ohlajanje v teku", false, true);
+            VentActive = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(172, 0), "Ventilacija aktivna", false, true);
 
             TempSenZg = new PlcVars.Word(this, new PlcVars.WordAddress(210), false);
             TempSenSr1 = new PlcVars.Word(this, new PlcVars.WordAddress(212), false);

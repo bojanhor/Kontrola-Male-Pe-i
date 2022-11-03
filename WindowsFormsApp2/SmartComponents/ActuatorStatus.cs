@@ -96,4 +96,91 @@ namespace WindowsFormsApp2
 
 
     }
+
+    class ActuatorStatusBlueOrange : Control
+    {
+
+        Color OkColor = Color.Blue;
+        Color ErrColor = Color.OrangeRed;
+        Color ExceptionColor = Color.Red;
+
+        Label l = new Label();
+        TextBox t = new TextBox();
+        Thread UpdateThread;
+
+        public PlcVars.Bit Value_PlcBit { get; set; }
+
+        public override string Text
+        {
+            get { return l.Text; }
+            set { l.Text = value; }
+        }
+
+
+        public ActuatorStatusBlueOrange()
+        {
+            Width = 150;
+            Height = 25;
+
+            l.Width = 120;
+            l.Top = 4;
+            Controls.Add(l);
+
+            t.Width = 20;
+            t.Height = 20;
+            t.Left = l.Width + 10;
+            t.BackColor = ExceptionColor;
+            Controls.Add(t);
+
+            bool designMode = (LicenseManager.UsageMode == LicenseUsageMode.Designtime);
+
+            if (!designMode)
+            {
+                UpdateThread = new Thread(update);
+                UpdateThread.Start();
+            }
+
+        }
+
+        void update()
+        {
+            var ex = new MethodInvoker(delegate { t.BackColor = ExceptionColor; ; });
+            var gn = new MethodInvoker(delegate { t.BackColor = OkColor; ; });
+            var rd = new MethodInvoker(delegate { t.BackColor = ErrColor; ; });
+
+            while (Parent == null)
+            {
+                Thread.Sleep(100);
+            }
+            Thread.Sleep(1000);
+            while (true)
+            {
+
+                try
+                {
+                    if (Value_PlcBit == null || Value_PlcBit.Value == null)
+                    {
+                        Parent.Invoke(ex);
+                    }
+                    else if ((bool)Value_PlcBit.Value)
+                    {
+                        Parent.Invoke(rd);
+                    }
+                    else
+                    {
+                        Parent.Invoke(gn);
+                    }
+                }
+                catch
+                {
+                    Parent.Invoke(ex);
+                }
+
+                Thread.Sleep(Settings.UpdateValuesPCms);
+            }
+
+        }
+
+
+    }
 }

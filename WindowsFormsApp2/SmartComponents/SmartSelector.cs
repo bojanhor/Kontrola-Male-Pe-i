@@ -39,9 +39,9 @@ namespace WindowsFormsApp2
 
     class TemperatureDifference_5_30 : SelectorBaseClass
     {
-        static int from = 5;
-        static int to = 30;
-        static int step = 5;
+        static int from = 2;
+        static int to = 15;
+        static int step = 2;
         static string postFix = "°C";
 
 
@@ -52,7 +52,7 @@ namespace WindowsFormsApp2
     }
     class TemperatureSelector_0_250 : SelectorBaseClass
     {
-        static int from =  40;
+        static int from =  30;
         static int to = 250;
         static int step = 10;
         static string postFix = "°C";
@@ -66,7 +66,7 @@ namespace WindowsFormsApp2
 
     class TemperatureSelector_0_350 : SelectorBaseClass
     {
-        static int from = 150;
+        static int from = 100;
         static int to = 350;
         static int step = 10;
         static string postFix = "°C";
@@ -78,15 +78,29 @@ namespace WindowsFormsApp2
         }
     }
 
-    class RpmSelector_30_100 : SelectorBaseClass
+    class RpmSelector_50_100 : SelectorBaseClass
     {
-        static int from = 30;
+        static int from = 50;
         static int to = 100;
         static int step = 5;
         static string postFix = "%";
 
 
-        public RpmSelector_30_100() : base(from, to, step, postFix)
+        public RpmSelector_50_100() : base(from, to, step, postFix)
+        {
+
+        }
+    }
+
+    class RpmSelector_80_100 : SelectorBaseClass
+    {
+        static int from = 80;
+        static int to = 100;
+        static int step = 5;
+        static string postFix = "%";
+
+
+        public RpmSelector_80_100() : base(from, to, step, postFix)
         {
 
         }

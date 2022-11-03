@@ -16,6 +16,8 @@ namespace WindowsFormsApp2
     {
         Prop1 p = Val.logocontroler.Prop1;
         Thread DisableGuiOnConnectionLossThread;
+        StopWatch stpw;
+
         public Gui_MalaPec()
         {            
             InitializeComponent();
@@ -30,8 +32,10 @@ namespace WindowsFormsApp2
             Temperatures_Rpm_DataFeed();
             TempSelectorDataFeed();
             connectedButton1.ID = 1;
-            DisableGuiOnConnectionLossThread = new Thread(DisableGuiOnConnectionLoss);
-           
+            DisableGuiOnConnectionLossThread = new Thread(DisableGuiOnConnectionLoss);            
+
+            stpw = new StopWatch(this, btnStart,btnStop,lblTime,lblTimeSet, btnUp,btnDown);
+
         }
 
         void enableGui(bool _enable)
@@ -120,6 +124,8 @@ namespace WindowsFormsApp2
             histHeat2_101.Value = p.HistHeat;
             actuatorStatus1.Value_PlcBit = p.Heat1;
             actuatorStatus2.Value_PlcBit = p.Heat2;
+            actuatorStatus3.Value_PlcBit = p.Heat3;
+            actuatorStatus4.Value_PlcBit = p.Heat4;
             textboxShow1.Value = p.TempReg;
             textboxShow2.Value = p.VentRpmCurrent;
             textboxShow3.Value = p.TempDif;
@@ -275,6 +281,11 @@ namespace WindowsFormsApp2
         }
 
         private void tb1sen1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rpmSelector_30_1001_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
