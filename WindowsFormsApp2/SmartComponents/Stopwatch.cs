@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
+using System.Threading;
 
 namespace WindowsFormsApp2
 {
@@ -12,15 +14,23 @@ namespace WindowsFormsApp2
         Button btnStart;
         Button btnStop;
         Label time;
-        Label timeSet;
+        Label timeSet;        
         TimeSpan ts_timeSet;
         TimeSpan ts_time;
         Button btnTimesetUp;
         Button btnTimesetDn;
         Form form;
         MethodInvoker m;
-        Timer MouseDownTimer = new Timer();
+        System.Windows.Forms.Timer MouseDownTimer = new System.Windows.Forms.Timer();
         MainTimer mainTimer = new MainTimer();
+        MainTimer WaiterTimer = new MainTimer();
+        int WaiterTimerInterval;
+
+        Color ColorPaused = Color.LightYellow;
+        Color ColorRunning = Color.Red;
+        Color ColorStopped = Color.LightGreen;
+        Color ColorOriginal;
+       
 
         public StopWatch(Form form, Button btnStart, Button btnStop, Label time, Label timeSet, Button btnTimesetUp, Button btnTimesetDn)
         {
@@ -28,30 +38,58 @@ namespace WindowsFormsApp2
             this.btnStart = btnStart;
             this.btnStop = btnStop;
             this.time = time;
-            this.timeSet = timeSet;
+            this.timeSet = timeSet;        
+             
             this.btnTimesetUp = btnTimesetUp;
             this.btnTimesetDn = btnTimesetDn;
 
             btnStart.Click += BtnStart_Click;
-            btnStop.Click += BtnStop_Click;    
-            
-            btnTimesetUp.MouseDown += BtnTimesetUp_MouseDown;
-            btnTimesetUp.MouseUp += BtnTimesetUp_MouseUp;
-
-            btnTimesetDn.MouseDown += BtnTimesetDn_MouseDown;
-            btnTimesetDn.MouseUp += BtnTimesetDn_MouseUp;
+            btnStop.Click += BtnStop_Click;
 
             mainTimer.Tick += MainTimer_Tick;
+            WaiterTimer.Tick += WaiterTimer_Tick;            
+            WaiterTimerInterval = 1000;
 
+            stopwatchEventReg();
             loadPreviousTime();
 
             m = new MethodInvoker(updateForm_invoker);
+            ColorOriginal = time.BackColor;            
 
+        }
+
+        void stopwatchEventReg()
+        {
+            btnTimesetUp.MouseDown += BtnTimesetUp_MouseDown;
+            btnTimesetUp.MouseUp += BtnTimesetUp_MouseUp;
+            btnTimesetUp.LostFocus += BtnTimesetUp_LostFocus;
+
+            btnTimesetDn.MouseDown += BtnTimesetDn_MouseDown;
+            btnTimesetDn.MouseUp += BtnTimesetDn_MouseUp;
+            btnTimesetDn.LostFocus += BtnTimesetDn_LostFocus;
+
+
+        }
+
+        private void BtnTimesetDn_LostFocus(object sender, EventArgs e)
+        {
+            if (MouseDownTimer.Enabled)
+            {
+                unnholdBtn();
+            }
+        }
+
+        private void BtnTimesetUp_LostFocus(object sender, EventArgs e)
+        {
+            if (MouseDownTimer.Enabled)
+            {
+                unnholdBtn();
+            }
         }
 
         void updateForm_invoker()
         {
-            timeSet.Text = TimeToString(ts_timeSet);
+            timeSet.Text = TimeToString(ts_timeSet);            
             time.Text = TimeToString(ts_time);
         }
 
@@ -60,14 +98,43 @@ namespace WindowsFormsApp2
             ts_time = ts_time.Add(TimeSpan.FromSeconds(1));                      
             updateForm();
 
+            
+
+            
+
+            // time has elapsed
             if (ts_time >= ts_timeSet)
             {
+                // if heating enabled disable it
+                var prop = Val.logocontroler.Prop1;               
+                prop.ForceEnableHeat.Value = 0;
+                prop.ForceDisableHeat.Value = 1;                
+
+                // stop stopwatch
                 mainTimer.Stop();
-                MessageBox.Show("Čas je potekel.");
+                time.BackColor = ColorStopped;
+
+                // buzz
+                prop.BuzzFromPC.SendPulse();
             }
+            else
+            {
+                time.BackColor = ColorRunning;
+            }
+
         }
 
         private void BtnTimesetDn_MouseUp(object sender, MouseEventArgs e)
+        {
+            unnholdBtn();
+        }
+
+        private void BtnTimesetUp_MouseUp(object sender, MouseEventArgs e)
+        {
+            unnholdBtn();
+        }
+
+        void unnholdBtn()
         {
             MouseDownTimer.Stop();
             MouseDownTimer.Dispose();
@@ -84,26 +151,19 @@ namespace WindowsFormsApp2
             }
             ts_timeSet = ts_timeSet.Add(new TimeSpan(0, -1, 0));
             
-            MouseDownTimer = new Timer();
+            MouseDownTimer = new System.Windows.Forms.Timer();
             MouseDownTimer.Interval = 200;
             holddur = 0;
             MouseDownTimer.Start();
             MouseDownTimer.Tick += MouseDownTimer_dn_Tick;
-        }
-
-        private void BtnTimesetUp_MouseUp(object sender, MouseEventArgs e)
-        {
-            MouseDownTimer.Stop();
-            MouseDownTimer.Dispose();
-            updateForm();
-        }
+        }        
 
         int holddur = 0;
         private void BtnTimesetUp_MouseDown(object sender, MouseEventArgs e)
         {
             ts_timeSet = ts_timeSet.Add(new TimeSpan(0, 1, 0));
             updateForm();
-            MouseDownTimer = new Timer();
+            MouseDownTimer = new System.Windows.Forms.Timer();
             MouseDownTimer.Interval = 200;
             holddur = 0;
             MouseDownTimer.Start();
@@ -177,23 +237,67 @@ namespace WindowsFormsApp2
 
         private void BtnStop_Click(object sender, EventArgs e)
         {
+            WaiterTimer.Stop();
             if (mainTimer.Started)
             {
+                time.BackColor = ColorStopped;
                 mainTimer.Stop();
+                btnStop.Text = "Reset";
             }
             else
             {
                 ts_time = TimeSpan.FromSeconds(0);
+                btnStop.Text = "Stop";
+                time.BackColor = ColorOriginal;
             }
+          
+
+            // if heating enabled disable it
+            var prop = Val.logocontroler.Prop1;            
+            prop.ForceEnableHeat.Value = 0;
+            prop.ForceDisableHeat.Value = 1;
+                        
+            //
             updateForm();
         }
-        
+
         private void BtnStart_Click(object sender, EventArgs e)
         {
-            mainTimer.Start();
+            WaiterTimer.Start();
+            var prop = Val.logocontroler.Prop1;
+            prop.ForceEnableHeat.Value = 1;
+            prop.ForceDisableHeat.Value = 0;
+
         }
 
-        
+        private void WaiterTimer_Tick(object sender, EventArgs e)
+        {
+            // if heating disabled enable it
+            WaiterTimer.Interval = WaiterTimerInterval = 1000;
+
+            // if temperature reached
+            var val = Val.logocontroler.Prop1.TempDosezena;
+            if (val.Value_bool)
+            {
+                mainTimer.Start();                
+
+                //
+                time.BackColor = ColorRunning;
+                WaiterTimer.Stop();
+            }
+            else
+            {
+                if (time.BackColor == ColorPaused)
+                {
+                    time.BackColor = ColorOriginal;
+                }
+                else
+                {
+                    time.BackColor = ColorPaused;
+                }
+                
+            }
+        }
 
         void loadPreviousTime()
         {
@@ -206,8 +310,8 @@ namespace WindowsFormsApp2
                 ts_timeSet = new TimeSpan(0, 0, 0);
             }
 
-            timeSet.Text = TimeToString(ts_timeSet);
-            
+            timeSet.Text = TimeToString(ts_timeSet);         
+
         }
 
         TimeSpan stringToTime(string val)

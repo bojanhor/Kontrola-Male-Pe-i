@@ -24,7 +24,7 @@ namespace WindowsFormsApp2
 
         public PlcVars.Word HistHeat;
 
-        public PlcVars.AlarmBit SenFail1, SenFail2, SenFail3, SenFail4, SenFail5;
+        public PlcVars.AlarmBit SenFail1, SenFail2, SenFail3, SenFail4, SenFail5, SenFail6;
 
         public PlcVars.Word SelT_Reg, SelT_Dif;
 
@@ -46,12 +46,14 @@ namespace WindowsFormsApp2
 
         public PlcVars.Word VentRpmCurrent;
 
-        public PlcVars.Word TempSenZg, TempSenSr1, TempSenSr2, TempSenSp, TempSenKn;
+        public PlcVars.Word TempSenZg, TempSenSr1, TempSenSr2, TempSenSp, TempSenKn, TempSenKos;
+
+        public PlcVars.Bit BuzzFromPC;
 
 
 
         //Alarm Bits
-        public PlcVars.AlarmBit DiffVntErr, MaxTempReached, VentDemand, MussLauf, VrataOdprta, CoolOff, VentActive;
+        public PlcVars.AlarmBit DiffVntErr, MaxTempReached, VentDemand, MussLauf, VrataOdprta, CoolOff, VentActive, TempDosezena;
         public PlcVars.AlarmBit VarnostniTermostatOk, FreqOk, EMG_OK, EMG_Aux_OK, Sw102PositionOK; // inverted
 
 
@@ -79,6 +81,7 @@ namespace WindowsFormsApp2
             SenFail3 = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(12, 0), "Napaka temperaturnega tipala Sr2", false, true);
             SenFail4 = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(13, 0), "Napaka temperaturnega tipala Sp", false, true);
             SenFail5 = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(14, 0), "Napaka temperaturnega tipala Kanal", false, true);
+            SenFail6 = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(16, 0), "Napaka temperaturnega tipala Kosa", false, true);
 
             SelT_Reg = new PlcVars.Word(this, new PlcVars.WordAddress(20), true);
             SelT_Dif = new PlcVars.Word(this, new PlcVars.WordAddress(22), true);
@@ -127,11 +130,15 @@ namespace WindowsFormsApp2
             CoolOff = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(171, 0), "Ohlajanje v teku", false, true);
             VentActive = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(172, 0), "Ventilacija aktivna", false, true);
 
+            TempDosezena = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(180, 0), "Tempreatura je dosežena", false, true);
+            BuzzFromPC = new PlcVars.Bit(this, new PlcVars.BitAddress(190, 0), true);
+
             TempSenZg = new PlcVars.Word(this, new PlcVars.WordAddress(210), false);
             TempSenSr1 = new PlcVars.Word(this, new PlcVars.WordAddress(212), false);
             TempSenSr2 = new PlcVars.Word(this, new PlcVars.WordAddress(214), false);
             TempSenSp= new PlcVars.Word(this, new PlcVars.WordAddress(216), false);
             TempSenKn = new PlcVars.Word(this, new PlcVars.WordAddress(218), false);
+            TempSenKos = new PlcVars.Word(this, new PlcVars.WordAddress(220), false);
 
         }
 

@@ -19,7 +19,7 @@
 		<show>true</show>							// indicates if tabpage is shown on GUI
 		<enabled>true</enabled>						// indicates if device is enabled - (gui, communication ...)
 		<showname>LOGO1</showname>					// Showname
-		<serverIP>192.168.0.201</serverIP>		// format must be ###.###.###.### (192.168.0.1) IP of PLC
+		<serverIP>10.199.197.41</serverIP>		// format must be ###.###.###.### (192.168.0.1) IP of PLC
 		<localTSAP>"02.00"</localTSAP>				// format must be ##.## (00.03) TSAP is used for comunication between PLCs 
 		<remoteTSAP>"20.00"</remoteTSAP>			// format must be ##.## (00.03) TSAP is used for comunication between PLCs
 		<watchdogEN>true</watchdogEN>				// value must be "true" or "false" .. enable or disable watchdog - watchdog is used for detecting comunication problems	
@@ -31,7 +31,7 @@
 		<show>false</show>//
 		<enabled>false</enabled>//
 		<showname>LOGO2</showname>//
-		<serverIP>192.168.10.202</serverIP>//
+		<serverIP>10.199.197.42</serverIP>//
 		<localTSAP>"03.00"</localTSAP>//
 		<remoteTSAP>"02.00"</remoteTSAP>//
 		<watchdogEN>true</watchdogEN>//

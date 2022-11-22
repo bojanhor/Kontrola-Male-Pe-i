@@ -21,7 +21,9 @@ namespace WindowsFormsApp2
         RadioButton btn1;
         RadioButton btn2;
         RadioButton btn3;
-        RadioButton btn4;        
+        RadioButton btn4;
+        RadioButton btn5;
+        RadioButton btn6;
 
         Color ErrColor = Color.Red;
         Color NormalColor;
@@ -50,7 +52,19 @@ namespace WindowsFormsApp2
             set { btn4.Text = value; }
         }
 
-        
+        public string SensorName5
+        {
+            get { return btn5.Text; }
+            set { btn5.Text = value; }
+        }
+
+        public string SensorName6
+        {
+            get { return btn6.Text; }
+            set { btn6.Text = value; }
+        }
+
+
         private PlcVars.Word value_;
 
         public PlcVars.Word Value
@@ -86,7 +100,14 @@ namespace WindowsFormsApp2
                 ReadFromPlc();
             }
 
-            NormalColor = btn1.BackColor;
+            disableUnused();
+
+            NormalColor = btn1.BackColor; // pull normal color info
+        }
+
+        void disableUnused()
+        {
+            btn2.Enabled = false; btn3.Enabled = false;
         }
 
         void ReadFromPlc()
@@ -100,7 +121,9 @@ namespace WindowsFormsApp2
             btn1.Checked = false;
             btn2.Checked = false;
             btn3.Checked = false;
-            btn4.Checked = false;            
+            btn4.Checked = false;
+            btn5.Checked = false;
+            btn6.Checked = false;
         }
 
         void SelectedSensorErrorMark()
@@ -109,12 +132,18 @@ namespace WindowsFormsApp2
             {
                 if (Value_SelectedSensorError.Value_bool)
                 {
+                    btn1.BackColor = NormalColor; btn2.BackColor = NormalColor; 
+                    btn3.BackColor = NormalColor; btn4.BackColor = NormalColor; 
+                    btn5.BackColor = NormalColor; btn6.BackColor = NormalColor;
+
                     switch (Value.Value_short)
                     {
-                        case 1: btn1.BackColor = ErrColor; btn2.BackColor = NormalColor; btn3.BackColor = NormalColor; btn4.BackColor = NormalColor; break;
-                        case 2: btn2.BackColor = ErrColor; btn1.BackColor = NormalColor; btn3.BackColor = NormalColor; btn4.BackColor = NormalColor; break;
-                        case 3: btn3.BackColor = ErrColor; btn1.BackColor = NormalColor; btn2.BackColor = NormalColor; btn4.BackColor = NormalColor; break;
-                        case 4: btn4.BackColor = ErrColor; btn1.BackColor = NormalColor; btn2.BackColor = NormalColor; btn3.BackColor = NormalColor; break;
+                        case 1: btn1.BackColor = ErrColor; break;
+                        case 2: btn2.BackColor = ErrColor; break;
+                        case 3: btn3.BackColor = ErrColor; break;
+                        case 4: btn4.BackColor = ErrColor; break;
+                        case 5: btn5.BackColor = ErrColor; break;
+                        case 6: btn6.BackColor = ErrColor; break;
                         default:
                             break;
                     }
@@ -125,7 +154,8 @@ namespace WindowsFormsApp2
                     btn2.BackColor = NormalColor;
                     btn3.BackColor = NormalColor;
                     btn4.BackColor = NormalColor;
-
+                    btn5.BackColor = NormalColor;
+                    btn6.BackColor = NormalColor;
                 }
             }
         }
@@ -142,7 +172,9 @@ namespace WindowsFormsApp2
                             case 1: UncheckAll(); btn1.Checked = true; break;
                             case 2: UncheckAll(); btn2.Checked = true; break;
                             case 3: UncheckAll(); btn3.Checked = true; break;
-                            case 4: UncheckAll(); btn4.Checked = true; break;                            
+                            case 4: UncheckAll(); btn4.Checked = true; break;
+                            case 5: UncheckAll(); btn5.Checked = true; break;
+                            case 6: UncheckAll(); btn6.Checked = true; break;
                             default:
                                 UncheckAll();
                                 break;
@@ -185,7 +217,9 @@ namespace WindowsFormsApp2
             SensorName1 = "Sensor1";
             SensorName2 = "Sensor2";
             SensorName3 = "Sensor3";
-            SensorName4 = "Sensor4";            
+            SensorName4 = "Sensor4";
+            SensorName5 = "Kanal";
+            SensorName6 = "Kos";
         }
 
         void CreateControls()
@@ -193,8 +227,9 @@ namespace WindowsFormsApp2
             btn1 = new RadioButton();
             btn2 = new RadioButton();
             btn3 = new RadioButton();
-            btn4 = new RadioButton();           
-            
+            btn4 = new RadioButton();
+            btn5 = new RadioButton();
+            btn6 = new RadioButton();
         }
                 
         void positionControls()
@@ -212,7 +247,9 @@ namespace WindowsFormsApp2
             btn2.Left = left; btn2.Top = top; top += spacing;
             btn3.Left = left; btn3.Top = top; top += spacing;
             btn4.Left = left; btn4.Top = top; top += spacing;
-            
+            btn5.Left = left; btn5.Top = top; top += spacing;
+            btn6.Left = left; btn6.Top = top; top += spacing;
+
         }
 
         void AddBtns()
@@ -221,7 +258,9 @@ namespace WindowsFormsApp2
             Controls.Add(btn2);
             Controls.Add(btn3);
             Controls.Add(btn4);
-           
+            Controls.Add(btn5);
+            Controls.Add(btn6);
+
         }
 
         void RegisterEvents()
@@ -229,7 +268,15 @@ namespace WindowsFormsApp2
             btn1.CheckedChanged += Btn1_CheckedChanged;
             btn2.CheckedChanged += Btn2_CheckedChanged;
             btn3.CheckedChanged += Btn3_CheckedChanged;
-            btn4.CheckedChanged += Btn4_CheckedChanged;           
+            btn4.CheckedChanged += Btn4_CheckedChanged;
+            btn5.CheckedChanged += Btn5_CheckedChanged;
+            btn6.CheckedChanged += Btn6_CheckedChanged;
+        }
+
+        private void Btn6_CheckedChanged(object sender, EventArgs e)
+        {
+            WriteMode = true;
+            Value.Value = 6;
         }
 
         private void Btn5_CheckedChanged(object sender, EventArgs e)
@@ -237,6 +284,7 @@ namespace WindowsFormsApp2
             WriteMode = true;
             Value.Value = 5;
         }
+
 
         private void Btn4_CheckedChanged(object sender, EventArgs e)
         {

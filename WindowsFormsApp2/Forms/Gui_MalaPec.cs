@@ -135,11 +135,15 @@ namespace WindowsFormsApp2
             tb1sen2.Value = p.TempSenSr1; tb1sen2.Prefix = "["; tb1sen2.Postfix = "°C]";
             tb1sen3.Value = p.TempSenSr2; tb1sen3.Prefix = "["; tb1sen3.Postfix = "°C]";
             tb1sen4.Value = p.TempSenSp; tb1sen4.Prefix = "["; tb1sen4.Postfix = "°C]";
+            tb1sen5.Value = p.TempSenKn; tb1sen5.Prefix = "["; tb1sen5.Postfix = "°C]";
+            tb1sen6.Value = p.TempSenKos; tb1sen6.Prefix = "["; tb1sen6.Postfix = "°C]";
 
             tb2Sen1.Value = p.TempSenZg; tb2Sen1.Prefix = "["; tb2Sen1.Postfix = "°C]";
             tb2Sen2.Value = p.TempSenSr1; tb2Sen2.Prefix = "["; tb2Sen2.Postfix = "°C]";
             tb2Sen3.Value = p.TempSenSr2; tb2Sen3.Prefix = "["; tb2Sen3.Postfix = "°C]";
             tb2Sen4.Value = p.TempSenSp; tb2Sen4.Prefix = "["; tb2Sen4.Postfix = "°C]";
+            tb2sen5.Value = p.TempSenKn; tb2sen5.Prefix = "["; tb2sen5.Postfix = "°C]";
+            tb2sen6.Value = p.TempSenKos; tb2sen6.Prefix = "["; tb2sen6.Postfix = "°C]";
 
             tbtempkanal.Value = p.TempSenKn;
 
@@ -159,6 +163,7 @@ namespace WindowsFormsApp2
             sensorStatus3.Value_PlcBit = p.SenFail3;
             sensorStatus4.Value_PlcBit = p.SenFail4;
             sensorStatus5.Value_PlcBit = p.SenFail5;
+            sensorStatus6.Value_PlcBit = p.SenFail6;
         }
 
         void UrnikDataFeed()
@@ -286,6 +291,26 @@ namespace WindowsFormsApp2
         }
 
         private void rpmSelector_30_1001_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb1sen4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textboxShow3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTimeSet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
         {
 
         }
