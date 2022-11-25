@@ -61,7 +61,7 @@ namespace WindowsFormsApp2
             var gn = new MethodInvoker(delegate { t.BackColor = OkColor; ; });
             var rd = new MethodInvoker(delegate { t.BackColor = ErrColor; ; });
 
-            while (Parent == null)
+            while (Parent == null || !Parent.IsHandleCreated)
             {
                 Thread.Sleep(100);
             }
@@ -148,7 +148,7 @@ namespace WindowsFormsApp2
             var gn = new MethodInvoker(delegate { t.BackColor = OkColor; ; });
             var rd = new MethodInvoker(delegate { t.BackColor = ErrColor; ; });
 
-            while (Parent == null)
+            while (Parent == null || !Parent.IsHandleCreated)
             {
                 Thread.Sleep(100);
             }

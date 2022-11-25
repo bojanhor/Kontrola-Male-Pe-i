@@ -595,9 +595,5 @@
 			<ID>1234</ID> 						//
 		  </User30>//
 		  //
-		  </USERS>//
-		  <STATS>//
-			<kwhTotal>846,1</kwhTotal>				// Skupna poraba v kWh
-			<hTotal>20</hTotal>						// Skupen čas delovanja (ko je GUI aktiven in je poraba več kot 0W)			
-		  </STATS>//
+		  </USERS>//		  
 	</root>

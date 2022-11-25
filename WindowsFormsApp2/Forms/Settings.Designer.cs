@@ -1846,6 +1846,7 @@
             // 
             // textBoxPathTemperatureLog
             // 
+            this.textBoxPathTemperatureLog.Enabled = false;
             this.textBoxPathTemperatureLog.Location = new System.Drawing.Point(6, 32);
             this.textBoxPathTemperatureLog.Name = "textBoxPathTemperatureLog";
             this.textBoxPathTemperatureLog.Size = new System.Drawing.Size(538, 20);
@@ -1883,6 +1884,7 @@
             // 
             // textBoxPathUALOG
             // 
+            this.textBoxPathUALOG.Enabled = false;
             this.textBoxPathUALOG.Location = new System.Drawing.Point(6, 32);
             this.textBoxPathUALOG.Name = "textBoxPathUALOG";
             this.textBoxPathUALOG.Size = new System.Drawing.Size(538, 20);
@@ -1987,6 +1989,7 @@
             // 
             // textBoxPathLOG
             // 
+            this.textBoxPathLOG.Enabled = false;
             this.textBoxPathLOG.Location = new System.Drawing.Point(6, 32);
             this.textBoxPathLOG.Name = "textBoxPathLOG";
             this.textBoxPathLOG.Size = new System.Drawing.Size(538, 20);
@@ -2068,7 +2071,7 @@
             this.textBoxPathXML.Location = new System.Drawing.Point(6, 32);
             this.textBoxPathXML.Name = "textBoxPathXML";
             this.textBoxPathXML.Size = new System.Drawing.Size(538, 20);
-            this.textBoxPathXML.TabIndex = 5;           
+            this.textBoxPathXML.TabIndex = 5;
             // 
             // groupBox2
             // 

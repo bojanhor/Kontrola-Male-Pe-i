@@ -724,7 +724,7 @@ namespace WindowsFormsApp2
             }
             public void ReportError_throwException(string Message, bool? forceSet_FlagToReport, bool? forceRead_FlagToReport)
             {
-                // TODO REPORT throw exception
+                throw new Exception(Message);
             }
         }
 

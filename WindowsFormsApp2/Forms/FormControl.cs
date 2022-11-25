@@ -101,14 +101,14 @@ namespace WindowsFormsApp2
 
             // Temperature Log CsvFile load
 
-            var TemperatureLogFilePath = Val.BaseDirectoryPath + "\\Log\\Temperatures.csv";
-            if (File.Exists(TemperatureLogFilePath))
+            var TemperatureLogFilePath = Val.BaseDirectoryPath + "\\Log";
+            if (Directory.Exists(TemperatureLogFilePath))
             {
                 Val.PathTemperatures = TemperatureLogFilePath;
             }
             else
             {
-                throw new Exception("Temperatures file is missing in directory \"Log\". " + "Put file named \"Temperatures.csv\" in that folder to overcome this error.");
+                throw new Exception("Log directory is missing.");
             }
 
             

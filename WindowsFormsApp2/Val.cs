@@ -23,10 +23,7 @@ namespace WindowsFormsApp2
         
         
         public static void InitialiseClass()
-        {
-            // TODO solve this
-            //SysLog.Message = new SysLog.MessageManager();
-
+        {           
             XmlController.XmlControllerInitialize();  
             logocontroler = new LogoControler();                // in new thread
             PCWD = new PC_WD();                                 // in new thread

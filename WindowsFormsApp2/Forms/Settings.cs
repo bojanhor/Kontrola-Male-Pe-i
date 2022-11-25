@@ -875,7 +875,7 @@ namespace WindowsFormsApp2
 
 
             // Checking if path exists XML
-            if (File.Exists(Settings.pathToConfigFile))  // TODO fix
+            if (File.Exists(Settings.pathToConfigFile))  
             {
                 UpdateFieldsXML();
             }

@@ -90,8 +90,12 @@ namespace WindowsFormsApp2
 
             DataFeederChk();
             MethodInvoker m = new MethodInvoker(UpdateValues);
+            while (FormControl.Gui == null)
+            {
+                Thread.Sleep(100);
+            }
             while (true)
-            {               
+            {                
                 FormControl.Gui.Invoke(m);                
                 Thread.Sleep(Settings.UpdateValuesPCms);
             }
@@ -237,7 +241,7 @@ namespace WindowsFormsApp2
                 
             });
 
-            if (Parent != null)
+            if (Parent != null && Parent.IsHandleCreated)
             {
                 Parent.Invoke(m);
             }            
