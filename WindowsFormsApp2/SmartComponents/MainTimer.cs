@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Timers;
+
 namespace WindowsFormsApp2
 {
 
-    class MainTimer:Timer
+    class MainTimer: System.Timers.Timer
     {        
         public bool Started { get; private set; }
         public MainTimer()
@@ -24,7 +26,7 @@ namespace WindowsFormsApp2
         public new virtual void Stop()
         {
             Started = false;
-            base.Stop();
+            base.Stop(); 
         }
     }
 }

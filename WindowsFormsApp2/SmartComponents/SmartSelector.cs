@@ -47,7 +47,8 @@ namespace WindowsFormsApp2
 
         public TemperatureDifference_5_30() : base(from, to, step, postFix)
         {
-
+            base.ManualAddToDatasource("999°C");
+            base.ManualAddToDatasource("998°C");
         }
     }
     class TemperatureSelector_0_250 : SelectorBaseClass
@@ -136,6 +137,12 @@ namespace WindowsFormsApp2
             }
         }
 
+        public void ManualAddToDatasource(string item)
+        {
+            datasource.Add(item);
+            populateCB();
+        }
+
         private void TemperatureSelectorBaseClass_DropDown(object sender, EventArgs e)
         {
             WriteMode = true;
@@ -173,7 +180,8 @@ namespace WindowsFormsApp2
         }
 
         void populateCB()
-        {
+        {            
+
             for (int i = 0; i < datasource.Count; i++)
             {
                 if (!Items.Contains(datasource[i]))

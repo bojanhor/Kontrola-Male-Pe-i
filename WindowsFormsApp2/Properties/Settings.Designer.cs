@@ -46,5 +46,17 @@ namespace WindowsFormsApp2.Properties {
                 this["StopWatchTime"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool PavzirajStopwatch {
+            get {
+                return ((bool)(this["PavzirajStopwatch"]));
+            }
+            set {
+                this["PavzirajStopwatch"] = value;
+            }
+        }
     }
 }

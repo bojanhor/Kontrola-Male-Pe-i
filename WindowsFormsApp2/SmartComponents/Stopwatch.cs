@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Drawing;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
+
     class StopWatch
     {
+        Thread selfControlThread;
         bool debugTemperaruraJeDosezena = false;
         public bool IsInProgress { get; private set; }
         Button btnStart;
@@ -19,48 +17,149 @@ namespace WindowsFormsApp2
         public delegate void Stopped(StopWatch sender); public event Stopped StopwatchStopped;
         public delegate void WasReset(StopWatch sender); public event WasReset StopwatchWasReset;
         Label time;
-        Label timeSet;        
+        Label timeSet;
+        Label lblEstimateEnd;
         TimeSpan ts_timeSet;
         TimeSpan ts_time;
         Button btnTimesetUp;        
         Button btnTimesetDn;
-        Form form;
+        GroupBox gbStopwatch;
+        CheckBox chkPauseIfLowTemp;
+        RadioButton ManualOffRadioBtn;
+
+
         MethodInvoker m;
         System.Windows.Forms.Timer MouseDownTimer = new System.Windows.Forms.Timer();
         MainTimer mainTimer = new MainTimer();
         MainTimer WaiterTimer = new MainTimer();        
 
         Color ColorPaused = Color.LightYellow;
-        Color ColorRunning = Color.Red;
-        Color ColorStopped = Color.LightGreen;
+        Color ColorRunning = Color.LightGreen;
+        Color ColorStopped = Color.Pink;
         Color ColorOriginal;
+
+        Form parent;
        
 
-        public StopWatch(Form form, Button btnStart, Button btnStop, Label time, Label timeSet, Button btnTimesetUp, Button btnTimesetDn)
+        public StopWatch(Form Parent)
         {
-            this.form = form;
-            this.btnStart = btnStart;
-            this.btnStop = btnStop;
-            this.time = time;
-            this.timeSet = timeSet;        
+            parent = Parent;
+            sartBtnTextDeciderInvoker = new MethodInvoker(sartBtnTextDeciderMethod);
+            // Finding controls by name from form
+            btnStart = (Button)Parent.Controls.Find("btnStart", true)[0];
+            btnStop = (Button)Parent.Controls.Find("btnStop", true)[0];
+            time = (Label)Parent.Controls.Find("lblTime", true)[0];
+            timeSet = (Label)Parent.Controls.Find("lblTimeSet", true)[0];        
              
-            this.btnTimesetUp = btnTimesetUp;
-            this.btnTimesetDn = btnTimesetDn;
+            btnTimesetUp = (Button)Parent.Controls.Find("btnUp", true)[0];
+            btnTimesetDn = (Button)Parent.Controls.Find("btnDown", true)[0];
+
+            gbStopwatch = (GroupBox)Parent.Controls.Find("gbStoparica", true)[0];
+            chkPauseIfLowTemp = (CheckBox)Parent.Controls.Find("chkPauseIfLowTemp", true)[0];
+            ManualOffRadioBtn = (RadioButton)Parent.Controls.Find("ManualOffRadioBtn", true)[0];
+            lblEstimateEnd = (Label)Parent.Controls.Find("lblEstimateEnd", true)[0];
+            ////
 
             btnStart.Click += BtnStart_Click;
             btnStop.Click += BtnStop_Click;
 
-            mainTimer.Tick += MainTimer_Tick;
-            WaiterTimer.Tick += WaiterTimer_Tick;    
+            mainTimer.Elapsed += MainTimer_Tick;
+            WaiterTimer.Elapsed += WaiterTimer_Tick;    
 
             stopwatchEventReg();
             loadPreviousTime();
 
             m = new MethodInvoker(updateForm_invoker);
-            ColorOriginal = time.BackColor;
+            estimateTimeLeftInvoker = new MethodInvoker(estimateTimeLeftMethod);
+            ColorOriginal = gbStopwatch.BackColor;
 
             btnStop.Text = "---";
 
+            StopwatchStarted += StopWatch_StopwatchStarted;
+            StopwatchStopped += StopWatch_StopwatchStopped;
+            StopwatchWasReset += StopWatch_StopwatchWasReset;
+
+            ManualOffRadioBtn.Click += ManualOffRadioBtn_Click;           
+        }
+
+        private void ManualOffRadioBtn_Click(object sender, EventArgs e)
+        {
+            Stop();
+        }
+
+        private void StopWatch_StopwatchWasReset(StopWatch sender)
+        {
+            
+        }
+
+        private void StopWatch_StopwatchStopped(StopWatch sender)
+        {
+            if (selfControlThread != null)
+            {
+                selfControlThread.Abort();
+            }            
+        }
+
+        private void StopWatch_StopwatchStarted(StopWatch sender)
+        {
+            selfControlThread = new Thread(selfControlMethod);
+            selfControlThread.Start();
+        }
+
+        bool wasStoppedBySelfControl = false;
+        Prop1 p = Val.logocontroler.Prop1;
+        void selfControlMethod()
+        {
+            while (true)
+            {
+                if (mainTimer.Enabled)
+                {
+                    if (!p.TempDosezena.Value_bool)
+                    {
+                        if (chkPauseIfLowTemp.Checked)
+                        {
+                            Pause();
+                            wasStoppedBySelfControl = true;
+                        }                        
+                    }
+                }
+
+                //
+                if (!WaiterTimer.Enabled)
+                {
+                    if (!mainTimer.Enabled)
+                    {
+                        if (p.TempDosezena.Value_bool)
+                        {
+                            if (wasStoppedBySelfControl)
+                            {
+                                Resume();
+                                wasStoppedBySelfControl = false;
+                            }                            
+                        }
+                    }
+                }
+               
+                Thread.Sleep(500);
+            }
+
+        }
+
+        public void ResumeStopwatchIfSettingChanged()
+        {
+            if (!WaiterTimer.Enabled)
+            {
+                if (!mainTimer.Enabled)
+                {
+
+                    if (wasStoppedBySelfControl)
+                    {
+                        Resume();
+                        wasStoppedBySelfControl = false;
+                    }
+
+                }
+            }
         }
 
         void stopwatchEventReg()
@@ -100,6 +199,7 @@ namespace WindowsFormsApp2
 
         private void MainTimer_Tick(object sender, EventArgs e)
         {
+
             ts_time = ts_time.Add(TimeSpan.FromSeconds(1));     
                         
             // time has elapsed
@@ -107,29 +207,39 @@ namespace WindowsFormsApp2
             {
                 // if heating enabled disable it
                 var prop = Val.logocontroler.Prop1;               
-                prop.ForceEnableHeat.Value = 0;
-                prop.ForceDisableHeat.Value = 1;                
+                prop.On.Value = 0;
+                prop.Off.Value = 1;                
 
                 // stop stopwatch
                 mainTimer.Stop();
                 StopwatchStopped.Invoke(this);
                 IsInProgress = false;
-                time.BackColor = ColorStopped;
+                gbStopwatch.BackColor = ColorStopped;
 
                 // buzz
-                prop.BuzzFromPC.SendPulse();
+                prop.BuzzFromPcEndCycle.SendPulse();
 
                 //
                 IsInProgress = false;
                 ts_time = ts_timeSet;
-                btnStop.Text = "Reset";
+                parent.Invoke(new MethodInvoker(delegate { btnStop.Text = "Reset"; })); 
                 
             }
             else
             {
-                time.BackColor = ColorRunning;
+                gbStopwatch.BackColor = ColorRunning;
+                parent.Invoke(new MethodInvoker(delegate { btnStop.Text = "Pause"; }));
             }
+            parent.Invoke(estimateTimeLeftInvoker);
             updateForm();
+        }
+
+        MethodInvoker estimateTimeLeftInvoker;
+        void estimateTimeLeftMethod()
+        {
+            var ts_txt = DateTime.Now + (ts_timeSet - ts_time);
+            var txt = ts_txt.ToString("HH:mm");
+            lblEstimateEnd.Text = txt;
         }
 
         private void BtnTimesetDn_MouseUp(object sender, MouseEventArgs e)
@@ -148,40 +258,75 @@ namespace WindowsFormsApp2
             MouseDownTimer.Dispose();
             updateForm();
             saveTime();
+            mouseDown = false;
         }
 
+        int holddur = 0;
+        bool mouseDown = false;
         private void BtnTimesetDn_MouseDown(object sender, MouseEventArgs e)
         {
+            if (mouseDown)
+            {
+                return;
+            }
+            mouseDown = true;
             ts_timeSet = ts_timeSet.Add(new TimeSpan(0, -1, 0));
             if (ts_timeSet <= new TimeSpan(0))
             {
-                ts_timeSet = new TimeSpan(0);                
+                ts_timeSet = new TimeSpan(0);
                 return;
-            }            
-            
+            }
+
             MouseDownTimer = new System.Windows.Forms.Timer();
             MouseDownTimer.Interval = 200;
             holddur = 0;
+
             MouseDownTimer.Start();
             MouseDownTimer.Tick += MouseDownTimer_dn_Tick;
             updateForm();
         }        
-
-        int holddur = 0;
+                
         private void BtnTimesetUp_MouseDown(object sender, MouseEventArgs e)
-        {         
-            ts_timeSet = ts_timeSet.Add(new TimeSpan(0, 1, 0));            
+        {
+            if (mouseDown)
+            {
+                return;
+            }
+            mouseDown = true;
+            ts_timeSet = ts_timeSet.Add(new TimeSpan(0, 1, 0));
             MouseDownTimer = new System.Windows.Forms.Timer();
             MouseDownTimer.Interval = 200;
             holddur = 0;
+
             MouseDownTimer.Start();
             MouseDownTimer.Tick += MouseDownTimer_up_Tick;
-            updateForm();
+            parent.Invoke(sartBtnTextDeciderInvoker);
+            updateForm();            
+        }
+
+        MethodInvoker sartBtnTextDeciderInvoker;
+        void sartBtnTextDeciderMethod()
+        {
+            if (!mainTimer.Enabled && !WaiterTimer.Enabled)
+            {
+                if (ts_timeSet > ts_time)
+                {
+                    btnStart.Text = "Start";
+                }
+            }            
         }
 
         private void MouseDownTimer_up_Tick(object sender, EventArgs e)
         {
-            if (holddur >= 17)
+            if (holddur >= 40)
+            {
+                ts_timeSet = ts_timeSet.Add(new TimeSpan(0, 8, 0));
+            }
+            else if (holddur >= 30)
+            {
+                ts_timeSet = ts_timeSet.Add(new TimeSpan(0, 5, 0));
+            }
+            else if (holddur >= 17)
             {
                 ts_timeSet = ts_timeSet.Add(new TimeSpan(0, 3, 0));
             }
@@ -211,7 +356,15 @@ namespace WindowsFormsApp2
                 updateForm();
                 return;
             }
-            if (holddur >= 17)
+            if (holddur >= 40)
+            {
+                ts_timeSet = ts_timeSet.Add(new TimeSpan(0, -8, 0));
+            }
+            else if (holddur >= 30)
+            {
+                ts_timeSet = ts_timeSet.Add(new TimeSpan(0, -5, 0));
+            }
+            else if (holddur >= 17)
             {
                 ts_timeSet = ts_timeSet.Add(new TimeSpan(0, -3, 0));
             }
@@ -240,34 +393,50 @@ namespace WindowsFormsApp2
 
         private void BtnStop_Click(object sender, EventArgs e)
         {
+            
             WaiterTimer.Stop();
+            parent.Invoke(new MethodInvoker(delegate { 
+                btnStart.Text = "Start"; 
+            }));
+
+            //           
+            
             if (mainTimer.Started)
             {
-                time.BackColor = ColorStopped;
+                gbStopwatch.BackColor = ColorStopped;
                 mainTimer.Stop();
-                btnStop.Text = "Reset";
+                parent.Invoke(new MethodInvoker(delegate {
+                    btnStop.Text = "Reset";
+                }));
             }
             else if(IsInProgress) // main timer is stopped AND IsInProgress
             {
-                ts_time = TimeSpan.FromSeconds(0);
-                btnStop.Text = "---";
-                time.BackColor = ColorOriginal;
-                StopwatchStopped.Invoke(this);
-                IsInProgress = false;
-                StopwatchWasReset.Invoke(this);
+                if (MessageBox.Show("Sarža še ni zaključena, ali vseeno želite ponastaviti štoparico? ","POZOR!",MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    ts_time = TimeSpan.FromSeconds(0);
+                    parent.Invoke(new MethodInvoker(delegate {
+                        btnStop.Text = "---";
+                    }));
+                    gbStopwatch.BackColor = ColorOriginal;
+                    StopwatchStopped.Invoke(this);
+                    IsInProgress = false;
+                    StopwatchWasReset.Invoke(this);
+                }               
             }
             else
             {
                 ts_time = TimeSpan.FromSeconds(0);
-                btnStop.Text = "---";
-                time.BackColor = ColorOriginal;
+                        parent.Invoke(new MethodInvoker(delegate {
+                            btnStop.Text = "---";
+                        }));
+                gbStopwatch.BackColor = ColorOriginal;
                 StopwatchWasReset.Invoke(this);
             }
 
             // if heating enabled disable it
             var prop = Val.logocontroler.Prop1;            
-            prop.ForceEnableHeat.Value = 0;
-            prop.ForceDisableHeat.Value = 1;
+            prop.On.Value = 0;
+            prop.Off.Value = 1;
                         
             //
             updateForm();
@@ -275,20 +444,28 @@ namespace WindowsFormsApp2
 
         private void BtnStart_Click(object sender, EventArgs e)
         {
+            if (WaiterTimer.Started || mainTimer.Started)
+            {
+                return;
+            }
             WaiterTimer.Start();
-            btnStop.Text = "Pause";
+            btnStop.Text = "Stop";
+            btnStart.Text = "---";           
             var prop = Val.logocontroler.Prop1;
-            prop.ForceEnableHeat.Value = 1;
-            prop.ForceDisableHeat.Value = 0;
+            prop.On.Value = 1;
+            prop.Off.Value = 0;
             IsInProgress = true;
             if (!mainTimer.Started)
             {
-                StopwatchStarted.Invoke(this);
+                StopwatchStarted.Invoke(null);
             }
+
         }
 
+        
         private void WaiterTimer_Tick(object sender, EventArgs e)
         {
+            parent.Invoke(new MethodInvoker(delegate { btnStop.Text = "Stop"; }));
             // if heating disabled enable it
             WaiterTimer.Interval = 1000;
 
@@ -296,25 +473,48 @@ namespace WindowsFormsApp2
             var val = Val.logocontroler.Prop1.TempDosezena;
             if (val.Value_bool || debugTemperaruraJeDosezena)
             {
-                mainTimer.Start();                
+                mainTimer.Start();
+                p.BuzzFromPcTemperatureReached.SendPulse();
 
                 //
-                time.BackColor = ColorRunning;
+                gbStopwatch.BackColor = ColorRunning;
                 WaiterTimer.Stop();
             }
             else
             {
-                if (time.BackColor == ColorPaused)
+                if (gbStopwatch.BackColor == ColorPaused)
                 {
-                    time.BackColor = ColorOriginal;
+                    gbStopwatch.BackColor = ColorOriginal;
                 }
                 else
                 {
-                    time.BackColor = ColorPaused;
+                    gbStopwatch.BackColor = ColorPaused;
                 }
                 
             }
         }
+
+        public void Pause()
+        {
+            if (mainTimer != null)
+            {
+                mainTimer.Stop();
+            }
+        }
+
+        public void Resume()
+        {
+            if (mainTimer != null)
+            {
+                mainTimer.Start();
+            }            
+        }
+
+        public void Stop()
+        {
+            BtnStop_Click(null,null);
+        }
+
 
         void loadPreviousTime()
         {
@@ -364,7 +564,7 @@ namespace WindowsFormsApp2
 
         void updateForm()
         {
-            m.Invoke();
+            parent.Invoke(m);
         }
     }
 }

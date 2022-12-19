@@ -232,6 +232,11 @@ namespace WindowsFormsApp2
 
         void addSeriesMethod()
         {
+            var cnt = Series.Count;
+            for (int i = 1; i < cnt; i++)
+            {
+                Series.Remove(Series[1]);
+            }
             Series.Add(series_1);
             Series.Add(series_2);
             Series.Add(series_3);

@@ -17,26 +17,26 @@ namespace WindowsFormsApp2
 
         bool WriteMode = false;
 
-        RadioButton btn1;
-        RadioButton btn2;
-        RadioButton btn3;
-
+        RadioButton rBtnAuto;
+        RadioButton rBtnOff;
+        RadioButton rBtnOn;
+        
         public string Text_Auto
         {
-            get { return btn1.Text; }
-            set { btn1.Text = value; }
+            get { return rBtnAuto.Text; }
+            set { rBtnAuto.Text = value; }
         }
 
         public string Text_Man0
         {
-            get { return btn2.Text; }
-            set { btn2.Text = value; }
+            get { return rBtnOff.Text; }
+            set { rBtnOff.Text = value; }
         }
 
         public string Text_Man1
         {
-            get { return btn3.Text; }
-            set { btn3.Text = value; }
+            get { return rBtnOn.Text; }
+            set { rBtnOn.Text = value; }
         }
 
         PlcVars.Word value_Auto;
@@ -111,9 +111,9 @@ namespace WindowsFormsApp2
 
         void UncheckAll()
         {
-            btn1.Checked = false;
-            btn2.Checked = false;
-            btn3.Checked = false;
+            rBtnAuto.Checked = false;
+            rBtnOff.Checked = false;
+            rBtnOn.Checked = false;
         }
 
         bool WordToBool(short? val)
@@ -140,15 +140,15 @@ namespace WindowsFormsApp2
                 {
                     if (WordToBool(Value_Auto.Value) && !WordToBool(Value_Man0.Value) && !WordToBool(Value_Man1.Value))
                     {
-                        btn1.Checked = true;
+                        rBtnAuto.Checked = true;
                     }
                     else if (!WordToBool(Value_Auto.Value) && WordToBool(Value_Man0.Value) && !WordToBool(Value_Man1.Value))
                     {
-                        btn2.Checked = true;
+                        rBtnOff.Checked = true;
                     }
                     else if (!WordToBool(Value_Auto.Value) && !WordToBool(Value_Man0.Value) && WordToBool(Value_Man1.Value))
                     {
-                        btn3.Checked = true;
+                        rBtnOn.Checked = true;
                     }
                     else
                     {
@@ -192,9 +192,9 @@ namespace WindowsFormsApp2
 
         void CreateControls()
         {
-            btn1 = new RadioButton();
-            btn2 = new RadioButton();
-            btn3 = new RadioButton();
+            rBtnAuto = new RadioButton();
+            rBtnOff = new RadioButton() {Name = "ManualOffRadioBtn" };
+            rBtnOn = new RadioButton();
 
         }
 
@@ -209,24 +209,24 @@ namespace WindowsFormsApp2
             Width = 100;
 
             // Buttons
-            btn1.Left = left; btn1.Top = top; top += spacing;
-            btn2.Left = left; btn2.Top = top; top += spacing;
-            btn3.Left = left; btn3.Top = top; top += spacing;
+            rBtnAuto.Left = left; rBtnAuto.Top = top; top += spacing;
+            rBtnOff.Left = left; rBtnOff.Top = top; top += spacing;
+            rBtnOn.Left = left; rBtnOn.Top = top; top += spacing;
 
         }
 
         void AddBtns()
         {
-            Controls.Add(btn1);
-            Controls.Add(btn2);
-            Controls.Add(btn3);
+            Controls.Add(rBtnAuto);
+            Controls.Add(rBtnOff);
+            Controls.Add(rBtnOn);
         }
 
         void RegisterEvents()
         {
-            btn1.CheckedChanged += Btn1_CheckedChanged;
-            btn2.CheckedChanged += Btn2_CheckedChanged;
-            btn3.CheckedChanged += Btn3_CheckedChanged;
+            rBtnAuto.CheckedChanged += Btn1_CheckedChanged;
+            rBtnOff.CheckedChanged += Btn2_CheckedChanged;
+            rBtnOn.CheckedChanged += Btn3_CheckedChanged;
         }
 
         private void Btn3_CheckedChanged(object sender, EventArgs e)

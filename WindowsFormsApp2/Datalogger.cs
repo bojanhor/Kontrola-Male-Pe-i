@@ -65,8 +65,11 @@ namespace WindowsFormsApp2
         public void StopCsvFileWriter()
         {
             isActive = false;
-            sw.Dispose();
-            sw = null;
+            if (sw != null)
+            {
+                sw.Dispose();
+                sw = null;
+            }            
         }
 
         public void WriteLine(ChartDataPoint Sensor1, ChartDataPoint Sensor2, ChartDataPoint Sensor3, ChartDataPoint Sensor4, ChartDataPoint SensorKanal, ChartDataPoint SensorKos)

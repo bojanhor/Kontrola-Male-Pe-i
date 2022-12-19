@@ -20,7 +20,7 @@ namespace WindowsFormsApp2
         public PlcVars.Word Sob_EN_1; public PlcVars.TimeSet SobTimeOn; public PlcVars.TimeSet SobTimeOff;
         public PlcVars.Word Ned_EN_1; public PlcVars.TimeSet NedTimeOn; public PlcVars.TimeSet NedTimeOff;
 
-        public PlcVars.Word AutoHeat, ForceDisableHeat, ForceEnableHeat;
+        public PlcVars.Word Auto, Off, On;
 
         public PlcVars.Word HistHeat;
 
@@ -48,12 +48,13 @@ namespace WindowsFormsApp2
 
         public PlcVars.Word TempSenZg, TempSenSr1, TempSenSr2, TempSenSp, TempSenKn, TempSenKos;
 
-        public PlcVars.Bit BuzzFromPC;
+        public PlcVars.Bit BuzzFromPC, BuzzFromPcEndCycle, BuzzFromPcTemperatureReached, BuzzFromPcERROR;
 
 
 
         //Alarm Bits
         public PlcVars.AlarmBit DiffVntErr, MaxTempReached, VentDemand, MussLauf, VrataOdprta, CoolOff, VentActive, TempDosezena;
+        public PlcVars.AlarmBit PCWDFail;
         public PlcVars.AlarmBit VarnostniTermostatOk, FreqOk, EMG_OK, EMG_Aux_OK, Sw102PositionOK; // inverted
 
 
@@ -70,9 +71,9 @@ namespace WindowsFormsApp2
             Sob_EN_1 = new PlcVars.Word(this, new PlcVars.WordAddress(80), true); SobTimeOn = new PlcVars.TimeSet(this, new PlcVars.WordAddress(60), true); SobTimeOff = new PlcVars.TimeSet(this, new PlcVars.WordAddress(62), true);
             Ned_EN_1 = new PlcVars.Word(this, new PlcVars.WordAddress(82), true); NedTimeOn = new PlcVars.TimeSet(this, new PlcVars.WordAddress(64), true); NedTimeOff = new PlcVars.TimeSet(this, new PlcVars.WordAddress(66), true);
 
-            AutoHeat = new PlcVars.Word(this, new PlcVars.WordAddress(84), true);
-            ForceDisableHeat = new PlcVars.Word(this, new PlcVars.WordAddress(86), true);
-            ForceEnableHeat = new PlcVars.Word(this, new PlcVars.WordAddress(88), true);
+            Auto = new PlcVars.Word(this, new PlcVars.WordAddress(84), true);
+            Off = new PlcVars.Word(this, new PlcVars.WordAddress(86), true);
+            On = new PlcVars.Word(this, new PlcVars.WordAddress(88), true);
 
             HistHeat = new PlcVars.Word(this, new PlcVars.WordAddress(100), true);
 
@@ -131,7 +132,12 @@ namespace WindowsFormsApp2
             VentActive = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(172, 0), "Ventilacija aktivna", false, true);
 
             TempDosezena = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(180, 0), "Tempreatura je dosežena", false, true);
+            PCWDFail = new PlcVars.AlarmBit(this, new PlcVars.BitAddress(188, 0), "Krmilnik ne zazna povezave s programom PC", false, true);
+
             BuzzFromPC = new PlcVars.Bit(this, new PlcVars.BitAddress(190, 0), true);
+            BuzzFromPcEndCycle = new PlcVars.Bit(this, new PlcVars.BitAddress(192, 0), true);
+            BuzzFromPcTemperatureReached = new PlcVars.Bit(this, new PlcVars.BitAddress(194, 0), true);
+            BuzzFromPcERROR = new PlcVars.Bit(this, new PlcVars.BitAddress(196, 0), true);
 
             TempSenZg = new PlcVars.Word(this, new PlcVars.WordAddress(210), false);
             TempSenSr1 = new PlcVars.Word(this, new PlcVars.WordAddress(212), false);

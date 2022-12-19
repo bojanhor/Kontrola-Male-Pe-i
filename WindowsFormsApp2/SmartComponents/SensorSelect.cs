@@ -235,7 +235,7 @@ namespace WindowsFormsApp2
         void positionControls()
         {
             int left = 10;
-            int spacing = 23;
+            int spacing = 30;
             int top = 5;
                         
             // Container

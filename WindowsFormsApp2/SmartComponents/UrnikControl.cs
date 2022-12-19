@@ -42,9 +42,7 @@ namespace WindowsFormsApp2
                 FormatDataGrid();
                 registerEvents();
                 UpdaterThreadSetup();
-                
-            }            
-
+            }           
         }
 
         public void FeedData(
@@ -95,11 +93,13 @@ namespace WindowsFormsApp2
                 Thread.Sleep(100);
             }
             while (true)
-            {                
-                FormControl.Gui.Invoke(m);                
-                Thread.Sleep(Settings.UpdateValuesPCms);
+            {
+                if (FormControl.Gui.IsHandleCreated)
+                {
+                    FormControl.Gui.Invoke(m);
+                    Thread.Sleep(Settings.UpdateValuesPCms);
+                }                
             }
-
         }
 
         void FillDatagridUrnik()

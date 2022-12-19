@@ -23086,3 +23086,1603 @@ Parameter name: inputUri
 25. 11. 2022 19:59:25 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
 25. 11. 2022 19:59:28 - Info: Connection failed. Trying to reconnect
 25. 11. 2022 19:59:28 - Info: Connection error: Watchdog error - Watchdog does not change
+
+
+Streamwriter was initialised.
+19/12/2022 09:54:13 - Info: Autoconnect at startup
+19/12/2022 09:54:13 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 09:54:13 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 09:54:13 - Info: GUI was loaded successfully
+19/12/2022 09:54:13 - Info: Connecting...
+
+
+Streamwriter was initialised.
+19/12/2022 09:54:26 - Info: Autoconnect at startup
+19/12/2022 09:54:27 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 09:54:27 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 09:54:27 - Info: GUI was loaded successfully
+19/12/2022 09:54:26 - Info: Connecting...
+19/12/2022 09:54:28 - Info: Connected
+19/12/2022 09:54:28 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:00:08 - Info: Autoconnect at startup
+19/12/2022 10:00:09 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:00:09 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:00:09 - Info: GUI was loaded successfully
+19/12/2022 10:00:08 - Info: Connecting...
+19/12/2022 10:00:10 - Info: Connected
+19/12/2022 10:00:10 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:00:42 - Info: Autoconnect at startup
+19/12/2022 10:00:43 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:00:43 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:00:43 - Info: GUI was loaded successfully
+19/12/2022 10:00:42 - Info: Connecting...
+19/12/2022 10:00:44 - Info: Connected
+19/12/2022 10:00:44 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:01:24 - Info: Autoconnect at startup
+19/12/2022 10:01:25 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:01:25 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:01:25 - Info: GUI was loaded successfully
+19/12/2022 10:01:24 - Info: Connecting...
+19/12/2022 10:01:26 - Info: Connected
+19/12/2022 10:01:26 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:06:46 - Info: Autoconnect at startup
+19/12/2022 10:06:46 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:06:46 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:06:46 - Info: GUI was loaded successfully
+19/12/2022 10:06:46 - Info: Connecting...
+19/12/2022 10:06:47 - Info: Connected
+19/12/2022 10:06:47 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:16:23 - Info: Autoconnect at startup
+19/12/2022 10:16:23 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:16:23 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:16:23 - Info: GUI was loaded successfully
+19/12/2022 10:16:23 - Info: Connecting...
+19/12/2022 10:16:24 - Info: Connected
+19/12/2022 10:16:24 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:17:20 - Info: Autoconnect at startup
+19/12/2022 10:17:20 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:17:20 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:17:20 - Info: GUI was loaded successfully
+19/12/2022 10:17:20 - Info: Connecting...
+19/12/2022 10:17:21 - Info: Connected
+19/12/2022 10:17:22 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:17:46 - Info: Autoconnect at startup
+19/12/2022 10:17:46 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:17:46 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:17:46 - Info: GUI was loaded successfully
+19/12/2022 10:17:46 - Info: Connecting...
+19/12/2022 10:17:47 - Info: Connected
+19/12/2022 10:17:47 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:17:52 - Info: Autoconnect at startup
+19/12/2022 10:17:52 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:17:52 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:17:52 - Info: GUI was loaded successfully
+19/12/2022 10:17:52 - Info: Connecting...
+19/12/2022 10:17:54 - Info: Connected
+19/12/2022 10:17:54 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:18:59 - Info: Autoconnect at startup
+19/12/2022 10:18:59 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:18:59 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:18:59 - Info: GUI was loaded successfully
+19/12/2022 10:18:59 - Info: Connecting...
+19/12/2022 10:19:00 - Info: Connected
+19/12/2022 10:19:00 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:19:15 - Info: Autoconnect at startup
+19/12/2022 10:19:16 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:19:16 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:19:16 - Info: GUI was loaded successfully
+19/12/2022 10:19:15 - Info: Connecting...
+19/12/2022 10:19:17 - Info: Connected
+19/12/2022 10:19:17 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:22:21 - Info: Autoconnect at startup
+19/12/2022 10:22:22 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:22:22 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:22:22 - Info: GUI was loaded successfully
+19/12/2022 10:22:21 - Info: Connecting...
+19/12/2022 10:22:23 - Info: Connected
+19/12/2022 10:22:23 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:24:51 - Info: Autoconnect at startup
+19/12/2022 10:24:51 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:24:51 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:24:51 - Info: GUI was loaded successfully
+19/12/2022 10:24:51 - Info: Connecting...
+19/12/2022 10:24:52 - Info: Connected
+19/12/2022 10:24:52 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:29:44 - Info: Autoconnect at startup
+19/12/2022 10:29:44 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:29:44 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:29:44 - Info: GUI was loaded successfully
+19/12/2022 10:29:44 - Info: Connecting...
+19/12/2022 10:29:45 - Info: Connected
+19/12/2022 10:29:45 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:30:15 - Info: Autoconnect at startup
+19/12/2022 10:30:16 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:30:16 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:30:16 - Info: GUI was loaded successfully
+19/12/2022 10:30:15 - Info: Connecting...
+19/12/2022 10:30:17 - Info: Connected
+19/12/2022 10:30:17 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:35:53 - Info: Autoconnect at startup
+19/12/2022 10:35:53 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:35:53 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:35:53 - Info: GUI was loaded successfully
+19/12/2022 10:35:53 - Info: Connecting...
+19/12/2022 10:35:54 - Info: Connected
+19/12/2022 10:35:54 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:36:16 - Info: Autoconnect at startup
+19/12/2022 10:36:24 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:36:24 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:36:24 - Info: GUI was loaded successfully
+19/12/2022 10:36:18 - Info: Connecting...
+19/12/2022 10:36:25 - Info: Connected
+19/12/2022 10:36:25 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:36:44 - Info: Autoconnect at startup
+19/12/2022 10:36:48 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:36:48 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:36:48 - Info: GUI was loaded successfully
+19/12/2022 10:36:48 - Info: Connecting...
+19/12/2022 10:36:49 - Info: Connected
+19/12/2022 10:36:49 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:37:14 - Info: Autoconnect at startup
+19/12/2022 10:37:15 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:37:15 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:37:15 - Info: GUI was loaded successfully
+19/12/2022 10:37:14 - Info: Connecting...
+19/12/2022 10:37:16 - Info: Connected
+19/12/2022 10:37:16 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:38:03 - Info: Autoconnect at startup
+19/12/2022 10:38:03 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:38:03 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:38:03 - Info: GUI was loaded successfully
+19/12/2022 10:38:03 - Info: Connecting...
+19/12/2022 10:38:04 - Info: Connected
+19/12/2022 10:38:04 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:40:55 - Info: Autoconnect at startup
+19/12/2022 10:40:56 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:40:56 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:40:56 - Info: GUI was loaded successfully
+19/12/2022 10:40:55 - Info: Connecting...
+19/12/2022 10:40:57 - Info: Connected
+19/12/2022 10:40:57 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:41:25 - Info: Autoconnect at startup
+19/12/2022 10:41:26 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:41:26 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:41:26 - Info: GUI was loaded successfully
+19/12/2022 10:41:25 - Info: Connecting...
+19/12/2022 10:41:27 - Info: Connected
+19/12/2022 10:41:27 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:41:53 - Info: Autoconnect at startup
+19/12/2022 10:41:53 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:41:53 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:41:53 - Info: GUI was loaded successfully
+19/12/2022 10:41:53 - Info: Connecting...
+19/12/2022 10:41:54 - Info: Connected
+19/12/2022 10:41:54 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:42:20 - Info: Autoconnect at startup
+19/12/2022 10:42:20 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:42:20 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:42:20 - Info: GUI was loaded successfully
+19/12/2022 10:42:20 - Info: Connecting...
+19/12/2022 10:42:21 - Info: Connected
+19/12/2022 10:42:21 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:43:25 - Info: Autoconnect at startup
+19/12/2022 10:43:25 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:43:25 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:43:25 - Info: GUI was loaded successfully
+19/12/2022 10:43:25 - Info: Connecting...
+19/12/2022 10:43:26 - Info: Connected
+19/12/2022 10:43:27 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:43:40 - Info: Autoconnect at startup
+19/12/2022 10:43:41 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:43:41 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:43:41 - Info: GUI was loaded successfully
+19/12/2022 10:43:40 - Info: Connecting...
+19/12/2022 10:43:42 - Info: Connected
+19/12/2022 10:43:42 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+19/12/2022 10:44:02 - Info: TCP : Error receiving Data
+19/12/2022 10:44:02 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 10:44:05 - Info: Running connection diagnostics...
+19/12/2022 10:44:05 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 10:44:05 - Info: Connected again
+
+
+Streamwriter was initialised.
+19/12/2022 10:44:16 - Info: Autoconnect at startup
+19/12/2022 10:44:16 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:44:16 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:44:16 - Info: GUI was loaded successfully
+19/12/2022 10:44:16 - Info: Connecting...
+19/12/2022 10:44:17 - Info: Connected
+19/12/2022 10:44:17 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:51:14 - Info: Autoconnect at startup
+19/12/2022 10:51:14 - Info: Connecting...
+
+
+Streamwriter was initialised.
+19/12/2022 10:52:48 - Info: Autoconnect at startup
+19/12/2022 10:52:48 - Info: Connecting...
+
+
+Streamwriter was initialised.
+19/12/2022 10:53:10 - Info: Autoconnect at startup
+19/12/2022 10:53:18 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:53:18 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:53:18 - Info: GUI was loaded successfully
+19/12/2022 10:53:10 - Info: Connecting...
+
+
+Streamwriter was initialised.
+19/12/2022 10:55:14 - Info: Autoconnect at startup
+19/12/2022 10:55:14 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:55:14 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:55:14 - Info: GUI was loaded successfully
+19/12/2022 10:55:14 - Info: Connecting...
+19/12/2022 10:55:21 - Info: Connected
+
+
+Streamwriter was initialised.
+19/12/2022 10:55:31 - Info: Autoconnect at startup
+19/12/2022 10:55:31 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:55:31 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:55:31 - Info: GUI was loaded successfully
+19/12/2022 10:55:31 - Info: Connecting...
+19/12/2022 10:55:32 - Info: Connected
+19/12/2022 10:55:32 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:55:44 - Info: Autoconnect at startup
+19/12/2022 10:55:45 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:55:45 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:55:45 - Info: GUI was loaded successfully
+19/12/2022 10:55:44 - Info: Connecting...
+19/12/2022 10:55:46 - Info: Connected
+19/12/2022 10:55:46 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 10:58:48 - Info: Autoconnect at startup
+19/12/2022 10:58:48 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:58:48 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 10:58:48 - Info: GUI was loaded successfully
+19/12/2022 10:58:48 - Info: Connecting...
+19/12/2022 10:58:49 - Info: Connected
+19/12/2022 10:58:49 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 11:00:05 - Info: Autoconnect at startup
+19/12/2022 11:00:05 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:00:05 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:00:05 - Info: GUI was loaded successfully
+19/12/2022 11:00:05 - Info: Connecting...
+19/12/2022 11:00:06 - Info: Connected
+19/12/2022 11:00:06 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 11:17:18 - Info: Autoconnect at startup
+19/12/2022 11:17:18 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:17:18 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:17:18 - Info: GUI was loaded successfully
+19/12/2022 11:17:18 - Info: Connecting...
+19/12/2022 11:17:19 - Info: Connected
+19/12/2022 11:17:19 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 11:47:10 - Info: Autoconnect at startup
+19/12/2022 11:47:10 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:47:10 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:47:10 - Info: GUI was loaded successfully
+19/12/2022 11:47:10 - Info: Connecting...
+19/12/2022 11:47:11 - Info: Connected
+19/12/2022 11:47:11 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 11:49:01 - Info: Autoconnect at startup
+19/12/2022 11:49:02 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:49:02 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:49:02 - Info: GUI was loaded successfully
+19/12/2022 11:49:01 - Info: Connecting...
+19/12/2022 11:49:03 - Info: Connected
+19/12/2022 11:49:03 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 11:54:38 - Info: Autoconnect at startup
+19/12/2022 11:54:39 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:54:39 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:54:39 - Info: GUI was loaded successfully
+19/12/2022 11:54:38 - Info: Connecting...
+19/12/2022 11:54:40 - Info: Connected
+19/12/2022 11:54:40 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 11:55:53 - Info: Autoconnect at startup
+19/12/2022 11:55:53 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:55:53 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:55:53 - Info: GUI was loaded successfully
+19/12/2022 11:55:53 - Info: Connecting...
+19/12/2022 11:55:54 - Info: Connected
+19/12/2022 11:55:54 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 11:58:37 - Info: Autoconnect at startup
+19/12/2022 11:58:37 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:58:37 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 11:58:37 - Info: GUI was loaded successfully
+19/12/2022 11:58:37 - Info: Connecting...
+19/12/2022 11:58:39 - Info: Connected
+19/12/2022 11:58:39 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:02:02 - Info: Autoconnect at startup
+19/12/2022 12:02:02 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:02:02 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:02:02 - Info: GUI was loaded successfully
+19/12/2022 12:02:02 - Info: Connecting...
+19/12/2022 12:02:03 - Info: Connected
+19/12/2022 12:02:03 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:03:30 - Info: Autoconnect at startup
+19/12/2022 12:03:30 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:03:30 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:03:30 - Info: GUI was loaded successfully
+19/12/2022 12:03:30 - Info: Connecting...
+19/12/2022 12:03:31 - Info: Connected
+19/12/2022 12:03:31 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:05:02 - Info: Autoconnect at startup
+19/12/2022 12:05:02 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:05:02 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:05:02 - Info: GUI was loaded successfully
+19/12/2022 12:05:02 - Info: Connecting...
+19/12/2022 12:05:03 - Info: Connected
+19/12/2022 12:05:03 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:05:59 - Info: Autoconnect at startup
+19/12/2022 12:05:59 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:05:59 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:05:59 - Info: GUI was loaded successfully
+19/12/2022 12:05:59 - Info: Connecting...
+19/12/2022 12:06:00 - Info: Connected
+19/12/2022 12:06:00 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:09:37 - Info: Autoconnect at startup
+19/12/2022 12:09:37 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:09:37 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:09:38 - Info: GUI was loaded successfully
+19/12/2022 12:09:37 - Info: Connecting...
+19/12/2022 12:09:39 - Info: Connected
+19/12/2022 12:09:39 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:13:08 - Info: Autoconnect at startup
+19/12/2022 12:13:09 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:13:09 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:13:09 - Info: GUI was loaded successfully
+19/12/2022 12:13:08 - Info: Connecting...
+19/12/2022 12:13:10 - Info: Connected
+19/12/2022 12:13:10 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:14:11 - Info: Autoconnect at startup
+19/12/2022 12:14:12 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:14:12 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:14:12 - Info: GUI was loaded successfully
+19/12/2022 12:14:11 - Info: Connecting...
+19/12/2022 12:14:13 - Info: Connected
+19/12/2022 12:14:13 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:19:45 - Info: Autoconnect at startup
+19/12/2022 12:19:45 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:19:45 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:19:45 - Info: GUI was loaded successfully
+19/12/2022 12:19:45 - Info: Connecting...
+19/12/2022 12:19:46 - Info: Connected
+19/12/2022 12:19:46 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:23:30 - Info: Autoconnect at startup
+19/12/2022 12:23:30 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:23:30 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:23:30 - Info: GUI was loaded successfully
+19/12/2022 12:23:30 - Info: Connecting...
+19/12/2022 12:23:31 - Info: Connected
+19/12/2022 12:23:31 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:24:53 - Info: Autoconnect at startup
+19/12/2022 12:24:54 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:24:54 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:24:54 - Info: GUI was loaded successfully
+19/12/2022 12:24:53 - Info: Connecting...
+19/12/2022 12:24:55 - Info: Connected
+19/12/2022 12:24:55 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:25:25 - Info: Autoconnect at startup
+19/12/2022 12:25:25 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:25:25 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:25:25 - Info: GUI was loaded successfully
+19/12/2022 12:25:25 - Info: Connecting...
+19/12/2022 12:25:26 - Info: Connected
+19/12/2022 12:25:26 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:27:18 - Info: Autoconnect at startup
+19/12/2022 12:27:19 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:27:19 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:27:19 - Info: GUI was loaded successfully
+19/12/2022 12:27:18 - Info: Connecting...
+19/12/2022 12:27:20 - Info: Connected
+19/12/2022 12:27:20 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 12:27:35 - Info: Autoconnect at startup
+19/12/2022 12:27:35 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:27:35 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 12:27:35 - Info: GUI was loaded successfully
+19/12/2022 12:27:35 - Info: Connecting...
+19/12/2022 12:27:36 - Info: Connected
+19/12/2022 12:27:36 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+19/12/2022 13:22:39 - Info: TCP : Error receiving Data
+19/12/2022 13:22:39 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 13:22:42 - Info: Running connection diagnostics...
+19/12/2022 13:22:42 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 13:22:43 - Info: Connected again
+
+
+Streamwriter was initialised.
+19/12/2022 13:24:24 - Info: Autoconnect at startup
+19/12/2022 13:24:24 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:24:24 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:24:24 - Info: GUI was loaded successfully
+19/12/2022 13:24:24 - Info: Connecting...
+19/12/2022 13:24:25 - Info: Connected
+19/12/2022 13:24:25 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 13:28:39 - Info: Autoconnect at startup
+19/12/2022 13:28:39 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:28:39 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:28:39 - Info: GUI was loaded successfully
+19/12/2022 13:28:39 - Info: Connecting...
+19/12/2022 13:28:40 - Info: Connected
+19/12/2022 13:28:40 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 13:29:17 - Info: Autoconnect at startup
+19/12/2022 13:29:17 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:29:17 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:29:17 - Info: GUI was loaded successfully
+19/12/2022 13:29:17 - Info: Connecting...
+19/12/2022 13:29:18 - Info: Connected
+19/12/2022 13:29:18 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 13:31:03 - Info: Autoconnect at startup
+19/12/2022 13:31:03 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:31:03 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:31:03 - Info: GUI was loaded successfully
+19/12/2022 13:31:03 - Info: Connecting...
+19/12/2022 13:31:04 - Info: Connected
+19/12/2022 13:31:04 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 13:33:27 - Info: Autoconnect at startup
+19/12/2022 13:33:28 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:33:28 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:33:28 - Info: GUI was loaded successfully
+19/12/2022 13:33:27 - Info: Connecting...
+19/12/2022 13:33:29 - Info: Connected
+19/12/2022 13:33:29 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 13:40:04 - Info: Autoconnect at startup
+19/12/2022 13:40:04 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:40:04 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:40:04 - Info: GUI was loaded successfully
+19/12/2022 13:40:04 - Info: Connecting...
+19/12/2022 13:40:05 - Info: Connected
+19/12/2022 13:40:05 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 13:43:37 - Info: Autoconnect at startup
+19/12/2022 13:43:37 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:43:37 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:43:37 - Info: GUI was loaded successfully
+19/12/2022 13:43:37 - Info: Connecting...
+19/12/2022 13:43:38 - Info: Connected
+19/12/2022 13:43:38 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 13:45:25 - Info: Autoconnect at startup
+19/12/2022 13:45:25 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:45:25 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:45:26 - Info: GUI was loaded successfully
+19/12/2022 13:45:25 - Info: Connecting...
+19/12/2022 13:45:27 - Info: Connected
+19/12/2022 13:45:27 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+19/12/2022 13:45:46 - Info: TCP : Error receiving Data
+19/12/2022 13:45:46 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 13:45:49 - Info: Running connection diagnostics...
+19/12/2022 13:45:49 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 13:45:50 - Info: Connected again
+
+
+Streamwriter was initialised.
+19/12/2022 13:56:38 - Info: Autoconnect at startup
+19/12/2022 13:56:38 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:56:38 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 13:56:38 - Info: GUI was loaded successfully
+19/12/2022 13:56:38 - Info: Connecting...
+19/12/2022 13:56:39 - Info: Connected
+19/12/2022 13:56:39 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+19/12/2022 14:05:19 - Info: Watchdog error - Watchdog does not change
+19/12/2022 14:05:19 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:05:22 - Info: Running connection diagnostics...
+19/12/2022 14:05:22 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:05:22 - Info: Connected again
+19/12/2022 14:05:22 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:05:25 - Info: Running connection diagnostics...
+19/12/2022 14:05:25 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:05:26 - Info: Connected again
+19/12/2022 14:05:26 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:05:29 - Info: Running connection diagnostics...
+19/12/2022 14:05:29 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:05:29 - Info: Connected again
+19/12/2022 14:05:29 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:05:32 - Info: Running connection diagnostics...
+19/12/2022 14:05:32 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:05:33 - Info: Connected again
+19/12/2022 14:05:33 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:05:36 - Info: Running connection diagnostics...
+19/12/2022 14:05:36 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:05:36 - Info: Connected again
+19/12/2022 14:05:36 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:05:39 - Info: Running connection diagnostics...
+19/12/2022 14:05:39 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:05:40 - Info: Connected again
+19/12/2022 14:05:40 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:05:43 - Info: Running connection diagnostics...
+19/12/2022 14:05:43 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:05:43 - Info: Connected again
+19/12/2022 14:05:43 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:05:46 - Info: Running connection diagnostics...
+19/12/2022 14:05:46 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:05:49 - Info: Connection failed. Trying to reconnect
+19/12/2022 14:05:49 - Info: Running connection diagnostics...
+19/12/2022 14:05:49 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:05:49 - Info: Connected again
+19/12/2022 14:05:49 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:05:52 - Info: Running connection diagnostics...
+19/12/2022 14:05:52 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:05:53 - Info: Connected again
+19/12/2022 14:09:44 - Info: Watchdog error - Watchdog does not change
+19/12/2022 14:09:44 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:09:47 - Info: Running connection diagnostics...
+19/12/2022 14:09:47 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:09:48 - Info: Connected again
+19/12/2022 14:09:48 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:09:51 - Info: Running connection diagnostics...
+19/12/2022 14:09:51 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:09:51 - Info: Connected again
+19/12/2022 14:09:51 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:09:54 - Info: Running connection diagnostics...
+19/12/2022 14:09:54 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:09:55 - Info: Connected again
+19/12/2022 14:10:47 - Info: Watchdog error - Watchdog does not change
+19/12/2022 14:10:47 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:10:50 - Info: Running connection diagnostics...
+19/12/2022 14:10:50 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:10:51 - Info: Connected again
+19/12/2022 14:10:51 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 14:10:54 - Info: Running connection diagnostics...
+19/12/2022 14:10:54 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 14:10:54 - Info: Connected again
+
+
+Streamwriter was initialised.
+19/12/2022 14:13:07 - Info: Autoconnect at startup
+19/12/2022 14:13:08 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:13:08 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:13:08 - Info: GUI was loaded successfully
+19/12/2022 14:13:07 - Info: Connecting...
+19/12/2022 14:13:09 - Info: Connected
+19/12/2022 14:13:09 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:24:19 - Info: Autoconnect at startup
+19/12/2022 14:24:19 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:24:19 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:24:19 - Info: GUI was loaded successfully
+19/12/2022 14:24:19 - Info: Connecting...
+19/12/2022 14:24:20 - Info: Connected
+19/12/2022 14:24:20 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:25:52 - Info: Autoconnect at startup
+19/12/2022 14:25:53 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:25:53 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:25:53 - Info: GUI was loaded successfully
+19/12/2022 14:25:52 - Info: Connecting...
+19/12/2022 14:25:54 - Info: Connected
+19/12/2022 14:25:54 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:27:02 - Info: Autoconnect at startup
+19/12/2022 14:27:03 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:27:03 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:27:03 - Info: GUI was loaded successfully
+19/12/2022 14:27:02 - Info: Connecting...
+19/12/2022 14:27:04 - Info: Connected
+19/12/2022 14:27:04 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:28:39 - Info: Autoconnect at startup
+19/12/2022 14:28:39 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:28:39 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:28:39 - Info: GUI was loaded successfully
+19/12/2022 14:28:39 - Info: Connecting...
+19/12/2022 14:28:40 - Info: Connected
+19/12/2022 14:28:40 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:30:01 - Info: Autoconnect at startup
+19/12/2022 14:30:01 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:30:01 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:30:01 - Info: GUI was loaded successfully
+19/12/2022 14:30:01 - Info: Connecting...
+19/12/2022 14:30:02 - Info: Connected
+19/12/2022 14:30:02 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:32:13 - Info: Autoconnect at startup
+19/12/2022 14:32:13 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:32:13 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:32:13 - Info: GUI was loaded successfully
+19/12/2022 14:32:13 - Info: Connecting...
+19/12/2022 14:32:14 - Info: Connected
+19/12/2022 14:32:14 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:35:04 - Info: Autoconnect at startup
+19/12/2022 14:35:04 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:35:04 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:35:04 - Info: GUI was loaded successfully
+19/12/2022 14:35:04 - Info: Connecting...
+19/12/2022 14:35:05 - Info: Connected
+19/12/2022 14:35:05 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:35:56 - Info: Autoconnect at startup
+19/12/2022 14:35:56 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:35:56 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:35:56 - Info: GUI was loaded successfully
+19/12/2022 14:35:56 - Info: Connecting...
+19/12/2022 14:35:57 - Info: Connected
+19/12/2022 14:35:57 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:36:49 - Info: Autoconnect at startup
+19/12/2022 14:36:49 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:36:49 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:36:49 - Info: GUI was loaded successfully
+19/12/2022 14:36:49 - Info: Connecting...
+19/12/2022 14:36:50 - Info: Connected
+19/12/2022 14:36:50 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:38:18 - Info: Autoconnect at startup
+19/12/2022 14:38:18 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:38:18 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:38:18 - Info: GUI was loaded successfully
+19/12/2022 14:38:18 - Info: Connecting...
+19/12/2022 14:38:19 - Info: Connected
+19/12/2022 14:38:19 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:39:48 - Info: Autoconnect at startup
+19/12/2022 14:39:48 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:39:48 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:39:48 - Info: GUI was loaded successfully
+19/12/2022 14:39:48 - Info: Connecting...
+19/12/2022 14:39:49 - Info: Connected
+19/12/2022 14:39:49 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:40:11 - Info: Autoconnect at startup
+19/12/2022 14:40:11 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:40:11 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:40:11 - Info: GUI was loaded successfully
+19/12/2022 14:40:11 - Info: Connecting...
+19/12/2022 14:40:12 - Info: Connected
+19/12/2022 14:40:12 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:41:06 - Info: Autoconnect at startup
+19/12/2022 14:41:06 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:41:06 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:41:06 - Info: GUI was loaded successfully
+19/12/2022 14:41:06 - Info: Connecting...
+19/12/2022 14:41:07 - Info: Connected
+19/12/2022 14:41:07 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:43:40 - Info: Autoconnect at startup
+19/12/2022 14:43:40 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:43:40 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:43:40 - Info: GUI was loaded successfully
+19/12/2022 14:43:40 - Info: Connecting...
+19/12/2022 14:43:41 - Info: Connected
+19/12/2022 14:43:41 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:44:05 - Info: Autoconnect at startup
+19/12/2022 14:44:05 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:44:05 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:44:05 - Info: GUI was loaded successfully
+19/12/2022 14:44:05 - Info: Connecting...
+19/12/2022 14:44:06 - Info: Connected
+19/12/2022 14:44:06 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:44:17 - Info: Autoconnect at startup
+19/12/2022 14:44:17 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:44:17 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:44:17 - Info: GUI was loaded successfully
+19/12/2022 14:44:17 - Info: Connecting...
+19/12/2022 14:44:18 - Info: Connected
+19/12/2022 14:44:19 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 14:49:49 - Info: Autoconnect at startup
+19/12/2022 14:49:49 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:49:49 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 14:49:49 - Info: GUI was loaded successfully
+19/12/2022 14:49:49 - Info: Connecting...
+19/12/2022 14:49:50 - Info: Connected
+19/12/2022 14:49:50 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:03:19 - Info: Autoconnect at startup
+19/12/2022 15:03:19 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:03:19 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:03:19 - Info: GUI was loaded successfully
+19/12/2022 15:03:19 - Info: Connecting...
+19/12/2022 15:03:20 - Info: Connected
+19/12/2022 15:03:20 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:21:50 - Info: Autoconnect at startup
+19/12/2022 15:21:50 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:21:50 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:21:50 - Info: GUI was loaded successfully
+19/12/2022 15:21:50 - Info: Connecting...
+19/12/2022 15:21:51 - Info: Connected
+
+
+Streamwriter was initialised.
+19/12/2022 15:22:02 - Info: Autoconnect at startup
+19/12/2022 15:22:02 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:22:02 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:22:02 - Info: GUI was loaded successfully
+19/12/2022 15:22:02 - Info: Connecting...
+19/12/2022 15:22:03 - Info: Connected
+19/12/2022 15:22:03 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:23:01 - Info: Autoconnect at startup
+19/12/2022 15:23:02 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:23:02 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:23:02 - Info: GUI was loaded successfully
+19/12/2022 15:23:01 - Info: Connecting...
+19/12/2022 15:23:03 - Info: Connected
+19/12/2022 15:23:03 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:24:32 - Info: Autoconnect at startup
+19/12/2022 15:24:32 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:24:32 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:24:32 - Info: GUI was loaded successfully
+19/12/2022 15:24:32 - Info: Connecting...
+19/12/2022 15:24:33 - Info: Connected
+19/12/2022 15:24:33 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:25:54 - Info: Autoconnect at startup
+19/12/2022 15:25:55 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:25:55 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:25:55 - Info: GUI was loaded successfully
+19/12/2022 15:25:54 - Info: Connecting...
+19/12/2022 15:25:56 - Info: Connected
+19/12/2022 15:25:56 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:26:44 - Info: Autoconnect at startup
+19/12/2022 15:26:44 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:26:44 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:26:44 - Info: GUI was loaded successfully
+19/12/2022 15:26:44 - Info: Connecting...
+19/12/2022 15:26:45 - Info: Connected
+19/12/2022 15:26:45 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:29:00 - Info: Autoconnect at startup
+19/12/2022 15:29:00 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:29:00 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:29:00 - Info: GUI was loaded successfully
+19/12/2022 15:29:00 - Info: Connecting...
+19/12/2022 15:29:01 - Info: Connected
+19/12/2022 15:29:01 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:31:17 - Info: Autoconnect at startup
+19/12/2022 15:31:17 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:31:17 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:31:17 - Info: GUI was loaded successfully
+19/12/2022 15:31:17 - Info: Connecting...
+19/12/2022 15:31:18 - Info: Connected
+19/12/2022 15:31:18 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:32:04 - Info: Autoconnect at startup
+19/12/2022 15:32:04 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:32:04 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:32:04 - Info: GUI was loaded successfully
+19/12/2022 15:32:04 - Info: Connecting...
+19/12/2022 15:32:05 - Info: Connected
+19/12/2022 15:32:05 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:32:44 - Info: Autoconnect at startup
+19/12/2022 15:32:44 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:32:44 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:32:44 - Info: GUI was loaded successfully
+19/12/2022 15:32:44 - Info: Connecting...
+19/12/2022 15:32:45 - Info: Connected
+19/12/2022 15:32:45 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:36:33 - Info: Autoconnect at startup
+19/12/2022 15:36:33 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:36:33 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:36:33 - Info: GUI was loaded successfully
+19/12/2022 15:36:33 - Info: Connecting...
+19/12/2022 15:36:34 - Info: Connected
+19/12/2022 15:36:34 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:37:22 - Info: Autoconnect at startup
+19/12/2022 15:37:23 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:37:23 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:37:23 - Info: GUI was loaded successfully
+19/12/2022 15:37:22 - Info: Connecting...
+19/12/2022 15:37:24 - Info: Connected
+19/12/2022 15:37:24 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:38:25 - Info: Autoconnect at startup
+19/12/2022 15:38:25 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:38:25 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:38:25 - Info: GUI was loaded successfully
+19/12/2022 15:38:25 - Info: Connecting...
+19/12/2022 15:38:26 - Info: Connected
+19/12/2022 15:38:26 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:40:00 - Info: Autoconnect at startup
+19/12/2022 15:40:00 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:40:00 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:40:00 - Info: GUI was loaded successfully
+19/12/2022 15:40:00 - Info: Connecting...
+19/12/2022 15:40:01 - Info: Connected
+19/12/2022 15:40:01 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:41:33 - Info: Autoconnect at startup
+19/12/2022 15:41:33 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:41:33 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:41:33 - Info: GUI was loaded successfully
+19/12/2022 15:41:33 - Info: Connecting...
+19/12/2022 15:41:34 - Info: Connected
+19/12/2022 15:41:34 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:44:02 - Info: Autoconnect at startup
+19/12/2022 15:44:02 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:44:02 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:44:02 - Info: GUI was loaded successfully
+19/12/2022 15:44:02 - Info: Connecting...
+19/12/2022 15:44:03 - Info: Connected
+19/12/2022 15:44:03 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:47:13 - Info: Autoconnect at startup
+19/12/2022 15:47:14 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:47:14 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:47:14 - Info: GUI was loaded successfully
+19/12/2022 15:47:13 - Info: Connecting...
+19/12/2022 15:47:15 - Info: Connected
+19/12/2022 15:47:15 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:47:26 - Info: Autoconnect at startup
+19/12/2022 15:47:26 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:47:26 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:47:26 - Info: GUI was loaded successfully
+19/12/2022 15:47:26 - Info: Connecting...
+19/12/2022 15:47:27 - Info: Connected
+19/12/2022 15:47:27 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:48:38 - Info: Autoconnect at startup
+19/12/2022 15:48:39 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:48:39 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:48:39 - Info: GUI was loaded successfully
+19/12/2022 15:48:38 - Info: Connecting...
+19/12/2022 15:48:40 - Info: Connected
+19/12/2022 15:48:40 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:53:30 - Info: Autoconnect at startup
+19/12/2022 15:53:30 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:53:30 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:53:30 - Info: GUI was loaded successfully
+19/12/2022 15:53:30 - Info: Connecting...
+19/12/2022 15:53:31 - Info: Connected
+19/12/2022 15:53:31 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:55:12 - Info: Autoconnect at startup
+19/12/2022 15:55:12 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:55:12 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:55:12 - Info: GUI was loaded successfully
+19/12/2022 15:55:12 - Info: Connecting...
+19/12/2022 15:55:13 - Info: Connected
+19/12/2022 15:55:13 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:56:12 - Info: Autoconnect at startup
+19/12/2022 15:56:12 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:56:12 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:56:12 - Info: GUI was loaded successfully
+19/12/2022 15:56:12 - Info: Connecting...
+19/12/2022 15:56:13 - Info: Connected
+19/12/2022 15:56:13 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:58:22 - Info: Autoconnect at startup
+19/12/2022 15:58:22 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:58:22 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:58:22 - Info: GUI was loaded successfully
+19/12/2022 15:58:22 - Info: Connecting...
+19/12/2022 15:58:23 - Info: Connected
+19/12/2022 15:58:23 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 15:58:57 - Info: Autoconnect at startup
+19/12/2022 15:58:57 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:58:57 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 15:58:57 - Info: GUI was loaded successfully
+19/12/2022 15:58:57 - Info: Connecting...
+19/12/2022 15:58:58 - Info: Connected
+19/12/2022 15:58:58 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 16:00:46 - Info: Autoconnect at startup
+19/12/2022 16:00:46 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:00:46 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:00:46 - Info: GUI was loaded successfully
+19/12/2022 16:00:46 - Info: Connecting...
+19/12/2022 16:00:47 - Info: Connected
+19/12/2022 16:00:47 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 16:01:57 - Info: Autoconnect at startup
+19/12/2022 16:01:57 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:01:57 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:01:57 - Info: GUI was loaded successfully
+19/12/2022 16:01:57 - Info: Connecting...
+19/12/2022 16:01:58 - Info: Connected
+19/12/2022 16:01:58 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+19/12/2022 16:08:55 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:08:55 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:08:58 - Info: Running connection diagnostics...
+19/12/2022 16:08:58 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:08:58 - Info: Connected again
+19/12/2022 16:08:58 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:09:01 - Info: Running connection diagnostics...
+19/12/2022 16:09:01 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:09:02 - Info: Connected again
+
+
+Streamwriter was initialised.
+19/12/2022 16:10:10 - Info: Autoconnect at startup
+19/12/2022 16:10:10 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:10:10 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:10:10 - Info: GUI was loaded successfully
+19/12/2022 16:10:10 - Info: Connecting...
+19/12/2022 16:10:11 - Info: Connected
+19/12/2022 16:10:11 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+19/12/2022 16:10:20 - Info: Can not read data from PLC
+19/12/2022 16:10:20 - Info: Connection error: Can not read data from PLC
+19/12/2022 16:10:23 - Info: Running connection diagnostics...
+19/12/2022 16:10:23 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:10:24 - Info: Connected again
+19/12/2022 16:19:00 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:19:00 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:19:03 - Info: Running connection diagnostics...
+19/12/2022 16:19:03 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:19:04 - Info: Connected again
+19/12/2022 16:19:04 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:19:07 - Info: Running connection diagnostics...
+19/12/2022 16:19:07 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:19:07 - Info: Connected again
+19/12/2022 16:19:07 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:19:10 - Info: Running connection diagnostics...
+19/12/2022 16:19:10 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:19:11 - Info: Connected again
+19/12/2022 16:23:56 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:23:56 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:24:00 - Info: Running connection diagnostics...
+19/12/2022 16:24:00 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:24:00 - Info: Connected again
+19/12/2022 16:24:00 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:24:03 - Info: Running connection diagnostics...
+19/12/2022 16:24:03 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:24:04 - Info: Connected again
+19/12/2022 16:24:04 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:24:07 - Info: Running connection diagnostics...
+19/12/2022 16:24:07 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:24:07 - Info: Connected again
+
+
+Streamwriter was initialised.
+19/12/2022 16:24:37 - Info: Autoconnect at startup
+19/12/2022 16:24:37 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:24:37 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:24:37 - Info: GUI was loaded successfully
+19/12/2022 16:24:37 - Info: Connecting...
+19/12/2022 16:24:38 - Info: Connected
+19/12/2022 16:24:38 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+19/12/2022 16:24:49 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:24:49 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:24:52 - Info: Running connection diagnostics...
+19/12/2022 16:24:52 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:24:53 - Info: Connected again
+19/12/2022 16:24:53 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:24:56 - Info: Running connection diagnostics...
+19/12/2022 16:24:56 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:24:56 - Info: Connected again
+19/12/2022 16:24:56 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:24:59 - Info: Running connection diagnostics...
+19/12/2022 16:24:59 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:25:00 - Info: Connected again
+19/12/2022 16:25:00 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:25:03 - Info: Running connection diagnostics...
+19/12/2022 16:25:03 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:25:04 - Info: Connected again
+19/12/2022 16:25:22 - Info: TCP : Error receiving Data
+19/12/2022 16:25:22 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 16:25:25 - Info: Running connection diagnostics...
+19/12/2022 16:25:25 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:25:26 - Info: Connected again
+19/12/2022 16:28:20 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:28:20 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:28:23 - Info: Running connection diagnostics...
+19/12/2022 16:28:23 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:28:24 - Info: Connected again
+19/12/2022 16:28:24 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:28:27 - Info: Running connection diagnostics...
+19/12/2022 16:28:27 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:28:27 - Info: Connected again
+19/12/2022 16:28:27 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:28:30 - Info: Running connection diagnostics...
+19/12/2022 16:28:30 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:28:31 - Info: Connected again
+19/12/2022 16:31:05 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:31:05 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:31:08 - Info: Running connection diagnostics...
+19/12/2022 16:31:08 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:31:09 - Info: Connected again
+19/12/2022 16:31:09 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:31:12 - Info: Running connection diagnostics...
+19/12/2022 16:31:12 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:31:12 - Info: Connected again
+19/12/2022 16:31:12 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:31:15 - Info: Running connection diagnostics...
+19/12/2022 16:31:16 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:31:16 - Info: Connected again
+
+
+Streamwriter was initialised.
+19/12/2022 16:36:40 - Info: Autoconnect at startup
+19/12/2022 16:36:40 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:36:40 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:36:40 - Info: GUI was loaded successfully
+19/12/2022 16:36:40 - Info: Connecting...
+19/12/2022 16:36:41 - Info: Connected
+19/12/2022 16:36:41 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+19/12/2022 16:37:25 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:37:25 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:37:28 - Info: Running connection diagnostics...
+19/12/2022 16:37:28 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:37:28 - Info: Connected again
+19/12/2022 16:37:28 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:37:31 - Info: Running connection diagnostics...
+19/12/2022 16:37:31 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:37:32 - Info: Connected again
+19/12/2022 16:37:32 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:37:35 - Info: Running connection diagnostics...
+19/12/2022 16:37:35 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:37:35 - Info: Connected again
+
+
+Streamwriter was initialised.
+19/12/2022 16:40:01 - Info: Autoconnect at startup
+19/12/2022 16:40:01 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:40:01 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:40:01 - Info: GUI was loaded successfully
+19/12/2022 16:40:01 - Info: Connecting...
+19/12/2022 16:40:02 - Info: Connected
+19/12/2022 16:40:02 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+19/12/2022 16:44:41 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:44:41 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:44:44 - Info: Running connection diagnostics...
+19/12/2022 16:44:44 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:44:45 - Info: Connected again
+19/12/2022 16:44:45 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:44:48 - Info: Running connection diagnostics...
+19/12/2022 16:44:48 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:44:48 - Info: Connected again
+
+
+Streamwriter was initialised.
+19/12/2022 16:44:57 - Info: Autoconnect at startup
+19/12/2022 16:44:58 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:44:58 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 16:44:58 - Info: GUI was loaded successfully
+19/12/2022 16:44:57 - Info: Connecting...
+19/12/2022 16:44:59 - Info: Connected
+19/12/2022 16:44:59 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+19/12/2022 16:52:03 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:52:03 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:52:06 - Info: Running connection diagnostics...
+19/12/2022 16:52:06 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:52:06 - Info: Connected again
+19/12/2022 16:52:06 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:52:09 - Info: Running connection diagnostics...
+19/12/2022 16:52:09 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:52:10 - Info: Connected again
+19/12/2022 16:52:10 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:52:13 - Info: Running connection diagnostics...
+19/12/2022 16:52:13 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:52:13 - Info: Connected again
+19/12/2022 16:52:59 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:52:59 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:53:02 - Info: Running connection diagnostics...
+19/12/2022 16:53:02 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:53:03 - Info: Connected again
+19/12/2022 16:53:03 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:53:06 - Info: Running connection diagnostics...
+19/12/2022 16:53:06 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:53:06 - Info: Connected again
+19/12/2022 16:53:06 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:53:09 - Info: Running connection diagnostics...
+19/12/2022 16:53:09 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:53:10 - Info: Connected again
+19/12/2022 16:55:44 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:55:44 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:55:47 - Info: Running connection diagnostics...
+19/12/2022 16:55:47 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:55:48 - Info: Connected again
+19/12/2022 16:55:48 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:55:51 - Info: Running connection diagnostics...
+19/12/2022 16:55:51 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:55:51 - Info: Connected again
+19/12/2022 16:55:51 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:55:54 - Info: Running connection diagnostics...
+19/12/2022 16:55:54 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:55:55 - Info: Connected again
+19/12/2022 16:55:55 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:55:58 - Info: Running connection diagnostics...
+19/12/2022 16:55:58 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:55:59 - Info: Connected again
+19/12/2022 16:55:59 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:56:02 - Info: Running connection diagnostics...
+19/12/2022 16:56:02 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:56:02 - Info: Connected again
+19/12/2022 16:57:29 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:57:29 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:57:32 - Info: Running connection diagnostics...
+19/12/2022 16:57:32 - Info:   -Ping successful but connection is poor: 10.199.197.41
+19/12/2022 16:57:32 - Info: Connected again
+19/12/2022 16:57:32 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:57:35 - Info: Running connection diagnostics...
+19/12/2022 16:57:35 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:57:36 - Info: Connected again
+19/12/2022 16:58:16 - Info: Watchdog error - Watchdog does not change
+19/12/2022 16:58:16 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:58:19 - Info: Running connection diagnostics...
+19/12/2022 16:58:19 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:58:20 - Info: Connected again
+19/12/2022 16:58:20 - Info: Connection error: Watchdog error - Watchdog does not change
+19/12/2022 16:58:23 - Info: Running connection diagnostics...
+19/12/2022 16:58:23 - Info:   -Ping successful at: 10.199.197.41
+19/12/2022 16:58:23 - Info: Connected again

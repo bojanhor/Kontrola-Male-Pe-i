@@ -24,11 +24,10 @@ namespace WindowsFormsApp2
 
         public Gui_MalaPec()
         {
-            InitializeComponent();
+            InitializeComponent();           
             FormatTopPanel();
             FormClosed += Gui_MalaPec_FormClosed;
             Resize += Gui_MalaPec_Resize;
-
             SetupForm();
             Load += Gui_MalaPec_Load;
             UrnikDataFeed();
@@ -38,13 +37,15 @@ namespace WindowsFormsApp2
             connectedButton1.ID = 1;
             DisableGuiOnConnectionLossThread = new Thread(DisableGuiOnConnectionLoss);
 
-            stpw = new StopWatch(this, btnStart, btnStop, lblTime, lblTimeSet, btnUp, btnDown);
+            stpw = new StopWatch(this);
             stpw.StopwatchStarted += Stpw_StopwatchStarted;
             stpw.StopwatchStopped += Stpw_StopwatchStopped;
             stpw.StopwatchWasReset += Stpw_StopwatchWasReset;
-
+          
             TimerSetup();
             DataloggerSetup();
+
+            chkPauseIfLowTemp.Checked = Properties.Settings.Default.PavzirajStopwatch;
         }
 
         void DataloggerSetup()
@@ -207,14 +208,11 @@ namespace WindowsFormsApp2
                 temperatureSelector_0_3001.Value = p.TempStPnt1;
                 temperatureSelector_0_3002.Value = p.TempStPnt2;
                 rpmSelector_30_1001.Value = p.VentStdby;
-                temperatureDifference_5_301.Value = p.VntDiffMax;
-                temperatureDifference_5_302.Value = p.VntDiffMin;
-                rpmSelector_30_1002.Value = p.SpdupDiff;
                 rpmSelector_30_1003.Value = p.VntCoolOff;
                 timeToGoMinutes_1_301.Value = p.VentCoolOffTime;
-                autoMan01Select1.Value_Auto = p.AutoHeat;
-                autoMan01Select1.Value_Man0 = p.ForceDisableHeat;
-                autoMan01Select1.Value_Man1 = p.ForceEnableHeat;
+                autoMan01Select1.Value_Auto = p.Auto;
+                autoMan01Select1.Value_Man0 = p.Off;
+                autoMan01Select1.Value_Man1 = p.On;
                 histHeat2_101.Value = p.HistHeat;
                 actuatorStatus1.Value_PlcBit = p.Heat1;
                 actuatorStatus2.Value_PlcBit = p.Heat2;
@@ -426,6 +424,31 @@ namespace WindowsFormsApp2
         }
 
         private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkPauseIfLowTemp_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!chkPauseIfLowTemp.Checked)
+            {
+                stpw.ResumeStopwatchIfSettingChanged();
+            }
+
+            Properties.Settings.Default.PavzirajStopwatch = chkPauseIfLowTemp.Checked;
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void temperatureDifference_5_301_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
