@@ -235,20 +235,20 @@ namespace WindowsFormsApp2
         void positionControls()
         {
             int left = 10;
-            int spacing = 30;
-            int top = 5;
+            double spacing = 23.5;
+            double top = 5;
                         
             // Container
-            Height = top * 2 + 5 * spacing;
+            Height = (int)Math.Round(top * 2 + 5 * spacing);
             Width = 150;
 
             // Buttons
-            btn1.Left = left; btn1.Top = top; top += spacing;
-            btn2.Left = left; btn2.Top = top; top += spacing;
-            btn3.Left = left; btn3.Top = top; top += spacing;
-            btn4.Left = left; btn4.Top = top; top += spacing;
-            btn5.Left = left; btn5.Top = top; top += spacing;
-            btn6.Left = left; btn6.Top = top; top += spacing;
+            btn1.Left = left; btn1.Top = (int)Math.Round(top); top += spacing;
+            btn2.Left = left; btn2.Top = (int)Math.Round(top); top += spacing;
+            btn3.Left = left; btn3.Top = (int)Math.Round(top); top += spacing;
+            btn4.Left = left; btn4.Top = (int)Math.Round(top); top += spacing;
+            btn5.Left = left; btn5.Top = (int)Math.Round(top); top += spacing;
+            btn6.Left = left; btn6.Top = (int)Math.Round(top); top += spacing;
 
         }
 
