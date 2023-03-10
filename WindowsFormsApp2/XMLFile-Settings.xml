@@ -28,14 +28,14 @@
 	  </LOGO1>//
 	  //
 	  <LOGO2>//
-		<show>false</show>//
-		<enabled>false</enabled>//
+		<show>true</show>//
+		<enabled>true</enabled>//
 		<showname>LOGO2</showname>//
 		<serverIP>10.199.197.42</serverIP>//
-		<localTSAP>"03.00"</localTSAP>//
-		<remoteTSAP>"02.00"</remoteTSAP>//
+		<localTSAP>"02.00"</localTSAP>//
+		<remoteTSAP>"20.00"</remoteTSAP>//
 		<watchdogEN>true</watchdogEN>//
-		<watchdogAddress>246</watchdogAddress>//
+		<watchdogAddress>4</watchdogAddress>//
 		<ReadWriteCycle>200</ReadWriteCycle>//
 		</LOGO2>//
 	  //

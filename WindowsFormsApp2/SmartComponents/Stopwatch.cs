@@ -6,7 +6,7 @@ using System.Windows.Forms;
 namespace WindowsFormsApp2
 {
 
-    class StopWatch
+    public class StopWatch
     {
         Thread selfControlThread;
         bool debugTemperaruraJeDosezena = false;

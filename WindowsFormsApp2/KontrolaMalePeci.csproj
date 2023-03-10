@@ -169,6 +169,7 @@
     <Compile Include="WinApi.cs" />
     <Compile Include="XmlController.cs" />
     <Compile Include="XmlEncription.cs" />
+    <Compile Include="Zracenje.cs" />
     <EmbeddedResource Include="Forms\FormControl.resx">
       <DependentUpon>FormControl.cs</DependentUpon>
     </EmbeddedResource>

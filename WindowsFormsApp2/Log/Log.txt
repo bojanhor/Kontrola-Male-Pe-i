@@ -24770,3 +24770,1547 @@ Parameter name: inputUri
 19/12/2022 17:16:47 - Info: Connecting...
 19/12/2022 17:16:48 - Info: Connected
 19/12/2022 17:16:48 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/12/2022 17:17:39 - Info: Autoconnect at startup
+19/12/2022 17:17:39 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 17:17:39 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/12/2022 17:17:39 - Info: GUI was loaded successfully
+19/12/2022 17:17:39 - Info: Connecting...
+19/12/2022 17:17:41 - Info: Connected
+19/12/2022 17:17:41 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+19/12/2022 17:51:32 - Info: TCP : Error receiving Data
+19/12/2022 17:51:32 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:51:35 - Info: Running connection diagnostics...
+19/12/2022 17:51:35 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:35 - Info: Running connection diagnostics...
+19/12/2022 17:51:35 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:35 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:51:38 - Info: Running connection diagnostics...
+19/12/2022 17:51:38 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:38 - Info: Running connection diagnostics...
+19/12/2022 17:51:38 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:38 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:51:41 - Info: Running connection diagnostics...
+19/12/2022 17:51:41 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:41 - Info: Running connection diagnostics...
+19/12/2022 17:51:41 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:41 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:51:44 - Info: Running connection diagnostics...
+19/12/2022 17:51:44 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:44 - Info: Running connection diagnostics...
+19/12/2022 17:51:44 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:44 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:51:47 - Info: Running connection diagnostics...
+19/12/2022 17:51:47 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:47 - Info: Running connection diagnostics...
+19/12/2022 17:51:47 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:47 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:51:50 - Info: Running connection diagnostics...
+19/12/2022 17:51:50 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:50 - Info: Running connection diagnostics...
+19/12/2022 17:51:50 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:50 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:51:53 - Info: Running connection diagnostics...
+19/12/2022 17:51:53 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:53 - Info: Running connection diagnostics...
+19/12/2022 17:51:53 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:53 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:51:56 - Info: Running connection diagnostics...
+19/12/2022 17:51:56 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:56 - Info: Running connection diagnostics...
+19/12/2022 17:51:56 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:56 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:51:59 - Info: Running connection diagnostics...
+19/12/2022 17:51:59 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:59 - Info: Running connection diagnostics...
+19/12/2022 17:51:59 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:51:59 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:52:02 - Info: Running connection diagnostics...
+19/12/2022 17:52:02 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:52:02 - Info: Running connection diagnostics...
+19/12/2022 17:52:02 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+19/12/2022 17:52:02 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:52:05 - Info: Running connection diagnostics...
+19/12/2022 17:52:08 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+19/12/2022 17:52:09 - Info: Connection failed. Trying to reconnect
+19/12/2022 17:52:09 - Info: Running connection diagnostics...
+19/12/2022 17:52:12 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+19/12/2022 17:52:12 - Info: Connection failed. Trying to reconnect
+19/12/2022 17:52:12 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:52:15 - Info: Running connection diagnostics...
+19/12/2022 17:52:18 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+19/12/2022 17:52:19 - Info: Connection failed. Trying to reconnect
+19/12/2022 17:52:19 - Info: Running connection diagnostics...
+19/12/2022 17:52:22 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+19/12/2022 17:52:22 - Info: Connection failed. Trying to reconnect
+19/12/2022 17:52:22 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:52:25 - Info: Running connection diagnostics...
+19/12/2022 17:52:28 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+19/12/2022 17:52:29 - Info: Connection failed. Trying to reconnect
+19/12/2022 17:52:29 - Info: Running connection diagnostics...
+19/12/2022 17:52:32 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+19/12/2022 17:52:32 - Info: Connection failed. Trying to reconnect
+19/12/2022 17:52:32 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:52:35 - Info: Running connection diagnostics...
+19/12/2022 17:52:38 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+19/12/2022 17:52:39 - Info: Connection failed. Trying to reconnect
+19/12/2022 17:52:39 - Info: Running connection diagnostics...
+19/12/2022 17:52:42 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+19/12/2022 17:52:42 - Info: Connection failed. Trying to reconnect
+19/12/2022 17:52:42 - Info: Connection error: TCP : Error receiving Data
+19/12/2022 17:52:45 - Info: Running connection diagnostics...
+19/12/2022 17:52:48 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+
+
+Streamwriter was initialised.
+20/12/2022 06:08:29 - Info: Autoconnect at startup
+20/12/2022 06:08:30 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+20/12/2022 06:08:30 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+20/12/2022 06:08:30 - Info: GUI was loaded successfully
+20/12/2022 06:08:29 - Info: Connecting...
+20/12/2022 06:08:31 - Info: Connected
+20/12/2022 06:08:31 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+20/12/2022 17:16:10 - Info: TCP : Error receiving Data
+20/12/2022 17:16:10 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:16:13 - Info: Running connection diagnostics...
+20/12/2022 17:16:13 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:13 - Info: Running connection diagnostics...
+20/12/2022 17:16:13 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:13 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:16:16 - Info: Running connection diagnostics...
+20/12/2022 17:16:16 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:16 - Info: Running connection diagnostics...
+20/12/2022 17:16:16 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:16 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:16:19 - Info: Running connection diagnostics...
+20/12/2022 17:16:19 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:19 - Info: Running connection diagnostics...
+20/12/2022 17:16:19 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:19 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:16:22 - Info: Running connection diagnostics...
+20/12/2022 17:16:22 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:22 - Info: Running connection diagnostics...
+20/12/2022 17:16:22 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:22 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:16:25 - Info: Running connection diagnostics...
+20/12/2022 17:16:25 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:25 - Info: Running connection diagnostics...
+20/12/2022 17:16:25 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:25 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:16:28 - Info: Running connection diagnostics...
+20/12/2022 17:16:28 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:28 - Info: Running connection diagnostics...
+20/12/2022 17:16:28 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:28 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:16:31 - Info: Running connection diagnostics...
+20/12/2022 17:16:31 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:31 - Info: Running connection diagnostics...
+20/12/2022 17:16:31 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:31 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:16:34 - Info: Running connection diagnostics...
+20/12/2022 17:16:34 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:34 - Info: Running connection diagnostics...
+20/12/2022 17:16:34 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+20/12/2022 17:16:34 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:16:37 - Info: Running connection diagnostics...
+20/12/2022 17:16:40 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+20/12/2022 17:16:40 - Info: Connection failed. Trying to reconnect
+20/12/2022 17:16:40 - Info: Running connection diagnostics...
+20/12/2022 17:16:43 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+20/12/2022 17:16:44 - Info: Connection failed. Trying to reconnect
+20/12/2022 17:16:44 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:16:47 - Info: Running connection diagnostics...
+20/12/2022 17:16:50 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+20/12/2022 17:16:50 - Info: Connection failed. Trying to reconnect
+20/12/2022 17:16:50 - Info: Running connection diagnostics...
+20/12/2022 17:16:53 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+20/12/2022 17:16:54 - Info: Connection failed. Trying to reconnect
+20/12/2022 17:16:54 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:16:57 - Info: Running connection diagnostics...
+20/12/2022 17:17:00 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+20/12/2022 17:17:00 - Info: Connection failed. Trying to reconnect
+20/12/2022 17:17:00 - Info: Running connection diagnostics...
+20/12/2022 17:17:03 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+20/12/2022 17:17:04 - Info: Connection failed. Trying to reconnect
+20/12/2022 17:17:04 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:17:07 - Info: Running connection diagnostics...
+20/12/2022 17:17:10 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+20/12/2022 17:17:10 - Info: Connection failed. Trying to reconnect
+20/12/2022 17:17:10 - Info: Running connection diagnostics...
+20/12/2022 17:17:13 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+20/12/2022 17:17:14 - Info: Connection failed. Trying to reconnect
+20/12/2022 17:17:14 - Info: Connection error: TCP : Error receiving Data
+20/12/2022 17:17:17 - Info: Running connection diagnostics...
+20/12/2022 17:17:20 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+20/12/2022 17:17:20 - Info: Connection failed. Trying to reconnect
+20/12/2022 17:17:20 - Info: Running connection diagnostics...
+
+
+Streamwriter was initialised.
+21/12/2022 08:38:10 - Info: Autoconnect at startup
+21/12/2022 08:38:11 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+21/12/2022 08:38:11 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+21/12/2022 08:38:11 - Info: GUI was loaded successfully
+21/12/2022 08:38:10 - Info: Connecting...
+21/12/2022 08:38:12 - Info: Connected
+21/12/2022 08:38:12 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+21/12/2022 18:07:43 - Info: TCP : Error receiving Data
+21/12/2022 18:07:43 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:07:46 - Info: Running connection diagnostics...
+21/12/2022 18:07:46 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:07:46 - Info: Running connection diagnostics...
+21/12/2022 18:07:46 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:07:46 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:07:49 - Info: Running connection diagnostics...
+21/12/2022 18:07:49 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:07:49 - Info: Running connection diagnostics...
+21/12/2022 18:07:49 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:07:49 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:07:52 - Info: Running connection diagnostics...
+21/12/2022 18:07:52 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:07:52 - Info: Running connection diagnostics...
+21/12/2022 18:07:52 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:07:52 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:07:55 - Info: Running connection diagnostics...
+21/12/2022 18:07:55 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:07:55 - Info: Running connection diagnostics...
+21/12/2022 18:07:55 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:07:55 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:07:58 - Info: Running connection diagnostics...
+21/12/2022 18:07:58 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:07:58 - Info: Running connection diagnostics...
+21/12/2022 18:07:58 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:07:58 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:08:01 - Info: Running connection diagnostics...
+21/12/2022 18:08:01 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:08:01 - Info: Running connection diagnostics...
+21/12/2022 18:08:01 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:08:01 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:08:04 - Info: Running connection diagnostics...
+21/12/2022 18:08:04 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:08:04 - Info: Running connection diagnostics...
+21/12/2022 18:08:04 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:08:04 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:08:07 - Info: Running connection diagnostics...
+21/12/2022 18:08:07 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:08:07 - Info: Running connection diagnostics...
+21/12/2022 18:08:07 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:08:07 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:08:10 - Info: Running connection diagnostics...
+21/12/2022 18:08:10 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:08:10 - Info: Running connection diagnostics...
+21/12/2022 18:08:10 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:08:10 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:08:13 - Info: Running connection diagnostics...
+21/12/2022 18:08:13 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:08:13 - Info: Running connection diagnostics...
+21/12/2022 18:08:13 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+21/12/2022 18:08:13 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:08:16 - Info: Running connection diagnostics...
+21/12/2022 18:08:19 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+21/12/2022 18:08:19 - Info: Connection failed. Trying to reconnect
+21/12/2022 18:08:19 - Info: Running connection diagnostics...
+21/12/2022 18:08:22 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+21/12/2022 18:08:23 - Info: Connection failed. Trying to reconnect
+21/12/2022 18:08:23 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:08:26 - Info: Running connection diagnostics...
+21/12/2022 18:08:29 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+21/12/2022 18:08:29 - Info: Connection failed. Trying to reconnect
+21/12/2022 18:08:29 - Info: Running connection diagnostics...
+21/12/2022 18:08:32 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+21/12/2022 18:08:33 - Info: Connection failed. Trying to reconnect
+21/12/2022 18:08:33 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:08:36 - Info: Running connection diagnostics...
+21/12/2022 18:08:39 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+21/12/2022 18:08:39 - Info: Connection failed. Trying to reconnect
+21/12/2022 18:08:39 - Info: Running connection diagnostics...
+21/12/2022 18:08:42 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+21/12/2022 18:08:43 - Info: Connection failed. Trying to reconnect
+21/12/2022 18:08:43 - Info: Connection error: TCP : Error receiving Data
+21/12/2022 18:08:46 - Info: Running connection diagnostics...
+21/12/2022 18:08:49 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+21/12/2022 18:08:49 - Info: Connection failed. Trying to reconnect
+21/12/2022 18:08:49 - Info: Running connection diagnostics...
+21/12/2022 18:08:52 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+21/12/2022 18:08:53 - Info: Connection failed. Trying to reconnect
+21/12/2022 18:08:53 - Info: Connection error: TCP : Error receiving Data
+
+
+Streamwriter was initialised.
+22/12/2022 06:52:58 - Info: Autoconnect at startup
+22/12/2022 06:52:58 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+22/12/2022 06:52:58 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+22/12/2022 06:52:58 - Info: GUI was loaded successfully
+22/12/2022 06:52:58 - Info: Connecting...
+22/12/2022 06:52:59 - Info: Connected
+22/12/2022 06:52:59 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+22/12/2022 15:50:34 - Info: TCP : Error receiving Data
+22/12/2022 15:50:34 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:50:37 - Info: Running connection diagnostics...
+22/12/2022 15:50:37 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:37 - Info: Running connection diagnostics...
+22/12/2022 15:50:37 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:37 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:50:40 - Info: Running connection diagnostics...
+22/12/2022 15:50:40 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:40 - Info: Running connection diagnostics...
+22/12/2022 15:50:40 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:40 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:50:43 - Info: Running connection diagnostics...
+22/12/2022 15:50:43 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:43 - Info: Running connection diagnostics...
+22/12/2022 15:50:43 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:43 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:50:46 - Info: Running connection diagnostics...
+22/12/2022 15:50:46 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:46 - Info: Running connection diagnostics...
+22/12/2022 15:50:46 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:46 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:50:49 - Info: Running connection diagnostics...
+22/12/2022 15:50:49 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:49 - Info: Running connection diagnostics...
+22/12/2022 15:50:49 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:49 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:50:52 - Info: Running connection diagnostics...
+22/12/2022 15:50:52 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:52 - Info: Running connection diagnostics...
+22/12/2022 15:50:52 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:52 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:50:56 - Info: Running connection diagnostics...
+22/12/2022 15:50:56 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:56 - Info: Running connection diagnostics...
+22/12/2022 15:50:56 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:56 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:50:59 - Info: Running connection diagnostics...
+22/12/2022 15:50:59 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:59 - Info: Running connection diagnostics...
+22/12/2022 15:50:59 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:50:59 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:51:02 - Info: Running connection diagnostics...
+22/12/2022 15:51:02 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:02 - Info: Running connection diagnostics...
+22/12/2022 15:51:02 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:02 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:51:05 - Info: Running connection diagnostics...
+22/12/2022 15:51:05 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:05 - Info: Running connection diagnostics...
+22/12/2022 15:51:05 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:05 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:51:08 - Info: Running connection diagnostics...
+22/12/2022 15:51:08 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:08 - Info: Running connection diagnostics...
+22/12/2022 15:51:08 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:08 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:51:11 - Info: Running connection diagnostics...
+22/12/2022 15:51:11 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:11 - Info: Running connection diagnostics...
+22/12/2022 15:51:11 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:11 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:51:14 - Info: Running connection diagnostics...
+22/12/2022 15:51:14 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:14 - Info: Running connection diagnostics...
+22/12/2022 15:51:14 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:14 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:51:17 - Info: Running connection diagnostics...
+22/12/2022 15:51:17 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:17 - Info: Running connection diagnostics...
+22/12/2022 15:51:17 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:17 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:51:20 - Info: Running connection diagnostics...
+22/12/2022 15:51:20 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:20 - Info: Running connection diagnostics...
+22/12/2022 15:51:20 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:20 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:51:23 - Info: Running connection diagnostics...
+22/12/2022 15:51:23 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:23 - Info: Running connection diagnostics...
+22/12/2022 15:51:23 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+22/12/2022 15:51:23 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:51:26 - Info: Running connection diagnostics...
+22/12/2022 15:51:28 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+22/12/2022 15:51:29 - Info: Connection failed. Trying to reconnect
+22/12/2022 15:51:29 - Info: Running connection diagnostics...
+22/12/2022 15:51:32 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+22/12/2022 15:51:32 - Info: Connection failed. Trying to reconnect
+22/12/2022 15:51:32 - Info: Connection error: TCP : Error receiving Data
+22/12/2022 15:51:35 - Info: Running connection diagnostics...
+22/12/2022 15:51:38 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+22/12/2022 15:51:39 - Info: Connection failed. Trying to reconnect
+22/12/2022 15:51:39 - Info: Running connection diagnostics...
+22/12/2022 15:51:42 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+22/12/2022 15:51:42 - Info: Connection failed. Trying to reconnect
+22/12/2022 15:51:42 - Info: Connection error: TCP : Error receiving Data
+
+
+Streamwriter was initialised.
+27/12/2022 08:44:38 - Info: Autoconnect at startup
+27/12/2022 08:44:38 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+27/12/2022 08:44:38 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+27/12/2022 08:44:38 - Info: GUI was loaded successfully
+27/12/2022 08:44:38 - Info: Connecting...
+27/12/2022 08:44:39 - Info: Connected
+27/12/2022 08:44:39 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+27/12/2022 15:21:23 - Info: TCP : Error receiving Data
+27/12/2022 15:21:23 - Info: Connection error: TCP : Error receiving Data
+27/12/2022 15:21:26 - Info: Running connection diagnostics...
+27/12/2022 15:21:26 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+27/12/2022 15:21:26 - Info: Running connection diagnostics...
+27/12/2022 15:21:26 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+27/12/2022 15:21:26 - Info: Connection error: TCP : Error receiving Data
+27/12/2022 15:21:29 - Info: Running connection diagnostics...
+27/12/2022 15:21:31 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:21:31 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:21:31 - Info: Running connection diagnostics...
+27/12/2022 15:21:34 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:21:34 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:21:34 - Info: Connection error: TCP : Error receiving Data
+27/12/2022 15:21:38 - Info: Running connection diagnostics...
+27/12/2022 15:21:40 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:21:41 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:21:41 - Info: Running connection diagnostics...
+27/12/2022 15:21:44 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:21:44 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:21:44 - Info: Connection error: TCP : Error receiving Data
+27/12/2022 15:21:48 - Info: Running connection diagnostics...
+27/12/2022 15:21:50 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:21:51 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:21:51 - Info: Running connection diagnostics...
+27/12/2022 15:21:54 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:21:54 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:21:54 - Info: Connection error: TCP : Error receiving Data
+27/12/2022 15:21:58 - Info: Running connection diagnostics...
+27/12/2022 15:22:00 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:22:01 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:22:01 - Info: Running connection diagnostics...
+27/12/2022 15:22:04 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:22:04 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:22:04 - Info: Connection error: TCP : Error receiving Data
+27/12/2022 15:22:08 - Info: Running connection diagnostics...
+27/12/2022 15:22:10 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:22:11 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:22:11 - Info: Running connection diagnostics...
+27/12/2022 15:22:14 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:22:14 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:22:14 - Info: Connection error: TCP : Error receiving Data
+27/12/2022 15:22:18 - Info: Running connection diagnostics...
+27/12/2022 15:22:20 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:22:21 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:22:21 - Info: Running connection diagnostics...
+27/12/2022 15:22:24 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:22:24 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:22:24 - Info: Connection error: TCP : Error receiving Data
+27/12/2022 15:22:28 - Info: Running connection diagnostics...
+27/12/2022 15:22:30 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+27/12/2022 15:22:31 - Info: Connection failed. Trying to reconnect
+27/12/2022 15:22:31 - Info: Running connection diagnostics...
+
+
+Streamwriter was initialised.
+28/12/2022 09:51:55 - Info: Autoconnect at startup
+28/12/2022 09:51:55 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+28/12/2022 09:51:55 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+28/12/2022 09:51:55 - Info: GUI was loaded successfully
+28/12/2022 09:51:55 - Info: Connecting...
+28/12/2022 09:51:56 - Info: Connected
+28/12/2022 09:51:56 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+28/12/2022 16:37:11 - Info: TCP : Error receiving Data
+28/12/2022 16:37:11 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:14 - Info: Running connection diagnostics...
+28/12/2022 16:37:14 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:14 - Info: Running connection diagnostics...
+28/12/2022 16:37:14 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:14 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:17 - Info: Running connection diagnostics...
+28/12/2022 16:37:17 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:17 - Info: Running connection diagnostics...
+28/12/2022 16:37:17 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:17 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:20 - Info: Running connection diagnostics...
+28/12/2022 16:37:20 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:20 - Info: Running connection diagnostics...
+28/12/2022 16:37:20 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:20 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:23 - Info: Running connection diagnostics...
+28/12/2022 16:37:23 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:23 - Info: Running connection diagnostics...
+28/12/2022 16:37:23 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:23 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:26 - Info: Running connection diagnostics...
+28/12/2022 16:37:26 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:26 - Info: Running connection diagnostics...
+28/12/2022 16:37:26 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:26 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:29 - Info: Running connection diagnostics...
+28/12/2022 16:37:29 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:29 - Info: Running connection diagnostics...
+28/12/2022 16:37:29 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:29 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:32 - Info: Running connection diagnostics...
+28/12/2022 16:37:32 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:32 - Info: Running connection diagnostics...
+28/12/2022 16:37:32 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:32 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:35 - Info: Running connection diagnostics...
+28/12/2022 16:37:35 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:35 - Info: Running connection diagnostics...
+28/12/2022 16:37:35 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:35 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:38 - Info: Running connection diagnostics...
+28/12/2022 16:37:38 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:38 - Info: Running connection diagnostics...
+28/12/2022 16:37:38 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:38 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:41 - Info: Running connection diagnostics...
+28/12/2022 16:37:41 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:41 - Info: Running connection diagnostics...
+28/12/2022 16:37:41 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:41 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:44 - Info: Running connection diagnostics...
+28/12/2022 16:37:44 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:44 - Info: Running connection diagnostics...
+28/12/2022 16:37:44 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:44 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:47 - Info: Running connection diagnostics...
+28/12/2022 16:37:47 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:47 - Info: Running connection diagnostics...
+28/12/2022 16:37:47 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:47 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:50 - Info: Running connection diagnostics...
+28/12/2022 16:37:50 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:50 - Info: Running connection diagnostics...
+28/12/2022 16:37:50 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+28/12/2022 16:37:50 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:37:53 - Info: Running connection diagnostics...
+28/12/2022 16:37:56 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+28/12/2022 16:37:56 - Info: Connection failed. Trying to reconnect
+28/12/2022 16:37:56 - Info: Running connection diagnostics...
+28/12/2022 16:37:59 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+28/12/2022 16:38:00 - Info: Connection failed. Trying to reconnect
+28/12/2022 16:38:00 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:38:03 - Info: Running connection diagnostics...
+28/12/2022 16:38:06 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+28/12/2022 16:38:06 - Info: Connection failed. Trying to reconnect
+28/12/2022 16:38:06 - Info: Running connection diagnostics...
+28/12/2022 16:38:09 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+28/12/2022 16:38:10 - Info: Connection failed. Trying to reconnect
+28/12/2022 16:38:10 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:38:13 - Info: Running connection diagnostics...
+28/12/2022 16:38:16 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+28/12/2022 16:38:16 - Info: Connection failed. Trying to reconnect
+28/12/2022 16:38:16 - Info: Running connection diagnostics...
+28/12/2022 16:38:19 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+28/12/2022 16:38:20 - Info: Connection failed. Trying to reconnect
+28/12/2022 16:38:20 - Info: Connection error: TCP : Error receiving Data
+28/12/2022 16:38:23 - Info: Running connection diagnostics...
+
+
+Streamwriter was initialised.
+29/12/2022 05:50:03 - Info: Autoconnect at startup
+29/12/2022 05:50:03 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+29/12/2022 05:50:03 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+29/12/2022 05:50:03 - Info: GUI was loaded successfully
+29/12/2022 05:50:03 - Info: Connecting...
+29/12/2022 05:50:05 - Info: Connected
+29/12/2022 05:50:05 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+30/12/2022 14:28:02 - Info: TCP : Error receiving Data
+30/12/2022 14:28:02 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:05 - Info: Running connection diagnostics...
+30/12/2022 14:28:05 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:05 - Info: Running connection diagnostics...
+30/12/2022 14:28:05 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:05 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:08 - Info: Running connection diagnostics...
+30/12/2022 14:28:08 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:08 - Info: Running connection diagnostics...
+30/12/2022 14:28:08 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:08 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:11 - Info: Running connection diagnostics...
+30/12/2022 14:28:11 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:11 - Info: Running connection diagnostics...
+30/12/2022 14:28:11 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:11 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:14 - Info: Running connection diagnostics...
+30/12/2022 14:28:14 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:14 - Info: Running connection diagnostics...
+30/12/2022 14:28:14 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:14 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:17 - Info: Running connection diagnostics...
+30/12/2022 14:28:17 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:17 - Info: Running connection diagnostics...
+30/12/2022 14:28:17 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:17 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:20 - Info: Running connection diagnostics...
+30/12/2022 14:28:20 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:20 - Info: Running connection diagnostics...
+30/12/2022 14:28:20 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:20 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:23 - Info: Running connection diagnostics...
+30/12/2022 14:28:23 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:23 - Info: Running connection diagnostics...
+30/12/2022 14:28:23 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:23 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:26 - Info: Running connection diagnostics...
+30/12/2022 14:28:26 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:26 - Info: Running connection diagnostics...
+30/12/2022 14:28:26 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:26 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:29 - Info: Running connection diagnostics...
+30/12/2022 14:28:29 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:29 - Info: Running connection diagnostics...
+30/12/2022 14:28:29 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:29 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:32 - Info: Running connection diagnostics...
+30/12/2022 14:28:32 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:32 - Info: Running connection diagnostics...
+30/12/2022 14:28:32 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:32 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:35 - Info: Running connection diagnostics...
+30/12/2022 14:28:35 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:35 - Info: Running connection diagnostics...
+30/12/2022 14:28:35 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:35 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:38 - Info: Running connection diagnostics...
+30/12/2022 14:28:38 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:38 - Info: Running connection diagnostics...
+30/12/2022 14:28:38 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+30/12/2022 14:28:38 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:41 - Info: Running connection diagnostics...
+30/12/2022 14:28:44 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+30/12/2022 14:28:45 - Info: Connection failed. Trying to reconnect
+30/12/2022 14:28:45 - Info: Running connection diagnostics...
+30/12/2022 14:28:48 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+30/12/2022 14:28:48 - Info: Connection failed. Trying to reconnect
+30/12/2022 14:28:48 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:28:51 - Info: Running connection diagnostics...
+30/12/2022 14:28:54 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+30/12/2022 14:28:55 - Info: Connection failed. Trying to reconnect
+30/12/2022 14:28:55 - Info: Running connection diagnostics...
+30/12/2022 14:28:58 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+30/12/2022 14:28:58 - Info: Connection failed. Trying to reconnect
+30/12/2022 14:28:58 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:29:01 - Info: Running connection diagnostics...
+30/12/2022 14:29:04 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+30/12/2022 14:29:05 - Info: Connection failed. Trying to reconnect
+30/12/2022 14:29:05 - Info: Running connection diagnostics...
+30/12/2022 14:29:08 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+30/12/2022 14:29:08 - Info: Connection failed. Trying to reconnect
+30/12/2022 14:29:08 - Info: Connection error: TCP : Error receiving Data
+30/12/2022 14:29:11 - Info: Running connection diagnostics...
+
+
+Streamwriter was initialised.
+03/01/2023 05:48:42 - Info: Autoconnect at startup
+03/01/2023 05:48:42 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+03/01/2023 05:48:42 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+03/01/2023 05:48:42 - Info: GUI was loaded successfully
+03/01/2023 05:48:42 - Info: Connecting...
+03/01/2023 05:48:43 - Info: Connected
+03/01/2023 05:48:43 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+05/01/2023 12:34:02 - Info: Autoconnect at startup
+05/01/2023 12:34:02 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+05/01/2023 12:34:02 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+05/01/2023 12:34:02 - Info: GUI was loaded successfully
+05/01/2023 12:34:02 - Info: Connecting...
+05/01/2023 12:34:03 - Info: Connected
+05/01/2023 12:34:03 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+06/01/2023 09:39:55 - Info: Autoconnect at startup
+06/01/2023 09:39:55 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/01/2023 09:39:55 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/01/2023 09:39:55 - Info: GUI was loaded successfully
+06/01/2023 09:39:55 - Info: Connecting...
+06/01/2023 09:39:56 - Info: Connected
+06/01/2023 09:39:56 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+09/01/2023 05:37:21 - Info: Autoconnect at startup
+09/01/2023 05:37:22 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+09/01/2023 05:37:22 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+09/01/2023 05:37:22 - Info: GUI was loaded successfully
+09/01/2023 05:37:21 - Info: Connecting...
+09/01/2023 05:37:23 - Info: Connected
+09/01/2023 05:37:23 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+11/01/2023 00:10:07 - Info: Autoconnect at startup
+11/01/2023 00:10:08 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+11/01/2023 00:10:08 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+11/01/2023 00:10:08 - Info: GUI was loaded successfully
+11/01/2023 00:10:07 - Info: Connecting...
+11/01/2023 00:10:09 - Info: Connected
+11/01/2023 00:10:09 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+13/01/2023 07:14:25 - Info: Autoconnect at startup
+13/01/2023 07:14:25 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+13/01/2023 07:14:25 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+13/01/2023 07:14:25 - Info: GUI was loaded successfully
+13/01/2023 07:14:25 - Info: Connecting...
+13/01/2023 07:14:26 - Info: Connected
+13/01/2023 07:14:26 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+19/01/2023 14:33:09 - Info: Autoconnect at startup
+19/01/2023 14:33:09 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/01/2023 14:33:09 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+19/01/2023 14:33:09 - Info: GUI was loaded successfully
+19/01/2023 14:33:09 - Info: Connecting...
+19/01/2023 14:33:10 - Info: Connected
+19/01/2023 14:33:11 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+23/01/2023 08:31:46 - Info: Autoconnect at startup
+23/01/2023 08:31:47 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+23/01/2023 08:31:47 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+23/01/2023 08:31:47 - Info: GUI was loaded successfully
+23/01/2023 08:31:46 - Info: Connecting...
+23/01/2023 08:31:48 - Info: Connected
+23/01/2023 08:31:48 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+24/01/2023 08:52:27 - Info: Autoconnect at startup
+24/01/2023 08:52:27 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+24/01/2023 08:52:27 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+24/01/2023 08:52:27 - Info: GUI was loaded successfully
+24/01/2023 08:52:27 - Info: Connecting...
+24/01/2023 08:52:28 - Info: Connected
+24/01/2023 08:52:28 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+25/01/2023 10:09:35 - Info: Autoconnect at startup
+25/01/2023 10:09:36 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+25/01/2023 10:09:36 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+25/01/2023 10:09:36 - Info: GUI was loaded successfully
+25/01/2023 10:09:36 - Info: Connecting...
+25/01/2023 10:09:37 - Info: Connected
+25/01/2023 10:09:37 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+01/02/2023 10:52:40 - Info: Autoconnect at startup
+01/02/2023 10:52:40 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+01/02/2023 10:52:40 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+01/02/2023 10:52:40 - Info: GUI was loaded successfully
+01/02/2023 10:52:40 - Info: Connecting...
+01/02/2023 10:52:41 - Info: Connected
+01/02/2023 10:52:41 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+06/02/2023 06:45:08 - Info: Autoconnect at startup
+06/02/2023 06:45:08 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/02/2023 06:45:08 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/02/2023 06:45:08 - Info: GUI was loaded successfully
+06/02/2023 06:45:08 - Info: Connecting...
+06/02/2023 06:45:09 - Info: Connected
+06/02/2023 06:45:09 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+09/02/2023 07:56:55 - Info: Autoconnect at startup
+09/02/2023 07:56:56 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+09/02/2023 07:56:56 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+09/02/2023 07:56:56 - Info: GUI was loaded successfully
+09/02/2023 07:56:55 - Info: Connecting...
+09/02/2023 07:56:57 - Info: Connected
+09/02/2023 07:56:57 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+15/02/2023 17:36:39 - Info: Autoconnect at startup
+15/02/2023 17:36:39 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+15/02/2023 17:36:39 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+15/02/2023 17:36:39 - Info: GUI was loaded successfully
+15/02/2023 17:36:39 - Info: Connecting...
+15/02/2023 17:36:40 - Info: Connected
+15/02/2023 17:36:40 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+16/02/2023 11:36:17 - Info: TCP : Error sending Data
+16/02/2023 11:36:17 - Info: Connection error: TCP : Error sending Data
+16/02/2023 11:36:20 - Info: Running connection diagnostics...
+16/02/2023 11:36:20 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+16/02/2023 11:36:20 - Info: Running connection diagnostics...
+16/02/2023 11:36:20 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+16/02/2023 11:36:20 - Info: Connection error: TCP : Error sending Data
+16/02/2023 11:36:23 - Info: Running connection diagnostics...
+16/02/2023 11:36:23 - Info: Error: R/W Cycle manager stopped. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+16/02/2023 11:36:23 - Info: Running connection diagnostics...
+16/02/2023 11:36:23 - Info: Error: Retrieving data from PLC failed. Message source: Program looptrough inside background worker: An exception occurred during a Ping request.
+16/02/2023 11:36:23 - Info: Connection error: TCP : Error sending Data
+16/02/2023 11:36:26 - Info: Running connection diagnostics...
+16/02/2023 11:36:26 - Info:   -Ping successful at: 10.199.197.41
+16/02/2023 11:36:28 - Info: Connection failed. Trying to reconnect
+16/02/2023 11:36:28 - Info: Running connection diagnostics...
+16/02/2023 11:36:28 - Info:   -Ping successful at: 10.199.197.41
+16/02/2023 11:36:29 - Info: Connected again
+16/02/2023 11:36:29 - Info: Connection error: TCP : Error sending Data
+16/02/2023 11:36:32 - Info: Running connection diagnostics...
+16/02/2023 11:36:32 - Info:   -Ping successful at: 10.199.197.41
+16/02/2023 11:36:32 - Info: Connected again
+
+
+Streamwriter was initialised.
+21/02/2023 14:27:31 - Info: Autoconnect at startup
+21/02/2023 14:27:31 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+21/02/2023 14:27:31 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+21/02/2023 14:27:31 - Info: GUI was loaded successfully
+21/02/2023 14:27:31 - Info: Connecting...
+21/02/2023 14:27:32 - Info: Connected
+21/02/2023 14:27:32 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+27/02/2023 12:15:25 - Info: Autoconnect at startup
+27/02/2023 12:15:25 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+27/02/2023 12:15:25 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+27/02/2023 12:15:25 - Info: GUI was loaded successfully
+27/02/2023 12:15:25 - Info: Connecting...
+27/02/2023 12:15:26 - Info: Connected
+27/02/2023 12:15:26 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+27/02/2023 13:45:47 - Info: TCP : Error receiving Data
+27/02/2023 13:45:47 - Info: Connection error: TCP : Error receiving Data
+27/02/2023 13:45:50 - Info: Running connection diagnostics...
+27/02/2023 13:45:50 - Info:   -Ping successful at: 10.199.197.41
+27/02/2023 13:45:50 - Info: Connected again
+
+
+Streamwriter was initialised.
+02/03/2023 06:31:37 - Info: Autoconnect at startup
+02/03/2023 06:31:37 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+02/03/2023 06:31:37 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+02/03/2023 06:31:37 - Info: GUI was loaded successfully
+02/03/2023 06:31:37 - Info: Connecting...
+02/03/2023 06:31:38 - Info: Connected
+02/03/2023 06:31:38 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+06/03/2023 12:22:48 - Info: Autoconnect at startup
+06/03/2023 12:22:48 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 12:22:48 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 12:22:48 - Info: GUI was loaded successfully
+06/03/2023 12:22:48 - Info: Connecting...
+06/03/2023 12:22:49 - Info: Connected
+06/03/2023 12:22:49 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 12:32:36 - Info: TCP : Error receiving Data
+06/03/2023 12:32:36 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:32:39 - Info: Running connection diagnostics...
+06/03/2023 12:32:42 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:32:45 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:32:45 - Info: Running connection diagnostics...
+06/03/2023 12:32:48 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:32:51 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:32:51 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:32:54 - Info: Running connection diagnostics...
+06/03/2023 12:32:57 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:33:00 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:33:00 - Info: Running connection diagnostics...
+06/03/2023 12:33:03 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:33:06 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:33:06 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:33:09 - Info: Running connection diagnostics...
+06/03/2023 12:33:12 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:33:14 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:33:14 - Info: Running connection diagnostics...
+06/03/2023 12:33:18 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:33:20 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:33:20 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:33:23 - Info: Running connection diagnostics...
+06/03/2023 12:33:26 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:33:29 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:33:29 - Info: Running connection diagnostics...
+06/03/2023 12:33:32 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:33:35 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:33:35 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:33:38 - Info: Running connection diagnostics...
+06/03/2023 12:33:41 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:33:43 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:33:43 - Info: Running connection diagnostics...
+06/03/2023 12:33:47 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:33:49 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:33:49 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:33:52 - Info: Running connection diagnostics...
+06/03/2023 12:33:55 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:33:58 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:33:58 - Info: Running connection diagnostics...
+06/03/2023 12:34:01 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:34:04 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:34:04 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:34:07 - Info: Running connection diagnostics...
+06/03/2023 12:34:10 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:34:12 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:34:12 - Info: Running connection diagnostics...
+06/03/2023 12:34:16 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:34:18 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:34:18 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:34:21 - Info: Running connection diagnostics...
+06/03/2023 12:34:24 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:34:27 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:34:27 - Info: Running connection diagnostics...
+06/03/2023 12:34:30 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:34:33 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:34:33 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:34:36 - Info: Running connection diagnostics...
+06/03/2023 12:34:39 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:34:41 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:34:41 - Info: Running connection diagnostics...
+06/03/2023 12:34:45 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:34:47 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:34:47 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:34:50 - Info: Running connection diagnostics...
+06/03/2023 12:34:53 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:34:56 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:34:56 - Info: Running connection diagnostics...
+06/03/2023 12:34:59 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:35:02 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:35:02 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:35:05 - Info: Running connection diagnostics...
+06/03/2023 12:35:08 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:35:10 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:35:10 - Info: Running connection diagnostics...
+06/03/2023 12:35:14 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:35:16 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:35:16 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:35:19 - Info: Running connection diagnostics...
+06/03/2023 12:35:22 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:35:25 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:35:25 - Info: Running connection diagnostics...
+06/03/2023 12:35:28 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:35:31 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:35:31 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:35:34 - Info: Running connection diagnostics...
+06/03/2023 12:35:37 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:35:39 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:35:39 - Info: Running connection diagnostics...
+06/03/2023 12:35:43 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:35:45 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:35:45 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:35:48 - Info: Running connection diagnostics...
+06/03/2023 12:35:51 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:35:54 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:35:54 - Info: Running connection diagnostics...
+06/03/2023 12:35:57 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:36:00 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:36:00 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:36:03 - Info: Running connection diagnostics...
+06/03/2023 12:36:06 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:36:08 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:36:08 - Info: Running connection diagnostics...
+06/03/2023 12:36:12 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:36:14 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:36:14 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:36:17 - Info: Running connection diagnostics...
+06/03/2023 12:36:20 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:36:23 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:36:23 - Info: Running connection diagnostics...
+06/03/2023 12:36:26 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:36:29 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:36:29 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:36:32 - Info: Running connection diagnostics...
+06/03/2023 12:36:35 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:36:37 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:36:37 - Info: Running connection diagnostics...
+06/03/2023 12:36:41 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:36:43 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:36:43 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:36:46 - Info: Running connection diagnostics...
+06/03/2023 12:36:49 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:36:52 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:36:52 - Info: Running connection diagnostics...
+06/03/2023 12:36:55 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:36:58 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:36:58 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:37:01 - Info: Running connection diagnostics...
+06/03/2023 12:37:04 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:37:06 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:37:06 - Info: Running connection diagnostics...
+06/03/2023 12:37:10 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:37:12 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:37:12 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:37:15 - Info: Running connection diagnostics...
+06/03/2023 12:37:18 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:37:21 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:37:21 - Info: Running connection diagnostics...
+06/03/2023 12:37:24 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:37:27 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:37:27 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:37:30 - Info: Running connection diagnostics...
+06/03/2023 12:37:33 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:37:35 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:37:35 - Info: Running connection diagnostics...
+06/03/2023 12:37:39 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:37:41 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:37:41 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:37:44 - Info: Running connection diagnostics...
+06/03/2023 12:37:47 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:37:50 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:37:50 - Info: Running connection diagnostics...
+06/03/2023 12:37:53 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:37:56 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:37:56 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:37:59 - Info: Running connection diagnostics...
+06/03/2023 12:38:02 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:38:04 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:38:04 - Info: Running connection diagnostics...
+06/03/2023 12:38:08 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:38:10 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:38:10 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:38:13 - Info: Running connection diagnostics...
+06/03/2023 12:38:16 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:38:19 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:38:19 - Info: Running connection diagnostics...
+06/03/2023 12:38:22 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:38:25 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:38:25 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:38:28 - Info: Running connection diagnostics...
+06/03/2023 12:38:31 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:38:33 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:38:33 - Info: Running connection diagnostics...
+06/03/2023 12:38:37 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:38:39 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:38:39 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:38:42 - Info: Running connection diagnostics...
+06/03/2023 12:38:45 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:38:48 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:38:48 - Info: Running connection diagnostics...
+06/03/2023 12:38:51 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:38:54 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:38:54 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:38:57 - Info: Running connection diagnostics...
+06/03/2023 12:39:00 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:39:02 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:39:02 - Info: Running connection diagnostics...
+06/03/2023 12:39:06 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:39:08 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:39:08 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:39:11 - Info: Running connection diagnostics...
+06/03/2023 12:39:14 - Info:   -Ping ERROR at: 10.199.197.41 (DestinationHostUnreachable)
+06/03/2023 12:39:17 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:39:17 - Info: Running connection diagnostics...
+06/03/2023 12:39:20 - Info:   -Ping ERROR at: 10.199.197.41 (TimedOut)
+06/03/2023 12:39:23 - Info: Connection failed. Trying to reconnect
+06/03/2023 12:39:23 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 12:39:26 - Info: Running connection diagnostics...
+06/03/2023 12:39:26 - Info:   -Ping successful at: 10.199.197.41
+06/03/2023 12:39:26 - Info: Connected again
+06/03/2023 12:51:34 - Info: Watchdog error - Watchdog does not change
+06/03/2023 12:51:34 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 12:51:37 - Info: Running connection diagnostics...
+06/03/2023 12:51:37 - Info:   -Ping successful at: 10.199.197.41
+06/03/2023 12:51:37 - Info: Connected again
+06/03/2023 12:51:37 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 12:51:40 - Info: Running connection diagnostics...
+06/03/2023 12:51:40 - Info:   -Ping successful at: 10.199.197.41
+06/03/2023 12:51:41 - Info: Connected again
+06/03/2023 12:52:50 - Info: Watchdog error - Watchdog does not change
+06/03/2023 12:52:50 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 12:52:53 - Info: Running connection diagnostics...
+06/03/2023 12:52:53 - Info:   -Ping successful at: 10.199.197.41
+06/03/2023 12:52:54 - Info: Connected again
+06/03/2023 12:52:54 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 12:52:57 - Info: Running connection diagnostics...
+06/03/2023 12:52:57 - Info:   -Ping successful at: 10.199.197.41
+06/03/2023 12:52:58 - Info: Connected again
+06/03/2023 12:52:58 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 12:53:01 - Info: Running connection diagnostics...
+06/03/2023 12:53:01 - Info:   -Ping successful at: 10.199.197.41
+06/03/2023 12:53:01 - Info: Connected again
+
+
+Streamwriter was initialised.
+06/03/2023 13:42:11 - Info: Autoconnect at startup
+06/03/2023 13:42:11 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:42:11 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:42:11 - Info: GUI was loaded successfully
+06/03/2023 13:42:11 - Info: Connecting...
+06/03/2023 13:42:12 - Info: Connected
+06/03/2023 13:42:12 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+06/03/2023 13:50:16 - Info: Autoconnect at startup
+06/03/2023 13:50:16 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:50:16 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:50:16 - Info: GUI was loaded successfully
+06/03/2023 13:50:16 - Info: Connecting...
+06/03/2023 13:50:17 - Info: Connected
+06/03/2023 13:50:17 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+06/03/2023 13:50:21 - Info: Autoconnect at startup
+06/03/2023 13:50:22 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:50:22 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:50:22 - Info: GUI was loaded successfully
+06/03/2023 13:50:21 - Info: Connecting...
+06/03/2023 13:50:23 - Info: Connected
+06/03/2023 13:50:23 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+06/03/2023 13:54:05 - Info: Autoconnect at startup
+06/03/2023 13:54:05 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:54:05 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:54:05 - Info: GUI was loaded successfully
+06/03/2023 13:54:05 - Info: Connecting...
+06/03/2023 13:54:06 - Info: Connected
+06/03/2023 13:54:06 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+06/03/2023 13:56:15 - Info: Autoconnect at startup
+06/03/2023 13:56:15 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:56:15 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:56:15 - Info: GUI was loaded successfully
+06/03/2023 13:56:15 - Info: Connecting...
+06/03/2023 13:56:16 - Info: Connected
+06/03/2023 13:56:16 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+
+
+Streamwriter was initialised.
+06/03/2023 13:56:43 - Info: Autoconnect at startup
+06/03/2023 13:56:43 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:56:43 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:56:43 - Info: GUI was loaded successfully
+06/03/2023 13:56:43 - Info: Connecting...
+06/03/2023 13:56:44 - Info: Connected
+06/03/2023 13:56:44 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 13:56:48 - Info: XML file was opend
+06/03/2023 13:57:16 - Info: LOGO1: Disconected by the user
+
+
+Streamwriter was initialised.
+06/03/2023 13:57:16 - Info: Autoconnect at startup
+06/03/2023 13:57:16 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:57:16 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:57:16 - Info: GUI was loaded successfully
+06/03/2023 13:57:16 - Info: Connecting...
+06/03/2023 13:57:17 - Info: Connected
+06/03/2023 13:57:17 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 13:57:27 - Info: XML file was opend
+06/03/2023 13:57:38 - Info: LOGO1: Disconected by the user
+
+
+Streamwriter was initialised.
+06/03/2023 13:57:39 - Info: Autoconnect at startup
+06/03/2023 13:57:39 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:57:39 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:57:39 - Info: GUI was loaded successfully
+06/03/2023 13:57:39 - Info: Connecting...
+06/03/2023 13:57:39 - Info: Connecting...
+06/03/2023 13:57:40 - Info: Connected
+06/03/2023 13:57:40 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 13:57:41 - Info: Connected
+06/03/2023 13:57:41 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+06/03/2023 13:58:47 - Info: Autoconnect at startup
+06/03/2023 13:58:47 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:58:47 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 13:58:47 - Info: GUI was loaded successfully
+06/03/2023 13:58:47 - Info: Connecting...
+06/03/2023 13:58:47 - Info: Connecting...
+06/03/2023 13:58:48 - Info: Connected
+06/03/2023 13:58:48 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 13:58:49 - Info: Connected
+06/03/2023 13:58:49 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+06/03/2023 14:00:13 - Info: Watchdog error - Watchdog does not change
+06/03/2023 14:00:13 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 14:00:16 - Info: Running connection diagnostics...
+06/03/2023 14:00:16 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 14:00:17 - Info: Connected again
+06/03/2023 14:00:17 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 14:00:20 - Info: Running connection diagnostics...
+06/03/2023 14:00:20 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 14:00:20 - Info: Connected again
+
+
+Streamwriter was initialised.
+06/03/2023 14:01:13 - Info: Autoconnect at startup
+06/03/2023 14:01:14 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 14:01:14 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 14:01:14 - Info: GUI was loaded successfully
+06/03/2023 14:01:13 - Info: Connecting...
+06/03/2023 14:01:13 - Info: Connecting...
+06/03/2023 14:01:15 - Info: Connected
+06/03/2023 14:01:15 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 14:01:16 - Info: Connected
+06/03/2023 14:01:16 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+06/03/2023 14:01:39 - Info: Watchdog error - Watchdog does not change
+06/03/2023 14:01:39 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 14:01:42 - Info: Running connection diagnostics...
+06/03/2023 14:01:42 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 14:01:43 - Info: Connected again
+06/03/2023 14:01:43 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 14:01:46 - Info: Running connection diagnostics...
+06/03/2023 14:01:46 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 14:01:46 - Info: Connected again
+
+
+Streamwriter was initialised.
+06/03/2023 14:11:14 - Info: Autoconnect at startup
+06/03/2023 14:11:15 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 14:11:15 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 14:11:15 - Info: GUI was loaded successfully
+06/03/2023 14:11:14 - Info: Connecting...
+06/03/2023 14:11:14 - Info: Connecting...
+06/03/2023 14:11:16 - Info: Connected
+06/03/2023 14:11:16 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 14:11:17 - Info: Connected
+06/03/2023 14:11:17 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+06/03/2023 14:12:09 - Info: Watchdog error - Watchdog does not change
+06/03/2023 14:12:09 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 14:12:12 - Info: Running connection diagnostics...
+06/03/2023 14:12:12 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 14:12:13 - Info: Connected again
+06/03/2023 14:12:13 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 14:12:16 - Info: Running connection diagnostics...
+06/03/2023 14:12:16 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 14:12:16 - Info: Connected again
+06/03/2023 14:13:13 - Info: Watchdog error - Watchdog does not change
+06/03/2023 14:13:13 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 14:13:16 - Info: Running connection diagnostics...
+06/03/2023 14:13:16 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 14:13:16 - Info: Connected again
+06/03/2023 14:13:16 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 14:13:19 - Info: Running connection diagnostics...
+06/03/2023 14:13:19 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 14:13:20 - Info: Connected again
+
+
+Streamwriter was initialised.
+06/03/2023 14:13:56 - Info: Autoconnect at startup
+06/03/2023 14:13:56 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 14:13:56 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 14:13:56 - Info: GUI was loaded successfully
+06/03/2023 14:13:56 - Info: Connecting...
+06/03/2023 14:13:56 - Info: Connecting...
+06/03/2023 14:13:57 - Info: Connected
+06/03/2023 14:13:57 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 14:13:58 - Info: Connected
+06/03/2023 14:13:58 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+06/03/2023 14:14:29 - Info: Watchdog error - Watchdog does not change
+06/03/2023 14:14:29 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 14:14:32 - Info: Running connection diagnostics...
+06/03/2023 14:14:32 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 14:14:33 - Info: Connected again
+06/03/2023 14:14:33 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 14:14:36 - Info: Running connection diagnostics...
+06/03/2023 14:14:36 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 14:14:36 - Info: Connected again
+06/03/2023 14:19:33 - Info: Watchdog error - Watchdog does not change
+06/03/2023 14:19:33 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 14:19:36 - Info: Running connection diagnostics...
+06/03/2023 14:19:36 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 14:19:36 - Info: Connected again
+06/03/2023 14:19:36 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 14:19:39 - Info: Running connection diagnostics...
+06/03/2023 14:19:39 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 14:19:40 - Info: Connected again
+
+
+Streamwriter was initialised.
+06/03/2023 14:20:02 - Info: Autoconnect at startup
+06/03/2023 14:20:02 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 14:20:02 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 14:20:02 - Info: GUI was loaded successfully
+06/03/2023 14:20:02 - Info: Connecting...
+06/03/2023 14:20:02 - Info: Connecting...
+06/03/2023 14:20:03 - Info: Connected
+06/03/2023 14:20:03 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 14:20:04 - Info: Connected
+06/03/2023 14:20:04 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+06/03/2023 14:24:43 - Info: Autoconnect at startup
+06/03/2023 14:24:43 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 14:24:43 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 14:24:43 - Info: GUI was loaded successfully
+06/03/2023 14:24:43 - Info: Connecting...
+06/03/2023 14:24:43 - Info: Connecting...
+06/03/2023 14:24:44 - Info: Connected
+06/03/2023 14:24:44 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 14:24:45 - Info: Connected
+06/03/2023 14:24:45 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+06/03/2023 14:25:28 - Info: Autoconnect at startup
+06/03/2023 14:25:28 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 14:25:28 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 14:25:28 - Info: GUI was loaded successfully
+06/03/2023 14:25:28 - Info: Connecting...
+06/03/2023 14:25:28 - Info: Connecting...
+06/03/2023 14:25:29 - Info: Connected
+06/03/2023 14:25:29 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 14:25:30 - Info: Connected
+06/03/2023 14:25:30 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+06/03/2023 15:32:12 - Info: Autoconnect at startup
+06/03/2023 15:32:12 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:32:12 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:32:12 - Info: GUI was loaded successfully
+06/03/2023 15:32:12 - Info: Connecting...
+06/03/2023 15:32:12 - Info: Connecting...
+06/03/2023 15:32:13 - Info: Connected
+06/03/2023 15:32:13 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 15:32:14 - Info: Connected
+06/03/2023 15:32:14 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+06/03/2023 15:33:32 - Info: Autoconnect at startup
+06/03/2023 15:33:32 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:33:32 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:33:32 - Info: GUI was loaded successfully
+06/03/2023 15:33:32 - Info: Connecting...
+06/03/2023 15:33:32 - Info: Connecting...
+06/03/2023 15:33:33 - Info: Connected
+06/03/2023 15:33:33 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 15:33:34 - Info: Connected
+06/03/2023 15:33:34 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+06/03/2023 15:45:16 - Info: Autoconnect at startup
+06/03/2023 15:45:16 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:45:16 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:45:16 - Info: GUI was loaded successfully
+06/03/2023 15:45:16 - Info: Connecting...
+06/03/2023 15:45:16 - Info: Connecting...
+06/03/2023 15:45:17 - Info: Connected
+06/03/2023 15:45:17 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 15:45:18 - Info: Connected
+06/03/2023 15:45:18 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+06/03/2023 15:46:26 - Info: Watchdog error - Watchdog does not change
+06/03/2023 15:46:26 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 15:46:29 - Info: Running connection diagnostics...
+06/03/2023 15:46:29 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 15:46:30 - Info: Connected again
+06/03/2023 15:46:30 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 15:46:33 - Info: Running connection diagnostics...
+06/03/2023 15:46:33 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 15:46:33 - Info: Connected again
+
+
+Streamwriter was initialised.
+06/03/2023 15:46:43 - Info: Autoconnect at startup
+06/03/2023 15:46:43 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:46:43 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:46:43 - Info: GUI was loaded successfully
+06/03/2023 15:46:43 - Info: Connecting...
+06/03/2023 15:46:43 - Info: Connecting...
+06/03/2023 15:46:44 - Info: Connected
+06/03/2023 15:46:44 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 15:46:45 - Info: Connected
+06/03/2023 15:46:45 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+06/03/2023 15:48:43 - Info: Watchdog error - Watchdog does not change
+06/03/2023 15:48:43 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 15:48:46 - Info: Running connection diagnostics...
+06/03/2023 15:48:46 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 15:48:47 - Info: Connected again
+06/03/2023 15:48:47 - Info: Connection error: Watchdog error - Watchdog does not change
+06/03/2023 15:48:50 - Info: Running connection diagnostics...
+06/03/2023 15:48:50 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 15:48:50 - Info: Connected again
+
+
+Streamwriter was initialised.
+06/03/2023 15:51:57 - Info: Autoconnect at startup
+06/03/2023 15:51:58 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:51:58 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:51:58 - Info: GUI was loaded successfully
+06/03/2023 15:51:57 - Info: Connecting...
+06/03/2023 15:51:57 - Info: Connecting...
+06/03/2023 15:51:59 - Info: Connected
+06/03/2023 15:51:59 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 15:52:00 - Info: Connected
+06/03/2023 15:52:00 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+06/03/2023 15:53:01 - Info: Autoconnect at startup
+06/03/2023 15:53:01 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:53:01 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:53:01 - Info: GUI was loaded successfully
+06/03/2023 15:53:01 - Info: Connecting...
+06/03/2023 15:53:01 - Info: Connecting...
+06/03/2023 15:53:02 - Info: Connected
+06/03/2023 15:53:02 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 15:53:03 - Info: Connected
+06/03/2023 15:53:03 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+06/03/2023 15:56:17 - Info: Autoconnect at startup
+06/03/2023 15:56:17 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:56:17 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:56:17 - Info: GUI was loaded successfully
+06/03/2023 15:56:17 - Info: Connecting...
+06/03/2023 15:56:17 - Info: Connecting...
+06/03/2023 15:56:18 - Info: Connected
+06/03/2023 15:56:18 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 15:56:19 - Info: Connected
+06/03/2023 15:56:19 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+06/03/2023 15:57:01 - Info: TCP : Error receiving Data
+06/03/2023 15:57:01 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 15:57:01 - Info: TCP : Error receiving Data
+06/03/2023 15:57:01 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 15:57:04 - Info: Running connection diagnostics...
+06/03/2023 15:57:04 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 15:57:04 - Info: Running connection diagnostics...
+06/03/2023 15:57:04 - Info:   -Ping successful at: 10.199.197.41
+06/03/2023 15:57:04 - Info: Connected again
+06/03/2023 15:57:05 - Info: Connected again
+
+
+Streamwriter was initialised.
+06/03/2023 15:57:41 - Info: Autoconnect at startup
+06/03/2023 15:57:41 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:57:41 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 15:57:41 - Info: GUI was loaded successfully
+06/03/2023 15:57:41 - Info: Connecting...
+06/03/2023 15:57:41 - Info: Connecting...
+06/03/2023 15:57:42 - Info: Connected
+06/03/2023 15:57:42 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 15:57:43 - Info: Connected
+06/03/2023 15:57:43 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+06/03/2023 15:58:05 - Info: TCP : Error receiving Data
+06/03/2023 15:58:05 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 15:58:05 - Info: TCP : Error receiving Data
+06/03/2023 15:58:05 - Info: Connection error: TCP : Error receiving Data
+06/03/2023 15:58:08 - Info: Running connection diagnostics...
+06/03/2023 15:58:08 - Info:   -Ping successful at: 10.199.197.42
+06/03/2023 15:58:09 - Info: Running connection diagnostics...
+06/03/2023 15:58:09 - Info:   -Ping successful at: 10.199.197.41
+06/03/2023 15:58:09 - Info: Connected again
+06/03/2023 15:58:09 - Info: Connected again
+
+
+Streamwriter was initialised.
+06/03/2023 16:07:18 - Info: Autoconnect at startup
+06/03/2023 16:07:19 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 16:07:19 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+06/03/2023 16:07:19 - Info: GUI was loaded successfully
+06/03/2023 16:07:19 - Info: Connecting...
+06/03/2023 16:07:19 - Info: Connecting...
+06/03/2023 16:07:20 - Info: Connected
+06/03/2023 16:07:20 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+06/03/2023 16:07:21 - Info: Connected
+06/03/2023 16:07:21 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+10/03/2023 10:07:15 - Info: Log file was opend

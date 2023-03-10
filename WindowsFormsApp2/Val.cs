@@ -12,7 +12,8 @@ namespace WindowsFormsApp2
     {       
         public static LogoControler logocontroler;       
         public static PC_WD PCWD;
-        public static WarningManager WarningManager;       
+        public static WarningManager WarningManager;
+        public static StopWatch StopWatch;
 
         public static string PathLogFIle = "";
         public static string PathUserActions = "";

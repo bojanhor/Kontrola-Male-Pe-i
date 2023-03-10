@@ -13,14 +13,18 @@ using System.Windows.Forms;
 namespace WindowsFormsApp2
 {
     public partial class Gui_MalaPec : Form
-    {
+    {        
         bool debugDontDisableGuiOnConnectionLost = false;
-        Prop1 p = Val.logocontroler.Prop1;
+
+        Prop1 p1 = Val.logocontroler.Prop1; 
+        Prop2 p2 = Val.logocontroler.Prop2;
+
         Thread DisableGuiOnConnectionLossThread;
         StopWatch stpw;
         SysTimer PopulateChart;
         Prop1 prop = Val.logocontroler.Prop1;
         Datalogger dl;
+        Zracenje Zracenje;
 
         public Gui_MalaPec()
         {
@@ -34,6 +38,7 @@ namespace WindowsFormsApp2
             SensorErrDataFeed();
             Temperatures_Rpm_DataFeed();
             TempSelectorDataFeed();
+            ZracenjeInit();
             connectedButton1.ID = 1;
             DisableGuiOnConnectionLossThread = new Thread(DisableGuiOnConnectionLoss);
 
@@ -41,11 +46,34 @@ namespace WindowsFormsApp2
             stpw.StopwatchStarted += Stpw_StopwatchStarted;
             stpw.StopwatchStopped += Stpw_StopwatchStopped;
             stpw.StopwatchWasReset += Stpw_StopwatchWasReset;
+            Val.StopWatch = stpw;
+
+            Zracenje = new Zracenje();
+            onOffTimerSelectorPavza.Value = p2.ZracenjeOffTime;
+            onOffTimerSelectorZracenje.Value = p2.ZracenjeOnTime;
           
             TimerSetup();
             DataloggerSetup();
 
             chkPauseIfLowTemp.Checked = Properties.Settings.Default.PavzirajStopwatch;
+        }
+
+        void ZracenjeInit()
+        {
+            tbStopnjaZracenje.Value = p2.StopnjaZracenja;
+            tbLopute.Value = p2.PozicijaLoputeDejanska;
+            onOffTimerSelectorPavza.SelectedValueChanged += OnOffTimerSelectorPavza_SelectedValueChanged;
+            onOffTimerSelectorZracenje.SelectedValueChanged += OnOffTimerSelectorZracenje_SelectedValueChanged;
+        }
+
+        private void OnOffTimerSelectorZracenje_SelectedValueChanged(object sender, EventArgs e)
+        {
+            Zracenje.Ontime_s = onOffTimerSelectorZracenje.Value.Value_short;
+        }
+
+        private void OnOffTimerSelectorPavza_SelectedValueChanged(object sender, EventArgs e)
+        {
+            Zracenje.Offtime_s = onOffTimerSelectorPavza.Value.Value_short;
         }
 
         void DataloggerSetup()
@@ -188,11 +216,11 @@ namespace WindowsFormsApp2
         {
             try
             {
-                sensorSelect1.Value = p.SelT_Reg;
-                sensorSelect2.Value = p.SelT_Dif;
+                sensorSelect1.Value = p1.SelT_Reg;
+                sensorSelect2.Value = p1.SelT_Dif;
 
-                sensorSelect1.Value_SelectedSensorError = p.Sel_T_Err;
-                sensorSelect2.Value_SelectedSensorError = p.Dif_T_Err;
+                sensorSelect1.Value_SelectedSensorError = p1.Sel_T_Err;
+                sensorSelect2.Value_SelectedSensorError = p1.Dif_T_Err;
             }
             catch (Exception)
             {
@@ -205,41 +233,41 @@ namespace WindowsFormsApp2
         {
             try
             {
-                temperatureSelector_0_3001.Value = p.TempStPnt1;
-                temperatureSelector_0_3002.Value = p.TempStPnt2;
-                rpmSelector_30_1001.Value = p.VentStdby;
-                rpmSelector_30_1003.Value = p.VntCoolOff;
-                timeToGoMinutes_1_301.Value = p.VentCoolOffTime;
-                autoMan01Select1.Value_Auto = p.Auto;
-                autoMan01Select1.Value_Man0 = p.Off;
-                autoMan01Select1.Value_Man1 = p.On;
-                histHeat2_101.Value = p.HistHeat;
-                actuatorStatus1.Value_PlcBit = p.Heat1;
-                actuatorStatus2.Value_PlcBit = p.Heat2;
-                actuatorStatus3.Value_PlcBit = p.Heat3;
-                actuatorStatus4.Value_PlcBit = p.Heat4;
-                textboxShow1.Value = p.TempReg;
-                textboxShow2.Value = p.VentRpmCurrent;
-                textboxShow3.Value = p.TempDif;
+                temperatureSelector_0_3001.Value = p1.TempStPnt1;
+                temperatureSelector_0_3002.Value = p1.TempStPnt2;
+                rpmSelector_30_1001.Value = p1.VentStdby;
+                rpmSelector_30_1003.Value = p1.VntCoolOff;
+                timeToGoMinutes_1_301.Value = p1.VentCoolOffTime;
+                autoMan01Select1.Value_Auto = p1.Auto;
+                autoMan01Select1.Value_Man0 = p1.Off;
+                autoMan01Select1.Value_Man1 = p1.On;
+                histHeat2_101.Value = p1.HistHeat;
+                actuatorStatus1.Value_PlcBit = p1.Heat1;
+                actuatorStatus2.Value_PlcBit = p1.Heat2;
+                actuatorStatus3.Value_PlcBit = p1.Heat3;
+                actuatorStatus4.Value_PlcBit = p1.Heat4;
+                textboxShow1.Value = p1.TempReg;
+                textboxShow2.Value = p1.VentRpmCurrent;
+                textboxShow3.Value = p1.TempDif;
 
 
-                tb1sen1.Value = p.TempSenZg; tb1sen1.Prefix = "["; tb1sen1.Postfix = "°C]";
-                tb1sen2.Value = p.TempSenSr1; tb1sen2.Prefix = "["; tb1sen2.Postfix = "°C]";
-                tb1sen3.Value = p.TempSenSr2; tb1sen3.Prefix = "["; tb1sen3.Postfix = "°C]";
-                tb1sen4.Value = p.TempSenSp; tb1sen4.Prefix = "["; tb1sen4.Postfix = "°C]";
-                tb1sen5.Value = p.TempSenKn; tb1sen5.Prefix = "["; tb1sen5.Postfix = "°C]";
-                tb1sen6.Value = p.TempSenKos; tb1sen6.Prefix = "["; tb1sen6.Postfix = "°C]";
+                tb1sen1.Value = p1.TempSenZg; tb1sen1.Prefix = "["; tb1sen1.Postfix = "°C]";
+                tb1sen2.Value = p1.TempSenSr1; tb1sen2.Prefix = "["; tb1sen2.Postfix = "°C]";
+                tb1sen3.Value = p1.TempSenSr2; tb1sen3.Prefix = "["; tb1sen3.Postfix = "°C]";
+                tb1sen4.Value = p1.TempSenSp; tb1sen4.Prefix = "["; tb1sen4.Postfix = "°C]";
+                tb1sen5.Value = p1.TempSenKn; tb1sen5.Prefix = "["; tb1sen5.Postfix = "°C]";
+                tb1sen6.Value = p1.TempSenKos; tb1sen6.Prefix = "["; tb1sen6.Postfix = "°C]";
 
-                tb2Sen1.Value = p.TempSenZg; tb2Sen1.Prefix = "["; tb2Sen1.Postfix = "°C]";
-                tb2Sen2.Value = p.TempSenSr1; tb2Sen2.Prefix = "["; tb2Sen2.Postfix = "°C]";
-                tb2Sen3.Value = p.TempSenSr2; tb2Sen3.Prefix = "["; tb2Sen3.Postfix = "°C]";
-                tb2Sen4.Value = p.TempSenSp; tb2Sen4.Prefix = "["; tb2Sen4.Postfix = "°C]";
-                tb2sen5.Value = p.TempSenKn; tb2sen5.Prefix = "["; tb2sen5.Postfix = "°C]";
-                tb2sen6.Value = p.TempSenKos; tb2sen6.Prefix = "["; tb2sen6.Postfix = "°C]";
+                tb2Sen1.Value = p1.TempSenZg; tb2Sen1.Prefix = "["; tb2Sen1.Postfix = "°C]";
+                tb2Sen2.Value = p1.TempSenSr1; tb2Sen2.Prefix = "["; tb2Sen2.Postfix = "°C]";
+                tb2Sen3.Value = p1.TempSenSr2; tb2Sen3.Prefix = "["; tb2Sen3.Postfix = "°C]";
+                tb2Sen4.Value = p1.TempSenSp; tb2Sen4.Prefix = "["; tb2Sen4.Postfix = "°C]";
+                tb2sen5.Value = p1.TempSenKn; tb2sen5.Prefix = "["; tb2sen5.Postfix = "°C]";
+                tb2sen6.Value = p1.TempSenKos; tb2sen6.Prefix = "["; tb2sen6.Postfix = "°C]";
 
-                tbtempkanal.Value = p.TempSenKn;
+                tbtempkanal.Value = p1.TempSenKn;
 
-                tbshowNajvisjaTerr.Value = p.TempErr;
+                tbshowNajvisjaTerr.Value = p1.TempErr;
             }
             catch (Exception)
             {
@@ -259,12 +287,12 @@ namespace WindowsFormsApp2
         {
             try
             {
-                sensorStatus1.Value_PlcBit = p.SenFail1;
-                sensorStatus2.Value_PlcBit = p.SenFail2;
-                sensorStatus3.Value_PlcBit = p.SenFail3;
-                sensorStatus4.Value_PlcBit = p.SenFail4;
-                sensorStatus5.Value_PlcBit = p.SenFail5;
-                sensorStatus6.Value_PlcBit = p.SenFail6;
+                sensorStatus1.Value_PlcBit = p1.SenFail1;
+                sensorStatus2.Value_PlcBit = p1.SenFail2;
+                sensorStatus3.Value_PlcBit = p1.SenFail3;
+                sensorStatus4.Value_PlcBit = p1.SenFail4;
+                sensorStatus5.Value_PlcBit = p1.SenFail5;
+                sensorStatus6.Value_PlcBit = p1.SenFail6;
             }
             catch (Exception)
             {
@@ -277,10 +305,10 @@ namespace WindowsFormsApp2
         {
             try
             {
-                urnikControl1.FeedData(
-                p.Pon_EN_1, p.Tor_EN_1, p.Sre_EN_1, p.Čet_EN_1, p.Pet_EN_1, p.Sob_EN_1, p.Ned_EN_1,
-                p.PonTimeOn, p.TorTimeOn, p.SreTimeOn, p.ČetTimeOn, p.PetTimeOn, p.SobTimeOn, p.NedTimeOn,
-                p.PonTimeOff, p.TorTimeOff, p.SreTimeOff, p.ČetTimeOff, p.PetTimeOff, p.SobTimeOff, p.NedTimeOff);
+                //urnikControl1.FeedData(
+                //p1.Pon_EN_1, p1.Tor_EN_1, p1.Sre_EN_1, p1.Čet_EN_1, p1.Pet_EN_1, p1.Sob_EN_1, p1.Ned_EN_1,
+                //p1.PonTimeOn, p1.TorTimeOn, p1.SreTimeOn, p1.ČetTimeOn, p1.PetTimeOn, p1.SobTimeOn, p1.NedTimeOn,
+                //p1.PonTimeOff, p1.TorTimeOff, p1.SreTimeOff, p1.ČetTimeOff, p1.PetTimeOff, p1.SobTimeOff, p1.NedTimeOff);
             }
             catch (Exception)
             {
@@ -451,6 +479,24 @@ namespace WindowsFormsApp2
         private void temperatureDifference_5_301_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void groupBox7_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void musslaufZracenje_Click(object sender, EventArgs e)
+        {
+            var buff = p2.Musslauf_Zracenje;
+            if (buff.Value_short == 0)
+            {
+                buff.Value_short = 1;
+            }
+            else
+            {
+                buff.Value_short = 0;
+            }
         }
     }
 

@@ -107,7 +107,21 @@ namespace WindowsFormsApp2
         }
     }
 
-    class SelectorBaseClass : ComboBox
+    public class OnOffTimerSelector : SelectorBaseClass
+    {
+        static int from = 30;
+        static int to = 250;
+        static int step = 10;
+        static string postFix = "s";
+
+
+        public OnOffTimerSelector() : base(from, to, step, postFix)
+        {
+
+        }
+    }
+
+    public class SelectorBaseClass : ComboBox
     {
         public PlcVars.Word Value;
         Thread updater;
