@@ -107,6 +107,20 @@ namespace WindowsFormsApp2
         }
     }
 
+    class LoputaSelector_0_100 : SelectorBaseClass
+    {
+        static int from = 0;
+        static int to = 100;
+        static int step = 5;
+        static string postFix = "%";
+
+
+        public LoputaSelector_0_100() : base(from, to, step, postFix)
+        {
+
+        }
+    }
+
     public class OnOffTimerSelector : SelectorBaseClass
     {
         static int from = 30;

@@ -36,7 +36,7 @@ namespace WindowsFormsApp2
 
         private void Stpw_StopwatchStopped(StopWatch sender)
         {
-            DelayStopZracenja = new SysTimer(new TimeSpan(0,5,0).TotalMilliseconds);
+            DelayStopZracenja = new SysTimer(new TimeSpan(0,0,10).TotalMilliseconds);
             DelayStopZracenja.AutoReset = false;
             DelayStopZracenja.Start();
             DelayStopZracenja.Elapsed += DelayStopZracenja_Elapsed;

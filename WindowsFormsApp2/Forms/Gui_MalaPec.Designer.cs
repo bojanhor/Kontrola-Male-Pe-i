@@ -145,6 +145,8 @@ namespace WindowsFormsApp2
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint110 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.62575275462962965D, 300D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint111 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.66513375D, 20D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint112 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.66513375D, 300D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint113 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.7072120833333333D, 20D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint114 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.7072120833333333D, 300D);
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -226,7 +228,7 @@ namespace WindowsFormsApp2
             this.btnStart = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.tbOdpirajLoputeDo = new WindowsFormsApp2.RpmSelector_50_100();
+            this.tbOdpirajLoputeDo = new WindowsFormsApp2.LoputaSelector_0_100();
             this.tbLoputaDejanska2 = new System.Windows.Forms.TextBox();
             this.tbLoputaDejanska1 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -984,7 +986,7 @@ namespace WindowsFormsApp2
             this.lblEstimateEnd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblEstimateEnd.AutoSize = true;
             this.lblEstimateEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstimateEnd.Location = new System.Drawing.Point(126, 104);
+            this.lblEstimateEnd.Location = new System.Drawing.Point(111, 104);
             this.lblEstimateEnd.Name = "lblEstimateEnd";
             this.lblEstimateEnd.Size = new System.Drawing.Size(34, 13);
             this.lblEstimateEnd.TabIndex = 7;
@@ -1333,6 +1335,8 @@ namespace WindowsFormsApp2
             series1.Points.Add(dataPoint110);
             series1.Points.Add(dataPoint111);
             series1.Points.Add(dataPoint112);
+            series1.Points.Add(dataPoint113);
+            series1.Points.Add(dataPoint114);
             series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time;
             series2.BorderWidth = 3;
             series2.ChartArea = "ChartArea1";
@@ -1544,7 +1548,7 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.TextBox tbLoputaDejanska1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label20;
-        private RpmSelector_50_100 tbOdpirajLoputeDo;
+        private LoputaSelector_0_100 tbOdpirajLoputeDo;
         private System.Windows.Forms.Label label21;
         public System.Windows.Forms.Label lblStevecSarz;
     }
