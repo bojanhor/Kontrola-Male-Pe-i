@@ -10,7 +10,8 @@ namespace WindowsFormsApp2
     {
         Thread selfControlThread;
         bool debugTemperaruraJeDosezena = false;
-        public bool IsInProgress { get; private set; }
+        public bool IsInProgress  { get; private set; }
+        public bool Counting { get; private set; } = false;
         Button btnStart;
         public delegate void Started(StopWatch sender); public event Started StopwatchStarted;        
         Button btnStop;
@@ -79,7 +80,9 @@ namespace WindowsFormsApp2
             StopwatchStopped += StopWatch_StopwatchStopped;
             StopwatchWasReset += StopWatch_StopwatchWasReset;
 
-            ManualOffRadioBtn.Click += ManualOffRadioBtn_Click;           
+            ManualOffRadioBtn.Click += ManualOffRadioBtn_Click;
+
+            
         }
 
         private void ManualOffRadioBtn_Click(object sender, EventArgs e)
@@ -89,11 +92,12 @@ namespace WindowsFormsApp2
 
         private void StopWatch_StopwatchWasReset(StopWatch sender)
         {
-            
+         
         }
 
         private void StopWatch_StopwatchStopped(StopWatch sender)
         {
+           
             if (selfControlThread != null)
             {
                 selfControlThread.Abort();
@@ -101,7 +105,7 @@ namespace WindowsFormsApp2
         }
 
         private void StopWatch_StopwatchStarted(StopWatch sender)
-        {
+        {            
             selfControlThread = new Thread(selfControlMethod);
             selfControlThread.Start();
         }
@@ -212,6 +216,7 @@ namespace WindowsFormsApp2
 
                 // stop stopwatch
                 mainTimer.Stop();
+                Counting = false;
                 StopwatchStopped.Invoke(this);
                 IsInProgress = false;
                 gbStopwatch.BackColor = ColorStopped;
@@ -405,6 +410,7 @@ namespace WindowsFormsApp2
             {
                 gbStopwatch.BackColor = ColorStopped;
                 mainTimer.Stop();
+                Counting = false;
                 parent.Invoke(new MethodInvoker(delegate {
                     btnStop.Text = "Reset";
                 }));
@@ -474,6 +480,7 @@ namespace WindowsFormsApp2
             if (val.Value_bool || debugTemperaruraJeDosezena)
             {
                 mainTimer.Start();
+                Counting = true;
                 p.BuzzFromPcTemperatureReached.SendPulse();
 
                 //
@@ -499,6 +506,7 @@ namespace WindowsFormsApp2
             if (mainTimer != null)
             {
                 mainTimer.Stop();
+                Counting = false;
             }
         }
 
@@ -507,6 +515,7 @@ namespace WindowsFormsApp2
             if (mainTimer != null)
             {
                 mainTimer.Start();
+                Counting = true;
             }            
         }
 

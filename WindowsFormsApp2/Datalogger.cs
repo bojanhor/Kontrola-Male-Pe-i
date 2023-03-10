@@ -48,8 +48,11 @@ namespace WindowsFormsApp2
             var col4 = "Sensor4";
             var col5 = "SensorKanal";
             var col6 = "SensorKos";
+            var col7 = "T_Nastavljena1";
+            var col8 = "T_Nastavljena2";
+            var col9 = "StoparicaObratuje";
 
-            var concat = col0 + delimeter + col1 + delimeter + col2 + delimeter + col3 + delimeter + col4 + delimeter + col5 + delimeter + col6;
+            var concat = col0 + delimeter + col1 + delimeter + col2 + delimeter + col3 + delimeter + col4 + delimeter + col5 + delimeter + col6 + delimeter + col7 + delimeter + col8 + delimeter + col9;
             sw = new StreamWriter(currentFileName, true);
             sw.WriteLine(concat);
             sw.Close();
@@ -72,7 +75,7 @@ namespace WindowsFormsApp2
             }            
         }
 
-        public void WriteLine(ChartDataPoint Sensor1, ChartDataPoint Sensor2, ChartDataPoint Sensor3, ChartDataPoint Sensor4, ChartDataPoint SensorKanal, ChartDataPoint SensorKos)
+        public void WriteLine(ChartDataPoint Sensor1, ChartDataPoint Sensor2, ChartDataPoint Sensor3, ChartDataPoint Sensor4, ChartDataPoint SensorKanal, ChartDataPoint SensorKos, ChartDataPoint T_Nastavljena1, ChartDataPoint T_Nastavljena2, string StopwatchInProgress)
         {
             isActive = true;
 
@@ -83,8 +86,11 @@ namespace WindowsFormsApp2
             var col4 = Sensor4.Value;            
             var col5 = SensorKanal.Value;
             var col6 = SensorKos.Value;
+            var col7 = T_Nastavljena1.Value;
+            var col8 = T_Nastavljena2.Value;
+            var col9 = StopwatchInProgress;
 
-            var concat = col0 + delimeter + col1 + delimeter + col2 + delimeter + col3 + delimeter + col4 + delimeter + col5 + delimeter + col6;
+            var concat = col0 + delimeter + col1 + delimeter + col2 + delimeter + col3 + delimeter + col4 + delimeter + col5 + delimeter + col6 + delimeter + col7 + delimeter + col8 + delimeter + col9;
 
             
             sw = new StreamWriter(currentFileName, true);

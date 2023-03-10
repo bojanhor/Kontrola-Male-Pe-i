@@ -47,7 +47,7 @@ namespace WindowsFormsApp2
             populateChartMethodInvoker = new MethodInvoker(populateChartMethod);
         }      
 
-        public void AddChartData(ChartDataPoint Sensor1, ChartDataPoint Sensor2, ChartDataPoint Sensor3, ChartDataPoint Sensor4, ChartDataPoint SensorKanal, ChartDataPoint SensorKos)
+        public void AddChartData(ChartDataPoint Sensor1, ChartDataPoint Sensor2, ChartDataPoint Sensor3, ChartDataPoint Sensor4, ChartDataPoint SensorKanal, ChartDataPoint SensorKos )
         {
             if (Parent == null || !Parent.IsHandleCreated)
             { return; }

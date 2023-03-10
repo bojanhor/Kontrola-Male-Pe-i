@@ -9,6 +9,7 @@ namespace WindowsFormsApp2
 {
     class Zracenje
     {
+        SysTimer DelayStopZracenja;
         Thread Zracenje_Thread;
         StopWatch stpw;
         public int Ontime_s 
@@ -28,10 +29,20 @@ namespace WindowsFormsApp2
             Offtime_s = 0;
 
             p2 = Val.logocontroler.Prop2;
+           
             
+
         }
 
         private void Stpw_StopwatchStopped(StopWatch sender)
+        {
+            DelayStopZracenja = new SysTimer(new TimeSpan(0,5,0).TotalMilliseconds);
+            DelayStopZracenja.AutoReset = false;
+            DelayStopZracenja.Start();
+            DelayStopZracenja.Elapsed += DelayStopZracenja_Elapsed;
+        }
+
+        private void DelayStopZracenja_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
             Zraci(false);
         }

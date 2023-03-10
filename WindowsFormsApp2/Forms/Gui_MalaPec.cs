@@ -20,7 +20,7 @@ namespace WindowsFormsApp2
         Prop2 p2 = Val.logocontroler.Prop2;
 
         Thread DisableGuiOnConnectionLossThread;
-        StopWatch stpw;
+        public StopWatch stpw;
         SysTimer PopulateChart;
         SysTimer UpdateLoputa;
         Prop1 prop = Val.logocontroler.Prop1;
@@ -121,6 +121,9 @@ namespace WindowsFormsApp2
             var cdp4 = new ChartDataPoint(now, prop.TempSenSp.Value_short);
             var cdp5 = new ChartDataPoint(now, prop.TempSenKn.Value_short);
             var cdp6 = new ChartDataPoint(now, prop.TempSenKos.Value_short);
+            var cdp7 = new ChartDataPoint(now, prop.TempStPnt1.Value_short);
+            var cdp8 = new ChartDataPoint(now, prop.TempStPnt2.Value_short);
+            var nfo9 = FormControl.Gui.stpw.Counting.ToString();
 
             try
             {
@@ -130,7 +133,7 @@ namespace WindowsFormsApp2
 
             try
             {
-                dl.WriteLine(cdp1, cdp2, cdp3, cdp4, cdp5, cdp6);
+                dl.WriteLine(cdp1, cdp2, cdp3, cdp4, cdp5, cdp6, cdp7, cdp8, nfo9);
             }
             catch (Exception) 
             { }
