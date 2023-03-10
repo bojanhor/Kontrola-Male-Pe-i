@@ -12,7 +12,7 @@ namespace WindowsFormsApp2
 {
     class SmartChart : Chart
     {
-       
+
         public ChartData ChartData_Sensor1;
         public ChartData ChartData_Sensor2;
         public ChartData ChartData_Sensor3;
@@ -21,9 +21,9 @@ namespace WindowsFormsApp2
         public ChartData ChartData_Kos;
 
         Series series_1, series_2, series_3, series_4, series_kanal, series_kos;
-        Thread ChartSetupThread;        
+        Thread ChartSetupThread;
         MethodInvoker visualSettings;
-        MethodInvoker addSeries;      
+        MethodInvoker addSeries;
         public SmartChart()
         {
             if (DesignMode)
@@ -38,14 +38,14 @@ namespace WindowsFormsApp2
             ChartData_Kos = new ChartData();
 
             ChartSetupThread = new Thread(new ThreadStart(chartSetupThreadMethod));
-            ChartSetupThread.SetApartmentState(ApartmentState.MTA);            
+            ChartSetupThread.SetApartmentState(ApartmentState.MTA);
             visualSettings = new MethodInvoker(visualSettingsMethod);
             addSeries = new MethodInvoker(addSeriesMethod);
             ChartSetupThread.Start();
             newSeries();
-                        
+
             populateChartMethodInvoker = new MethodInvoker(populateChartMethod);
-        }                       
+        }      
 
         public void AddChartData(ChartDataPoint Sensor1, ChartDataPoint Sensor2, ChartDataPoint Sensor3, ChartDataPoint Sensor4, ChartDataPoint SensorKanal, ChartDataPoint SensorKos)
         {
@@ -54,44 +54,44 @@ namespace WindowsFormsApp2
 
             if (Sensor1 != null)
             {
-                ChartData_Sensor1.AddChartDataPoint(Sensor1);                
+                ChartData_Sensor1.AddChartDataPoint(Sensor1);
             }
             if (Sensor2 != null)
             {
-                ChartData_Sensor2.AddChartDataPoint(Sensor2);                
+                ChartData_Sensor2.AddChartDataPoint(Sensor2);
             }
             if (Sensor3 != null)
             {
-                ChartData_Sensor3.AddChartDataPoint(Sensor3);                
+                ChartData_Sensor3.AddChartDataPoint(Sensor3);
             }
             if (Sensor4 != null)
             {
-                ChartData_Sensor4.AddChartDataPoint(Sensor4);                
+                ChartData_Sensor4.AddChartDataPoint(Sensor4);
             }
             if (SensorKanal != null)
             {
-                ChartData_Kanal.AddChartDataPoint(SensorKanal);                
+                ChartData_Kanal.AddChartDataPoint(SensorKanal);
             }
             if (SensorKos != null)
             {
                 ChartData_Kos.AddChartDataPoint(SensorKos);
-            }            
+            }
 
             populateChart();
         }
 
-      
+
         void chartSetupThreadMethod()
         {
             // wait for form to load
             while (Parent == null || !Parent.IsHandleCreated || !Parent.Visible)
             {
-                Thread.Sleep(100);                
+                Thread.Sleep(100);
             }
             Thread.Sleep(1000);
             // apply settings and populate  
             Parent.Invoke(addSeries);
-            Parent.Invoke(visualSettings);            
+            Parent.Invoke(visualSettings);
         }
 
         int gridInterval = 20;
@@ -111,7 +111,7 @@ namespace WindowsFormsApp2
             series_1.SetCustomProperty("LineTension", "0.2");
             series_1.BorderWidth = 3;
             series_1.XValueType = ChartValueType.Time;
-            series_1.Name = "Sensor1";                     
+            series_1.Name = "Sensor1";
 
             series_2.ChartType = SeriesChartType.Spline;
             series_2.SetCustomProperty("LineTension", "0.2");
@@ -152,83 +152,92 @@ namespace WindowsFormsApp2
         }
         void populateChartMethod()
         {
-            if (series_1 == null)
+            try
             {
-                return;
-            }
+                if (series_1 == null)
+                {
+                    return;
+                }
 
-            ClearAllSeries();
+                ClearAllSeries();
 
-            // data Sensor1
-            var buff = ChartData_Sensor1.GetNextChartDatatPoint();
+                // data Sensor1
+                var buff = ChartData_Sensor1.GetNextChartDatatPoint();
 
-            ChartData_Sensor1.ResetRetrival();
-            while (ChartData_Sensor1.HasNext())
-            {
-                buff = ChartData_Sensor1.GetNextChartDatatPoint();
-                series_1.Points.AddXY(buff.Time, buff.Value);
-            }
+                ChartData_Sensor1.ResetRetrival();
+                while (ChartData_Sensor1.HasNext())
+                {
+                    buff = ChartData_Sensor1.GetNextChartDatatPoint();
+                    series_1.Points.AddXY(buff.Time, buff.Value);
+                }
 
-            // data Sensor2
-             buff = ChartData_Sensor2.GetNextChartDatatPoint();
-
-            ChartData_Sensor2.ResetRetrival();
-            while (ChartData_Sensor2.HasNext())
-            {
+                // data Sensor2
                 buff = ChartData_Sensor2.GetNextChartDatatPoint();
-                series_2.Points.AddXY(buff.Time, buff.Value);
-            }
 
-            // data Sensor3
-             buff = ChartData_Sensor3.GetNextChartDatatPoint();
+                ChartData_Sensor2.ResetRetrival();
+                while (ChartData_Sensor2.HasNext())
+                {
+                    buff = ChartData_Sensor2.GetNextChartDatatPoint();
+                    series_2.Points.AddXY(buff.Time, buff.Value);
+                }
 
-            ChartData_Sensor3.ResetRetrival();
-            while (ChartData_Sensor3.HasNext())
-            {
+                // data Sensor3
                 buff = ChartData_Sensor3.GetNextChartDatatPoint();
-                series_3.Points.AddXY(buff.Time, buff.Value);
-            }
 
-            // data Sensor4
-             buff = ChartData_Sensor4.GetNextChartDatatPoint();
+                ChartData_Sensor3.ResetRetrival();
+                while (ChartData_Sensor3.HasNext())
+                {
+                    buff = ChartData_Sensor3.GetNextChartDatatPoint();
+                    series_3.Points.AddXY(buff.Time, buff.Value);
+                }
 
-            ChartData_Sensor4.ResetRetrival();
-            while (ChartData_Sensor4.HasNext())
-            {
+                // data Sensor4
                 buff = ChartData_Sensor4.GetNextChartDatatPoint();
-                series_4.Points.AddXY(buff.Time, buff.Value);
-            }
 
-            // data Kanal
-             buff = ChartData_Kanal.GetNextChartDatatPoint();
+                ChartData_Sensor4.ResetRetrival();
+                while (ChartData_Sensor4.HasNext())
+                {
+                    buff = ChartData_Sensor4.GetNextChartDatatPoint();
+                    series_4.Points.AddXY(buff.Time, buff.Value);
+                }
 
-            ChartData_Kanal.ResetRetrival();
-            while (ChartData_Kanal.HasNext())
-            {
+                // data Kanal
                 buff = ChartData_Kanal.GetNextChartDatatPoint();
-                series_kanal.Points.AddXY(buff.Time, buff.Value);
-            }
 
-            // data Kos
-             buff = ChartData_Kos.GetNextChartDatatPoint();
+                ChartData_Kanal.ResetRetrival();
+                while (ChartData_Kanal.HasNext())
+                {
+                    buff = ChartData_Kanal.GetNextChartDatatPoint();
+                    series_kanal.Points.AddXY(buff.Time, buff.Value);
+                }
 
-            ChartData_Kos.ResetRetrival();
-            while (ChartData_Kos.HasNext())
-            {
+                // data Kos
                 buff = ChartData_Kos.GetNextChartDatatPoint();
-                series_kos.Points.AddXY(buff.Time, buff.Value);
+
+                ChartData_Kos.ResetRetrival();
+                while (ChartData_Kos.HasNext())
+                {
+                    buff = ChartData_Kos.GetNextChartDatatPoint();
+                    series_kos.Points.AddXY(buff.Time, buff.Value);
+                }
+
             }
+            catch (Exception)
+            {
+                // TODO log
+            }
+
         }
-        
+
         void newSeries()
         {
             series_1 = new Series();
-            series_2 = new Series(); 
-            series_3 = new Series(); 
-            series_4 = new Series(); 
-            series_kanal = new Series(); 
-            series_kos = new Series(); 
-        }                
+            series_2 = new Series();
+            series_3 = new Series();
+            series_4 = new Series();
+            series_kanal = new Series();
+            series_kos = new Series();
+        }
 
         void addSeriesMethod()
         {
@@ -244,7 +253,7 @@ namespace WindowsFormsApp2
             Series.Add(series_kanal);
             Series.Add(series_kos);
         }
-      
+
         void ClearAllSeries()
         {
             try
@@ -260,8 +269,18 @@ namespace WindowsFormsApp2
             catch (Exception ex)
             {
                 throw new Exception("Cant clear Points in chart. " + ex.Message);
-            }            
-        }        
+            }
+        }
+
+        public void ResetChart()
+        {
+            ChartData_Sensor1.Clear();
+            ChartData_Sensor2.Clear();
+            ChartData_Sensor3.Clear();
+            ChartData_Sensor4.Clear();
+            ChartData_Kanal.Clear();
+            ChartData_Kos.Clear();          
+        }
     }
 
     class ChartData
@@ -274,7 +293,7 @@ namespace WindowsFormsApp2
 
         public ChartData()
         {
-            
+
         }
         public ChartData(int maxEntries)
         {
@@ -290,21 +309,29 @@ namespace WindowsFormsApp2
                     ChartDataPoints.RemoveAt(0);
                 }
             }
-            
+
             ChartDataPoints.Add(cdp);
         }
 
         public ChartDataPoint GetNextChartDatatPoint()
         {
-            currentcdp ++;
-            return ChartDataPoints[currentcdp-1];
+            try
+            {
+                currentcdp++;
+                return ChartDataPoints[currentcdp - 1];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
 
         public bool HasNext()
         {
             if (currentcdp < ChartDataPoints.Count)
             {
-               return true;
+                return true;
             }
             return false;
         }
@@ -314,10 +341,15 @@ namespace WindowsFormsApp2
             currentcdp = 0;
         }
 
+        public void Clear()
+        {
+            ChartDataPoints.Clear();
+            ResetRetrival();
+        }
     }
 
     public class ChartDataPoint
-    {       
+    {
         public DateTime Time { get; private set; }
         public float Value { get; private set; }
 

@@ -26,6 +26,7 @@ namespace WindowsFormsApp2
         Prop1 prop = Val.logocontroler.Prop1;
         Datalogger dl;
         Zracenje Zracenje;
+        uint StevecSarz = 0;
 
         public Gui_MalaPec()
         {
@@ -54,7 +55,6 @@ namespace WindowsFormsApp2
             onOffTimerSelectorZracenje.Value = p2.ZracenjeOnTime;
           
             TimerSetup();
-            DataloggerSetup();
 
             chkPauseIfLowTemp.Checked = Properties.Settings.Default.PavzirajStopwatch;
 
@@ -98,20 +98,7 @@ namespace WindowsFormsApp2
         {
             Zracenje.Offtime_s = onOffTimerSelectorPavza.Value.Value_short;
         }
-
-        void DataloggerSetup()
-        {
-            try
-            {
-                dl = new Datalogger();
-            }
-            catch (Exception)
-            {
-                throw new Exception("Inernal error: DataloggerSetup()");
-            }
-            
-        }
-
+       
         void TimerSetup()
         {
             PopulateChart = new SysTimer(60000); // chart interval
@@ -145,29 +132,50 @@ namespace WindowsFormsApp2
             {
                 dl.WriteLine(cdp1, cdp2, cdp3, cdp4, cdp5, cdp6);
             }
-            catch (Exception) { }
+            catch (Exception) 
+            { }
             
         }                
         void populateChartFirstTime()
         {
-            populateChart(); populateChart(); // two times is workaround. Chart doesnt show line if it has just one data point
+            populateChart();         
+            populateChart(); // two times is workaround. Chart doesnt show line if it has just one data point
         }
 
         private void Stpw_StopwatchWasReset(StopWatch sender)
         {
-            dl.StopCsvFileWriter();
+            if (dl != null)
+            {
+                dl.StopCsvFileWriter();
+                dl = null;
+            }            
         }
 
         private void Stpw_StopwatchStopped(StopWatch sender)
         {
-            PopulateChart.Enabled = false;
+            populateChart();
         }
 
         private void Stpw_StopwatchStarted(StopWatch sender)
         {
+            if (dl == null)
+            {
+                // occours when datalogger and chart need to be reset
+                dl = new Datalogger();
+                smartChart1.ResetChart();
+                populateChartFirstTime();
+                PopulateChart.Enabled = true;
+                IncrementStevecSarz();
+
+            }
             dl.StartCsvFileWriter();
-            PopulateChart.Enabled = true;
-            populateChartFirstTime();           
+
+        }
+
+        void IncrementStevecSarz()
+        {
+            StevecSarz++;
+            lblStevecSarz.Text = StevecSarz.ToString();
         }
 
         void enableGui(bool _enable)
