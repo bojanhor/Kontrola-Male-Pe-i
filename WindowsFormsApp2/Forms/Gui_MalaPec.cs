@@ -22,6 +22,7 @@ namespace WindowsFormsApp2
         Thread DisableGuiOnConnectionLossThread;
         StopWatch stpw;
         SysTimer PopulateChart;
+        SysTimer UpdateLoputa;
         Prop1 prop = Val.logocontroler.Prop1;
         Datalogger dl;
         Zracenje Zracenje;
@@ -56,12 +57,34 @@ namespace WindowsFormsApp2
             DataloggerSetup();
 
             chkPauseIfLowTemp.Checked = Properties.Settings.Default.PavzirajStopwatch;
+
+            tbOdpirajLoputeDo.Value = p2.PozicijaLoputeNastavljena;
+
+            UpdateLoputa = new SysTimer(500);
+            UpdateLoputa.Elapsed += UpdateLoputa_Elapsed;
+            UpdateLoputa.Start();
+        }
+
+        private void UpdateLoputa_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            var p = Val.logocontroler.Prop2;
+            const double corr = 1.04166667; // phisical daa is wrong shows 4 instead of 0. The number is deducted by 4 and multiplied with this number so we get 0-100
+
+            var m = new MethodInvoker(delegate {
+                tbLoputaDejanska1.Text = 
+                Math.Round(p.PozicijaLoputeDejanska1.Value_short * corr,0).ToString() + "/" + p.PozicijaLoputeNastavljena.Value_string + "%";
+
+                tbLoputaDejanska2.Text =
+                Math.Round(p.PozicijaLoputeDejanska2.Value_short * corr, 0).ToString() + "/" + p.PozicijaLoputeNastavljena.Value_string + "%";
+            });
+
+            Invoke(m);
+            
         }
 
         void ZracenjeInit()
         {
             tbStopnjaZracenje.Value = p2.StopnjaZracenja;
-            tbLopute.Value = p2.PozicijaLoputeDejanska;
             onOffTimerSelectorPavza.SelectedValueChanged += OnOffTimerSelectorPavza_SelectedValueChanged;
             onOffTimerSelectorZracenje.SelectedValueChanged += OnOffTimerSelectorZracenje_SelectedValueChanged;
         }
@@ -497,6 +520,11 @@ namespace WindowsFormsApp2
             {
                 buff.Value_short = 0;
             }
+        }
+
+        private void tbOdpirajLoputeDo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

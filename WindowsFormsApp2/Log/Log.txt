@@ -26314,3 +26314,255 @@ Parameter name: inputUri
 06/03/2023 16:07:21 - Info: Connected
 06/03/2023 16:07:21 - Info: Watchdog started successfully - Period (Frequency) is 200ms
 10/03/2023 10:07:15 - Info: Log file was opend
+
+
+Streamwriter was initialised.
+10/03/2023 10:14:11 - Info: Autoconnect at startup
+
+
+Streamwriter was initialised.
+10/03/2023 10:15:54 - Info: Autoconnect at startup
+10/03/2023 10:15:54 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 10:15:54 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 10:15:54 - Info: GUI was loaded successfully
+10/03/2023 10:15:54 - Info: Connecting...
+10/03/2023 10:15:54 - Info: Connecting...
+10/03/2023 10:15:56 - Info: Connected
+10/03/2023 10:15:56 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+10/03/2023 10:15:57 - Info: Connected
+10/03/2023 10:15:57 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+10/03/2023 10:59:08 - Info: Autoconnect at startup
+10/03/2023 10:59:08 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 10:59:08 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 10:59:08 - Info: GUI was loaded successfully
+10/03/2023 10:59:08 - Info: Connecting...
+10/03/2023 10:59:08 - Info: Connecting...
+10/03/2023 10:59:09 - Info: Connected
+10/03/2023 10:59:10 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+10/03/2023 10:59:10 - Info: Connected
+10/03/2023 10:59:10 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+10/03/2023 11:05:52 - Info: Watchdog error - Watchdog does not change
+10/03/2023 11:05:52 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 11:05:55 - Info: Running connection diagnostics...
+10/03/2023 11:05:55 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 11:05:56 - Info: Connected again
+10/03/2023 11:05:56 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 11:05:59 - Info: Running connection diagnostics...
+10/03/2023 11:05:59 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 11:05:59 - Info: Connected again
+10/03/2023 11:10:18 - Info: Watchdog error - Watchdog does not change
+10/03/2023 11:10:18 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 11:10:21 - Info: Running connection diagnostics...
+10/03/2023 11:10:21 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 11:10:21 - Info: Connected again
+10/03/2023 11:10:21 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 11:10:24 - Info: Running connection diagnostics...
+10/03/2023 11:10:24 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 11:10:25 - Info: Connected again
+10/03/2023 11:10:25 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 11:10:28 - Info: Running connection diagnostics...
+10/03/2023 11:10:28 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 11:10:28 - Info: Connected again
+10/03/2023 11:10:28 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 11:10:31 - Info: Running connection diagnostics...
+10/03/2023 11:10:31 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 11:10:32 - Info: Connected again
+10/03/2023 11:11:45 - Info: Watchdog error - Watchdog does not change
+10/03/2023 11:11:45 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 11:11:48 - Info: Running connection diagnostics...
+10/03/2023 11:11:48 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 11:11:48 - Info: Connected again
+10/03/2023 11:11:48 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 11:11:52 - Info: Running connection diagnostics...
+10/03/2023 11:11:52 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 11:11:52 - Info: Connected again
+10/03/2023 11:11:52 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 11:11:55 - Info: Running connection diagnostics...
+10/03/2023 11:11:55 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 11:11:56 - Info: Connected again
+10/03/2023 11:17:01 - Info: Watchdog error - Watchdog does not change
+10/03/2023 11:17:01 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 11:17:04 - Info: Running connection diagnostics...
+10/03/2023 11:17:04 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 11:17:05 - Info: Connected again
+10/03/2023 11:17:05 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 11:17:08 - Info: Running connection diagnostics...
+10/03/2023 11:17:08 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 11:17:08 - Info: Connected again
+10/03/2023 12:20:23 - Info: Watchdog error - Watchdog does not change
+10/03/2023 12:20:23 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 12:20:26 - Info: Running connection diagnostics...
+10/03/2023 12:20:26 - Info:   -Ping successful but connection is poor: 10.199.197.42
+10/03/2023 12:20:27 - Info: Connected again
+10/03/2023 12:20:27 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 12:20:30 - Info: Running connection diagnostics...
+10/03/2023 12:20:30 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 12:20:30 - Info: Connected again
+10/03/2023 12:20:30 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 12:20:33 - Info: Running connection diagnostics...
+10/03/2023 12:20:33 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 12:20:34 - Info: Connected again
+10/03/2023 12:22:17 - Info: Watchdog error - Watchdog does not change
+10/03/2023 12:22:17 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 12:22:20 - Info: Running connection diagnostics...
+10/03/2023 12:22:20 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 12:22:21 - Info: Connected again
+10/03/2023 12:22:21 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 12:22:24 - Info: Running connection diagnostics...
+10/03/2023 12:22:24 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 12:22:25 - Info: Connected again
+
+
+Streamwriter was initialised.
+10/03/2023 12:49:00 - Info: Autoconnect at startup
+10/03/2023 12:49:00 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 12:49:00 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 12:49:00 - Info: GUI was loaded successfully
+10/03/2023 12:49:00 - Info: Connecting...
+10/03/2023 12:49:00 - Info: Connecting...
+10/03/2023 12:49:01 - Info: Connected
+10/03/2023 12:49:01 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+10/03/2023 12:49:02 - Info: Connected
+10/03/2023 12:49:02 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+10/03/2023 12:49:37 - Info: Autoconnect at startup
+10/03/2023 12:49:37 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 12:49:37 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 12:49:37 - Info: GUI was loaded successfully
+10/03/2023 12:49:37 - Info: Connecting...
+10/03/2023 12:49:37 - Info: Connecting...
+
+
+Streamwriter was initialised.
+10/03/2023 12:50:57 - Info: Autoconnect at startup
+10/03/2023 12:50:57 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 12:50:57 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 12:50:57 - Info: GUI was loaded successfully
+10/03/2023 12:50:57 - Info: Connecting...
+10/03/2023 12:50:57 - Info: Connecting...
+
+
+Streamwriter was initialised.
+10/03/2023 12:51:28 - Info: Autoconnect at startup
+10/03/2023 12:51:28 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 12:51:28 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 12:51:28 - Info: GUI was loaded successfully
+10/03/2023 12:51:28 - Info: Connecting...
+10/03/2023 12:51:28 - Info: Connecting...
+10/03/2023 12:51:29 - Info: Connected
+10/03/2023 12:51:29 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+10/03/2023 12:51:30 - Info: Connected
+10/03/2023 12:51:30 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+10/03/2023 12:52:16 - Info: Watchdog error - Watchdog does not change
+10/03/2023 12:52:16 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 12:52:19 - Info: Running connection diagnostics...
+10/03/2023 12:52:19 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 12:52:20 - Info: Connected again
+10/03/2023 12:52:20 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 12:52:23 - Info: Running connection diagnostics...
+10/03/2023 12:52:23 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 12:52:23 - Info: Connected again
+10/03/2023 12:55:37 - Info: Watchdog error - Watchdog does not change
+10/03/2023 12:55:37 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 12:55:40 - Info: Running connection diagnostics...
+10/03/2023 12:55:40 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 12:55:40 - Info: Connected again
+10/03/2023 12:55:40 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 12:55:43 - Info: Running connection diagnostics...
+10/03/2023 12:55:43 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 12:55:44 - Info: Connected again
+10/03/2023 13:03:08 - Info: Watchdog error - Watchdog does not change
+10/03/2023 13:03:08 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 13:03:11 - Info: Running connection diagnostics...
+10/03/2023 13:03:11 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 13:03:11 - Info: Connected again
+10/03/2023 13:03:11 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 13:03:14 - Info: Running connection diagnostics...
+10/03/2023 13:03:14 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 13:03:15 - Info: Connected again
+10/03/2023 13:04:29 - Info: Watchdog error - Watchdog does not change
+10/03/2023 13:04:29 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 13:04:32 - Info: Running connection diagnostics...
+10/03/2023 13:04:32 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 13:04:33 - Info: Connected again
+10/03/2023 13:04:33 - Info: Connection error: Watchdog error - Watchdog does not change
+10/03/2023 13:04:36 - Info: Running connection diagnostics...
+10/03/2023 13:04:36 - Info:   -Ping successful at: 10.199.197.42
+10/03/2023 13:04:36 - Info: Connected again
+
+
+Streamwriter was initialised.
+10/03/2023 13:24:23 - Info: Autoconnect at startup
+10/03/2023 13:24:23 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 13:24:23 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 13:24:23 - Info: GUI was loaded successfully
+10/03/2023 13:24:23 - Info: Connecting...
+10/03/2023 13:24:23 - Info: Connecting...
+10/03/2023 13:24:24 - Info: Connected
+10/03/2023 13:24:24 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+10/03/2023 13:24:25 - Info: Connected
+10/03/2023 13:24:25 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+10/03/2023 13:25:55 - Info: Autoconnect at startup
+10/03/2023 13:25:55 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 13:25:55 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 13:25:55 - Info: GUI was loaded successfully
+10/03/2023 13:25:55 - Info: Connecting...
+10/03/2023 13:25:55 - Info: Connecting...
+10/03/2023 13:25:56 - Info: Connected
+10/03/2023 13:25:56 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+10/03/2023 13:25:57 - Info: Connected
+10/03/2023 13:25:57 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+10/03/2023 13:34:30 - Info: Autoconnect at startup
+10/03/2023 13:34:30 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 13:34:30 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 13:34:30 - Info: GUI was loaded successfully
+10/03/2023 13:34:30 - Info: Connecting...
+10/03/2023 13:34:30 - Info: Connecting...
+10/03/2023 13:34:31 - Info: Connected
+10/03/2023 13:34:31 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+10/03/2023 13:34:32 - Info: Connected
+10/03/2023 13:34:32 - Info: Watchdog started successfully - Period (Frequency) is 200ms
+
+
+Streamwriter was initialised.
+10/03/2023 13:36:04 - Info: Autoconnect at startup
+10/03/2023 13:36:04 - Info: LOGO-1: Error updating fields on form: The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 13:36:04 - Info: LOGO-1: Error updating fields on form (paths to log files): The string was not recognized as a valid Uri.
+Parameter name: inputUri
+10/03/2023 13:36:04 - Info: GUI was loaded successfully
+10/03/2023 13:36:04 - Info: Connecting...
+10/03/2023 13:36:04 - Info: Connecting...
+10/03/2023 13:36:05 - Info: Connected
+10/03/2023 13:36:05 - Info: Watchdog started successfully - Period (Frequency) is 100ms
+10/03/2023 13:36:06 - Info: Connected
+10/03/2023 13:36:06 - Info: Watchdog started successfully - Period (Frequency) is 200ms
