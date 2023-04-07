@@ -50,6 +50,9 @@ namespace WindowsFormsApp2
 
         public PlcVars.Bit BuzzFromPC, BuzzFromPcEndCycle, BuzzFromPcTemperatureReached, BuzzFromPcERROR;
 
+        public PlcVars.Bit StopwatchStart, StopwatchStop, StopwatchReset, StopwatchRunning, TimeReached, StopwatchPaused, StopwatchStopped, HeatingUp;
+        public PlcVars.Word StopwatchTime, TimeSet, PauseIfTlow;
+
 
 
         //Alarm Bits
@@ -146,6 +149,17 @@ namespace WindowsFormsApp2
             TempSenKn = new PlcVars.Word(this, new PlcVars.WordAddress(218), false);
             TempSenKos = new PlcVars.Word(this, new PlcVars.WordAddress(220), false);
 
+            StopwatchStart = new PlcVars.Bit(this,new PlcVars.BitAddress(240,0),true);
+            StopwatchStop = new PlcVars.Bit(this, new PlcVars.BitAddress(242, 0), true);
+            StopwatchReset = new PlcVars.Bit(this, new PlcVars.BitAddress(244, 0), true);
+            StopwatchTime = new PlcVars.Word(this, new PlcVars.WordAddress(246), false);
+            StopwatchRunning = new PlcVars.Bit(this, new PlcVars.BitAddress(248, 0), false);
+            TimeReached = new PlcVars.Bit(this, new PlcVars.BitAddress(249, 0), false);
+            PauseIfTlow = new PlcVars.Word(this, new PlcVars.WordAddress(252), true);
+            TimeSet = new PlcVars.Word(this, new PlcVars.WordAddress(250), true);
+            StopwatchPaused = new PlcVars.Bit(this, new PlcVars.BitAddress(254, 0), false);
+            StopwatchStopped = new PlcVars.Bit(this, new PlcVars.BitAddress(256, 0), false);
+            HeatingUp = new PlcVars.Bit(this, new PlcVars.BitAddress(258, 0), false);
         }
 
     }

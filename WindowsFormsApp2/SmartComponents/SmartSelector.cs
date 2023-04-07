@@ -123,7 +123,7 @@ namespace WindowsFormsApp2
 
     public class OnOffTimerSelector : SelectorBaseClass
     {
-        static int from = 30;
+        static int from = 0;
         static int to = 250;
         static int step = 10;
         static string postFix = "s";

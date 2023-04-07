@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Timers;
 
 namespace WindowsFormsApp2
 {
@@ -20,6 +21,7 @@ namespace WindowsFormsApp2
         Prop2 p2 = Val.logocontroler.Prop2;
 
         Thread DisableGuiOnConnectionLossThread;
+        System.Timers.Timer RefreshGui;
         public StopWatch stpw;
         SysTimer PopulateChart;
         SysTimer UpdateLoputa;
@@ -27,6 +29,7 @@ namespace WindowsFormsApp2
         Datalogger dl;
         Zracenje Zracenje;
         uint StevecSarz = 0;
+        MethodInvoker updateStopwatchTimeMethodInvoker;
 
         public Gui_MalaPec()
         {
@@ -36,7 +39,6 @@ namespace WindowsFormsApp2
             Resize += Gui_MalaPec_Resize;
             SetupForm();
             Load += Gui_MalaPec_Load;
-            UrnikDataFeed();
             SensorErrDataFeed();
             Temperatures_Rpm_DataFeed();
             TempSelectorDataFeed();
@@ -55,14 +57,67 @@ namespace WindowsFormsApp2
             onOffTimerSelectorZracenje.Value = p2.ZracenjeOnTime;
           
             TimerSetup();
-
-            chkPauseIfLowTemp.Checked = Properties.Settings.Default.PavzirajStopwatch;
-
+            
             tbOdpirajLoputeDo.Value = p2.PozicijaLoputeNastavljena;
 
             UpdateLoputa = new SysTimer(500);
             UpdateLoputa.Elapsed += UpdateLoputa_Elapsed;
             UpdateLoputa.Start();
+
+            RefreshGui = new System.Timers.Timer(100);
+            RefreshGui.AutoReset = true;
+            RefreshGui.Elapsed += RefreshGui_Elapsed;
+            RefreshGui.Start();
+
+            updateStopwatchTimeMethodInvoker = new MethodInvoker(updateStopwatchTimeMethod);
+
+        }
+
+        private void RefreshGui_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            updateStopwatchTime();
+        }
+
+        int count = 0;
+        void updateStopwatchTimeMethod()
+        {
+            var timeInSeconds = prop.StopwatchTime.Value_short;
+            var time = TimeSpan.FromSeconds(timeInSeconds);
+            var txt = TimeToString(time);
+            FormControl.Gui.lblStopwatchTime.Text = txt;
+
+            timeInSeconds = prop.TimeSet.Value_short;
+            time = TimeSpan.FromSeconds(timeInSeconds);
+            txt = TimeToString(time);
+            FormControl.Gui.lblTimeSet1.Text = txt;
+
+            if (count > 10)
+            {
+                count = 0;
+                if (p1.PauseIfTlow.Value_short == 1)
+                {
+                    cbPauseIfTlow.Checked = true;
+                }
+                else
+                {
+                    cbPauseIfTlow.Checked = false;
+                }
+            }
+
+            count++;
+        }
+                
+        void updateStopwatchTime()
+        {
+            try
+            {
+                FormControl.Gui.Invoke(updateStopwatchTimeMethodInvoker);
+            }
+            catch 
+            {
+
+            }
+           
         }
 
         private void UpdateLoputa_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
@@ -312,11 +367,6 @@ namespace WindowsFormsApp2
 
         }
 
-        string formatTemp1(string temperature)
-        {
-            return ("[" + temperature + "°C]");
-        }
-
         void SensorErrDataFeed()
         {
             try
@@ -335,21 +385,7 @@ namespace WindowsFormsApp2
 
         }
 
-        void UrnikDataFeed()
-        {
-            try
-            {
-                //urnikControl1.FeedData(
-                //p1.Pon_EN_1, p1.Tor_EN_1, p1.Sre_EN_1, p1.Čet_EN_1, p1.Pet_EN_1, p1.Sob_EN_1, p1.Ned_EN_1,
-                //p1.PonTimeOn, p1.TorTimeOn, p1.SreTimeOn, p1.ČetTimeOn, p1.PetTimeOn, p1.SobTimeOn, p1.NedTimeOn,
-                //p1.PonTimeOff, p1.TorTimeOff, p1.SreTimeOff, p1.ČetTimeOff, p1.PetTimeOff, p1.SobTimeOff, p1.NedTimeOff);
-            }
-            catch (Exception)
-            {
-                throw new Exception("Internal error: UrnikDataFeed()");
-            }
-        }
-
+       
         private void Gui_MalaPec_Load(object sender, EventArgs e)
         {           
             registerEvents();
@@ -361,8 +397,7 @@ namespace WindowsFormsApp2
         {
             Helper.ExitApp();
         }
-
-       
+              
         private void FormatTopPanel()
         {            
             panelTop.Width = Width;   
@@ -489,17 +524,7 @@ namespace WindowsFormsApp2
         {
 
         }
-
-        private void chkPauseIfLowTemp_CheckedChanged(object sender, EventArgs e)
-        {
-            if (!chkPauseIfLowTemp.Checked)
-            {
-                stpw.ResumeStopwatchIfSettingChanged();
-            }
-
-            Properties.Settings.Default.PavzirajStopwatch = chkPauseIfLowTemp.Checked;
-        }
-
+       
         private void btnStart_Click(object sender, EventArgs e)
         {
 
@@ -536,6 +561,82 @@ namespace WindowsFormsApp2
         private void tbOdpirajLoputeDo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+        string TimeToString(TimeSpan val)
+        {
+            return val.ToString("c");
+        }
+
+        private void btn_Plus1_Click(object sender, EventArgs e)
+        {
+            if (p1.TimeSet.Value_short >= 18000)
+            {
+                p1.TimeSet.Value_short = 18000;
+                return;
+            }
+            p1.TimeSet.Value_short += 60;
+        }
+
+        private void btn_Plus10_Click(object sender, EventArgs e)
+        {
+            if (p1.TimeSet.Value_short >= 18000)
+            {
+                p1.TimeSet.Value_short = 18000;
+                return;
+            }
+            p1.TimeSet.Value_short += 600;
+        }
+
+        private void btn_Plus30_Click(object sender, EventArgs e)
+        {
+            if (p1.TimeSet.Value_short >= 18000)
+            {
+                p1.TimeSet.Value_short = 18000;
+                return;
+            }
+            p1.TimeSet.Value_short += 1800;
+        }
+
+        private void btn_Minus1_Click(object sender, EventArgs e)
+        {
+            if (p1.TimeSet.Value_short < 60)
+            {
+                p1.TimeSet.Value_short = 0;
+                return;
+            }
+            p1.TimeSet.Value_short -= 60;
+        }
+
+        private void btn_Minus10_Click(object sender, EventArgs e)
+        {
+            if (p1.TimeSet.Value_short < 600)
+            {
+                p1.TimeSet.Value_short = 0;
+                return;
+            }
+            p1.TimeSet.Value_short -= 600;
+        }
+
+        private void btn_Minus30_Click(object sender, EventArgs e)
+        {
+            if (p1.TimeSet.Value_short < 1800)
+            {
+                p1.TimeSet.Value_short = 0;
+                return;
+            }
+            p1.TimeSet.Value_short -= 1800;
+        }
+
+        private void cbPauseIfTlow_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbPauseIfTlow.Checked)             
+            {
+                p1.PauseIfTlow.Value_short = 1;
+            }
+            else
+            {
+                p1.PauseIfTlow.Value_short = 0;
+            }
         }
     }
 

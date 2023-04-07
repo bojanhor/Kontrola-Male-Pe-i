@@ -34,29 +34,5 @@ namespace WindowsFormsApp2.Properties {
                 this["PathXML"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("00:00:00")]
-        public string StopWatchTime {
-            get {
-                return ((string)(this["StopWatchTime"]));
-            }
-            set {
-                this["StopWatchTime"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool PavzirajStopwatch {
-            get {
-                return ((bool)(this["PavzirajStopwatch"]));
-            }
-            set {
-                this["PavzirajStopwatch"] = value;
-            }
-        }
     }
 }

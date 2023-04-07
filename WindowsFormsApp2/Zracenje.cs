@@ -54,7 +54,7 @@ namespace WindowsFormsApp2
         }
 
 
-        void Zraci(bool set)
+        public void Zraci(bool set)
         {
             if (set)
             {
