@@ -14,7 +14,6 @@ namespace WindowsFormsApp2
         char delimeter = ';';
         public static string folder = Val.PathTemperatures;
         StreamWriter sw;
-        bool isActive = false;
         public Datalogger()
         {            
             checkPath();
@@ -60,14 +59,12 @@ namespace WindowsFormsApp2
         }
 
         public void StartCsvFileWriter()
-        {
-            isActive = true;           
+        {          
             createHeader();
         }
 
         public void StopCsvFileWriter()
         {
-            isActive = false;
             if (sw != null)
             {
                 sw.Dispose();
@@ -77,8 +74,6 @@ namespace WindowsFormsApp2
 
         public void WriteLine(ChartDataPoint Sensor1, ChartDataPoint Sensor2, ChartDataPoint Sensor3, ChartDataPoint Sensor4, ChartDataPoint SensorKanal, ChartDataPoint SensorKos, ChartDataPoint T_Nastavljena1, ChartDataPoint T_Nastavljena2, string StopwatchInProgress)
         {
-            isActive = true;
-
             var col0 = Sensor1.Time.ToString();
             var col1 = Sensor1.Value;
             var col2 = Sensor2.Value;

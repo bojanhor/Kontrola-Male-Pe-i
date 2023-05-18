@@ -2,41 +2,42 @@
 using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
+using System.Timers;
+using Timer = System.Timers.Timer;
 
 namespace WindowsFormsApp2
 {
 
     public class StopWatch
     {
-        Thread selfControlThread;
-        bool debugTemperaruraJeDosezena = false;
+        Timer ButtonTextUpdater;
+
         public bool IsInProgress  { get; private set; }
         public bool Counting { get; private set; } = false;
-        Button btnStart;
-        public delegate void Started(StopWatch sender); public event Started StopwatchStarted;        
+        Button btnStart;   
         Button btnStop;
-        public delegate void Stopped(StopWatch sender); public event Stopped StopwatchStopped;
-        public delegate void WasReset(StopWatch sender); public event WasReset StopwatchWasReset;
-        public delegate void WasPaused(StopWatch sender); public event WasReset StopwatchWasPaused;
 
         Label lblEstimateEnd;
         TimeSpan ts_timeSet;        
         GroupBox gbStopwatch;
         RadioButton ManualOffRadioBtn;
 
-        System.Windows.Forms.Timer MouseDownTimer = new System.Windows.Forms.Timer();
-        MainTimer mainTimer = new MainTimer();
-        MainTimer WaiterTimer = new MainTimer();        
+        System.Windows.Forms.Timer MouseDownTimer = new System.Windows.Forms.Timer();              
 
-        Color ColorPaused = Color.LightYellow;
+        Color ColorPaused = Color.Yellow;
         Color ColorRunning = Color.LightGreen;
-        Color ColorStopped = Color.Pink;
+        Color ColorStopped = Color.Red;
         Color ColorOriginal;
 
         Form parent;
         Prop1 p = Val.logocontroler.Prop1;
 
         MethodInvoker updateStopwatchTimeMethodInvoker;
+
+        readonly string btnTxt_Stop = "STOP";
+        readonly string btnTxt_Start = "START";
+        readonly string btnTxt_empty = "---";
+        readonly string btnTxt_Reset = "RESET";
 
 
         public StopWatch(Form Parent)
@@ -53,31 +54,25 @@ namespace WindowsFormsApp2
             ////
 
             btnStart.Click += BtnStart_Click;
-            btnStop.Click += BtnStop_Click;
-
-            mainTimer.Elapsed += MainTimer_Tick;
-            WaiterTimer.Elapsed += WaiterTimer_Tick;    
-
-            estimateTimeLeftInvoker = new MethodInvoker(estimateTimeLeftMethod);
+            btnStop.Click += BtnStop_Click;   
             ColorOriginal = gbStopwatch.BackColor;
-
-            btnStop.Text = "---";
-
-            StopwatchStarted += StopWatch_StopwatchStarted;
-            StopwatchStopped += StopWatch_StopwatchStopped;
-            StopwatchWasReset += StopWatch_StopwatchWasReset;
-            StopwatchWasPaused += StopWatch_StopwatchWasPaused;
 
             ManualOffRadioBtn.Click += ManualOffRadioBtn_Click;
 
             updateStopwatchTimeMethodInvoker = new MethodInvoker(updateStopwatchTimeMethod);
 
             ts_timeSet = TimeSpan.FromSeconds(p.TimeSet.Value_short);
+
+            ButtonTextMethodInvoker = new MethodInvoker(ButtonText);
+
+            ButtonTextUpdater = new Timer(50);
+            ButtonTextUpdater.Elapsed += ButtonTextUpdater_Elapsed;
+            ButtonTextUpdater.Start();
         }
 
-        private void StopWatch_StopwatchWasPaused(StopWatch sender)
+        private void ButtonTextUpdater_Elapsed(object sender, ElapsedEventArgs e)
         {
-            Val.logocontroler.Prop1.StopwatchStop.SendPulse();
+            ButtonText();
         }
 
         private void ManualOffRadioBtn_Click(object sender, EventArgs e)
@@ -85,124 +80,62 @@ namespace WindowsFormsApp2
             Stop();
         }
 
-        private void StopWatch_StopwatchWasReset(StopWatch sender)
+        MethodInvoker ButtonTextMethodInvoker;
+        void ButtonText()
         {
-            p.StopwatchReset.SendPulse();            
-        }
-
-        private void StopWatch_StopwatchStopped(StopWatch sender)
-        {
-            p.StopwatchStop.SendPulse();        
-
-            if (selfControlThread != null)
+            if (FormControl.Gui.InvokeRequired)
             {
-                selfControlThread.Abort();
-            }    
-            
-
-        }
-
-        private void StopWatch_StopwatchStarted(StopWatch sender)
-        {
-            p.StopwatchStart.SendPulse();            
-
-            selfControlThread = new Thread(selfControlMethod);
-            selfControlThread.Start();
-        }
-
-        bool wasStoppedBySelfControl = false;
-        
-        void selfControlMethod()
-        {
-            while (true)
-            {
-                updateStopwatchTime();
-
-                if (mainTimer.Enabled)
-                {
-                    if (!p.TempDosezena.Value_bool)
-                    {
-                        if (FormControl.Gui.cbPauseIfTlow.Checked)
-                        {
-                            Pause();
-                            wasStoppedBySelfControl = true;
-                        }                        
-                    }
-                }
-
-                //
-                if (!WaiterTimer.Enabled)
-                {
-                    if (!mainTimer.Enabled)
-                    {
-                        if (p.TempDosezena.Value_bool)
-                        {
-                            if (wasStoppedBySelfControl)
-                            {
-                                Resume();
-                                wasStoppedBySelfControl = false;
-                            }                            
-                        }
-                    }
-                }
-               
-                Thread.Sleep(500);
-            }
-
-        }
-
-        public void ResumeStopwatchIfSettingChanged()
-        {
-            if (!WaiterTimer.Enabled)
-            {
-                if (!mainTimer.Enabled)
-                {
-
-                    if (wasStoppedBySelfControl)
-                    {
-                        Resume();
-                        wasStoppedBySelfControl = false;
-                    }
-
-                }
-            }
-        }
-
-        private void MainTimer_Tick(object sender, EventArgs e)
-        {        
-            // time has elapsed
-            if (p.StopwatchTime.Value_short >= p.TimeSet.Value_short)
-            {
-                // if heating enabled disable it
-                var prop = Val.logocontroler.Prop1;               
-                prop.On.Value = 0;
-                prop.Off.Value = 1;                
-
-                // stop stopwatch
-                mainTimer.Stop();
-                Counting = false;
-                StopwatchStopped.Invoke(this);
-                IsInProgress = false;
-                gbStopwatch.BackColor = ColorStopped;
-
-                // buzz
-                prop.BuzzFromPcEndCycle.SendPulse();
-
-                //
-                IsInProgress = false;               
-                parent.Invoke(new MethodInvoker(delegate { btnStop.Text = "Reset"; })); 
-                
+                FormControl.Gui.Invoke(ButtonTextMethodInvoker);
             }
             else
             {
-                gbStopwatch.BackColor = ColorRunning;
-                parent.Invoke(new MethodInvoker(delegate { btnStop.Text = "Pause"; }));
+                if (p.StopwatchRunning.Value_bool) // running
+                {
+                    btnStop.Text = btnTxt_Stop;
+                    btnStart.Text = btnTxt_empty;
+
+                    gbStopwatch.BackColor = ColorRunning;
+                }
+                else if (p.StopwatchStopped.Value_bool) // stopped
+                {
+                    btnStop.Text = btnTxt_Reset;
+                    btnStart.Text = btnTxt_Start;
+                }
+                else if (p.StopwatchPaused.Value_bool) // paused
+                {
+                    if (p.StopwatchTime.Value_short >= p.TimeSet.Value_short && p.StopwatchTime.Value_short > 0) // paused - Timer Elapsed
+                    {
+                        btnStop.Text = btnTxt_Reset;
+                        btnStart.Text = btnTxt_empty;
+                        gbStopwatch.BackColor = ColorStopped;
+                    }
+                    else // Paused - manual
+                    {
+                        btnStop.Text = btnTxt_Reset;
+                        btnStart.Text = btnTxt_Start;
+                        gbStopwatch.BackColor = ColorOriginal;
+                    }
+
+                }
+                else if (p.HeatingUp.Value_bool) // heating up
+                {
+                    btnStop.Text = btnTxt_Stop;
+                    btnStart.Text = btnTxt_empty;
+
+                    // blink stopwatch
+                    if (p.Blink_HeatingUp.Value_bool)
+                    {
+                        gbStopwatch.BackColor = ColorPaused;
+                    }
+                    else
+                    {
+                        gbStopwatch.BackColor = ColorOriginal;
+                    }
+                }
+                
             }
-            parent.Invoke(estimateTimeLeftInvoker);
             
         }
-
-        MethodInvoker estimateTimeLeftInvoker;
         void estimateTimeLeftMethod()
         {
             var ts_txt = DateTime.Now + (TimeSpan.FromSeconds(p.TimeSet.Value_short) - TimeSpan.FromSeconds(p.StopwatchTime.Value_short));
@@ -227,137 +160,45 @@ namespace WindowsFormsApp2
         MethodInvoker sartBtnTextDeciderInvoker;
         void sartBtnTextDeciderMethod()
         {
-            if (!mainTimer.Enabled && !WaiterTimer.Enabled)
-            {
-                if (p.TimeSet.Value_short > p.StopwatchTime.Value_short)
-                {
-                    btnStart.Text = "Start";
-                }
-            }            
+            //if (!mainTimer.Enabled && !WaiterTimer.Enabled)
+            //{
+            //    if (p.TimeSet.Value_short > p.StopwatchTime.Value_short)
+            //    {
+            //        btnStart.Text = "Start";
+            //    }
+            //}            
         }
 
         private void BtnStop_Click(object sender, EventArgs e)
         {
-            
-            WaiterTimer.Stop();
-            parent.Invoke(new MethodInvoker(delegate { 
-                btnStart.Text = "Start"; 
-            }));
-
-            //           
-            
-            if (mainTimer.Started)
+            if (btnStop.Text == btnTxt_Reset)
             {
-                StopwatchWasPaused.Invoke(this);
-                gbStopwatch.BackColor = ColorStopped;
-                mainTimer.Stop();
-                Counting = false;
-                parent.Invoke(new MethodInvoker(delegate {
-                    btnStop.Text = "Reset";
-                }));
-            }
-            else if(IsInProgress) // main timer is stopped AND IsInProgress
-            {
-                if (MessageBox.Show("Sarža še ni zaključena, ali vseeno želite ponastaviti štoparico? ","POZOR!",MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {   
-                    parent.Invoke(new MethodInvoker(delegate {
-                        btnStop.Text = "---";
-                    }));
-                    gbStopwatch.BackColor = ColorOriginal;
-                    StopwatchStopped.Invoke(this);
-                    IsInProgress = false;
-                    StopwatchWasReset.Invoke(this);
-                }               
-            }
-            else
-            {               
-                parent.Invoke(new MethodInvoker(delegate {
-                    btnStop.Text = "---";
-                }));
-                gbStopwatch.BackColor = ColorOriginal;
-                StopwatchWasReset.Invoke(this);
+                p.StopwatchReset.SendPulse();
             }
 
-            // if heating enabled disable it
-            var prop = Val.logocontroler.Prop1;            
-            prop.On.Value = 0;
-            prop.Off.Value = 1;
-                        
-            //        
+            else if (btnStop.Text == btnTxt_Stop)
+            {
+                p.StopwatchStop.SendPulse();
+            }
+           
         }
 
         private void BtnStart_Click(object sender, EventArgs e)
         {
-            if (WaiterTimer.Started || mainTimer.Started)
+            if (p.TimeSet.Value_short == 0)
             {
+                MessageBox.Show("Nastavite željeni čas!"); 
                 return;
             }
-            WaiterTimer.Start();
-            btnStop.Text = "Stop";
-            btnStart.Text = "---";           
-            var prop = Val.logocontroler.Prop1;
-            prop.On.Value = 1;
-            prop.Off.Value = 0;
-            IsInProgress = true;
-            if (!mainTimer.Started)
+            if (btnStart.Text == btnTxt_Start)
             {
-                StopwatchStarted.Invoke(null);
+                p.StopwatchStart.SendPulse();
             }
 
-        }
-
-        
-        private void WaiterTimer_Tick(object sender, EventArgs e)
-        {
-            parent.Invoke(new MethodInvoker(delegate { btnStop.Text = "Stop"; }));
-            // if heating disabled enable it
-            WaiterTimer.Interval = 1000;
-
-            // if temperature reached
-            var val = Val.logocontroler.Prop1.TempDosezena;
-            if (val.Value_bool || debugTemperaruraJeDosezena)
+            else if (btnStart.Text == btnTxt_empty)
             {
-                mainTimer.Start();
-                Counting = true;
-                p.BuzzFromPcTemperatureReached.SendPulse();
-
-                //
-                gbStopwatch.BackColor = ColorRunning;
-                WaiterTimer.Stop();
-            }
-            else
-            {
-                if (gbStopwatch.BackColor == ColorPaused)
-                {
-                    gbStopwatch.BackColor = ColorOriginal;
-                }
-                else
-                {
-                    gbStopwatch.BackColor = ColorPaused;
-                }
-                
-            }
-
-            parent.Invoke(estimateTimeLeftInvoker);
-            
-        }
-
-        public void Pause()
-        {
-            if (mainTimer != null)
-            {
-                mainTimer.Stop();
-                Counting = false;
-            }
-        }
-
-        public void Resume()
-        {
-            if (mainTimer != null)
-            {
-                mainTimer.Start();
-                Counting = true;
-            }            
+                // ignore
+            }   
         }
 
         public void Stop()

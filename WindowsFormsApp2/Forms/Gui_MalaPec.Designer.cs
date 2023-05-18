@@ -194,6 +194,24 @@ namespace WindowsFormsApp2
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint160 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.62360689814814818D, 300D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint161 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.6337966435185185D, 20D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint162 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.6337966435185185D, 300D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint163 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.517839224537037D, 20D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint164 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.517839224537037D, 300D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint165 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.629498761574074D, 20D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint166 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.629498761574074D, 300D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint167 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.62967649305555551D, 20D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint168 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.62967649305555551D, 300D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint169 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.64403880787037038D, 20D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint170 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.64403880787037038D, 300D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint171 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.64547506944444444D, 20D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint172 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.64547506944444444D, 300D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint173 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.6505406944444444D, 20D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint174 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.6505406944444444D, 300D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint175 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.65322620370370366D, 20D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint176 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.65322620370370366D, 300D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint177 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.6552635185185185D, 20D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint178 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.6552635185185185D, 300D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint179 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.66284780092592588D, 20D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint180 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0.66284780092592588D, 300D);
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -226,6 +244,7 @@ namespace WindowsFormsApp2
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.gbStoparica = new System.Windows.Forms.GroupBox();
+            this.cbPauseIfTlow = new System.Windows.Forms.CheckBox();
             this.btn_Minus30 = new System.Windows.Forms.Button();
             this.btn_Minus10 = new System.Windows.Forms.Button();
             this.btn_Minus1 = new System.Windows.Forms.Button();
@@ -241,20 +260,17 @@ namespace WindowsFormsApp2
             this.btnStart = new System.Windows.Forms.Button();
             this.lblTimeSet1 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.tbLoputaDejanska2 = new System.Windows.Forms.TextBox();
             this.tbLoputaDejanska1 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.musslaufZracenje = new System.Windows.Forms.Button();
-            this.cbPauseIfTlow = new System.Windows.Forms.CheckBox();
-            this.tbOdpirajLoputeDo = new WindowsFormsApp2.LoputaSelector_0_100();
-            this.onOffTimerSelectorZracenje = new WindowsFormsApp2.OnOffTimerSelector();
-            this.onOffTimerSelectorPavza = new WindowsFormsApp2.OnOffTimerSelector();
-            this.tbStopnjaZracenje = new WindowsFormsApp2.TextboxShow();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.man01Select1 = new WindowsFormsApp2.Man01Select();
+            this.loputaSelector2 = new WindowsFormsApp2.LoputaSelector_0_100();
+            this.loputaSelector1 = new WindowsFormsApp2.LoputaSelector_0_100();
+            this.autoMan01Select2 = new WindowsFormsApp2.AutoMan01Select();
             this.smartChart1 = new WindowsFormsApp2.SmartChart();
             this.actuatorStatus4 = new WindowsFormsApp2.ActuatorStatusBlueOrange();
             this.actuatorStatus3 = new WindowsFormsApp2.ActuatorStatusBlueOrange();
@@ -264,7 +280,7 @@ namespace WindowsFormsApp2
             this.tbtempkanal = new WindowsFormsApp2.TextboxShow();
             this.textboxShow3 = new WindowsFormsApp2.TextboxShow();
             this.textboxShow1 = new WindowsFormsApp2.TextboxShow();
-            this.autoMan01Select1 = new WindowsFormsApp2.AutoMan01Select();
+            this.autoMan01Select1 = new WindowsFormsApp2.Man01Select();
             this.histHeat2_101 = new WindowsFormsApp2.HistHeat2_10();
             this.temperatureSelector_0_3002 = new WindowsFormsApp2.TemperatureSelector_0_250();
             this.temperatureSelector_0_3001 = new WindowsFormsApp2.TemperatureSelector_0_250();
@@ -296,6 +312,8 @@ namespace WindowsFormsApp2
             this.connectedButton1 = new WindowsFormsApp2.ConnectedButton();
             this.dataGridViewComboBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.tsAutoVklop = new WindowsFormsApp2.TemperatureSelector_0_250();
+            this.label20 = new System.Windows.Forms.Label();
             this.panelTop.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -589,6 +607,17 @@ namespace WindowsFormsApp2
             this.gbStoparica.TabStop = false;
             this.gbStoparica.Text = "Štoparica";
             // 
+            // cbPauseIfTlow
+            // 
+            this.cbPauseIfTlow.AutoSize = true;
+            this.cbPauseIfTlow.Location = new System.Drawing.Point(44, 164);
+            this.cbPauseIfTlow.Name = "cbPauseIfTlow";
+            this.cbPauseIfTlow.Size = new System.Drawing.Size(180, 17);
+            this.cbPauseIfTlow.TabIndex = 19;
+            this.cbPauseIfTlow.Text = "Pavza ob nezadostni temperaturi";
+            this.cbPauseIfTlow.UseVisualStyleBackColor = true;
+            this.cbPauseIfTlow.CheckedChanged += new System.EventHandler(this.cbPauseIfTlow_CheckedChanged);
+            // 
             // btn_Minus30
             // 
             this.btn_Minus30.Location = new System.Drawing.Point(26, 64);
@@ -705,7 +734,7 @@ namespace WindowsFormsApp2
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(75, 23);
             this.btnStop.TabIndex = 1;
-            this.btnStop.Text = "Stop";
+            this.btnStop.Text = "...";
             this.btnStop.UseVisualStyleBackColor = true;
             // 
             // btnStart
@@ -714,7 +743,7 @@ namespace WindowsFormsApp2
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start";
+            this.btnStart.Text = "...";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -731,38 +760,29 @@ namespace WindowsFormsApp2
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.label20);
-            this.groupBox7.Controls.Add(this.tbOdpirajLoputeDo);
+            this.groupBox7.Controls.Add(this.tsAutoVklop);
+            this.groupBox7.Controls.Add(this.label10);
+            this.groupBox7.Controls.Add(this.man01Select1);
+            this.groupBox7.Controls.Add(this.label9);
+            this.groupBox7.Controls.Add(this.label1);
+            this.groupBox7.Controls.Add(this.loputaSelector2);
+            this.groupBox7.Controls.Add(this.loputaSelector1);
+            this.groupBox7.Controls.Add(this.autoMan01Select2);
             this.groupBox7.Controls.Add(this.tbLoputaDejanska2);
             this.groupBox7.Controls.Add(this.tbLoputaDejanska1);
             this.groupBox7.Controls.Add(this.label18);
-            this.groupBox7.Controls.Add(this.label10);
-            this.groupBox7.Controls.Add(this.onOffTimerSelectorZracenje);
-            this.groupBox7.Controls.Add(this.label9);
-            this.groupBox7.Controls.Add(this.onOffTimerSelectorPavza);
             this.groupBox7.Controls.Add(this.label8);
-            this.groupBox7.Controls.Add(this.tbStopnjaZracenje);
-            this.groupBox7.Controls.Add(this.label1);
-            this.groupBox7.Controls.Add(this.musslaufZracenje);
             this.groupBox7.Location = new System.Drawing.Point(640, 99);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(139, 437);
             this.groupBox7.TabIndex = 30;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Zračenje";
+            this.groupBox7.Text = "Odsesovanje";
             this.groupBox7.Enter += new System.EventHandler(this.groupBox7_Enter_1);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 156);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(90, 13);
-            this.label20.TabIndex = 33;
-            this.label20.Text = "Odpiraj lopute do:";
             // 
             // tbLoputaDejanska2
             // 
-            this.tbLoputaDejanska2.Location = new System.Drawing.Point(62, 121);
+            this.tbLoputaDejanska2.Location = new System.Drawing.Point(68, 257);
             this.tbLoputaDejanska2.Name = "tbLoputaDejanska2";
             this.tbLoputaDejanska2.ReadOnly = true;
             this.tbLoputaDejanska2.Size = new System.Drawing.Size(65, 20);
@@ -770,7 +790,7 @@ namespace WindowsFormsApp2
             // 
             // tbLoputaDejanska1
             // 
-            this.tbLoputaDejanska1.Location = new System.Drawing.Point(62, 96);
+            this.tbLoputaDejanska1.Location = new System.Drawing.Point(68, 159);
             this.tbLoputaDejanska1.Name = "tbLoputaDejanska1";
             this.tbLoputaDejanska1.ReadOnly = true;
             this.tbLoputaDejanska1.Size = new System.Drawing.Size(65, 20);
@@ -779,34 +799,16 @@ namespace WindowsFormsApp2
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(9, 124);
+            this.label18.Location = new System.Drawing.Point(9, 207);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(49, 13);
             this.label18.TabIndex = 38;
             this.label18.Text = "Loputa2:";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(9, 254);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 13);
-            this.label10.TabIndex = 37;
-            this.label10.Text = "Čas zračenja";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(9, 211);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 13);
-            this.label9.TabIndex = 35;
-            this.label9.Text = "Čas pavze:";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 99);
+            this.label8.Location = new System.Drawing.Point(9, 109);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 13);
             this.label8.TabIndex = 32;
@@ -815,71 +817,74 @@ namespace WindowsFormsApp2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 68);
+            this.label1.Location = new System.Drawing.Point(9, 162);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Stopnja: ";
+            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.TabIndex = 44;
+            this.label1.Text = "Trenutno:";
             // 
-            // musslaufZracenje
+            // label9
             // 
-            this.musslaufZracenje.Location = new System.Drawing.Point(6, 27);
-            this.musslaufZracenje.Name = "musslaufZracenje";
-            this.musslaufZracenje.Size = new System.Drawing.Size(90, 23);
-            this.musslaufZracenje.TabIndex = 0;
-            this.musslaufZracenje.Text = "Prisilni vklop";
-            this.musslaufZracenje.UseVisualStyleBackColor = true;
-            this.musslaufZracenje.Click += new System.EventHandler(this.musslaufZracenje_Click);
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(9, 260);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(53, 13);
+            this.label9.TabIndex = 45;
+            this.label9.Text = "Trenutno:";
             // 
-            // cbPauseIfTlow
+            // label10
             // 
-            this.cbPauseIfTlow.AutoSize = true;
-            this.cbPauseIfTlow.Location = new System.Drawing.Point(44, 164);
-            this.cbPauseIfTlow.Name = "cbPauseIfTlow";
-            this.cbPauseIfTlow.Size = new System.Drawing.Size(180, 17);
-            this.cbPauseIfTlow.TabIndex = 19;
-            this.cbPauseIfTlow.Text = "Pavza ob nezadostni temperaturi";
-            this.cbPauseIfTlow.UseVisualStyleBackColor = true;
-            this.cbPauseIfTlow.CheckedChanged += new System.EventHandler(this.cbPauseIfTlow_CheckedChanged);
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(18, 358);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 13);
+            this.label10.TabIndex = 47;
+            this.label10.Text = "Hitrost:";
             // 
-            // tbOdpirajLoputeDo
+            // man01Select1
             // 
-            this.tbOdpirajLoputeDo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.tbOdpirajLoputeDo.FormattingEnabled = true;
-            this.tbOdpirajLoputeDo.Location = new System.Drawing.Point(6, 172);
-            this.tbOdpirajLoputeDo.Name = "tbOdpirajLoputeDo";
-            this.tbOdpirajLoputeDo.Size = new System.Drawing.Size(121, 21);
-            this.tbOdpirajLoputeDo.TabIndex = 32;
-            this.tbOdpirajLoputeDo.SelectedIndexChanged += new System.EventHandler(this.tbOdpirajLoputeDo_SelectedIndexChanged);
+            this.man01Select1.Location = new System.Drawing.Point(12, 373);
+            this.man01Select1.Name = "man01Select1";
+            this.man01Select1.OffPulse = null;
+            this.man01Select1.OnPulse = null;
+            this.man01Select1.Size = new System.Drawing.Size(100, 56);
+            this.man01Select1.TabIndex = 46;
+            this.man01Select1.Text = "man01Select1";
+            this.man01Select1.Text_Man0 = "1";
+            this.man01Select1.Text_Man1 = "2";
+            this.man01Select1.Value = null;
             // 
-            // onOffTimerSelectorZracenje
+            // loputaSelector2
             // 
-            this.onOffTimerSelectorZracenje.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.onOffTimerSelectorZracenje.FormattingEnabled = true;
-            this.onOffTimerSelectorZracenje.Location = new System.Drawing.Point(6, 270);
-            this.onOffTimerSelectorZracenje.Name = "onOffTimerSelectorZracenje";
-            this.onOffTimerSelectorZracenje.Size = new System.Drawing.Size(121, 21);
-            this.onOffTimerSelectorZracenje.TabIndex = 36;
+            this.loputaSelector2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loputaSelector2.FormattingEnabled = true;
+            this.loputaSelector2.Location = new System.Drawing.Point(12, 230);
+            this.loputaSelector2.Name = "loputaSelector2";
+            this.loputaSelector2.Size = new System.Drawing.Size(121, 21);
+            this.loputaSelector2.TabIndex = 43;
             // 
-            // onOffTimerSelectorPavza
+            // loputaSelector1
             // 
-            this.onOffTimerSelectorPavza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.onOffTimerSelectorPavza.FormattingEnabled = true;
-            this.onOffTimerSelectorPavza.Location = new System.Drawing.Point(6, 227);
-            this.onOffTimerSelectorPavza.Name = "onOffTimerSelectorPavza";
-            this.onOffTimerSelectorPavza.Size = new System.Drawing.Size(121, 21);
-            this.onOffTimerSelectorPavza.TabIndex = 34;
+            this.loputaSelector1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loputaSelector1.FormattingEnabled = true;
+            this.loputaSelector1.Location = new System.Drawing.Point(12, 132);
+            this.loputaSelector1.Name = "loputaSelector1";
+            this.loputaSelector1.Size = new System.Drawing.Size(121, 21);
+            this.loputaSelector1.TabIndex = 42;
             // 
-            // tbStopnjaZracenje
+            // autoMan01Select2
             // 
-            this.tbStopnjaZracenje.Location = new System.Drawing.Point(62, 65);
-            this.tbStopnjaZracenje.Name = "tbStopnjaZracenje";
-            this.tbStopnjaZracenje.Postfix = "%";
-            this.tbStopnjaZracenje.Prefix = null;
-            this.tbStopnjaZracenje.ReadOnly = true;
-            this.tbStopnjaZracenje.Size = new System.Drawing.Size(34, 20);
-            this.tbStopnjaZracenje.TabIndex = 31;
-            this.tbStopnjaZracenje.Value = null;
+            this.autoMan01Select2.Location = new System.Drawing.Point(12, 16);
+            this.autoMan01Select2.Name = "autoMan01Select2";
+            this.autoMan01Select2.Size = new System.Drawing.Size(100, 79);
+            this.autoMan01Select2.TabIndex = 41;
+            this.autoMan01Select2.Text = "autoMan01Select2";
+            this.autoMan01Select2.Text_Auto = "AUTO";
+            this.autoMan01Select2.Text_Man0 = "OFF";
+            this.autoMan01Select2.Text_Man1 = "ON";
+            this.autoMan01Select2.Value_Auto = null;
+            this.autoMan01Select2.Value_Man0 = null;
+            this.autoMan01Select2.Value_Man1 = null;
             // 
             // smartChart1
             // 
@@ -1059,6 +1064,24 @@ namespace WindowsFormsApp2
             series1.Points.Add(dataPoint160);
             series1.Points.Add(dataPoint161);
             series1.Points.Add(dataPoint162);
+            series1.Points.Add(dataPoint163);
+            series1.Points.Add(dataPoint164);
+            series1.Points.Add(dataPoint165);
+            series1.Points.Add(dataPoint166);
+            series1.Points.Add(dataPoint167);
+            series1.Points.Add(dataPoint168);
+            series1.Points.Add(dataPoint169);
+            series1.Points.Add(dataPoint170);
+            series1.Points.Add(dataPoint171);
+            series1.Points.Add(dataPoint172);
+            series1.Points.Add(dataPoint173);
+            series1.Points.Add(dataPoint174);
+            series1.Points.Add(dataPoint175);
+            series1.Points.Add(dataPoint176);
+            series1.Points.Add(dataPoint177);
+            series1.Points.Add(dataPoint178);
+            series1.Points.Add(dataPoint179);
+            series1.Points.Add(dataPoint180);
             series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time;
             series2.BorderWidth = 3;
             series2.ChartArea = "ChartArea1";
@@ -1197,15 +1220,14 @@ namespace WindowsFormsApp2
             // 
             this.autoMan01Select1.Location = new System.Drawing.Point(16, 19);
             this.autoMan01Select1.Name = "autoMan01Select1";
+            this.autoMan01Select1.OffPulse = null;
+            this.autoMan01Select1.OnPulse = null;
             this.autoMan01Select1.Size = new System.Drawing.Size(100, 79);
             this.autoMan01Select1.TabIndex = 21;
             this.autoMan01Select1.Text = "autoMan01Select1";
-            this.autoMan01Select1.Text_Auto = "AUTO - Urnik";
             this.autoMan01Select1.Text_Man0 = "OFF - Izklop";
             this.autoMan01Select1.Text_Man1 = "ON - Vklop";
-            this.autoMan01Select1.Value_Auto = null;
-            this.autoMan01Select1.Value_Man0 = null;
-            this.autoMan01Select1.Value_Man1 = null;
+            this.autoMan01Select1.Value = null;
             // 
             // histHeat2_101
             // 
@@ -1556,6 +1578,24 @@ namespace WindowsFormsApp2
             this.dataGridViewComboBoxColumn6.Name = "dataGridViewComboBoxColumn6";
             this.dataGridViewComboBoxColumn6.Width = 125;
             // 
+            // tsAutoVklop
+            // 
+            this.tsAutoVklop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tsAutoVklop.FormattingEnabled = true;
+            this.tsAutoVklop.Location = new System.Drawing.Point(12, 328);
+            this.tsAutoVklop.Name = "tsAutoVklop";
+            this.tsAutoVklop.Size = new System.Drawing.Size(121, 21);
+            this.tsAutoVklop.TabIndex = 48;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(9, 312);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(100, 13);
+            this.label20.TabIndex = 49;
+            this.label20.Text = "Avtomatki vklop pri:";
+            // 
             // Gui_MalaPec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1634,7 +1674,7 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label12;
         private TimeToGoMinutes_1_30 timeToGoMinutes_1_301;
-        private AutoMan01Select autoMan01Select1;
+        private Man01Select autoMan01Select1;
         private System.Windows.Forms.Label label13;
         private HistHeat2_10 histHeat2_101;
         private ConnectedButton connectedButton1;
@@ -1673,19 +1713,9 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label lblEstimateEnd;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button musslaufZracenje;
-        private System.Windows.Forms.Label label8;
-        private TextboxShow tbStopnjaZracenje;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        public OnOffTimerSelector onOffTimerSelectorZracenje;
-        public OnOffTimerSelector onOffTimerSelectorPavza;
         private System.Windows.Forms.TextBox tbLoputaDejanska2;
         private System.Windows.Forms.TextBox tbLoputaDejanska1;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label20;
-        private LoputaSelector_0_100 tbOdpirajLoputeDo;
         private System.Windows.Forms.Label label21;
         public System.Windows.Forms.Label lblStevecSarz;
         public System.Windows.Forms.Label lblStopwatchTime;
@@ -1697,5 +1727,15 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Button btn_Plus10;
         private System.Windows.Forms.Button btn_Plus1;
         public System.Windows.Forms.CheckBox cbPauseIfTlow;
+        private System.Windows.Forms.Label label8;
+        public AutoMan01Select autoMan01Select2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label1;
+        private LoputaSelector_0_100 loputaSelector2;
+        private LoputaSelector_0_100 loputaSelector1;
+        private System.Windows.Forms.Label label10;
+        private Man01Select man01Select1;
+        private System.Windows.Forms.Label label20;
+        private TemperatureSelector_0_250 tsAutoVklop;
     }
 }

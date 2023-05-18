@@ -10,24 +10,34 @@ namespace WindowsFormsApp2
     public class Prop2 : PropComm
     {
 
-        public PlcVars.Word Musslauf_Zracenje, MinZracenje, MaxZracenje;
-        public PlcVars.Word StopnjaZracenja;
-        public PlcVars.Word PozicijaLoputeNastavljena;
-        public PlcVars.Word PozicijaLoputeDejanska1, PozicijaLoputeDejanska2;
-        public PlcVars.Word ZracenjeOnTime;
-        public PlcVars.Word ZracenjeOffTime;
+        public PlcVars.Word auto, man0, man1;
+        public PlcVars.Word loputa1PovratnaInfo, loputa2PovratnaInfo;
+
+        public PlcVars.Word loputa1Nastavi, loputa2Nastavi;
+
+        public PlcVars.Word automatskiVklopPri;
+
+        public PlcVars.Bit setHitrostMala, setHitrostVelika, readHitrost;
 
         public Prop2(Sharp7.S7Client client):base(client)
         {
-            MinZracenje = new PlcVars.Word(this, new PlcVars.WordAddress(8), true);
-            MaxZracenje = new PlcVars.Word(this, new PlcVars.WordAddress(10), true);
-            Musslauf_Zracenje = new PlcVars.Word(this, new PlcVars.WordAddress(12), true);
-            StopnjaZracenja = new PlcVars.Word(this, new PlcVars.WordAddress(100), false);
-            PozicijaLoputeNastavljena = new PlcVars.Word(this, new PlcVars.WordAddress(110), true);
-            PozicijaLoputeDejanska1 = new PlcVars.Word(this, new PlcVars.WordAddress(120), false);
-            PozicijaLoputeDejanska2 = new PlcVars.Word(this, new PlcVars.WordAddress(130), false);
-            ZracenjeOnTime = new PlcVars.Word(this, new PlcVars.WordAddress(14), true);
-            ZracenjeOffTime = new PlcVars.Word(this, new PlcVars.WordAddress(16), true);
+            auto = new PlcVars.Word(this, new PlcVars.WordAddress(10), true);
+            man0 = new PlcVars.Word(this, new PlcVars.WordAddress(12), true);
+            man1 = new PlcVars.Word(this, new PlcVars.WordAddress(14), true);
+
+            setHitrostMala = new PlcVars.Bit(this, new PlcVars.BitAddress(20,0), true);
+            setHitrostVelika = new PlcVars.Bit(this, new PlcVars.BitAddress(21, 0), true);
+            readHitrost = new PlcVars.Bit(this, new PlcVars.BitAddress(22, 0), false);
+
+            automatskiVklopPri = new PlcVars.Word(this, new PlcVars.WordAddress(40), true);
+
+            loputa1Nastavi = new PlcVars.Word(this, new PlcVars.WordAddress(110), true);
+            loputa2Nastavi = new PlcVars.Word(this, new PlcVars.WordAddress(112), true);
+
+            loputa1PovratnaInfo = new PlcVars.Word(this, new PlcVars.WordAddress(120), false);
+            loputa2PovratnaInfo = new PlcVars.Word(this, new PlcVars.WordAddress(130), false);
+
+
         }
 
     }

@@ -27,7 +27,7 @@ namespace WindowsFormsApp2
         SysTimer UpdateLoputa;
         Prop1 prop = Val.logocontroler.Prop1;
         Datalogger dl;
-        Zracenje Zracenje;
+        Odsesovanje Zracenje;
         uint StevecSarz = 0;
         MethodInvoker updateStopwatchTimeMethodInvoker;
 
@@ -42,27 +42,15 @@ namespace WindowsFormsApp2
             SensorErrDataFeed();
             Temperatures_Rpm_DataFeed();
             TempSelectorDataFeed();
-            ZracenjeInit();
             connectedButton1.ID = 1;
             DisableGuiOnConnectionLossThread = new Thread(DisableGuiOnConnectionLoss);
 
             stpw = new StopWatch(this);
-            stpw.StopwatchStarted += Stpw_StopwatchStarted;
-            stpw.StopwatchStopped += Stpw_StopwatchStopped;
-            stpw.StopwatchWasReset += Stpw_StopwatchWasReset;
             Val.StopWatch = stpw;
 
-            Zracenje = new Zracenje();
-            onOffTimerSelectorPavza.Value = p2.ZracenjeOffTime;
-            onOffTimerSelectorZracenje.Value = p2.ZracenjeOnTime;
+            Zracenje = new Odsesovanje(this);
           
             TimerSetup();
-            
-            tbOdpirajLoputeDo.Value = p2.PozicijaLoputeNastavljena;
-
-            UpdateLoputa = new SysTimer(500);
-            UpdateLoputa.Elapsed += UpdateLoputa_Elapsed;
-            UpdateLoputa.Start();
 
             RefreshGui = new System.Timers.Timer(100);
             RefreshGui.AutoReset = true;
@@ -118,40 +106,6 @@ namespace WindowsFormsApp2
 
             }
            
-        }
-
-        private void UpdateLoputa_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
-        {
-            var p = Val.logocontroler.Prop2;
-            const double corr = 1.04166667; // phisical daa is wrong shows 4 instead of 0. The number is deducted by 4 and multiplied with this number so we get 0-100
-
-            var m = new MethodInvoker(delegate {
-                tbLoputaDejanska1.Text = 
-                Math.Round(p.PozicijaLoputeDejanska1.Value_short * corr,0).ToString() + "/" + p.PozicijaLoputeNastavljena.Value_string + "%";
-
-                tbLoputaDejanska2.Text =
-                Math.Round(p.PozicijaLoputeDejanska2.Value_short * corr, 0).ToString() + "/" + p.PozicijaLoputeNastavljena.Value_string + "%";
-            });
-
-            Invoke(m);
-            
-        }
-
-        void ZracenjeInit()
-        {
-            tbStopnjaZracenje.Value = p2.StopnjaZracenja;
-            onOffTimerSelectorPavza.SelectedValueChanged += OnOffTimerSelectorPavza_SelectedValueChanged;
-            onOffTimerSelectorZracenje.SelectedValueChanged += OnOffTimerSelectorZracenje_SelectedValueChanged;
-        }
-
-        private void OnOffTimerSelectorZracenje_SelectedValueChanged(object sender, EventArgs e)
-        {
-            Zracenje.Ontime_s = onOffTimerSelectorZracenje.Value.Value_short;
-        }
-
-        private void OnOffTimerSelectorPavza_SelectedValueChanged(object sender, EventArgs e)
-        {
-            Zracenje.Offtime_s = onOffTimerSelectorPavza.Value.Value_short;
         }
        
         void TimerSetup()
@@ -327,9 +281,9 @@ namespace WindowsFormsApp2
                 rpmSelector_30_1001.Value = p1.VentStdby;
                 rpmSelector_30_1003.Value = p1.VntCoolOff;
                 timeToGoMinutes_1_301.Value = p1.VentCoolOffTime;
-                autoMan01Select1.Value_Auto = p1.Auto;
-                autoMan01Select1.Value_Man0 = p1.Off;
-                autoMan01Select1.Value_Man1 = p1.On;
+                autoMan01Select1.Value = p1.PecOnStatus;
+                autoMan01Select1.OnPulse = p1.PecOnPulse;
+                autoMan01Select1.OffPulse = p1.PecOffPulse;
                 histHeat2_101.Value = p1.HistHeat;
                 actuatorStatus1.Value_PlcBit = p1.Heat1;
                 actuatorStatus2.Value_PlcBit = p1.Heat2;
@@ -543,19 +497,6 @@ namespace WindowsFormsApp2
         private void groupBox7_Enter_1(object sender, EventArgs e)
         {
 
-        }
-
-        private void musslaufZracenje_Click(object sender, EventArgs e)
-        {
-            var buff = p2.Musslauf_Zracenje;
-            if (buff.Value_short == 0)
-            {
-                buff.Value_short = 1;
-            }
-            else
-            {
-                buff.Value_short = 0;
-            }
         }
 
         private void tbOdpirajLoputeDo_SelectedIndexChanged(object sender, EventArgs e)

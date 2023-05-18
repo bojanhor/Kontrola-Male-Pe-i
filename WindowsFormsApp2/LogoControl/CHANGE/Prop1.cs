@@ -12,15 +12,7 @@ namespace WindowsFormsApp2
         //PC Watchdog
         public PlcVars.Word PCWD;
 
-        public PlcVars.Word Pon_EN_1; public PlcVars.TimeSet PonTimeOn; public PlcVars.TimeSet PonTimeOff;
-        public PlcVars.Word Tor_EN_1; public PlcVars.TimeSet TorTimeOn; public PlcVars.TimeSet TorTimeOff;
-        public PlcVars.Word Sre_EN_1; public PlcVars.TimeSet SreTimeOn; public PlcVars.TimeSet SreTimeOff;
-        public PlcVars.Word Čet_EN_1; public PlcVars.TimeSet ČetTimeOn; public PlcVars.TimeSet ČetTimeOff;
-        public PlcVars.Word Pet_EN_1; public PlcVars.TimeSet PetTimeOn; public PlcVars.TimeSet PetTimeOff;
-        public PlcVars.Word Sob_EN_1; public PlcVars.TimeSet SobTimeOn; public PlcVars.TimeSet SobTimeOff;
-        public PlcVars.Word Ned_EN_1; public PlcVars.TimeSet NedTimeOn; public PlcVars.TimeSet NedTimeOff;
-
-        public PlcVars.Word Auto, Off, On;
+        public PlcVars.Bit  PecOnPulse, PecOffPulse, PecOnStatus;
 
         public PlcVars.Word HistHeat;
 
@@ -48,12 +40,12 @@ namespace WindowsFormsApp2
 
         public PlcVars.Word TempSenZg, TempSenSr1, TempSenSr2, TempSenSp, TempSenKn, TempSenKos;
 
-        public PlcVars.Bit BuzzFromPC, BuzzFromPcEndCycle, BuzzFromPcTemperatureReached, BuzzFromPcERROR;
+        public PlcVars.Bit BuzzFromPC, BuzzFromPcEndCycle, BuzzFromPcERROR;
 
         public PlcVars.Bit StopwatchStart, StopwatchStop, StopwatchReset, StopwatchRunning, TimeReached, StopwatchPaused, StopwatchStopped, HeatingUp;
         public PlcVars.Word StopwatchTime, TimeSet, PauseIfTlow;
 
-
+        public PlcVars.Bit Blink_HeatingUp;
 
         //Alarm Bits
         public PlcVars.AlarmBit DiffVntErr, MaxTempReached, VentDemand, MussLauf, VrataOdprta, CoolOff, VentActive, TempDosezena;
@@ -65,18 +57,6 @@ namespace WindowsFormsApp2
         {
             //PC Watchdog
             PCWD = new PlcVars.Word(this, new PlcVars.WordAddress(GetPCWD_Address()), true);
-            
-            Pon_EN_1 = new PlcVars.Word(this, new PlcVars.WordAddress(70), true); PonTimeOn = new PlcVars.TimeSet(this, new PlcVars.WordAddress(40), true); PonTimeOff = new PlcVars.TimeSet(this, new PlcVars.WordAddress(42), true);
-            Tor_EN_1 = new PlcVars.Word(this, new PlcVars.WordAddress(72), true); TorTimeOn = new PlcVars.TimeSet(this, new PlcVars.WordAddress(44), true); TorTimeOff = new PlcVars.TimeSet(this, new PlcVars.WordAddress(46), true);
-            Sre_EN_1 = new PlcVars.Word(this, new PlcVars.WordAddress(74), true); SreTimeOn = new PlcVars.TimeSet(this, new PlcVars.WordAddress(48), true); SreTimeOff = new PlcVars.TimeSet(this, new PlcVars.WordAddress(50), true);
-            Čet_EN_1 = new PlcVars.Word(this, new PlcVars.WordAddress(76), true); ČetTimeOn = new PlcVars.TimeSet(this, new PlcVars.WordAddress(52), true); ČetTimeOff = new PlcVars.TimeSet(this, new PlcVars.WordAddress(54), true);
-            Pet_EN_1 = new PlcVars.Word(this, new PlcVars.WordAddress(78), true); PetTimeOn = new PlcVars.TimeSet(this, new PlcVars.WordAddress(56), true); PetTimeOff = new PlcVars.TimeSet(this, new PlcVars.WordAddress(58), true);
-            Sob_EN_1 = new PlcVars.Word(this, new PlcVars.WordAddress(80), true); SobTimeOn = new PlcVars.TimeSet(this, new PlcVars.WordAddress(60), true); SobTimeOff = new PlcVars.TimeSet(this, new PlcVars.WordAddress(62), true);
-            Ned_EN_1 = new PlcVars.Word(this, new PlcVars.WordAddress(82), true); NedTimeOn = new PlcVars.TimeSet(this, new PlcVars.WordAddress(64), true); NedTimeOff = new PlcVars.TimeSet(this, new PlcVars.WordAddress(66), true);
-
-            Auto = new PlcVars.Word(this, new PlcVars.WordAddress(84), true);
-            Off = new PlcVars.Word(this, new PlcVars.WordAddress(86), true);
-            On = new PlcVars.Word(this, new PlcVars.WordAddress(88), true);
 
             HistHeat = new PlcVars.Word(this, new PlcVars.WordAddress(100), true);
 
@@ -99,6 +79,10 @@ namespace WindowsFormsApp2
             VntCoolOff = new PlcVars.Word(this, new PlcVars.WordAddress(32), true);
 
             VentCoolOffTime = new PlcVars.Word(this, new PlcVars.WordAddress(38), true);
+
+            PecOnPulse = new PlcVars.Bit(this, new PlcVars.BitAddress(87, 0), true);
+            PecOffPulse = new PlcVars.Bit(this, new PlcVars.BitAddress(88, 0), true);
+            PecOnStatus = new PlcVars.Bit(this, new PlcVars.BitAddress(89, 0), false);
 
             TempStPnt1 = new PlcVars.Word(this, new PlcVars.WordAddress(90),true);
             TempStPnt2 = new PlcVars.Word(this, new PlcVars.WordAddress(92), true);
@@ -139,7 +123,6 @@ namespace WindowsFormsApp2
 
             BuzzFromPC = new PlcVars.Bit(this, new PlcVars.BitAddress(190, 0), true);
             BuzzFromPcEndCycle = new PlcVars.Bit(this, new PlcVars.BitAddress(192, 0), true);
-            BuzzFromPcTemperatureReached = new PlcVars.Bit(this, new PlcVars.BitAddress(194, 0), true);
             BuzzFromPcERROR = new PlcVars.Bit(this, new PlcVars.BitAddress(196, 0), true);
 
             TempSenZg = new PlcVars.Word(this, new PlcVars.WordAddress(210), false);
@@ -160,6 +143,8 @@ namespace WindowsFormsApp2
             StopwatchPaused = new PlcVars.Bit(this, new PlcVars.BitAddress(254, 0), false);
             StopwatchStopped = new PlcVars.Bit(this, new PlcVars.BitAddress(256, 0), false);
             HeatingUp = new PlcVars.Bit(this, new PlcVars.BitAddress(258, 0), false);
+
+            Blink_HeatingUp = new PlcVars.Bit(this, new PlcVars.BitAddress(260, 0), false);
         }
 
     }

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    class AutoMan01Select : Control
+    public class AutoMan01Select : Control
     {
 
         Thread updaterThread;
@@ -20,7 +20,7 @@ namespace WindowsFormsApp2
         RadioButton rBtnAuto;
         RadioButton rBtnOff;
         RadioButton rBtnOn;
-        
+
         public string Text_Auto
         {
             get { return rBtnAuto.Text; }
@@ -193,7 +193,7 @@ namespace WindowsFormsApp2
         void CreateControls()
         {
             rBtnAuto = new RadioButton();
-            rBtnOff = new RadioButton() {Name = "ManualOffRadioBtn" };
+            rBtnOff = new RadioButton() { Name = "ManualOffRadioBtn" };
             rBtnOn = new RadioButton();
 
         }
@@ -247,6 +247,187 @@ namespace WindowsFormsApp2
             Value_Auto.Value = 1; Value_Man0.Value = 0; Value_Man1.Value = 0;
         }
     }
+
+    class Man01Select : Control
+    {
+
+        Thread updaterThread;
+        RadioButton rBtnOff;
+        RadioButton rBtnOn;
+
+        public string Text_Man0
+        {
+            get { return rBtnOff.Text; }
+            set { rBtnOff.Text = value; }
+        }
+
+        public string Text_Man1
+        {
+            get { return rBtnOn.Text; }
+            set { rBtnOn.Text = value; }
+        }
+
+        PlcVars.Bit value_;
+        public PlcVars.Bit Value
+        {
+            get
+            {
+                if (value_ == null && !designMode)
+                {
+                    MessageBox.Show("You should provide Value to Man01Select to operate normaly.");
+                }
+
+                return value_;
+            }
+
+            set { value_ = value; }
+        }
+
+
+        PlcVars.Bit onPulse;
+        public PlcVars.Bit OnPulse
+        {
+            get
+            {
+                if (onPulse == null && !designMode)
+                {
+                    MessageBox.Show("You should provide Value [OnPulse] to Man01Select to operate normaly.");
+                }
+
+                return onPulse;
+            }
+
+            set { onPulse = value; }
+        }
+
+        PlcVars.Bit offPulse;
+        public PlcVars.Bit OffPulse
+        {
+            get
+            {
+                if (offPulse == null && !designMode)
+                {
+                    MessageBox.Show("You should provide Value [OffPulse] to Man01Select to operate normaly.");
+                }
+
+                return offPulse;
+            }
+
+            set { offPulse = value; }
+        }
+
+        bool designMode = false;
+
+        public Man01Select()
+        {
+            CreateControls();
+            names();
+            positionControls();
+            AddBtns();
+            designMode = (LicenseManager.UsageMode == LicenseUsageMode.Designtime);
+            if (!designMode)
+            {
+                RegisterEvents();
+                ReadFromPlc();
+            }
+        }
+
+        void ReadFromPlc()
+        {
+            updaterThread = new Thread(update);
+            updaterThread.Start();
+        }
+
+        void update()
+        {
+            var m = new MethodInvoker(delegate
+            {
+                    if (value_.Value_bool)
+                    {
+                        rBtnOff.Checked = false;
+                        rBtnOn.Checked = true;
+                    }
+                    else
+                    {
+                        rBtnOff.Checked = true;
+                        rBtnOn.Checked = false;
+                    }    
+            });
+
+            while (Parent == null)
+            {
+                Thread.Sleep(100);
+            }
+
+            Thread.Sleep(1000);
+
+            while (true)
+            {
+                try
+                {
+                    Parent.Invoke(m);
+                }
+                catch
+                {
+
+                }
+                Thread.Sleep(Settings.UpdateValuesPCms);
+            }
+        }
+
+        void names()
+        {
+            Text_Man0 = "OFF";
+            Text_Man1 = "ON";
+        }
+
+        void CreateControls()
+        {
+            rBtnOff = new RadioButton() { Name = "ManualOffRadioBtn" };
+            rBtnOn = new RadioButton();
+
+        }
+
+        void positionControls()
+        {
+            int left = 10;
+            int spacing = 23;
+            int top = 5;
+
+            // Container
+            Height = top * 2 + 3 * spacing;
+            Width = 100;
+
+            // Buttons            
+            rBtnOff.Left = left; rBtnOff.Top = top; top += spacing;
+            rBtnOn.Left = left; rBtnOn.Top = top; top += spacing;
+
+        }
+
+        void AddBtns()
+        {
+            Controls.Add(rBtnOff);
+            Controls.Add(rBtnOn);
+        }
+
+        void RegisterEvents()
+        {
+
+            rBtnOff.Click += RBtnOff_Click;
+            rBtnOn.Click += RBtnOn_Click;
+        }
+
+        private void RBtnOn_Click(object sender, EventArgs e)
+        {
+            onPulse.SendPulse();
+        }
+
+        private void RBtnOff_Click(object sender, EventArgs e)
+        {
+            offPulse.SendPulse();
+        }
+    }
+
 }
 
-    
+
